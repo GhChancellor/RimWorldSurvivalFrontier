@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Add to repice "Make_ChemfuelFromOrganics" a new recipe. Add Hay, Corpses Humanlike and Corpses Animal  -->
+<!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromOrganics -->
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Normal</success>
+        <operations>
+            <!-- Remove Hay from disallowed ingredients -->
+            <li Class="PatchOperationRemove">
+                <xpath>
+                    /Defs/RecipeDef[defName="Make_ChemfuelFromOrganics"]/ingredients/li/filter/disallowedThingDefs/li[text()="Hay"]
+                </xpath>
+            </li>
+            <!-- Remove Hay from fixed ingredients -->
+            <li Class="PatchOperationRemove">
+                <xpath>
+                    /Defs/RecipeDef[defName="Make_ChemfuelFromOrganics"]/fixedIngredientFilter/disallowedThingDefs/li[text()="Hay"]
+                </xpath>
+            </li>
+            <!-- Unlocks corpses Human/Animal for chemfuel production -->
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromOrganics"]/fixedIngredientFilter/categories</xpath>
+                <value>
+                    <li>CorpsesHumanlike</li>
+                    <li>CorpsesAnimal</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

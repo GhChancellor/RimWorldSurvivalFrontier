@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <!--  ================= RSF_PlasticBasicRecipe  ================= -->
+    <RSF_PlasticBasicRecipe.label>make basic plastic</RSF_PlasticBasicRecipe.label>
+    <RSF_PlasticBasicRecipe.description>Lightweight bio-plastic from plant materials. Basic-grade material suitable for simple furniture and structures.</RSF_PlasticBasicRecipe.description>
+    <RSF_PlasticBasicRecipe.jobString>producing basic plastic</RSF_PlasticBasicRecipe.jobString>
+
+    <!--  ================= RSF_PlasticIndustrialRecipe  ================= -->
+    <RSF_PlasticIndustrialRecipe.label>make industrial plastic</RSF_PlasticIndustrialRecipe.label>
+    <RSF_PlasticIndustrialRecipe.description>Advanced bio-plastic with enhanced durability. Industrial-grade material for high-quality furniture and robust structures.</RSF_PlasticIndustrialRecipe.description>
+    <RSF_PlasticIndustrialRecipe.jobString>producing industrial plastic</RSF_PlasticIndustrialRecipe.jobString>
+
+    <!--  ================= RSF_PlasticBioSteelRecipe  ================= -->
+    <RSF_PlasticBioSteelRecipe.label>make plastic Bio-Steel</RSF_PlasticBioSteelRecipe.label>
+    <RSF_PlasticBioSteelRecipe.description>Advanced Plastic bio-engineered steel created by reinforcing plant-based polymers with metallic compounds. While not as strong as spacer-tech materials, it offers an excellent balance of durability and sustainability for colonial construction.</RSF_PlasticBioSteelRecipe.description>
+    <RSF_PlasticBioSteelRecipe.jobString>producing Plastic Bio-Steel</RSF_PlasticBioSteelRecipe.jobString>
+
+    <!--  ================= RSF_PlasticFiberRecipe  ================= -->
+    <RSF_PlasticFiberRecipe.label>make plastic fiber</RSF_PlasticFiberRecipe.label>
+    <RSF_PlasticFiberRecipe.description>Synthetic textile fiber from bio-plastic. Suitable for clothing production and textile crafting.</RSF_PlasticFiberRecipe.description>
+    <RSF_PlasticFiberRecipe.jobString>producing plastic fiber</RSF_PlasticFiberRecipe.jobString>
+
+    <!--  ================= RSF_ChemfuelFromPlasticRecipe  ================= -->
+    <RSF_ChemfuelFromPlasticRecipe.label>make chemfuel from plastic</RSF_ChemfuelFromPlasticRecipe.label>
+    <RSF_ChemfuelFromPlasticRecipe.description>Convert plastic into chemfuel.</RSF_ChemfuelFromPlasticRecipe.description>
+    <RSF_ChemfuelFromPlasticRecipe.jobString>converting plastic to chemfuel</RSF_ChemfuelFromPlasticRecipe.jobString>
+
+    <!--  ================= RSF_PlasticIncendiaryRecipe  ================= -->
+    <RSF_PlasticIncendiaryRecipe.label>make incendiary plastic</RSF_PlasticIncendiaryRecipe.label>
+    <RSF_PlasticIncendiaryRecipe.description>Bio-plastic infused with volatile compounds. Extremely flammable construction material for tactical applications. Handle with care.</RSF_PlasticIncendiaryRecipe.description>
+    <RSF_PlasticIncendiaryRecipe.jobString>converting bio plastic to incendiary plastic </RSF_PlasticIncendiaryRecipe.jobString>
+
+    <!--  ================= RSF_EcoLeatherRecipe  ================= -->
+    <RSF_EcoLeatherRecipe.label>make eco leather</RSF_EcoLeatherRecipe.label>
+    <RSF_EcoLeatherRecipe.description>Synthetic leather from plant polymers. Sustainable alternative to animal leather for high-quality clothing.</RSF_EcoLeatherRecipe.description>
+    <RSF_EcoLeatherRecipe.jobString>converting plastic fiber to eco leather</RSF_EcoLeatherRecipe.jobString>
+</LanguageData>

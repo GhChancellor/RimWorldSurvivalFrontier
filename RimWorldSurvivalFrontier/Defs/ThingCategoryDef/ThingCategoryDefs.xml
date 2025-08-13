@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <!--Plastic Basic, Plastic Industrial, Plastic Fiber, and Wood Planks-->
+    <ThingCategoryDef>
+        <defName>TradingGoods</defName>
+        <label>tradingGoods</label>
+        <parent>Manufactured</parent>
+    </ThingCategoryDef>
+
+    <!-- Plastic Bio-Steel-->
+    <ThingCategoryDef>
+        <defName>TradingGoods2</defName>
+        <label>tradingGoods2</label>
+        <parent>Manufactured</parent>
+    </ThingCategoryDef>
+</Defs>

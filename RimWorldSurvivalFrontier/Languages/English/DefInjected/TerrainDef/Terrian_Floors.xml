@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <!--  ================= RSF_BurnedPlasticIncendiaryTile  ================= -->
+    <RSF_BurnedPlasticIncendiaryTile.label>burned incendiary plastic tile.</RSF_BurnedPlasticIncendiaryTile.label>
+    <RSF_BurnedPlasticIncendiaryTile.description>Incendiary plastic tile that has been burned in a fire.</RSF_BurnedPlasticIncendiaryTile.description>
+
+    <!--  ================= RSF_PlasticIncendiaryTile  ================= -->
+    <RSF_PlasticIncendiaryTile.label>Incendiary plastic tile</RSF_PlasticIncendiaryTile.label>
+    <RSF_PlasticIncendiaryTile.description>Extremely flammable for tactical applications. Handle with care.</RSF_PlasticIncendiaryTile.description>
+
+</LanguageData>

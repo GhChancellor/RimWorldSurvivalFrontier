@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Normal</success>
+        <operations>
+            <!-- Trader  Caravan_Outlander_BulkGoods -->
+            
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+                
+                <value>
+                    <li Class="StockGenerator_Category">
+                        <categoryDef>TradingGoods</categoryDef> <!-- See ThingCategoryDefs.xml > TradingGoods -->
+                        <thingDefCountRange>1~6</thingDefCountRange>
+                        <totalPriceRange>200~400</totalPriceRange>
+                    </li>
+                </value>
+            </li>    
+
+            <!-- Trader  Base_Outlander_Standard -->
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath>
+                <value>
+                    <li Class="StockGenerator_Category">
+                        <categoryDef>TradingGoods</categoryDef> <!-- See ThingCategoryDefs.xml > TradingGoods -->
+                        <thingDefCountRange>1~6</thingDefCountRange>
+                        <totalPriceRange>200~400</totalPriceRange>
+                    </li>
+                </value>
+            </li>
+
+            <!-- Trader Orbital_BulkGoods -->
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TraderKindDef[defName="Orbital_BulkGoods"]/stockGenerators</xpath>
+                <value>
+                    <li Class="StockGenerator_Category">
+                        <categoryDef>TradingGoods</categoryDef> <!-- See ThingCategoryDefs.xml > TradingGoods -->
+                        <thingDefCountRange>1~6</thingDefCountRange>
+                        <totalPriceRange>200~400</totalPriceRange>
+                    </li>
+                </value>
+            </li>
+            
+            <!-- Trader Orbital_Exotic -->
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TraderKindDef[defName="Orbital_Exotic"]/stockGenerators</xpath>
+                <value>
+                    <li Class="StockGenerator_Category">
+                        <categoryDef>TradingGoods2</categoryDef> <!-- See ThingCategoryDefs.xml > TradingGoods2 -->
+                        <thingDefCountRange>0~1</thingDefCountRange>
+                        <totalPriceRange>50~200</totalPriceRange>
+                    </li>
+                </value>
+            </li>
+            
+            <!-- Trader Caravan_Outlander_Exotic -->
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+                <value>
+                    <li Class="StockGenerator_Category">
+                        <categoryDef>TradingGoods2</categoryDef> <!-- See ThingCategoryDefs.xml > TradingGoods2 -->
+                        <thingDefCountRange>0~1</thingDefCountRange>
+                        <totalPriceRange>50~200</totalPriceRange>
+                    </li>
+                </value>
+            </li>
+            
+        </operations>
+    </Operation>
+</Patch>
+
+
+<!--
+Outlander (Avanzati)
+
+Caravan_Outlander_BulkGoods ✅ → Materiali industriali moderni
+Base_Outlander_Standard ✅ → Comunità tecnologicamente avanzate
+Orbital_BulkGoods ✅ → Tecnologia spaziale/sintetica
+
+Altri Trader Lore-Friendly
+
+Caravan_Outlander_Exotic ✅ → Materiali sperimentali/avanzati
+Orbital_Exotic ✅ → Tecnologie glitterworld
+Caravan_Outlander_CombatSupplier ? → Solo se l'ecoplastica ha usi militari
+
+❌ NON LORE-FRIENDLY
+Tribal (Neolitici)
+
+Caravan_Neolithic_* ❌ → Tecnologia pre-industriale
+Base_Neolithic_Standard ❌ → Non conoscono materiali sintetici
+-->
+
+
+                    <!-- RSF_PlasticBasic -->
+        <!--                    <li Class="StockGenerator_SingleDef">-->
+        <!--                        <thingDef>RSF_PlasticBasic</thingDef>-->
+        <!--                        <countRange>250~400</countRange>-->
+        <!--                    </li>-->
+        <!--                    &lt;!&ndash; RSF_PlasticIndustrial &ndash;&gt;-->
+        <!--                    <li Class="StockGenerator_SingleDef">-->
+        <!--                        <thingDef>RSF_PlasticIndustrial</thingDef>-->
+        <!--                        <countRange>250~400</countRange>-->
+        <!--                    </li>-->
+        <!--                    &lt;!&ndash; RSF_PlasticFiber &ndash;&gt;-->
+        <!--                    <li Class="StockGenerator_SingleDef">-->
+        <!--                        <thingDef>RSF_PlasticFiber</thingDef>-->
+        <!--                        <countRange>250~400</countRange>-->
+        <!--                    </li>-->

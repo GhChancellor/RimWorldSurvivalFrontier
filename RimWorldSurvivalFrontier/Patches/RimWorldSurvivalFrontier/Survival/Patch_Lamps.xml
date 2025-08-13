@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+How to calculate display Radius
+Radius = specialDisplayRadius ( solarLamp ) / glowRadius  
+specialDisplayRadius = glowRadius * Radius
+
+Radius 5.8 / 14 = 0.41
+specialDisplayRadius = 11 * 0.41 = 4.5
+
+See /Defs/ThingDefs_Buildings/Buildings_Furniture.xml
+-->
+
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Normal</success>
+        <operations>
+            <!-- Add display radius to Wall Lamp-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "WallLamp"]</xpath>
+                <value>
+                    <specialDisplayRadius>4.5</specialDisplayRadius>
+                </value>
+            </li>
+
+            <!-- Add display radius to Flood Light-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "FloodLight"]</xpath>
+                <value>
+                    <specialDisplayRadius>9.8</specialDisplayRadius>
+                </value>
+            </li>
+
+            <!-- Add display radius to Standing Lamp -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "StandingLamp"]</xpath>
+                <value>
+                    <specialDisplayRadius>4.9</specialDisplayRadius>
+                </value>
+            </li>
+
+            <!-- Add display radius to Torch Lamp-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "TorchLamp"]</xpath>
+                <value>
+                    <specialDisplayRadius>4.1</specialDisplayRadius>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

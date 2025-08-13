@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ThingDef Name="TemplateBasin" ParentName="BuildingBase" Abstract="true" >
+        <label>Template</label>
+        <description>A simple Template.</description>
+        <noRightClickDraftAttack>true</noRightClickDraftAttack>
+        <thingClass>Building_PlantGrower</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Production/HydroponicsBasin</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <color>(150, 111, 51)</color>
+            <drawSize>(1,4)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <castEdgeShadows>true</castEdgeShadows>
+        <altitudeLayer>LowPlant</altitudeLayer>
+        <defaultPlacingRot>East</defaultPlacingRot>
+        <passability>PassThroughOnly</passability>
+        <pathCost>30</pathCost>
+
+        <fillPercent>0.30</fillPercent>
+        <canOverlapZones>false</canOverlapZones>
+        
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+               
+        <statBases>
+            <WorkToBuild>1500</WorkToBuild>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+            <Cleanliness>-3</Cleanliness>
+            <Mass>5</Mass> <!-- it's necessary for MinifiedThing--> 
+        </statBases>
+        <size>(1,4)</size>
+
+        <fertility>1.2</fertility>
+        <building>
+            <defaultPlantToGrow>Plant_Haygrass</defaultPlantToGrow>
+            <sowTag>CustomSowTagPlants</sowTag>
+            <buildingTags>
+                <li>Production</li> <!-- Menù production -->
+            </buildingTags>
+        </building>
+        <tickerType>Rare</tickerType>
+
+        <stuffCategories>
+            <li>Woody</li> <!-- materials used to build this item -->
+        </stuffCategories>
+
+        <costStuffCount>50</costStuffCount>
+
+        <costList>
+            <Steel>3</Steel>
+        </costList>
+
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        
+        <!--Which menu appear Production/Furniture/Recreation/Security -->
+        <designationCategory>Production</designationCategory>
+
+        <neverMultiSelect>false</neverMultiSelect>
+
+        <!-- ********** MinifiedThing ************** -->
+
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <overrideMinifiedRot>North</overrideMinifiedRot>
+        <minifiedDrawOffset>(0, 0, 0.2)</minifiedDrawOffset>
+
+        <thingCategories>
+            <li>BuildingsFurniture</li> <!-- it's necessary for MinifiedThing -->
+        </thingCategories>
+        
+    <!-- ************************************* -->
+    </ThingDef>
+
+    <!-- Crop Basin -->
+    <ThingDef ParentName="TemplateBasin">
+        <defName>RSF_CropBasin</defName>
+        <label>RSF_CropBasin.label</label>
+        <description>RSF_CropBasin.description</description>
+
+        <!-- Materials -->
+        <costStuffCount>40</costStuffCount>
+        <costList>
+            <Steel>60</Steel>
+        </costList>
+    </ThingDef>
+
+    <!-- Crop Basin 1x1 -->
+    <ThingDef ParentName="TemplateBasin">
+        <defName>RSF_CropBasinTiny</defName>
+        <label>RSF_CropBasinTiny.label</label>
+        <description>RSF_CropBasinTiny.description</description>
+
+        <graphicData>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToBuild>375</WorkToBuild>
+        </statBases>
+
+        <size>(1,1)</size>
+
+        <!-- Materials -->
+        <costStuffCount>15</costStuffCount>
+        <costList>
+            <Steel>20</Steel>
+        </costList>
+    
+    </ThingDef>
+
+    <!-- Crop Basin 1x3 -->
+    <ThingDef ParentName="TemplateBasin">
+        <defName>RSF_CropBasinCompact</defName>
+        <label>RSF_CropBasinCompact.label</label>
+        <description>RSF_CropBasinCompact.description</description>
+
+        <graphicData>
+            <drawSize>(1,3)</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToBuild>1000</WorkToBuild>
+        </statBases>
+
+        <size>(1,3)</size>
+
+        <!-- Materials -->
+        <costStuffCount>45</costStuffCount>
+        <costList>
+            <Steel>30</Steel>
+        </costList>
+    </ThingDef>
+    
+    <!-- Tree Basin -->
+    <ThingDef ParentName="TemplateBasin">
+        <defName>RSF_TreeBasinTiny</defName>
+        <label>RSF_TreeBasinTiny.label</label>
+        <description>RSF_TreeBasinTiny.description</description>
+        <graphicData>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToBuild>800</WorkToBuild>
+        </statBases>
+
+        <size>(1,1)</size>
+        <fertility>0.8</fertility>
+        
+        <building>
+            <defaultPlantToGrow>Plant_TreePoplar</defaultPlantToGrow>
+            <sowTag>CustomSowTagTree</sowTag>
+        </building>
+
+        <!-- Materials -->
+        <costStuffCount>30</costStuffCount>
+        <costList>
+            <Steel>30</Steel>
+        </costList>
+    </ThingDef>
+    
+</Defs>

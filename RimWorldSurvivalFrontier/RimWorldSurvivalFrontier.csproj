@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net48</TargetFramework>
+        <!-- Enables C# 10 features -->
+        <LangVersion>10</LangVersion>
+        <!-- Disabled for Unity compatibility -->
+        <Nullable>disable</Nullable>
+        <RootNamespace>RimWorldSurvivalFrontier</RootNamespace>
+    </PropertyGroup>
+
+    <!-- Mod content files -->
+    <ItemGroup>
+
+        <!-- Game and engine dependencies -->
+        <Reference Include="Assembly-CSharp">
+            <HintPath>../libs/v1.6/Assembly-CSharp.dll</HintPath>
+        </Reference>
+
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>../libs/v1.6/UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+
+        <Reference Include="0Harmony">
+            <HintPath>../libs/v1.6/0Harmony.dll</HintPath>
+        </Reference>
+
+    </ItemGroup>
+
+    <!-- Mod Folder -->
+    <ItemGroup>
+        <Folder Include="About\**\*"/>
+        <Folder Include="Defs\**\*"/>
+        <Folder Include="Languages\**\*"/>
+        <Folder Include="Patches\**\*"/>
+    </ItemGroup>
+
+    <!-- Post-build deployment steps -->
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <PropertyGroup>
+            <ProjectName>RimWorldSurvivalFrontier</ProjectName>
+            <ModRootFolder>/home/$(USER)/Documenti/Archivio/Store/Steam/steamapps/common/RimWorld/Mods/$(ProjectName)</ModRootFolder>
+            <ModAssembliesFolder>$(ModRootFolder)/Assemblies</ModAssembliesFolder>
+            <ModName>$(ProjectName).dll</ModName>
+        </PropertyGroup>
+
+        <!-- Create required directories -->
+        <Exec Command="mkdir -p &quot;$(ModRootFolder)/About&quot;"/>
+        <Exec Command="mkdir -p &quot;$(ModRootFolder)/Defs&quot;"/>
+        <Exec Command="mkdir -p &quot;$(ModRootFolder)/Languages&quot;"/>
+        <Exec Command="mkdir -p &quot;$(ModRootFolder)/Patches&quot;"/>
+        <Exec Command="mkdir -p &quot;$(ModAssembliesFolder)&quot;"/>
+
+        <!-- Copy mod files to installation directory -->
+
+        <Exec Command="rsync -av --delete &quot;About/&quot; &quot;$(ModRootFolder)/About/&quot;"/>
+        <Exec Command="rsync -av --delete &quot;Defs/&quot; &quot;$(ModRootFolder)/Defs/&quot;"/>
+        <Exec Command="rsync -av --delete &quot;Languages/&quot; &quot;$(ModRootFolder)/Languages/&quot;"/>
+        <Exec Command="rsync -av --delete &quot;Patches/&quot; &quot;$(ModRootFolder)/Patches/&quot;"/>
+        <Exec Command="rsync -av --delete &quot;$(TargetPath)&quot; &quot;$(ModAssembliesFolder)/$(ModName)&quot;"/>
+
+    </Target>
+</Project>

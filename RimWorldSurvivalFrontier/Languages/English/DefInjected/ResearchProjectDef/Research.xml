@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <!--  ================= RSF_PlasticBasicResearch  ================= -->
+    <RSF_PlasticBasicResearch.label>basic plastic</RSF_PlasticBasicResearch.label>
+    <RSF_PlasticBasicResearch.description>Lightweight bio-plastic from plant materials. Basic-grade material suitable for simple furniture and structures.</RSF_PlasticBasicResearch.description>
+
+    <!--  ================= RSF_PlasticIndustrialResearch  ================= -->
+    <RSF_PlasticIndustrialResearch.label>industrial plastic</RSF_PlasticIndustrialResearch.label>
+    <RSF_PlasticIndustrialResearch.description>Advanced bio-plastic with enhanced durability. Industrial-grade material for high-quality furniture and robust structures.</RSF_PlasticIndustrialResearch.description>
+
+    <!--  ================= RSF_PlasticBioSteelResearch  ================= -->
+    <RSF_PlasticBioSteelResearch.label>plastic Bio-Steel </RSF_PlasticBioSteelResearch.label>
+    <RSF_PlasticBioSteelResearch.description>Advanced plastic bio-engineered steel created by reinforcing plant-based polymers with metallic compounds. While not as strong as spacer-tech materials, it offers an excellent balance of durability and sustainability for colonial construction.</RSF_PlasticBioSteelResearch.description>
+
+    <!--  ================= RSF_PlasticFiberResearch  ================= -->
+    <RSF_PlasticFiberResearch.label>plastic fiber</RSF_PlasticFiberResearch.label>
+    <RSF_PlasticFiberResearch.description>Synthetic textile fiber from bio-plastic. Suitable for clothing production and textile crafting.</RSF_PlasticFiberResearch.description>
+
+    <!--  ================= RSF_PlasticIncendiaryResearch  ================= -->
+    <RSF_PlasticIncendiaryResearch.label>incendiary plastic</RSF_PlasticIncendiaryResearch.label>
+    <RSF_PlasticIncendiaryResearch.description>Bio-plastic infused with volatile compounds. Extremely flammable construction material for tactical applications. Handle with care.</RSF_PlasticIncendiaryResearch.description>
+
+    <!--  ================= RSF_EcoLeatherResearch  ================= -->
+    <RSF_EcoLeatherResearch.label>eco leather</RSF_EcoLeatherResearch.label>
+    <RSF_EcoLeatherResearch.description>Synthetic leather from plant polymers. Sustainable alternative to animal leather for high-quality clothing.</RSF_EcoLeatherResearch.description>
+
+</LanguageData>

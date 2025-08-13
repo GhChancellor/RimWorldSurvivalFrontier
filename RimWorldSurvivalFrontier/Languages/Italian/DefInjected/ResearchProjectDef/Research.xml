@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <!--  ================= RSF_PlasticBasicResearch  ================= -->
+    <RSF_PlasticBasicResearch.label>plastica base</RSF_PlasticBasicResearch.label>
+    <RSF_PlasticBasicResearch.description>Bio-plastica leggera ricavata da materiali vegetali. Adatta per la costruzione di mobili e strutture ma di qualità inferiore.</RSF_PlasticBasicResearch.description>
+
+    <!--  ================= RSF_PlasticIndustrialResearch  ================= -->
+    <RSF_PlasticIndustrialResearch.label>plastica industriale</RSF_PlasticIndustrialResearch.label>
+    <RSF_PlasticIndustrialResearch.description>Bio-plastica resistente per costruzioni. Adatta per la costruzione di mobili e strutture ma di qualità superiore.</RSF_PlasticIndustrialResearch.description>
+
+    <!--  ================= RSF_PlasticBioSteelResearch  ================= -->
+    <RSF_PlasticBioSteelResearch.label>acciaio bio-ingegnerizzato</RSF_PlasticBioSteelResearch.label>
+    <RSF_PlasticBioSteelResearch.description>Acciaio bio-ingegnerizzato avanzato creato rinforzando polimeri vegetali con composti metallici. Pur non essendo resistente come i materiali spacer-tech, offre un eccellente equilibrio tra durabilità e sostenibilità per le costruzioni coloniali.</RSF_PlasticBioSteelResearch.description>
+
+    <!--  ================= RSF_PlasticFiberResearch  ================= -->
+    <RSF_PlasticFiberResearch.label>fibra di plastica</RSF_PlasticFiberResearch.label>
+    <RSF_PlasticFiberResearch.description>Tessuto sintetico ricavato da bio-plastica. Adatto per la produzione di vestiti base e commercio.</RSF_PlasticFiberResearch.description>
+
+    <!--  ================= RSF_PlasticIncendiaryResearch  ================= -->
+    <RSF_PlasticIncendiaryResearch.label>plastica incendiaria</RSF_PlasticIncendiaryResearch.label>
+    <RSF_PlasticIncendiaryResearch.description>Bioplastica rinforzata con composti volatili. Materiale da costruzione estremamente infiammabile per applicazioni tattiche. Maneggiare con cura..</RSF_PlasticIncendiaryResearch.description>
+
+    <!--  ================= RSF_EcoLeatherResearch  ================= -->
+    <RSF_EcoLeatherResearch.label>eco pelle</RSF_EcoLeatherResearch.label>
+    <RSF_EcoLeatherResearch.description>Pelle sintetica bio-ingegnerizzata creata da polimeri vegetali avanzati. Alternativa sostenibile al cuoio animale per abbigliamento di qualità.</RSF_EcoLeatherResearch.description>
+
+</LanguageData>

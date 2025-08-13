@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <TerrainDef ParentName="BurnedFloorBase">
+        <defName>RSF_BurnedPlasticIncendiaryTile</defName>
+        <label>RSF_BurnedPlasticIncendiaryTile.label</label>
+        <renderPrecedence>240</renderPrecedence>
+        <description>RSF_BurnedPlasticIncendiaryTile.description</description>
+        <texturePath>Terrain/Surfaces/BurnedStrawmatting</texturePath>
+        <edgeType>FadeRough</edgeType>
+    </TerrainDef>
+
+    <TerrainDef ParentName="FloorBase">
+        <defName>RSF_PlasticIncendiaryTile</defName>
+        <label>RSF_PlasticIncendiaryTile.label</label>
+        <description>RSF_PlasticIncendiaryTile.description</description>
+        
+        <texturePath>Terrain/Surfaces/PavedTile</texturePath>
+        <pollutedTexturePath>Terrain/Surfaces/PavedTilePolluted</pollutedTexturePath>
+        <color>(255,140,0)</color>
+        <pollutionOverlayTexturePath />
+        <pollutionColor>(1, 1, 1, 1)</pollutionColor>
+        <pollutionTintColor>(1, 1, 1, 1)</pollutionTintColor>
+        <edgeType>Hard</edgeType>
+        <renderPrecedence>240</renderPrecedence>
+        <burnedDef>RSF_BurnedPlasticIncendiaryTile</burnedDef>
+        <pathCost>1</pathCost>
+        <statBases>
+            <Beauty>-1</Beauty>
+            <Cleanliness>-0.1</Cleanliness>
+            <WorkToBuild>120</WorkToBuild>
+            <FilthMultiplier>0.05</FilthMultiplier>
+            <Flammability>1.5</Flammability>
+        </statBases>
+        <costList>
+            <RSF_PlasticIncendiary>2</RSF_PlasticIncendiary>
+        </costList>
+        <designationHotKey>Misc6</designationHotKey>
+        <uiOrder>2010</uiOrder>
+    </TerrainDef>
+
+</Defs>
+

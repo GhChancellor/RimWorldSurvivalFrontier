@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    
+    <!--  ================= RSF_BurnedPlasticIncendiaryTile  ================= -->
+    <RSF_BurnedPlasticIncendiaryTile.label>piastrella di plastica incendiaria bruciata.</RSF_BurnedPlasticIncendiaryTile.label>
+    <RSF_BurnedPlasticIncendiaryTile.description>Piastrella di plastica incendiaria bruciata durante un incendio.</RSF_BurnedPlasticIncendiaryTile.description>
+
+    <!--  ================= RSF_PlasticIncendiaryTile  ================= -->
+    <RSF_PlasticIncendiaryTile.label>piastrella di plastica incendiaria</RSF_PlasticIncendiaryTile.label>
+    <RSF_PlasticIncendiaryTile.description>Estremamente infiammabile per applicazioni tattiche. Maneggiare con cautela</RSF_PlasticIncendiaryTile.description>
+    
+</LanguageData>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+
+    <!--  ================= RSF_PlasticBasicResearch  ================= -->
+    <ResearchProjectDef>
+        <defName>RSF_PlasticBasicResearch</defName>
+        <label>RSF_PlasticBasicResearch.label</label>
+        <description>RSF_PlasticBasicResearch.description</description>
+        <baseCost>300</baseCost> <!-- research -->
+        <techLevel>Industrial</techLevel>
+        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+<!--            <li>Electricity</li>-->
+            <li>BiofuelRefining</li>
+        </prerequisites>
+        <researchViewX>0.50</researchViewX> <!-- Position on tab research -->
+        <researchViewY>2.30</researchViewY>
+        <tab>RSF_EcoPlastic</tab>
+    </ResearchProjectDef>
+    
+    <!--  ================= RSF_PlasticIndustrialResearch  ================= -->
+    <ResearchProjectDef>
+        <defName>RSF_PlasticIndustrialResearch</defName>
+        <label>RSF_PlasticIndustrialResearch.label</label>
+        <description>RSF_PlasticIndustrialResearch.description</description>
+        <baseCost>1200</baseCost> <!-- research -->
+        <techLevel>Industrial</techLevel>
+        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+            <li>Electricity</li>
+            <li>Smithing</li>
+            <li>BiofuelRefining</li>
+            <li>RSF_PlasticBasicResearch</li>
+            <li>Machining</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX> <!-- Position on tab research -->
+        <researchViewY>1.00</researchViewY>
+        <tab>RSF_EcoPlastic</tab>
+    </ResearchProjectDef>
+    
+    <!--  ================= RSF_PlasticBioSteelResearch  ================= -->
+    <ResearchProjectDef>
+        <defName>RSF_PlasticBioSteelResearch</defName>
+        <label>RSF_PlasticBioSteelResearch.label</label>
+        <description>RSF_PlasticBioSteelResearch.description</description>
+        <baseCost>2000</baseCost> <!-- research -->
+        <techLevel>Industrial</techLevel>
+        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+            <li>Electricity</li>
+            <li>Smithing</li>
+            <li>BiofuelRefining</li>
+            <li>RSF_PlasticBasicResearch</li>
+            <li>Machining</li>
+            <li>RSF_PlasticIndustrialResearch</li>
+            <li>MicroelectronicsBasics</li>
+        </prerequisites>
+        <researchViewX>2.50</researchViewX> <!-- Position on tab research -->
+        <researchViewY>0.90</researchViewY>
+
+        <tab>RSF_EcoPlastic</tab>
+    </ResearchProjectDef>
+
+    <!--  ================= RSF_PlasticFiberResearch  ================= -->
+    <ResearchProjectDef>
+        <defName>RSF_PlasticFiberResearch</defName>
+        <label>RSF_PlasticFiberResearch.label</label>
+        <description>RSF_PlasticFiberResearch.description</description>
+        <baseCost>600</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+            <li>Electricity</li>
+            <li>BiofuelRefining</li>
+            <li>RSF_PlasticBasicResearch</li>
+        </prerequisites>
+        <researchViewX>1.50</researchViewX> <!-- Position on tab research -->
+        <researchViewY>2.30</researchViewY>
+        <tab>RSF_EcoPlastic</tab>
+    </ResearchProjectDef>
+
+    <!--  ================= RSF_EcoLeatherResearch  ================= -->
+    <ResearchProjectDef>
+        <defName>RSF_EcoLeatherResearch</defName>
+        <label>RSF_EcoLeatherResearch.label</label>
+        <description>RSF_EcoLeatherResearch.description</description>
+        <baseCost>800</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+            <li>Electricity</li>
+            <li>BiofuelRefining</li>
+            <li>RSF_PlasticBasicResearch</li>
+            <li>RSF_PlasticFiberResearch</li>
+        </prerequisites>
+        <researchViewX>2.50</researchViewX> <!-- Position on tab research -->
+        <researchViewY>2.30</researchViewY>
+        <tab>RSF_EcoPlastic</tab>
+    </ResearchProjectDef>
+
+    <!--  ================= RSF_PlasticIncendiaryResearch  ================= -->
+    <ResearchProjectDef>
+        <defName>RSF_PlasticIncendiaryResearch</defName>
+        <label>RSF_PlasticIncendiaryResearch.label</label>
+        <description>RSF_PlasticIncendiaryResearch.description</description>
+        <baseCost>300</baseCost> <!-- research -->
+        <techLevel>Industrial</techLevel>
+        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+            <li>Electricity</li>
+            <li>BiofuelRefining</li>
+            <li>RSF_PlasticBasicResearch</li>
+        </prerequisites>
+        <researchViewX>0.50</researchViewX> <!-- Position on tab research -->
+        <researchViewY>0.40</researchViewY>
+        <tab>RSF_EcoPlastic</tab>
+    </ResearchProjectDef>
+    
+</Defs>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- See /Defs/ThingDefs_Plants/Plants_Cultivated_Farm.xml-->
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Normal</success>
+        <operations>
+
+            <!-- ======================== Plants ======================== -->
+
+            <!--Add Plant_Corn to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Corn"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+            <!--Add Plant_Cotton to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Cotton"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+            <!--Add Plant_Dandelion to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Dandelion"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+            <!--Add Plant_Daylily to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Daylily"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+            <!--Add Plant_Devilstrand to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Devilstrand"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+            <!--Add Plant_Haygrass to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Haygrass"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+            <!--Add Plant_Hops to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Hops"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+            <!--Add Plant_Healroot to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Healroot"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+            <!--Add Plant_Potato to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Potato"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>           
+            
+            <!--Add Plant_Psychoid to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Psychoid"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>           
+            
+            <!--Add Plant_Rice to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Rice"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+            <!--Add Plant_Rose to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Rose"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+            <!--Add Plant_Smokeleaf to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Smokeleaf"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+            <!--Add Plant_Strawberry to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Strawberry"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+            <!--Add Plant_Tinctoria to CustomSowTagPlants-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_Tinctoria"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagPlants</li>
+                    </sowTags>
+                </value>
+            </li>
+
+            <!-- ======================== Tree ======================== -->
+
+            <!--Add Plant_TreeOak to CustomSowTagTree-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_TreeOak"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagTree</li>
+                    </sowTags>
+                </value>
+            </li>
+
+            <!--Add Plant_TreeCocoa to CustomSowTagTree-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_TreeCocoa"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagTree</li>
+                    </sowTags>
+                </value>
+            </li>
+
+            <!--Add Plant_TreePoplar to CustomSowTagTree-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Plant_TreePoplar"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>CustomSowTagTree</li>
+                    </sowTags>
+                </value>
+            </li>
+            
+        </operations>
+    </Operation>
+</Patch>

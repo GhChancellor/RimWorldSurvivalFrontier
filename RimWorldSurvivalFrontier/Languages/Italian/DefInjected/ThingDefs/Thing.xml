@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <!--  ================= RSF_PlasticBasic ================= -->
+    <RSF_PlasticBasic.label>plastica base</RSF_PlasticBasic.label>
+    <RSF_PlasticBasic.description>Bio-plastica leggera ricavata da materiali vegetali. Adatta per la costruzione di mobili e strutture ma di qualità inferiore.</RSF_PlasticBasic.description>
+
+    <!--  ================= RSF_PlasticIndustrial ================= -->
+    <RSF_PlasticIndustrial.label>plastica industriale</RSF_PlasticIndustrial.label>
+    <RSF_PlasticIndustrial.description>Bio-plastica resistente per costruzioni. Adatta per la costruzione di mobili e strutture ma di qualità superiore.</RSF_PlasticIndustrial.description>
+
+    <!--  ================= RSF_PlasticBioSteel ================= -->
+    <RSF_PlasticBioSteel.label>acciaio bio-plastico</RSF_PlasticBioSteel.label>
+    <RSF_PlasticBioSteel.description>Acciaio bio-ingegnerizzato plastico avanzato creato rinforzando polimeri di origine vegetale con composti metallici. Pur non essendo resistente quanto i materiali spaziali, offre un eccellente equilibrio tra durabilità e sostenibilità per le costruzioni coloniali.</RSF_PlasticBioSteel.description>
+
+    <!--  ================= RSF_PlasticFiber ================= -->
+    <RSF_PlasticFiber.label>fibra plastica</RSF_PlasticFiber.label>
+    <RSF_PlasticFiber.description>Tessuto sintetico ricavato da bio-plastica. Adatto per la produzione di vestiti base e commercio.</RSF_PlasticFiber.description>
+
+    <!--  ================= RSF_WoodPlanks ================= -->
+    <RSF_WoodPlanks.label>assi di legno</RSF_WoodPlanks.label>
+    <RSF_WoodPlanks.description>Utile per costruire strutture, armi, generatori elettrici e falò da campo. Può essere rifinito in Chemfuel.</RSF_WoodPlanks.description>
+
+    <!--  ================= RSF_PlasticIncendiary ================= -->
+    <RSF_PlasticIncendiary.label>plastica incendiaria</RSF_PlasticIncendiary.label>
+    <RSF_PlasticIncendiary.description>Crea composti volatili, materiale da costruzione estremamente infiammabile per applicazioni tattiche. Maneggiare con cura.</RSF_PlasticIncendiary.description>
+
+    <!--  ================= RSF_EcoLeather ================= -->
+    <RSF_EcoLeather.label>eco pelle</RSF_EcoLeather.label>
+    <RSF_EcoLeather.description>Pelle sintetica bio-ingegnerizzata creata da polimeri vegetali avanzati. Alternativa sostenibile al cuoio animale per abbigliamento di qualità.</RSF_EcoLeather.description>
+
+    <!--  ================= RSF_SunLampMini ================= -->
+    <RSF_SunLampMini.label>lampada solare mini</RSF_SunLampMini.label>
+    <RSF_SunLampMini.description>Una lampada solare mini che permette la crescita indoor di ortaggi ma consuma una considerevole quantità di energia. Si spegne automaticamente di notte</RSF_SunLampMini.description>
+
+    <!--  ================= RSF_SunLampTiny 1x1 ================= -->
+    <RSF_SunLampTiny.label>lampada solare minuscola 1x1 </RSF_SunLampTiny.label>
+    <RSF_SunLampTiny.description>Una minuscola lampada solare 1x1 che permette la crescita indoor di ortaggi ma consuma una moderata quantità di energia. Si spegne automaticamente di notte.</RSF_SunLampTiny.description>
+
+    <!--  ================= RSF_SunLampCompact 1x3 ================= -->
+    <RSF_SunLampCompact.label>lampada solare compatta 1x3 </RSF_SunLampCompact.label>
+    <RSF_SunLampCompact.description>Una lampada solare compatta 1x3 che permette la crescita indoor di ortaggi ma consuma una moderata quantità di energia. Si spegne automaticamente di notte.</RSF_SunLampCompact.description>
+
+    <!-- RSF_CropBasin -->
+    <RSF_CropBasin.label>vasca di coltivazione ortaggi</RSF_CropBasin.label>
+    <RSF_CropBasin.description>Una semplice vasca di coltivazione per ortaggi indoor non richiede energia.</RSF_CropBasin.description>
+
+    <!-- RSF_CropBasinTiny 1x1 -->
+    <RSF_CropBasinTiny.label>minuscola vasca di coltivazione 1x1 per ortaggi</RSF_CropBasinTiny.label>
+    <RSF_CropBasinTiny.description>Una minuscola vasca di coltivazione 1x1 per ortaggi indoor non richiede energia.</RSF_CropBasinTiny.description>
+    
+    <!-- RSF_CropBasinCompact 1x3 -->
+    <RSF_CropBasinCompact.label>vasca compatta di coltivazione 1x3 per ortaggi</RSF_CropBasinCompact.label>
+    <RSF_CropBasinCompact.description>Una vasca compatta di coltivazione 1x3 per ortaggi indoor non richiede energia.</RSF_CropBasinCompact.description>
+
+    <!-- RSF_TreeBasinTiny 1x1 -->
+    <RSF_TreeBasinTiny.label>minuscola vasca di coltivazione 1x1 per alberi </RSF_TreeBasinTiny.label>
+    <RSF_TreeBasinTiny.description>Una minuscola vasca di coltivazione 1x1 per alberi indoor non richiede energia.</RSF_TreeBasinTiny.description>
+
+    <!-- RSF_ChemFuelStove -->
+    <RSF_ChemFuelStove.label>Forno a biocarburante</RSF_ChemFuelStove.label>
+    <RSF_ChemFuelStove.description>Un forno a biocarburante con piano di cottura per prepare pasti.</RSF_ChemFuelStove.description>
+
+</LanguageData>

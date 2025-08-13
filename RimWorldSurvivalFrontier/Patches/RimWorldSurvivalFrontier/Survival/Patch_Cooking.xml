@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Normal</success>
+        <operations>
+            <!-- Add Chemfuel to Work -->
+            <!-- See /Defs/WorkGiverDefs/WorkGivers.xml > DoBillsCook-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/WorkGiverDef[defName ="DoBillsCook"]</xpath>
+                <value>
+                    <fixedBillGiverDefs>
+                        <li>RSF_ChemFuelStove</li>
+                    </fixedBillGiverDefs>
+                </value>
+            </li> 
+        </operations>
+    </Operation>
+
+</Patch>

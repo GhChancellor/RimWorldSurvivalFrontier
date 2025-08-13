@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+    <!--  ===== RSF_PlasticBasic > ThingCategoryDef TradingGoods ==== -->
+    <ThingDef ParentName="ResourceVerbBase">
+        <!-- ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog -->
+        <!-- CORE IDENTITY -->
+        <defName>RSF_PlasticBasic</defName>
+        <label>RSF_PlasticBasic.label</label>
+        <description>RSF_PlasticBasic.description</description>
+
+        <!-- VISUAL REPRESENTATION -->
+        <graphicData>
+            <texPath>Things/Item/Resource/StoneBlocks</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(255,255,255)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
+        </graphicData>
+        
+        <equippedAngleOffset>-20</equippedAngleOffset> 
+        
+        <!-- PHYSICAL PROPERTIES -->
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        
+        <!-- STATISTICS -->
+        <statBases>
+            <!-- Economic: Slightly cheaper than wood (1.2 vs 1.02) -->
+            <MarketValue>1.02</MarketValue>
+
+            <!-- Durability: Reduced hitpoints, bioplastic is less sturdy -->
+            <MaxHitPoints>127</MaxHitPoints>
+
+            <!-- Weight: Lighter than wood, easier transport -->
+            <Mass>0.3</Mass>
+
+            <!-- Fire: Slightly less flammable than wood -->
+            <Flammability>0.9</Flammability>
+
+            <!-- Weather: Better resistance to deterioration -->
+            <DeteriorationRate>0.4</DeteriorationRate>
+
+            <!-- Combat: Poor armor values - not suitable for military gear -->
+            <StuffPower_Armor_Sharp>0.25</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.20</StuffPower_Armor_Heat>
+
+            <!-- Insulation: Same as wood - could be improved for extreme biomes -->
+            <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+
+            <!-- Weapon damage: Very poor for combat applications -->
+            <SharpDamageMultiplier>0.20</SharpDamageMultiplier>
+            <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+        </statBases>
+        
+        <burnableByRecipe>true</burnableByRecipe> <!-- Can be used as fuel -->
+        <healthAffectsPrice>false</healthAffectsPrice> <!-- No effect on price if damaged -->
+        <minRewardCount>10</minRewardCount> <!-- Quest rewards -->
+        
+        <stuffProps>
+            <!-- Material appearance and naming -->
+<!--            <stuffAdjective>bioplastic</stuffAdjective>-->
+            <!-- Material categories this can be used for -->
+            <categories>
+                <li>Woody</li> <!-- Furniture material -->
+            </categories>
+            <commonality>0.85</commonality> <!-- Spawn probability (wood 1.0)-->
+            <color>(255,255,255)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
+
+            <!-- Audio/Visual effects - using wood equivalents (closest vanilla match) -->
+            <constructEffect>ConstructWood</constructEffect>
+<!--            <appearance>Planks</appearance> &lt;!&ndash; Maintains plank appearance like wood &ndash;&gt;-->
+            
+            <!-- Sound effects for interactions -->
+            <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>  <!-- Bullet impact sound -->
+            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>    <!-- Sharp weapon hit sound -->
+            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>    <!-- Blunt weapon hit sound -->
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>  <!-- Melee impact sound -->
+            
+            <statFactors>
+                <MaxHitPoints>0.65</MaxHitPoints>
+                <Beauty>0.8</Beauty> <!-- Less attractive than natural materials -->
+                <Flammability>0.95</Flammability> <!-- Multiplied by fire (Flammability * Flammability) -->
+                <WorkToMake>0.7</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from this material -->
+                <WorkToBuild>0.7</WorkToBuild> <!-- How to build structures ( wall, door ) from this material -->
+                <DoorOpenSpeed>1.2</DoorOpenSpeed>
+            </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
+        
+        <!-- Inventory category -->
+        <thingCategories>
+            <li>ResourcesRaw</li>
+            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
+        </thingCategories>
+        
+        <techHediffsTags>
+            <li>Poor</li> <!-- quality of prosthesis -->
+        </techHediffsTags>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleeBlunt</li>
+            <li>Neolithic</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>log</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2.5</cooldownTime>
+            </li>
+        </tools>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+    <!--  ===== RSF_PlasticIndustrial > ThingCategoryDef TradingGoods ==== -->
+    <ThingDef ParentName="ResourceVerbBase">
+        <!-- ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog -->
+        <!-- CORE IDENTITY -->
+        <defName>RSF_PlasticIndustrial</defName>
+        <label>RSF_PlasticIndustrial.label</label>
+        <description>RSF_PlasticIndustrial.description</description>
+        
+        <!-- VISUAL REPRESENTATION -->
+        <graphicData>
+            <texPath>Things/Item/Resource/StoneBlocks</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(85,95,105)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
+        </graphicData>
+
+        <equippedAngleOffset>-20</equippedAngleOffset>
+
+        <!-- PHYSICAL PROPERTIES -->
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+
+        <!-- STATISTICS -->
+        <statBases>
+            <!-- Economic: Slightly cheaper than wood (1.2 vs 1.02) -->
+            <MarketValue>1.07</MarketValue>
+
+            <!-- Durability: Reduced hitpoints, bioplastic is less sturdy -->
+            <MaxHitPoints>168</MaxHitPoints>
+
+            <!-- Weight: Lighter than wood, easier transport -->
+            <Mass>0.5</Mass>
+
+            <!-- Fire: Slightly less flammable than wood -->
+            <Flammability>0.8</Flammability>
+
+            <!-- Weather: Better resistance to deterioration -->
+            <DeteriorationRate>0.3</DeteriorationRate>
+
+            <!-- Combat: Poor armor values - not suitable for military gear -->
+            <StuffPower_Armor_Sharp>0.65</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.65</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.55</StuffPower_Armor_Heat>
+
+            <!-- Insulation: Same as wood - could be improved for extreme biomes -->
+            <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+
+            <!-- Weapon damage: Very poor for combat applications -->
+            <SharpDamageMultiplier>0.50</SharpDamageMultiplier>
+            <BluntDamageMultiplier>0.11</BluntDamageMultiplier>
+        </statBases>
+
+        <burnableByRecipe>true</burnableByRecipe> <!-- Can be used as fuel -->
+        <healthAffectsPrice>false</healthAffectsPrice> <!-- No effect on price if damaged -->
+        <minRewardCount>10</minRewardCount> <!-- Quest rewards -->
+
+        <stuffProps>
+            <!-- Material appearance and naming -->
+<!--            <stuffAdjective>bioplastic</stuffAdjective>-->
+            <!-- Material categories this can be used for -->
+            <categories>
+                <li>Woody</li> <!-- Furniture material -->
+            </categories>
+            <commonality>0.85</commonality> <!-- Spawn probability (wood 1.0)-->
+            <color>(85,95,105)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
+            <!-- Audio/Visual effects - using wood equivalents (closest vanilla match) -->
+            <constructEffect>ConstructWood</constructEffect>
+            <!--            <appearance>Planks</appearance> &lt;!&ndash; Maintains plank appearance like wood &ndash;&gt;-->
+
+            <!-- Sound effects for interactions -->
+            <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>  <!-- Bullet impact sound -->
+            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>    <!-- Sharp weapon hit sound -->
+            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>    <!-- Blunt weapon hit sound -->
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>  <!-- Melee impact sound -->
+
+            <statFactors>
+                <MaxHitPoints>0.65</MaxHitPoints>
+                <Beauty>1.2</Beauty> <!-- Less attractive than natural materials -->
+                <Flammability>0.95</Flammability> <!-- Multiplied by fire (Flammability * Flammability) -->
+                <WorkToMake>0.7</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from this material -->
+                <WorkToBuild>0.7</WorkToBuild> <!-- How to build structures ( wall, door ) from this material -->
+                <DoorOpenSpeed>1.2</DoorOpenSpeed>
+            </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
+
+        <!-- Inventory category -->
+        <thingCategories>
+            <li>ResourcesRaw</li>
+            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
+        </thingCategories>
+
+        <techHediffsTags>
+            <li>Poor</li> <!-- quality of prosthesis -->
+        </techHediffsTags>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleeBlunt</li>
+            <li>Neolithic</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>log</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2.5</cooldownTime>
+            </li>
+        </tools>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+    <!--  ===== RSF_PlasticBioSteel > ThingCategoryDef TradingGoods ==== -->
+    <ThingDef ParentName="ResourceBase">
+        <!--ThingDefs_Items/Items_Resource_Stuff.xml > Plasteel-->
+        <!-- CORE IDENTITY -->
+        <defName>RSF_PlasticBioSteel</defName>
+        <label>RSF_PlasticBioSteel.label</label>
+        <description>RSF_PlasticBioSteel.description</description>
+
+        <!-- VISUAL REPRESENTATION -->
+        <graphicData>
+            <texPath>Things/Item/Resource/Plasteel</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(30,144,255)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
+        </graphicData>
+
+        <!-- SOUND EFFECTS -->
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>                 <!-- No effect on price if damaged -->
+        
+        <!-- RAW MATERIAL STATS -->
+        <statBases>
+            <!-- Economic values -->
+            <MarketValue>5.5</MarketValue>                             <!-- Industrial grade, more expensive than wood -->
+            <Mass>0.28</Mass>                                          <!-- Denser than RSF_PlasticBasic -->
+
+            <!-- Armor effectiveness when used as stuff -->
+            <StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>     <!-- Better protection than basic -->
+            <StuffPower_Armor_Blunt>0.46</StuffPower_Armor_Blunt>     <!-- Enhanced blunt protection -->
+            <StuffPower_Armor_Heat>0.55</StuffPower_Armor_Heat>       <!-- Still melts under heat -->
+
+            <!-- Insulation effectiveness when used as stuff -->
+            <StuffPower_Insulation_Cold>2.4</StuffPower_Insulation_Cold> <!-- Better cold insulation -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- Better heat insulation -->
+
+            <!-- Damage multipliers for weapons made from this ???? -->
+            <!-- Da rivedere-->
+            <SharpDamageMultiplier>0.93</SharpDamageMultiplier>       <!-- Better than basic but still fragile -->
+            <BluntDamageMultiplier>0.7</BluntDamageMultiplier>        <!-- More rigid than basic -->
+        </statBases>
+
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
+
+        <!-- Inventory category -->
+        <thingCategories>
+            <li>ResourcesRaw</li>
+            <li>TradingGoods2</li>
+        </thingCategories>
+
+        <techHediffsTags>
+            <li>Simple</li> <!-- quality of prosthesis -->
+        </techHediffsTags>
+
+<!--        <deepCommonality>1</deepCommonality>-->
+<!--        <deepCountPerPortion>10</deepCountPerPortion>-->
+<!--        <deepLumpSizeRange>2~10</deepLumpSizeRange>-->
+<!--        <burnableByRecipe>false</burnableByRecipe>-->
+<!--        <smeltable>true</smeltable>-->
+
+        <stuffProps>
+            <categories>
+                <!-- Material categories this can be used for -->
+                <li>Metallic</li> <!-- Industrial material strutucture, weapons, etc. -->
+            </categories>
+            <appearance>Metal</appearance>
+            <commonality>0.3</commonality>
+            <constructEffect>ConstructMetal</constructEffect>
+            <isAirtight>true</isAirtight>
+            <color>(30,144,255)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
+            
+            <!-- Sound effects -->
+            <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+            
+            <statFactors>
+                <MaxHitPoints>2.2</MaxHitPoints>
+                <Beauty>1.3</Beauty>
+                <Flammability>0.3</Flammability>
+                <WorkToMake>1.4</WorkToMake>
+                <WorkToBuild>1.4</WorkToBuild>
+                <MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier> <!-- ????-->
+            </statFactors>
+        </stuffProps>
+
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+        
+    </ThingDef>
+
+    <!--  ===== RSF_PlasticFiber > ThingCategoryDef TradingGoods ==== -->
+    <ThingDef ParentName="ResourceBase">
+        <!--ThingDefs_Items/Items_Resource_Stuff.xml > Cloth-->
+        <defName>RSF_PlasticFiber</defName>
+        <label>RSF_PlasticFiber.label</label>
+        <description>RSF_PlasticFiber.description</description>
+        
+        <graphicData>
+            <texPath>Things/Item/Resource/Cloth</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(240,248,240)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
+        </graphicData>
+        
+        <statBases>
+            <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.18</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+            <MaxHitPoints>80</MaxHitPoints>
+            <MarketValue>1.5</MarketValue>
+            <Mass>0.026</Mass>
+            <Flammability>1.2</Flammability>
+            <DeteriorationRate>4</DeteriorationRate>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>30</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Flammability>1.2</Flammability>
+                <Beauty>1</Beauty>
+            </statFactors>
+            <categories>
+                <li>Fabric</li>
+            </categories>
+            <color>(240,248,240)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
+            <commonality>1.4</commonality>
+            <allowColorGenerators>true</allowColorGenerators>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <thingCategories>
+            <li>Textiles</li>
+            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
+        </thingCategories>
+        <comps>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+        </comps>
+        <colorGeneratorInTraderStock Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>5</weight>
+                    <only>(0.33,0.33,0.33,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <min>(0.3,0.3,0.3,1)</min>
+                    <max>(0.9,0.9,0.9,1)</max>
+                </li>
+                <li>
+                    <weight>5</weight>
+                    <only>(0.9,0.9,0.9,1)</only>
+                </li>
+            </options>
+        </colorGeneratorInTraderStock>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+
+    <!--  ===== RSF_WoodPlanks > ThingCategoryDef TradingGoods ==== -->
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>RSF_WoodPlanks</defName>
+        <label>RSF_WoodPlanks.label</label>
+        <description>RSF_WoodPlanks.description</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/StoneBlocks</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(160,130,98)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        <statBases>
+            <MarketValue>1.2</MarketValue>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>0.4</Mass>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>0.5</DeteriorationRate>
+            <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>0.40</SharpDamageMultiplier>
+            <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>10</minRewardCount>
+        <stuffProps>
+            <!-- <stuffAdjective>wooden</stuffAdjective>-->
+            <categories>
+                <li>Woody</li>
+            </categories>
+            <commonality>1.00</commonality>
+            <color>(160,130,98)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
+            <constructEffect>ConstructWood</constructEffect>
+            <appearance>Planks</appearance>
+            <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
+            <statFactors>
+                <MaxHitPoints>0.65</MaxHitPoints>
+                <Beauty>1</Beauty>
+                <Flammability>1</Flammability>
+                <WorkToMake>0.7</WorkToMake>
+                <WorkToBuild>0.7</WorkToBuild>
+                <DoorOpenSpeed>1.2</DoorOpenSpeed>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <isTechHediff>true</isTechHediff>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
+        </thingCategories>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleeBlunt</li>
+            <li>Neolithic</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>log</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+    <!--  ===== RSF_PlasticIncendiary > ThingCategoryDef TradingGoods ==== -->
+    <ThingDef ParentName="ResourceVerbBase">
+        <!-- ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog -->
+        <!-- CORE IDENTITY -->
+        <defName>RSF_PlasticIncendiary</defName>
+        <label>RSF_PlasticIncendiary.label</label>
+        <description>RSF_PlasticIncendiary.description</description>
+
+        <!-- VISUAL REPRESENTATION -->
+        <graphicData>
+            <texPath>Things/Item/Resource/StoneBlocks</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(255,140,0)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
+        </graphicData>
+
+        <equippedAngleOffset>-20</equippedAngleOffset>
+
+        <!-- PHYSICAL PROPERTIES -->
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+
+        <!-- STATISTICS -->
+        <statBases>
+            <!-- Economic: Slightly cheaper than wood (1.2 vs 1.02) -->
+            <MarketValue>2.50</MarketValue>
+
+            <!-- Durability: Reduced hitpoints, bioplastic is less sturdy -->
+            <MaxHitPoints>80</MaxHitPoints>
+
+            <!-- Weight: Lighter than wood, easier transport -->
+            <Mass>0.4</Mass>
+
+            <!-- Fire: Slightly less flammable than wood -->
+            <Flammability>1.5</Flammability>
+
+            <!-- Weather: Better resistance to deterioration -->
+            <DeteriorationRate>0.6</DeteriorationRate>
+
+            <!-- Combat: Poor armor values - not suitable for military gear -->
+            <StuffPower_Armor_Sharp>0.25</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.20</StuffPower_Armor_Heat>
+
+            <!-- Insulation: Same as wood - could be improved for extreme biomes -->
+            <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+
+            <!-- Weapon damage: Very poor for combat applications -->
+            <SharpDamageMultiplier>0.20</SharpDamageMultiplier>
+            <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+        </statBases>
+
+        <burnableByRecipe>true</burnableByRecipe> <!-- Can be used as fuel -->
+        <healthAffectsPrice>false</healthAffectsPrice> <!-- No effect on price if damaged -->
+        <minRewardCount>10</minRewardCount> <!-- Quest rewards -->
+
+        <stuffProps>
+            <!-- Material appearance and naming -->
+            <!--            <stuffAdjective>bioplastic</stuffAdjective>-->
+            <!-- Material categories this can be used for -->
+            <categories>
+                <li>Woody</li> <!-- Furniture material -->
+            </categories>
+            <commonality>0.85</commonality> <!-- Spawn probability (wood 1.0)-->
+            <color>(255,140,0)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
+
+            <!-- Audio/Visual effects - using wood equivalents (closest vanilla match) -->
+            <constructEffect>ConstructWood</constructEffect>
+<!--            <appearance>Planks</appearance> &lt;!&ndash; Maintains plank appearance like wood &ndash;&gt;-->
+
+            <!-- Sound effects for interactions -->
+            <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>  <!-- Bullet impact sound -->
+            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>    <!-- Sharp weapon hit sound -->
+            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>    <!-- Blunt weapon hit sound -->
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>  <!-- Melee impact sound -->
+
+            <statFactors>
+                <MaxHitPoints>0.50</MaxHitPoints>
+                <Beauty>0.6</Beauty> <!-- Less attractive than natural materials -->
+                <Flammability>2.5</Flammability> <!-- Multiplied by fire (Flammability * Flammability) -->
+                <WorkToMake>1.3</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from this material -->
+                <WorkToBuild>1.3</WorkToBuild> <!-- How to build structures ( wall, door ) from this material -->
+                <DoorOpenSpeed>0.8</DoorOpenSpeed>
+            </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
+
+        <!-- Inventory category -->
+        <thingCategories>
+            <li>ResourcesRaw</li>
+            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
+        </thingCategories>
+
+        <techHediffsTags>
+            <li>Poor</li> <!-- quality of prosthesis -->
+        </techHediffsTags>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleeBlunt</li>
+            <li>Neolithic</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>log</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2.5</cooldownTime>
+            </li>
+        </tools>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
+    <!--  ===== RSF_EcoLeather > ThingCategoryDef TradingGoods ==== -->
+    <ThingDef ParentName="LeatherBase">
+        <defName>RSF_EcoLeather</defName>
+        <label>RSF_EcoLeather.label</label>
+        <description>RSF_EcoLeather.description</description>
+
+        <graphicData>
+            <texPath>Things/Item/Resource/Leather</texPath>
+            <color>(85,107,47)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
+        </graphicData>
+
+        <statBases>
+            <MarketValue>2.5</MarketValue> <!-- Leggermente più costoso -->
+            <Mass>0.025</Mass>  <!-- Weight: Lighter than wood, easier transport -->
+            <DeteriorationRate>1.5</DeteriorationRate> <!-- resistance to deterioration -->
+            <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold> <!-- Insulation -->
+            <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+        </statBases>
+
+        <stuffProps>
+<!--            <stuffAdjective>plastic leather</stuffAdjective>-->
+            <categories>
+                <li>Leathery</li>
+            </categories>
+            <commonality>0.02</commonality> <!-- Meno comune del cuoio normale -->
+        </stuffProps>
+
+        <thingCategories>
+<!--            <li>Leathers</li>-->
+<!--            <li>Leathery</li>-->
+            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
+        </thingCategories>
+    </ThingDef>
+    
+</Defs>
