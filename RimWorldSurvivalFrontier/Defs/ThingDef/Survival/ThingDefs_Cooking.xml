@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    
-    <!--Add Chem Fuel Stove-->
+
+    <!--  =============== add RSF_ChemFuelStove =============== -->
     <ThingDef ParentName="BenchBase">
         <defName>RSF_ChemFuelStove</defName>
         <label>RSF_ChemFuelStove.label</label>
@@ -22,6 +22,8 @@
         <castEdgeShadows>true</castEdgeShadows>
         <staticSunShadowHeight>0.20</staticSunShadowHeight>
         <constructEffect>ConstructMetal</constructEffect>
+
+        <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>80</Steel>
         </costList>
@@ -95,4 +97,5 @@
             <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
         </building>
     </ThingDef>
+    
 </Defs>

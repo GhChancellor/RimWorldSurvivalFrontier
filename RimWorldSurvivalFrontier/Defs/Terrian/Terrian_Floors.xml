@@ -2,6 +2,7 @@
 
 <Defs>
 
+    <!--  ================= RSF_BurnedPlasticIncendiaryTile  ================= -->
     <TerrainDef ParentName="BurnedFloorBase">
         <defName>RSF_BurnedPlasticIncendiaryTile</defName>
         <label>RSF_BurnedPlasticIncendiaryTile.label</label>
@@ -11,6 +12,7 @@
         <edgeType>FadeRough</edgeType>
     </TerrainDef>
 
+    <!--  ================= RSF_PlasticIncendiaryTile  ================= -->
     <TerrainDef ParentName="FloorBase">
         <defName>RSF_PlasticIncendiaryTile</defName>
         <label>RSF_PlasticIncendiaryTile.label</label>
@@ -33,6 +35,8 @@
             <FilthMultiplier>0.05</FilthMultiplier>
             <Flammability>1.5</Flammability>
         </statBases>
+
+        <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <RSF_PlasticIncendiary>2</RSF_PlasticIncendiary>
         </costList>

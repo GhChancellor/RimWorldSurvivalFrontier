@@ -42,24 +42,32 @@
     <RSF_SunLampCompact.label>lampada solare compatta 1x3 </RSF_SunLampCompact.label>
     <RSF_SunLampCompact.description>Una lampada solare compatta 1x3 che permette la crescita indoor di ortaggi ma consuma una moderata quantità di energia. Si spegne automaticamente di notte.</RSF_SunLampCompact.description>
 
-    <!-- RSF_CropBasin -->
+    <!--  ================= RSF_CropBasin ================= -->
     <RSF_CropBasin.label>vasca di coltivazione ortaggi</RSF_CropBasin.label>
     <RSF_CropBasin.description>Una semplice vasca di coltivazione per ortaggi indoor non richiede energia.</RSF_CropBasin.description>
 
-    <!-- RSF_CropBasinTiny 1x1 -->
+    <!--  ================= RSF_CropBasinTiny ================= -->
     <RSF_CropBasinTiny.label>minuscola vasca di coltivazione 1x1 per ortaggi</RSF_CropBasinTiny.label>
     <RSF_CropBasinTiny.description>Una minuscola vasca di coltivazione 1x1 per ortaggi indoor non richiede energia.</RSF_CropBasinTiny.description>
     
-    <!-- RSF_CropBasinCompact 1x3 -->
+    <!--  ================= RSF_CropBasinCompact ================= -->
     <RSF_CropBasinCompact.label>vasca compatta di coltivazione 1x3 per ortaggi</RSF_CropBasinCompact.label>
     <RSF_CropBasinCompact.description>Una vasca compatta di coltivazione 1x3 per ortaggi indoor non richiede energia.</RSF_CropBasinCompact.description>
-
-    <!-- RSF_TreeBasinTiny 1x1 -->
+    
+    <!--  ================= RSF_TreeBasinTiny ================= -->
     <RSF_TreeBasinTiny.label>minuscola vasca di coltivazione 1x1 per alberi </RSF_TreeBasinTiny.label>
     <RSF_TreeBasinTiny.description>Una minuscola vasca di coltivazione 1x1 per alberi indoor non richiede energia.</RSF_TreeBasinTiny.description>
-
-    <!-- RSF_ChemFuelStove -->
+    
+    <!--  ================= RSF_ChemFuelStove ================= -->
     <RSF_ChemFuelStove.label>Forno a biocarburante</RSF_ChemFuelStove.label>
     <RSF_ChemFuelStove.description>Un forno a biocarburante con piano di cottura per prepare pasti.</RSF_ChemFuelStove.description>
+
+    <!--  ================= RSF_DriedMeat ================= -->
+    <RSF_DriedMeat.label>produci carne essiccata</RSF_DriedMeat.label>
+    <RSF_DriedMeat.description>Conserva la carne essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedMeat.description>
+
+    <!--  ================= RSF_DriedFruit ================= -->
+    <RSF_DriedFruit.label>produci frutta essiccata</RSF_DriedFruit.label>
+    <RSF_DriedFruit.description>Conserva la frutta essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedFruit.description>
 
 </LanguageData>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+    <!--  ================= TemplateSunLamp ================= -->
     <ThingDef Name="TemplateSunLamp" ParentName="LampBase" Abstract="true" >
         <label>Template Sun Lamp</label>
         <description>An industrial lamp which lights an area brightly enough to grow crops, but consumes a huge amount of power. Automatically turns itself off at night.</description>
@@ -18,6 +19,8 @@
             <WorkToBuild>330</WorkToBuild>
             <Mass>4.5</Mass>
         </statBases>
+
+        <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>40</Steel>
         </costList>
@@ -53,8 +56,8 @@
         but it matches in this case-->
         <specialDisplayRadius>5.8</specialDisplayRadius>    
     </ThingDef>
-     
-    <!-- Sun Wall Lamp -->
+    
+    <!--  ================= SunWallLamp ================= --> <!-- ERROR >>>>> SunWallLamp <<<<<< -->
     <ThingDef ParentName="TemplateSunLamp">
         <defName>SunWallLamp</defName>
         <label>Sun Wall Lamp</label>
@@ -84,6 +87,7 @@
             <li>Placeworker_AttachedToWall</li>
         </placeWorkers>
 
+        
         <costList>
             <Steel>20</Steel>
         </costList>
@@ -112,8 +116,8 @@
         </comps>
         <specialDisplayRadius>3.7</specialDisplayRadius>
     </ThingDef>
-
-    <!-- Mini Sun Lamp -->
+    
+    <!--  ================= RSF_SunLampMini ================= -->
     <ThingDef ParentName="TemplateSunLamp">
         <defName>RSF_SunLampMini</defName>
         <label>RSF_SunLampMini.label</label>
@@ -127,6 +131,7 @@
         </statBases>
         <uiOrder>2996</uiOrder>
 
+        <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>16</Steel>
         </costList>
@@ -150,7 +155,7 @@
         <specialDisplayRadius>2.5</specialDisplayRadius>
     </ThingDef>
 
-    <!-- Pico 1x1 Sun Lamp -->
+    <!--  ================= RSF_SunLampTiny ================= -->
     <ThingDef ParentName="TemplateSunLamp">
         <defName>RSF_SunLampTiny</defName>
         <label>RSF_SunLampTiny.label</label>
@@ -162,6 +167,7 @@
         </statBases>
         <uiOrder>2996</uiOrder>
 
+        <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>10</Steel>
         </costList>
@@ -185,7 +191,7 @@
         <specialDisplayRadius>1.2</specialDisplayRadius>
     </ThingDef>
     
-    <!-- Pico 1x3 Sun Lamp -->
+    <!--  ================= RSF_SunLampCompact ================= -->
     <ThingDef ParentName="TemplateSunLamp">
         <defName>RSF_SunLampCompact</defName>
         <label>RSF_SunLampCompact.label</label>
@@ -197,6 +203,7 @@
         </statBases>
         <uiOrder>2996</uiOrder>
 
+        <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>10</Steel>
         </costList>

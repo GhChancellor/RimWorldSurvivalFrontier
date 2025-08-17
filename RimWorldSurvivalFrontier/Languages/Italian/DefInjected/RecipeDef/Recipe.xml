@@ -2,40 +2,49 @@
 
 <LanguageData>
     
-    <!--  ================= RSF_PlasticBasicRecipe  ================= -->
+    <!--  ================= RSF_PlasticBasicRecipe ================= -->
     <RSF_PlasticBasicRecipe.label>produci plastica base</RSF_PlasticBasicRecipe.label>
     <RSF_PlasticBasicRecipe.description>Bio-plastica leggera ricavata da materiali vegetali. Adatta per la costruzione di mobili e strutture ma di qualità inferiore.</RSF_PlasticBasicRecipe.description>
     <RSF_PlasticBasicRecipe.jobString>producendo plastica base</RSF_PlasticBasicRecipe.jobString>
 
-    <!--  ================= RSF_PlasticIndustrialRecipe  ================= -->
+    <!--  ================= RSF_PlasticIndustrialRecipe ================= -->
     <RSF_PlasticIndustrialRecipe.label>produci plastica industriale</RSF_PlasticIndustrialRecipe.label>
     <RSF_PlasticIndustrialRecipe.description>Bio-plastica resistente per costruzioni. Adatta per la costruzione di mobili e strutture ma di qualità superiore.</RSF_PlasticIndustrialRecipe.description>
     <RSF_PlasticIndustrialRecipe.jobString>producendo plastica industriale</RSF_PlasticIndustrialRecipe.jobString>
 
-    <!--  ================= RSF_PlasticBioSteelRecipe  ================= -->
+    <!--  ================= RSF_PlasticBioSteelRecipe ================= -->
     <RSF_PlasticBioSteelRecipe.label>produci acciaio Bio-Plastico</RSF_PlasticBioSteelRecipe.label>
     <RSF_PlasticBioSteelRecipe.description>Acciaio bio-ingegnerizzato plastico avanzato creato rinforzando polimeri di origine vegetale con composti metallici. Pur non essendo resistente quanto i materiali spaziali, offre un eccellente equilibrio tra durabilità e sostenibilità per le costruzioni coloniali.</RSF_PlasticBioSteelRecipe.description>
     <RSF_PlasticBioSteelRecipe.jobString>producendo acciaio Bio-Plastico</RSF_PlasticBioSteelRecipe.jobString>
 
-    <!--  ================= RSF_PlasticFiberRecipe  ================= -->
+    <!--  ================= RSF_PlasticFiberRecipe ================= -->
     <RSF_PlasticFiberRecipe.label>produci fibra plastica</RSF_PlasticFiberRecipe.label>
     <RSF_PlasticFiberRecipe.description>Tessuto sintetico ricavato da bio-plastica. Adatto per la produzione di vestiti base e commercio.</RSF_PlasticFiberRecipe.description>
     <RSF_PlasticFiberRecipe.jobString>producendo fibra plastica</RSF_PlasticFiberRecipe.jobString>
 
-    <!--  ================= RSF_ChemfuelFromPlasticRecipe  ================= -->
+    <!--  ================= RSF_ChemfuelFromPlasticRecipe ================= -->
     <RSF_ChemfuelFromPlasticRecipe.label>produci chemfuel da plastica</RSF_ChemfuelFromPlasticRecipe.label>
     <RSF_ChemfuelFromPlasticRecipe.description>Converti plastic in chemfuel.</RSF_ChemfuelFromPlasticRecipe.description>
     <RSF_ChemfuelFromPlasticRecipe.jobString>Converto plastic in chemfuel</RSF_ChemfuelFromPlasticRecipe.jobString>
 
-    <!--  ================= RSF_PlasticIncendiaryRecipe  ================= -->
+    <!--  ================= RSF_PlasticIncendiaryRecipe ================= -->
     <RSF_PlasticIncendiaryRecipe.label>produci plastica incediaria</RSF_PlasticIncendiaryRecipe.label>
     <RSF_PlasticIncendiaryRecipe.description>Bioplastica rinforzata con composti volatili. Materiale da costruzione estremamente infiammabile per applicazioni tattiche. Maneggiare con cura.</RSF_PlasticIncendiaryRecipe.description>
     <RSF_PlasticIncendiaryRecipe.jobString>Converto bio plastica in plastica incediaria </RSF_PlasticIncendiaryRecipe.jobString>
 
-    <!--  ================= RSF_EcoLeatherRecipe  ================= -->
+    <!--  ================= RSF_EcoLeatherRecipe ================= -->
     <RSF_EcoLeatherRecipe.label>produci eco pelle</RSF_EcoLeatherRecipe.label>
     <RSF_EcoLeatherRecipe.description>Pelle sintetica bio-ingegnerizzata creata da polimeri vegetali avanzati. Alternativa sostenibile al cuoio animale per abbigliamento di qualità.</RSF_EcoLeatherRecipe.description>
     <RSF_EcoLeatherRecipe.jobString>Converto fibra plastica in eco pelle</RSF_EcoLeatherRecipe.jobString>
-    
-</LanguageData>
 
+    <!--  ================= RSF_DriedMeat ================= -->
+    <RSF_DriedMeatRecipe.label>produci carne essiccata</RSF_DriedMeatRecipe.label>
+    <RSF_DriedMeatRecipe.description>Conserva la carne essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedMeatRecipe.description>
+    <RSF_DriedMeatRecipe.jobString>converte la carne cruda in carne essiccata</RSF_DriedMeatRecipe.jobString>
+
+    <!--  ================= RSF_DriedFruit ================= -->
+    <RSF_DriedFruitRecipe.label>produci frutta essiccata</RSF_DriedFruitRecipe.label>
+    <RSF_DriedFruitRecipe.description>Conserva la frutta essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedFruitRecipe.description>
+    <RSF_DriedFruitRecipe.jobString>converte la frutta cruda in frutta essiccata</RSF_DriedFruitRecipe.jobString>
+
+</LanguageData>

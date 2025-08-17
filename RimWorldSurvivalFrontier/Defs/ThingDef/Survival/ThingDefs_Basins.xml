@@ -48,12 +48,17 @@
         </building>
         <tickerType>Rare</tickerType>
 
-        <stuffCategories>
+        <!-- These two tags work together - you cannot have one without the other -->
+        <!-- If you define stuffCategories, you MUST also define costStuffCount -->
+        
+        <!-- stuffCategories defines WHICH material types can be used -->
+        <stuffCategories> 
             <li>Woody</li> <!-- materials used to build this item -->
         </stuffCategories>
-
+        <!-- costStuffCount defines HOW MUCH of that material is required -->
         <costStuffCount>50</costStuffCount>
-
+        
+        <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>3</Steel>
         </costList>
@@ -84,8 +89,13 @@
         <label>RSF_CropBasin.label</label>
         <description>RSF_CropBasin.description</description>
 
-        <!-- Materials -->
+        <!-- stuffCategories defines WHICH material types can be used -->
+        <!-- costStuffCount defines HOW MUCH of that material is required -->
+        <!-- These two tags work together - you cannot have one without the other -->
+        <!-- If you define stuffCategories, you MUST also define costStuffCount -->
         <costStuffCount>40</costStuffCount>
+        
+        <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>60</Steel>
         </costList>
@@ -107,8 +117,13 @@
 
         <size>(1,1)</size>
 
-        <!-- Materials -->
+        <!-- stuffCategories defines WHICH material types can be used -->
+        <!-- costStuffCount defines HOW MUCH of that material is required -->
+        <!-- These two tags work together - you cannot have one without the other -->
+        <!-- If you define stuffCategories, you MUST also define costStuffCount -->
         <costStuffCount>15</costStuffCount>
+        
+        <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>20</Steel>
         </costList>
@@ -131,8 +146,13 @@
 
         <size>(1,3)</size>
 
-        <!-- Materials -->
+        <!-- stuffCategories defines WHICH material types can be used -->
+        <!-- costStuffCount defines HOW MUCH of that material is required -->
+        <!-- These two tags work together - you cannot have one without the other -->
+        <!-- If you define stuffCategories, you MUST also define costStuffCount -->
         <costStuffCount>45</costStuffCount>
+
+        <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>30</Steel>
         </costList>
@@ -159,8 +179,13 @@
             <sowTag>CustomSowTagTree</sowTag>
         </building>
 
-        <!-- Materials -->
+        <!-- stuffCategories defines WHICH material types can be used -->
+        <!-- costStuffCount defines HOW MUCH of that material is required -->
+        <!-- These two tags work together - you cannot have one without the other -->
+        <!-- If you define stuffCategories, you MUST also define costStuffCount -->
         <costStuffCount>30</costStuffCount>
+        
+        <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>30</Steel>
         </costList>

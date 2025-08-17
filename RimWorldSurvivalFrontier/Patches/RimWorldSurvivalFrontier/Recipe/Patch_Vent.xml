@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- see: /Defs/ThingDefs_Buildings/Buildings_Temperature.xml -->
+    <!-- Original recipe 30 Steel-->
+    <Operation Class="PatchOperationSequence">
+        <success>Normal</success>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <!--        =============== Change value Steel ===============-->
+                <xpath>Defs/ThingDef[defName ="Vent"]/costList/Steel</xpath>
+                <value>
+                    <Steel>15</Steel>
+                </value>
+            </li>
+
+            <!-- stuffCategories defines WHICH material types can be used -->
+            <!-- costStuffCount defines HOW MUCH of that material is required -->
+            <!-- These two tags work together - you cannot have one without the other -->
+            <!-- If you define stuffCategories, you MUST also define costStuffCount -->
+            
+            <!--        =============== Add new type of material ( wood, stone ... ) ===============-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Vent"]</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Metallic</li>
+                        <li>Stony</li>
+                        <li>Woody</li>
+                    </stuffCategories>
+                </value>
+            </li>
+
+            <!--        =============== Add amount of material ===============-->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Vent"]</xpath>
+                <value>
+                    <costStuffCount>40</costStuffCount>
+                </value>
+            </li>
+
+
+        </operations>
+
+
+    </Operation>
+</Patch>
+
+
+        <!--<li Class="PatchOperationAdd">-->
+        <!--<xpath>Defs/ThingDef[defName ="Vent"]</xpath>-->
+        <!--&lt;!&ndash;                <xpath>Defs/ThingDef[defName ="Vent"]/stuffProps/categories</xpath>&ndash;&gt;-->
+        <!--<value>-->
+        <!--    <stuffProps>-->
+        <!--        <categories>-->
+        <!--            <li>Woody</li>-->
+        <!--        </categories>-->
+        <!--    </stuffProps>-->
+        <!--    &lt;!&ndash;                    <costStuffCount>15</costStuffCount>&ndash;&gt;-->
+        <!--</value>-->
+        <!--</li>-->
+
+
+        <!--        <operations>-->
+        <!--            &lt;!&ndash;  =============== Remove Steel =============== &ndash;&gt;-->
+        <!--            <li Class="PatchOperationRemove">-->
+        <!--                <xpath>Defs/ThingDef[defName ="Vent"]/costList</xpath>-->
+        <!--            </li>-->
+        <!--        </operations>-->

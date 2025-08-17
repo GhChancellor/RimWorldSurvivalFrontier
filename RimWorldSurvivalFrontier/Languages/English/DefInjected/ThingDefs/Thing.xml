@@ -61,5 +61,13 @@
     <!--  ================= RSF_ChemFuelStove ================= -->
     <RSF_ChemFuelStove.label>chemfuel stove</RSF_ChemFuelStove.label>
     <RSF_ChemFuelStove.description>A Chemfuel-fueled stove with an attached countertop for preparing meals.</RSF_ChemFuelStove.description>
-    
+
+    <!--  ================= RSF_DriedMeat ================= -->
+    <RSF_DriedMeat.label>dried meat</RSF_DriedMeat.label>
+    <RSF_DriedMeat.description>Preserve meat by drying it. The result tastes awful and gives mood penalties but lasts much longer without refrigeration. Better used as an ingredient in cooked meals than eaten directly.</RSF_DriedMeat.description>
+
+    <!--  ================= RSF_DriedFruit ================= -->
+    <RSF_DriedFruit.label>dried fruit</RSF_DriedFruit.label>
+    <RSF_DriedFruit.description>Preserve Fruit by drying it. The result tastes awful and gives mood penalties but lasts much longer without refrigeration. Better used as an ingredient in cooked meals than eaten directly.</RSF_DriedFruit.description>
+
 </LanguageData>

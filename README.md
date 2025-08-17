@@ -1,11 +1,17 @@
-**RimWorld Survival Frontier**
-
 ## 🌨️ **Designed for Extreme Climates**
 Complete survival toolkit for extreme biomes. Materials, food production, shelter - everything needed to thrive in hostile frontiers.
 
 ## 🎯 **Vanilla Friendly** :
 Perfect integration with the base game. Balanced for equilibrium gameplay without disrupting the RimWorld experience.
 
+RECENT UPDATES: 1.0.0.8
+🆕 BONUS UPDATE: 
+- Chemfuel Stove now available!
+- Recipe Balance: Vent recipe adjustments now you can use different material for building it. 
+
+🗺️ NEXT UPDATE: Dried Food System
+- ETA: 5-7 days        
+        
 ## 🌱 **Ecological Production**
 Create bio-plastic at the biofuel refinery from common plant resources: agave, berries, corn, potatoes, and rice.
 Even greenhouse-grown crops work! No more dependence on traders for advanced materials!
@@ -62,7 +68,21 @@ Add sun lamps
 ## **Quality of life ( QoL ) ** :
 Add light range indicators to all vanilla lamps: Wall Lamp, Flood Light, Standing Lamp, Torch Lamp, and Wall Torch Lamp
 
-Originally inspired by Plastic Revolution by Orbittwz. https://github.com/orbittwz/PlasticRevolution .
+🌍 **TRANSLATION REQUEST** 🌍
+
+Want to see RimWorld Survival Frontier in your language?
+
+Currently supported:
+- English (default)
+- Italian (native)
+
+**How to help:**
+1. Comment your language
+2. I'll provide translation keys
+3. You translate, I'll credit you!
+        
+Originally inspired by Plastic Revolution by Orbittwz.
+https://github.com/orbittwz/PlasticRevolution .
 Completely rewritten implementation with expanded survival focus.
 
 Licensed under MIT License.
