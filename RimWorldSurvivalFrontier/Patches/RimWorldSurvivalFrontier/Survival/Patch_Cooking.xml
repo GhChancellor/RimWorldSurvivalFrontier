@@ -6,11 +6,9 @@
             <!-- Add Chemfuel to Work -->
             <!-- See /Defs/WorkGiverDefs/WorkGivers.xml > DoBillsCook-->
             <li Class="PatchOperationAdd">
-                <xpath>Defs/WorkGiverDef[defName ="DoBillsCook"]</xpath>
+                <xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs</xpath>
                 <value>
-                    <fixedBillGiverDefs>
-                        <li>RSF_ChemFuelStove</li>
-                    </fixedBillGiverDefs>
+                    <li>RSF_ChemFuelStove</li> 
                 </value>
             </li> 
         </operations>

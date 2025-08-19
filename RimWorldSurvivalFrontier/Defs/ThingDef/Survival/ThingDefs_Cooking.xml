@@ -96,6 +96,10 @@
             <workTableRoomRole>Kitchen</workTableRoomRole>
             <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
         </building>
+
+        <researchPrerequisites>
+            <li>BiofuelRefining</li>
+        </researchPrerequisites>
     </ThingDef>
     
 </Defs>
