@@ -4,13 +4,17 @@ Complete survival toolkit for extreme biomes. Materials, food production, shelte
 ## 🎯 **Vanilla Friendly** :
 Perfect integration with the base game. Balanced for equilibrium gameplay without disrupting the RimWorld experience.
 
-RECENT UPDATES: 1.0.0.8
-🆕 BONUS UPDATE: 
-- Chemfuel Stove now available!
-- Recipe Balance: Vent recipe adjustments now you can use different material for building it. 
-
-🗺️ NEXT UPDATE: Dried Food System
-- ETA: 5-7 days        
+RECENT UPDATES: 1.0.0.18
+- Add dried fruit and dried meat for longer storage without refrigeration
+- Add stone to build the basin
+- Fix Basins Tree Basin Tiny 1x1
+- Add Plant Tree Drago Nano
+        
+UPDATES: 1.0.0.11
+- Chemfuel Stove now available! ( fixed )
+        
+Next Update:        
+- Add more indoor tree plants
         
 ## 🌱 **Ecological Production**
 Create bio-plastic at the biofuel refinery from common plant resources: agave, berries, corn, potatoes, and rice.
@@ -58,12 +62,16 @@ Now traders bring raw resources: Plastic Basic, Plastic Industrial, Plastic Bio-
 - 80% efficiency
 - Tiny 1x1
 
-Add sun lamps
+*Add sun lamps*
 - All lamps have light range indicators
 - Wall sun lamp
 - Small sun lamp
 - Tiny 1x1 sun lamp
 - Compact 1x3 sun lamp
+
+## **Cooking**
+- Add Chemfuel
+- Add dried fruit and dried meat for longer storage without refrigeration
 
 ## **Quality of life ( QoL ) ** :
 Add light range indicators to all vanilla lamps: Wall Lamp, Flood Light, Standing Lamp, Torch Lamp, and Wall Torch Lamp

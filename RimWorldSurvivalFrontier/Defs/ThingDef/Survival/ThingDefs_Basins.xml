@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    
-    <ThingDef Name="TemplateBasin" ParentName="BuildingBase" Abstract="true" >
+
+    <!--  ================= TemplateBasim ================= -->
+    <ThingDef Name="TemplateBasin" ParentName="BuildingBase" Abstract="true">
         <label>Template</label>
         <description>A simple Template.</description>
         <noRightClickDraftAttack>true</noRightClickDraftAttack>
@@ -26,15 +27,15 @@
 
         <fillPercent>0.30</fillPercent>
         <canOverlapZones>false</canOverlapZones>
-        
+
         <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-               
+
         <statBases>
             <WorkToBuild>1500</WorkToBuild>
             <MaxHitPoints>120</MaxHitPoints>
             <Flammability>0.5</Flammability>
             <Cleanliness>-3</Cleanliness>
-            <Mass>5</Mass> <!-- it's necessary for MinifiedThing--> 
+            <Mass>5</Mass> <!-- it's necessary for MinifiedThing-->
         </statBases>
         <size>(1,4)</size>
 
@@ -50,21 +51,22 @@
 
         <!-- These two tags work together - you cannot have one without the other -->
         <!-- If you define stuffCategories, you MUST also define costStuffCount -->
-        
+
         <!-- stuffCategories defines WHICH material types can be used -->
-        <stuffCategories> 
+        <stuffCategories>
             <li>Woody</li> <!-- materials used to build this item -->
+            <li>Stony</li>
         </stuffCategories>
         <!-- costStuffCount defines HOW MUCH of that material is required -->
         <costStuffCount>50</costStuffCount>
-        
+
         <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>3</Steel>
         </costList>
 
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-        
+
         <!--Which menu appear Production/Furniture/Recreation/Security -->
         <designationCategory>Production</designationCategory>
 
@@ -79,11 +81,11 @@
         <thingCategories>
             <li>BuildingsFurniture</li> <!-- it's necessary for MinifiedThing -->
         </thingCategories>
-        
-    <!-- ************************************* -->
+
+        <!-- ************************************* -->
     </ThingDef>
 
-    <!-- Crop Basin -->
+    <!--  ================= RSF_CropBasin ================= -->
     <ThingDef ParentName="TemplateBasin">
         <defName>RSF_CropBasin</defName>
         <label>RSF_CropBasin.label</label>
@@ -94,14 +96,14 @@
         <!-- These two tags work together - you cannot have one without the other -->
         <!-- If you define stuffCategories, you MUST also define costStuffCount -->
         <costStuffCount>40</costStuffCount>
-        
+
         <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>60</Steel>
         </costList>
     </ThingDef>
 
-    <!-- Crop Basin 1x1 -->
+    <!--  ================= RSF_CropBasinTiny 1x1 ================= -->
     <ThingDef ParentName="TemplateBasin">
         <defName>RSF_CropBasinTiny</defName>
         <label>RSF_CropBasinTiny.label</label>
@@ -122,15 +124,15 @@
         <!-- These two tags work together - you cannot have one without the other -->
         <!-- If you define stuffCategories, you MUST also define costStuffCount -->
         <costStuffCount>15</costStuffCount>
-        
+
         <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>20</Steel>
         </costList>
-    
+
     </ThingDef>
 
-    <!-- Crop Basin 1x3 -->
+    <!--  ================= RSF_CropBasinCompact 1x3 ================= -->
     <ThingDef ParentName="TemplateBasin">
         <defName>RSF_CropBasinCompact</defName>
         <label>RSF_CropBasinCompact.label</label>
@@ -157,8 +159,8 @@
             <Steel>30</Steel>
         </costList>
     </ThingDef>
-    
-    <!-- Tree Basin -->
+
+    <!--  ================= RSF_TreeBasinTiny 1x1 ================= -->
     <ThingDef ParentName="TemplateBasin">
         <defName>RSF_TreeBasinTiny</defName>
         <label>RSF_TreeBasinTiny.label</label>
@@ -173,9 +175,9 @@
 
         <size>(1,1)</size>
         <fertility>0.8</fertility>
-        
+
         <building>
-            <defaultPlantToGrow>Plant_TreePoplar</defaultPlantToGrow>
+            <defaultPlantToGrow>RSF_Plant_TreeDragoNano</defaultPlantToGrow>
             <sowTag>CustomSowTagTree</sowTag>
         </building>
 
@@ -184,11 +186,11 @@
         <!-- These two tags work together - you cannot have one without the other -->
         <!-- If you define stuffCategories, you MUST also define costStuffCount -->
         <costStuffCount>30</costStuffCount>
-        
+
         <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>30</Steel>
         </costList>
     </ThingDef>
-    
+
 </Defs>

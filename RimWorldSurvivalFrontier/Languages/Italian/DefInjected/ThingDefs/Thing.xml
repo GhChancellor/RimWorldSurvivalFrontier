@@ -70,4 +70,20 @@
     <RSF_DriedFruit.label>produci frutta essiccata</RSF_DriedFruit.label>
     <RSF_DriedFruit.description>Conserva la frutta essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedFruit.description>
 
+    <!-- ================= RSF_Plant_TreeDragoNano ================= -->
+    <RSF_Plant_TreeDragoNano.label>albero Drago nano</RSF_Plant_TreeDragoNano.label>
+    <RSF_Plant_TreeDragoNano.description>Un robusto albero nano del deserto con foglie spesse e appuntite.</RSF_Plant_TreeDragoNano.description>
+
+    <!--    &lt;!&ndash;  ================= RSF_PlantTreePoplarNano ================= &ndash;&gt;-->
+<!--    <RSF_PlantTreePoplarNano.label>RSF_PlantTreePoplarNano label IT</RSF_PlantTreePoplarNano.label>-->
+<!--    <RSF_PlantTreePoplarNano.description>RSF_PlantTreePoplarNano description IT</RSF_PlantTreePoplarNano.description>-->
+
+<!--    &lt;!&ndash;  ================= RSF_PlantTreeOakNano ================= &ndash;&gt;-->
+<!--    <RSF_PlantTreeOakNano.label>RSF_PlantTreeOakNano label IT </RSF_PlantTreeOakNano.label>-->
+<!--    <RSF_PlantTreeOakNano.description>RSF_PlantTreeOakNano description IT</RSF_PlantTreeOakNano.description>-->
+
+<!--    &lt;!&ndash;  ================= RSF_TreeBambooNano ================= &ndash;&gt;-->
+<!--    <RSF_TreeBambooNano.label>RSF_TreeBambooNano label IT</RSF_TreeBambooNano.label>-->
+<!--    <RSF_TreeBambooNano.description>RSF_TreeBambooNano description IT</RSF_TreeBambooNano.description>-->
+<!--    -->
 </LanguageData>

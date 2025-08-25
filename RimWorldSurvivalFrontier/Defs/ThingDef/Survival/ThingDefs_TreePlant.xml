@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Plant_TreeOak, Plant_TreeCocoa, Plant_TreePoplar, Plant_TreeDrago-->
+<Defs>
+
+    <!-- ================= RSF_Plant_TreeDragoNano temperate biomes ================= -->
+    <ThingDef ParentName="TreeBase">
+        <defName>RSF_Plant_TreeDragoNano</defName>
+        <label>RSF_Plant_TreeDragoNano.label</label>
+        <description>RSF_Plant_TreeDragoNano.description</description>
+        <graphicData>
+            <texPath>Things/Plant/TreeDrago</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.24, 0.35, 0.13)</volume>
+                <offset>(0,0,-0.38)</offset>
+            </shadowData>
+        </graphicData>
+        <statBases>
+            <Beauty>1</Beauty>
+            <BeautyOutdoors>1</BeautyOutdoors>
+        </statBases>
+        <ingestible/>
+        <plant>
+            <growDays>15</growDays>
+            <wildClusterRadius>6</wildClusterRadius>
+            <wildClusterWeight>3</wildClusterWeight>
+            <immatureGraphicPath>Things/Plant/TreeDrago_Immature</immatureGraphicPath>
+            <maxGrowthTemperature>75</maxGrowthTemperature>
+
+            <!-- Custom options -->
+            <harvestYield>20</harvestYield>
+            <sowWork>2500</sowWork>
+            <harvestWork>400</harvestWork>
+            <sowMinSkill>3</sowMinSkill>
+            <sowTags>
+                <li>CustomSowTagTree</li>
+            </sowTags>
+
+            <!-- can or can't build indoor-->
+            <interferesWithRoof>false</interferesWithRoof> <!-- Can build indoor -->
+        </plant>
+
+    </ThingDef>
+</Defs>
+

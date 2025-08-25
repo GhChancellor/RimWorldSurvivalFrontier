@@ -157,38 +157,6 @@
                     </sowTags>
                 </value>
             </li>
-
-            <!-- ======================== Tree ======================== -->
-
-            <!--Add Plant_TreeOak to CustomSowTagTree-->
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName ="Plant_TreeOak"]/plant</xpath>
-                <value>
-                    <sowTags>
-                        <li>CustomSowTagTree</li>
-                    </sowTags>
-                </value>
-            </li>
-
-            <!--Add Plant_TreeCocoa to CustomSowTagTree-->
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName ="Plant_TreeCocoa"]/plant</xpath>
-                <value>
-                    <sowTags>
-                        <li>CustomSowTagTree</li>
-                    </sowTags>
-                </value>
-            </li>
-
-            <!--Add Plant_TreePoplar to CustomSowTagTree-->
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName ="Plant_TreePoplar"]/plant</xpath>
-                <value>
-                    <sowTags>
-                        <li>CustomSowTagTree</li>
-                    </sowTags>
-                </value>
-            </li>
             
         </operations>
     </Operation>

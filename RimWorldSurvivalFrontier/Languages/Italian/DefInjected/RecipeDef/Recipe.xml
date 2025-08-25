@@ -47,4 +47,14 @@
     <RSF_DriedFruitRecipe.description>Conserva la frutta essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedFruitRecipe.description>
     <RSF_DriedFruitRecipe.jobString>converte la frutta cruda in frutta essiccata</RSF_DriedFruitRecipe.jobString>
 
+    <!--  ================= RSF_DriedMeat ================= -->
+    <RSF_DriedMeatRecipe4x.label>produci carne essiccata x4</RSF_DriedMeatRecipe4x.label>
+    <RSF_DriedMeatRecipe4x.description>Conserva la carne essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedMeatRecipe4x.description>
+    <RSF_DriedMeatRecipe4x.jobString>converte la carne cruda in carne essiccata</RSF_DriedMeatRecipe4x.jobString>
+
+    <!--  ================= RSF_DriedFruit ================= -->
+    <RSF_DriedFruitRecipe4x.label>produci frutta essiccata x4</RSF_DriedFruitRecipe4x.label>
+    <RSF_DriedFruitRecipe4x.description>Conserva la frutta essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedFruitRecipe4x.description>
+    <RSF_DriedFruitRecipe4x.jobString>converte la frutta cruda in frutta essiccata</RSF_DriedFruitRecipe4x.jobString>
+
 </LanguageData>

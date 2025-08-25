@@ -22,8 +22,6 @@
         <castEdgeShadows>true</castEdgeShadows>
         <staticSunShadowHeight>0.20</staticSunShadowHeight>
         <constructEffect>ConstructMetal</constructEffect>
-
-        <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
             <Steel>80</Steel>
         </costList>
@@ -101,5 +99,94 @@
             <li>BiofuelRefining</li>
         </researchPrerequisites>
     </ThingDef>
-    
+
+    <!--  =============== RSF_TemplateKibble =============== -->
+    <!-- see Defs/ThingDefs_Items/Items_Food.xml > Kibble -->
+    <ThingDef Name="RSF_TemplateKibble" ParentName="OrganicProductBase" Abstract="true">
+        <label>RSF_Template dried food</label>
+        <thingCategories>
+            <li>Foods</li>
+        </thingCategories>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <graphicData>
+            <texPath>Things/Item/Resource/Pemmican</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Ingredients">
+                <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+            </li>
+            <li Class="CompProperties_FoodPoisonable" />
+        </comps>
+    </ThingDef>
+
+    <!--  =============== RSF_DriedMeat =============== -->
+    <ThingDef ParentName="RSF_TemplateKibble">
+        <defName>RSF_DriedMeat</defName>
+        <label>RSF_DriedMeat.label</label>
+        <description>RSF_DriedMeat.description</description>
+        <ingestible>
+            <foodType>Meat</foodType>                    <!--  Meat vs Kibble -->
+            <preferability>RawTasty</preferability>      <!-- RawTasty vs RawBad -->
+            <tasteThought>AteRawFood</tasteThought>      <!--  AteRawFood vs AteKibble -->
+            <optimalityOffsetHumanlikes>-7</optimalityOffsetHumanlikes>  <!-- less penalty -->
+            <ingestEffect>EatMeat</ingestEffect>         <!-- EatMeat -->
+            <ingestSound>RawMeat_Eat</ingestSound>       <!-- sound -->
+        </ingestible>
+
+        <statBases>
+            <MarketValue>1.2</MarketValue>
+            <Mass>0.015</Mass>
+            <Flammability>0.6</Flammability>
+            <WorkToMake>600</WorkToMake>
+            <DeteriorationRate>2</DeteriorationRate>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <thingCategories>
+            <li>MeatRaw</li>
+        </thingCategories>
+                
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>50</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+            
+        </comps>
+    </ThingDef>
+
+    <!--  =============== RSF_DriedFruit =============== -->
+    <ThingDef ParentName="RSF_TemplateKibble">
+        <defName>RSF_DriedFruit</defName>
+        <label>RSF_DriedFruit.label</label>
+        <description>RSF_DriedFruit.description</description>
+        <ingestible>
+            <foodType>VegetableOrFruit</foodType>                    <!--  Meat vs Kibble -->
+            <preferability>RawTasty</preferability>      <!-- RawTasty vs RawBad -->
+            <tasteThought>AteRawFood</tasteThought>      <!--  AteRawFood vs AteKibble -->
+            <optimalityOffsetHumanlikes>-7</optimalityOffsetHumanlikes>  <!-- less penalty -->
+            <ingestEffect>EatVegetarian</ingestEffect>         <!-- EatMeat -->
+            <ingestSound>RawVegetable_Eat</ingestSound>       <!-- sound -->
+        </ingestible>
+
+        <statBases>
+            <MarketValue>1.2</MarketValue>
+            <Mass>0.015</Mass>
+            <Flammability>0.6</Flammability>
+            <WorkToMake>600</WorkToMake>
+            <DeteriorationRate>2</DeteriorationRate>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <thingCategories>
+            <li>PlantFoodRaw</li>
+        </thingCategories>
+
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>50</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+
+        </comps>
+    </ThingDef>
 </Defs>

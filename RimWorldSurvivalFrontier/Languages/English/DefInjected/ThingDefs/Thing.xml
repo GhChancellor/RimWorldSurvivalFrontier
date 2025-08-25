@@ -2,72 +2,89 @@
 
 <LanguageData>
 
-    <!--  ================= RSF_PlasticBasic ================= -->
+    <!-- ================= RSF_PlasticBasic ================= -->
     <RSF_PlasticBasic.label>plastic basic</RSF_PlasticBasic.label>
     <RSF_PlasticBasic.description>Lightweight bio-plastic from plant materials. Basic-grade material suitable for simple furniture and structures.</RSF_PlasticBasic.description>
 
-    <!--  ================= RSF_PlasticIndustrial ================= -->
+    <!-- ================= RSF_PlasticIndustrial ================= -->
     <RSF_PlasticIndustrial.label>plastic industrial</RSF_PlasticIndustrial.label>
     <RSF_PlasticIndustrial.description>Advanced bio-plastic with enhanced durability. Industrial-grade material for high-quality furniture and robust structures.</RSF_PlasticIndustrial.description>
 
-    <!--  ================= RSF_PlasticBioSteel ================= -->
+    <!-- ================= RSF_PlasticBioSteel ================= -->
     <RSF_PlasticBioSteel.label>plastic bio-steel</RSF_PlasticBioSteel.label>
     <RSF_PlasticBioSteel.description>Advanced bio-engineered steel created by reinforcing plant-based polymers with metallic compounds. While not as strong as spacer-tech materials, it offers an excellent balance of durability and sustainability for colonial construction.</RSF_PlasticBioSteel.description>
 
-    <!--  ================= RSF_PlasticFiber ================= -->
+    <!-- ================= RSF_PlasticFiber ================= -->
     <RSF_PlasticFiber.label>plastic fiber</RSF_PlasticFiber.label>
     <RSF_PlasticFiber.description>Synthetic textile fiber from bio-plastic. Suitable for clothing production and textile crafting.</RSF_PlasticFiber.description>
 
-    <!--  ================= RSF_WoodPlanks ================= -->
+    <!-- ================= RSF_WoodPlanks ================= -->
     <RSF_WoodPlanks.label>wood planks</RSF_WoodPlanks.label>
     <RSF_WoodPlanks.description>Useful for building structures and weapons. Good fuel for campfires and generators, and can be refined into chemfuel.</RSF_WoodPlanks.description>
 
-    <!--  ================= RSF_PlasticIncendiary ================= -->
+    <!-- ================= RSF_PlasticIncendiary ================= -->
     <RSF_PlasticIncendiary.label>incendiary plastic</RSF_PlasticIncendiary.label>
     <RSF_PlasticIncendiary.description>Bio-plastic infused with volatile compounds. Extremely flammable construction material for tactical applications. Handle with care.</RSF_PlasticIncendiary.description>
 
-    <!--  ================= RSF_EcoLeather ================= -->
+    <!-- ================= RSF_EcoLeather ================= -->
     <RSF_EcoLeather.label>eco leather</RSF_EcoLeather.label>
     <RSF_EcoLeather.description>Synthetic leather from plant polymers. Sustainable alternative to animal leather for high-quality clothing.</RSF_EcoLeather.description>
 
-    <!--  ================= RSF_SunLampMini ================= -->
+    <!-- ================= RSF_SunLampMini ================= -->
     <RSF_SunLampMini.label>mini sun lamp</RSF_SunLampMini.label>
     <RSF_SunLampMini.description>A mini sun lamp which lights an area brightly enough to grow crops, but consumes a considerable amount of power. Automatically turns itself off at night.</RSF_SunLampMini.description>
 
-    <!--  ================= RSF_SunLampTiny 1x1 ================= -->
+    <!-- ================= RSF_SunLampTiny 1x1 ================= -->
     <RSF_SunLampTiny.label>tiny sun lamp 1x1</RSF_SunLampTiny.label>
     <RSF_SunLampTiny.description>A tiny sun lamp 1x1 which lights an area brightly enough to grow crops, but consumes a moderate amount of power. Automatically turns itself off at night.</RSF_SunLampTiny.description>
 
-    <!--  ================= RSF_SunLampCompact 1x3 ================= -->
+    <!-- ================= RSF_SunLampCompact 1x3 ================= -->
     <RSF_SunLampCompact.label>compact sun lamp 1x3</RSF_SunLampCompact.label>
     <RSF_SunLampCompact.description>A compact sun lamp 1x3 which lights an area brightly enough to grow crops, but consumes a moderate amount of power. Automatically turns itself off at night.</RSF_SunLampCompact.description>
     
-    <!--  ================= RSF_CropBasin ================= -->
+    <!-- ================= RSF_CropBasin ================= -->
     <RSF_CropBasin.label>crop basin</RSF_CropBasin.label>
     <RSF_CropBasin.description>A simple basin for growing crops indoors without electricity.</RSF_CropBasin.description>
 
-    <!--  ================= RSF_CropBasinTiny 1x1 ================= -->
+    <!-- ================= RSF_CropBasinTiny 1x1 ================= -->
     <RSF_CropBasinTiny.label>tiny crop basin 1x1</RSF_CropBasinTiny.label>
     <RSF_CropBasinTiny.description>A tiny crop basin 1x1 for growing crops indoors without electricity.</RSF_CropBasinTiny.description>
 
-    <!--  ================= RSF_CropBasinCompact 1x3 ================= -->
+    <!-- ================= RSF_CropBasinCompact 1x3 ================= -->
     <RSF_CropBasinCompact.label>compact crop basin 1x3</RSF_CropBasinCompact.label>
     <RSF_CropBasinCompact.description>A compact basin 1x3 for growing crops indoors without electricity.</RSF_CropBasinCompact.description>
 
-    <!--  ================= RSF_TreeBasinTiny 1x1 ================= -->
+    <!-- ================= RSF_TreeBasinTiny 1x1 ================= -->
     <RSF_TreeBasinTiny.label>tiny tree basin 1x1</RSF_TreeBasinTiny.label>
     <RSF_TreeBasinTiny.description>A tiny basin 1x1 for growing tree indoors without electricity.</RSF_TreeBasinTiny.description>
 
-    <!--  ================= RSF_ChemFuelStove ================= -->
+    <!-- ================= RSF_ChemFuelStove ================= -->
     <RSF_ChemFuelStove.label>chemfuel stove</RSF_ChemFuelStove.label>
     <RSF_ChemFuelStove.description>A Chemfuel-fueled stove with an attached countertop for preparing meals.</RSF_ChemFuelStove.description>
 
-    <!--  ================= RSF_DriedMeat ================= -->
+    <!-- ================= RSF_DriedMeat ================= -->
     <RSF_DriedMeat.label>dried meat</RSF_DriedMeat.label>
     <RSF_DriedMeat.description>Preserve meat by drying it. The result tastes awful and gives mood penalties but lasts much longer without refrigeration. Better used as an ingredient in cooked meals than eaten directly.</RSF_DriedMeat.description>
 
-    <!--  ================= RSF_DriedFruit ================= -->
+    <!-- ================= RSF_DriedFruit ================= -->
     <RSF_DriedFruit.label>dried fruit</RSF_DriedFruit.label>
     <RSF_DriedFruit.description>Preserve Fruit by drying it. The result tastes awful and gives mood penalties but lasts much longer without refrigeration. Better used as an ingredient in cooked meals than eaten directly.</RSF_DriedFruit.description>
 
+    <!-- ================= RSF_Plant_TreeDragoNano ================= -->
+    <RSF_Plant_TreeDragoNano.label>drago tree nano</RSF_Plant_TreeDragoNano.label>
+    <RSF_Plant_TreeDragoNano.description>A hardy desert tree nano topped with thick, pointed leaves.</RSF_Plant_TreeDragoNano.description>
+    
+<!--    &lt;!&ndash; ================= RSF_PlantTreePoplarNano ================= &ndash;&gt;-->
+<!--    <RSF_PlantTreePoplarNano.label>poplar tree Nano</RSF_PlantTreePoplarNano.label>-->
+<!--    <RSF_PlantTreePoplarNano.description>A softwood tree nano that grows very fast in temperate biomes. Unfortunately, its wood is weak and so it yields less useful material than hardwood trees.</RSF_PlantTreePoplarNano.description>-->
+
+<!--    &lt;!&ndash; ================= RSF_PlantTreeCocoaNano ================= &ndash;&gt;-->
+<!--    <RSF_PlantTreeCocoaNano.label>cocoa tree nano</RSF_PlantTreeCocoaNano.label>-->
+<!--    <RSF_PlantTreeCocoaNano.description>A tropical tree that produces chocolate, genetically engineered to sweeten its own product, and survive in slightly less-warm climates.</RSF_PlantTreeCocoaNano.description>-->
+
+<!--    &lt;!&ndash; ================= RSF_TreeBambooNano ================= &ndash;&gt;-->
+<!--    <RSF_TreeBambooNano.label>bamboo tree nano</RSF_TreeBambooNano.label>-->
+<!--    <RSF_TreeBambooNano.description>A fast-growing in the tropical biomes tree-like plant that grows in dense groves. Bamboo can be harvested for a wood-like material. The plant itself is not beautiful.</RSF_TreeBambooNano.description>-->
+<!--    -->
+    
 </LanguageData>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <!--    see: Defs/RecipeDefs/Recipes_Food.xml > Make_Pemmican -->
+    <!--  ================= RSF_TemplatePreservedFood  ================= -->
+    <RecipeDef Name="RSF_TemplatePreservedFood" Abstract="true">
+        <label>RSF_Template Preserved Food</label>
+        <description>Make pemmican, a preserved combination of meat and plant food. It doesn't taste amazing, but lasts
+            a long time without refrigeration.
+        </description>
+        <jobString>Making pemmican.</jobString>
+        <workAmount>700</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <workSkill>Cooking</workSkill>
+        <displayPriority>1440</displayPriority>
+
+        <recipeUsers>
+            <li>FueledStove</li>
+            <li>ElectricStove</li>
+            <li>RSF_ChemFuelStove</li>
+            <li>Campfire</li>
+        </recipeUsers>
+
+        <defaultIngredientFilter>
+            <disallowedThingDefs>
+                <li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+            </disallowedThingDefs>
+        </defaultIngredientFilter>
+
+    </RecipeDef>
+
+    <!--  ================= RSF_DriedMeatRecipe  ================= -->
+    <RecipeDef ParentName="RSF_TemplatePreservedFood">
+        <defName>RSF_DriedMeatRecipe</defName>
+        <label>RSF_DriedMeatRecipe.label</label>
+        <jobString>RSF_DriedMeatRecipe.jobString</jobString>
+        <workAmount>700</workAmount>
+
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>MeatRaw</li>
+                    </categories>
+                </filter>
+                <count>0.35</count>
+            </li>
+        </ingredients>
+
+        <fixedIngredientFilter>
+            <categories>
+                <li>MeatRaw</li>
+            </categories>
+            <disallowedCategories>
+                <li>AnimalProductRaw</li>
+                <li>PlantFoodRaw</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+
+        <defaultIngredientFilter>
+            <categories>
+                <li>MeatRaw</li>
+            </categories>
+        </defaultIngredientFilter>
+
+        <products>
+            <RSF_DriedMeat>16</RSF_DriedMeat>
+        </products>
+    </RecipeDef>
+
+    <!--  ================= RSF_DriedMeatRecipe x4 ================= -->
+    <RecipeDef ParentName="RSF_TemplatePreservedFood">
+        <defName>RSF_DriedMeatRecipe4x</defName>
+        <label>RSF_DriedMeatRecipe4x.label</label>
+        <jobString>RSF_DriedMeatRecipe4x.jobString</jobString>
+        <workAmount>700</workAmount>
+
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>MeatRaw</li>
+                    </categories>
+                </filter>
+                <count>1.4</count>
+            </li>
+        </ingredients>
+
+        <fixedIngredientFilter>
+            <categories>
+                <li>MeatRaw</li>
+            </categories>
+            <disallowedCategories>
+                <li>AnimalProductRaw</li>
+                <li>PlantFoodRaw</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+
+        <defaultIngredientFilter>
+            <categories>
+                <li>MeatRaw</li>
+            </categories>
+        </defaultIngredientFilter>
+
+        <products>
+            <RSF_DriedMeat>64</RSF_DriedMeat>
+        </products>
+    </RecipeDef>
+    
+    <!--  ================= RSF_DriedFruitRecipe  ================= -->
+    <RecipeDef ParentName="RSF_TemplatePreservedFood">
+        <defName>RSF_DriedFruitRecipe</defName>
+        <label>RSF_DriedFruitRecipe.label</label>
+        <jobString>RSF_DriedFruitRecipe.jobString</jobString>
+        <workAmount>700</workAmount>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs> 
+                        <li>RawBerries</li>
+                    </thingDefs>
+                </filter>
+                <count>0.35</count>
+            </li>
+        </ingredients>
+
+        <fixedIngredientFilter>
+            <thingDefs>  
+                <li>RawBerries</li> 
+            </thingDefs>
+            <disallowedCategories>
+                <li>AnimalProductRaw</li>
+                <li>MeatRaw</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+
+        <defaultIngredientFilter>
+            <thingDefs>  
+                <li>RawBerries</li> 
+            </thingDefs>
+        </defaultIngredientFilter>
+
+        <products>
+            <RSF_DriedFruit>16</RSF_DriedFruit>
+        </products>
+    </RecipeDef>
+    
+    <!--  ================= RSF_DriedFruitRecipe x4  ================= -->
+    <RecipeDef ParentName="RSF_TemplatePreservedFood">
+        <defName>RSF_DriedFruitRecipe4x</defName>
+        <label>RSF_DriedFruitRecipe4x.label</label>
+        <jobString>RSF_DriedFruitRecipe4x.jobString</jobString>
+        <workAmount>700</workAmount>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs> 
+                        <li>RawBerries</li>
+                    </thingDefs>
+                </filter>
+                <count>1.4</count>
+            </li>
+        </ingredients>
+
+        <fixedIngredientFilter>
+            <thingDefs>  
+                <li>RawBerries</li> 
+            </thingDefs>
+            <disallowedCategories>
+                <li>AnimalProductRaw</li>
+                <li>MeatRaw</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+
+        <defaultIngredientFilter>
+            <thingDefs>  
+                <li>RawBerries</li> 
+            </thingDefs>
+        </defaultIngredientFilter>
+        <products>
+            <RSF_DriedFruit>64</RSF_DriedFruit>
+        </products>
+    </RecipeDef>
+    
+    
+</Defs>
