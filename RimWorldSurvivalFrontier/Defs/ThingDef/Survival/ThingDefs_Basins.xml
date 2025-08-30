@@ -191,6 +191,10 @@
         <costList>
             <Steel>30</Steel>
         </costList>
+
+        <researchPrerequisites>
+            <li>TreeSowing</li>
+        </researchPrerequisites>
     </ThingDef>
 
 </Defs>

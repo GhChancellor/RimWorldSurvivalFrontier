@@ -70,21 +70,24 @@
     <RSF_DriedFruit.label>dried fruit</RSF_DriedFruit.label>
     <RSF_DriedFruit.description>Preserve Fruit by drying it. The result tastes awful and gives mood penalties but lasts much longer without refrigeration. Better used as an ingredient in cooked meals than eaten directly.</RSF_DriedFruit.description>
 
-    <!-- ================= RSF_Plant_TreeDragoNano ================= -->
+    <!-- ================= RSF_Plant_TreeDragoNano arid shrublands and deserts.  ================= -->
     <RSF_Plant_TreeDragoNano.label>drago tree nano</RSF_Plant_TreeDragoNano.label>
     <RSF_Plant_TreeDragoNano.description>A hardy desert tree nano topped with thick, pointed leaves.</RSF_Plant_TreeDragoNano.description>
-    
-<!--    &lt;!&ndash; ================= RSF_PlantTreePoplarNano ================= &ndash;&gt;-->
-<!--    <RSF_PlantTreePoplarNano.label>poplar tree Nano</RSF_PlantTreePoplarNano.label>-->
-<!--    <RSF_PlantTreePoplarNano.description>A softwood tree nano that grows very fast in temperate biomes. Unfortunately, its wood is weak and so it yields less useful material than hardwood trees.</RSF_PlantTreePoplarNano.description>-->
 
-<!--    &lt;!&ndash; ================= RSF_PlantTreeCocoaNano ================= &ndash;&gt;-->
-<!--    <RSF_PlantTreeCocoaNano.label>cocoa tree nano</RSF_PlantTreeCocoaNano.label>-->
-<!--    <RSF_PlantTreeCocoaNano.description>A tropical tree that produces chocolate, genetically engineered to sweeten its own product, and survive in slightly less-warm climates.</RSF_PlantTreeCocoaNano.description>-->
+    <!-- ================= RSF_Plant_TreeCocoaNano tropical biomes ================= -->
+    <RSF_Plant_TreeCocoaNano.label>cocoa tree nano</RSF_Plant_TreeCocoaNano.label>
+    <RSF_Plant_TreeCocoaNano.description>A tropical tree nano that produces chocolate, genetically engineered to sweeten its own product, and survive in slightly less-warm climates.</RSF_Plant_TreeCocoaNano.description>
 
-<!--    &lt;!&ndash; ================= RSF_TreeBambooNano ================= &ndash;&gt;-->
-<!--    <RSF_TreeBambooNano.label>bamboo tree nano</RSF_TreeBambooNano.label>-->
-<!--    <RSF_TreeBambooNano.description>A fast-growing in the tropical biomes tree-like plant that grows in dense groves. Bamboo can be harvested for a wood-like material. The plant itself is not beautiful.</RSF_TreeBambooNano.description>-->
-<!--    -->
+    <!-- ================= RSF_Plant_TreePineNano boreal forests and tundra ================= -->
+    <RSF_Plant_TreePineNano.label>pine tree nano</RSF_Plant_TreePineNano.label>
+    <RSF_Plant_TreePineNano.description>A nano conifer covered with prickly pine cones. It grows in a distinctive conical shape. Pine trees can be grown in boreal forests and tundra.</RSF_Plant_TreePineNano.description>
+
+    <!-- ================= RSF_Plant_TreeBambooNano Tropical ================= -->
+    <RSF_Plant_TreeBambooNano.label>bamboo tree nano</RSF_Plant_TreeBambooNano.label>
+    <RSF_Plant_TreeBambooNano.description>A fast-growing tree-like plant that grows in dense groves. Bamboo can be harvested for a wood-like material. The plant itself is not beautiful.</RSF_Plant_TreeBambooNano.description>
+
+    <!-- ================= RSF_Plant_TreePalmNano Tropical ================= -->
+    <RSF_Plant_TreePalmNano.label>palm tree nano</RSF_Plant_TreePalmNano.label>
+    <RSF_Plant_TreePalmNano.description>A fast-growing tree-like plant that grows in dense groves. Bamboo can be harvested for a wood-like material. The plant itself is not beautiful.</RSF_Plant_TreePalmNano.description>
     
 </LanguageData>

@@ -4,18 +4,18 @@ Complete survival toolkit for extreme biomes. Materials, food production, shelte
 ## 🎯 **Vanilla Friendly** :
 Perfect integration with the base game. Balanced for equilibrium gameplay without disrupting the RimWorld experience.
 
-RECENT UPDATES: 1.0.0.18
+RECENT UPDATES:
+ 
+UPDATES: 1.0.0.23
+- Now tree basin unlocks with Tree Sowing research
+- Add more indoor tree plants: Tree Drago Nano, Tree Cocoa Nano, Tree Pine Nano, Tree Bamboo Nano, Tree Palm Nano
+
+UPDATES: 1.0.0.18
 - Add dried fruit and dried meat for longer storage without refrigeration
 - Add stone to build the basin
 - Fix Basins Tree Basin Tiny 1x1
 - Add Plant Tree Drago Nano
-        
-UPDATES: 1.0.0.11
-- Chemfuel Stove now available! ( fixed )
-        
-Next Update:        
-- Add more indoor tree plants
-        
+               
 ## 🌱 **Ecological Production**
 Create bio-plastic at the biofuel refinery from common plant resources: agave, berries, corn, potatoes, and rice.
 Even greenhouse-grown crops work! No more dependence on traders for advanced materials!
@@ -58,7 +58,7 @@ Now traders bring raw resources: Plastic Basic, Plastic Industrial, Plastic Bio-
 
 *Tree Basin*:
 - No power required.
-- Crop types: Oak Tree, Cocoa Tree, Poplar Tree
+- Tree types: Tree Drago Nano, Tree Cocoa Nano, Tree Pine Nano, Tree Bamboo Nano, Tree Palm Nano
 - 80% efficiency
 - Tiny 1x1
 
@@ -70,7 +70,7 @@ Now traders bring raw resources: Plastic Basic, Plastic Industrial, Plastic Bio-
 - Compact 1x3 sun lamp
 
 ## **Cooking**
-- Add Chemfuel
+- Add Chemfuel stove
 - Add dried fruit and dried meat for longer storage without refrigeration
 
 ## **Quality of life ( QoL ) ** :

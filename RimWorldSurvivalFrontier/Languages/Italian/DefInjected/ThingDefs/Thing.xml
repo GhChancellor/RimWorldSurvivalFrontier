@@ -70,20 +70,23 @@
     <RSF_DriedFruit.label>produci frutta essiccata</RSF_DriedFruit.label>
     <RSF_DriedFruit.description>Conserva la frutta essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedFruit.description>
 
-    <!-- ================= RSF_Plant_TreeDragoNano ================= -->
+    <!-- ================= RSF_Plant_TreeDragoNano arid shrublands and deserts.  ================= -->
     <RSF_Plant_TreeDragoNano.label>albero Drago nano</RSF_Plant_TreeDragoNano.label>
     <RSF_Plant_TreeDragoNano.description>Un robusto albero nano del deserto con foglie spesse e appuntite.</RSF_Plant_TreeDragoNano.description>
 
-    <!--    &lt;!&ndash;  ================= RSF_PlantTreePoplarNano ================= &ndash;&gt;-->
-<!--    <RSF_PlantTreePoplarNano.label>RSF_PlantTreePoplarNano label IT</RSF_PlantTreePoplarNano.label>-->
-<!--    <RSF_PlantTreePoplarNano.description>RSF_PlantTreePoplarNano description IT</RSF_PlantTreePoplarNano.description>-->
+    <!-- ================= RSF_Plant_TreeCocoaNano tropical biomes ================= -->
+    <RSF_Plant_TreeCocoaNano.label>albero del cacao nano</RSF_Plant_TreeCocoaNano.label>
+    <RSF_Plant_TreeCocoaNano.description>Un albero tropicale nano che produce cioccolato, geneticamente modificato per addolcire i propri frutti e sopravvivere in climi leggermente meno caldi.</RSF_Plant_TreeCocoaNano.description>
 
-<!--    &lt;!&ndash;  ================= RSF_PlantTreeOakNano ================= &ndash;&gt;-->
-<!--    <RSF_PlantTreeOakNano.label>RSF_PlantTreeOakNano label IT </RSF_PlantTreeOakNano.label>-->
-<!--    <RSF_PlantTreeOakNano.description>RSF_PlantTreeOakNano description IT</RSF_PlantTreeOakNano.description>-->
+    <!-- ================= RSF_Plant_TreePineNano boreal forests and tundra ================= -->
+    <RSF_Plant_TreePineNano.label>albero di pino nano</RSF_Plant_TreePineNano.label>
+    <RSF_Plant_TreePineNano.description>Una conifera nana ricoperta di pigne spinose. Cresce con una forma conica caratteristica, il pino può crescere in foreste boreali e tundra.</RSF_Plant_TreePineNano.description>
+    
+    <!-- ================= RSF_Plant_TreeBambooNano tropical ================= -->
+    <RSF_Plant_TreeBambooNano.label>albero di bamboo nano</RSF_Plant_TreeBambooNano.label>
+    <RSF_Plant_TreeBambooNano.description>Un albero nano a crescita rapida che cresce in boschetti densi. Il bambù può essere raccolto per ottenere un materiale simile al legno. La pianta stessa non è bella.</RSF_Plant_TreeBambooNano.description>
 
-<!--    &lt;!&ndash;  ================= RSF_TreeBambooNano ================= &ndash;&gt;-->
-<!--    <RSF_TreeBambooNano.label>RSF_TreeBambooNano label IT</RSF_TreeBambooNano.label>-->
-<!--    <RSF_TreeBambooNano.description>RSF_TreeBambooNano description IT</RSF_TreeBambooNano.description>-->
-<!--    -->
+    <!--  ================= RSF_Plant_TreePalmNano tropical ================= -->
+    <RSF_Plant_TreePalmNano.label>albero di palma nano</RSF_Plant_TreePalmNano.label>
+    <RSF_Plant_TreePalmNano.description>Un albero tropicale nano con un tronco nudo sormontato da un gruppo di foglie molto larghe. Purtroppo, questa varietà non produce noci di cocco commestibili.</RSF_Plant_TreePalmNano.description>
 </LanguageData>

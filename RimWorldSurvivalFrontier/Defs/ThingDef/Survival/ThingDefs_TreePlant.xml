@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--Plant_TreeOak, Plant_TreeCocoa, Plant_TreePoplar, Plant_TreeDrago-->
+<!-- TreeDragoNano, TreeCocoaNano, TreePineNano, TreeBambooNano, TreePalmNano-->
 <Defs>
 
-    <!-- ================= RSF_Plant_TreeDragoNano temperate biomes ================= -->
+    <!-- ================= RSF_Plant_TreeDragoNano arid shrublands and deserts.  ================= -->
     <ThingDef ParentName="TreeBase">
         <defName>RSF_Plant_TreeDragoNano</defName>
         <label>RSF_Plant_TreeDragoNano.label</label>
@@ -22,7 +22,8 @@
         </statBases>
         <ingestible/>
         <plant>
-            <growDays>15</growDays>
+<!--            <growDays>15</growDays>-->
+            <growDays>0.001</growDays>
             <wildClusterRadius>6</wildClusterRadius>
             <wildClusterWeight>3</wildClusterWeight>
             <immatureGraphicPath>Things/Plant/TreeDrago_Immature</immatureGraphicPath>
@@ -37,10 +38,161 @@
                 <li>CustomSowTagTree</li>
             </sowTags>
 
-            <!-- can or can't build indoor-->
-            <interferesWithRoof>false</interferesWithRoof> <!-- Can build indoor -->
+            <!-- Can build tree indoor -->
+            <mustBeWildToSow>false</mustBeWildToSow>
+            <interferesWithRoof>false</interferesWithRoof>
         </plant>
 
+    </ThingDef>
+
+    <!-- ================= RSF_Plant_TreeCocoaNano tropical biomes ================= -->
+    <ThingDef ParentName="Plant_TreeCocoa">
+        <defName>RSF_Plant_TreeCocoaNano</defName>
+        <label>RSF_Plant_TreeCocoaNano.label</label>
+        <description>RSF_Plant_TreeCocoaNano.description</description>
+
+        <plant>
+            <dieIfLeafless>true</dieIfLeafless>
+<!--            <growDays>16</growDays>-->
+            <growDays>0.001</growDays>
+            <sowResearchPrerequisites Inherit="False">
+                <li>Cocoa</li>
+            </sowResearchPrerequisites>
+
+            <!-- Custom options -->
+            <harvestYield>15</harvestYield>
+            <sowWork>2500</sowWork>
+            <harvestWork>310</harvestWork>
+            <sowMinSkill>7</sowMinSkill>
+            <sowTags>
+                <li>CustomSowTagTree</li>
+            </sowTags>
+
+            <!-- Can build tree indoor -->
+            <interferesWithRoof>false</interferesWithRoof>
+        </plant>
+    </ThingDef>
+
+    <!-- ================= RSF_Plant_TreePineNano boreal forests and tundra ================= -->
+    <ThingDef ParentName="TreeBase">
+        <defName>RSF_Plant_TreePineNano</defName>
+        <label>RSF_Plant_TreePineNano.label</label>
+        <description>RSF_Plant_TreePineNano.description</description>
+        <graphicData>
+            <texPath>Things/Plant/TreePine</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.15, 0.3, 0.15)</volume>
+                <offset>(0,0,-0.38)</offset>
+            </shadowData>
+        </graphicData>
+        <statBases>
+            <Beauty>2</Beauty>
+            <BeautyOutdoors>2</BeautyOutdoors>
+        </statBases>
+        <ingestible/>
+        <plant>
+<!--            <growDays>20</growDays>-->
+            <growDays>0.001</growDays>
+            <visualSizeRange>1.5~3.0</visualSizeRange>
+            <pollutedGraphicPath>Things/Plant/TreePine_Polluted</pollutedGraphicPath>
+            <immatureGraphicPath>Things/Plant/TreePine_Immature</immatureGraphicPath>
+
+            <!-- Custom options -->
+            <harvestYield>23</harvestYield>
+            <sowWork>2500</sowWork>
+            <harvestWork>560</harvestWork>
+            <sowMinSkill>4</sowMinSkill>
+            <sowTags>
+                <li>CustomSowTagTree</li>
+            </sowTags>
+
+            <!-- Can build tree indoor -->
+            <mustBeWildToSow>false</mustBeWildToSow>
+            <interferesWithRoof>false</interferesWithRoof>
+        </plant>
+    </ThingDef>
+
+    <!-- ================= RSF_Plant_TreeBambooNano Tropical ================= -->
+    <ThingDef ParentName="TreeBase">
+        <defName>RSF_Plant_TreeBambooNano</defName>
+        <label>RSF_Plant_TreeBambooNano.label</label>
+        <description>RSF_Plant_TreeBambooNano.description</description>
+        <statBases>
+            <Nutrition>1.5</Nutrition>
+            <Mass>75</Mass>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/TreeBamboo</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.38, 0.3, 0.15)</volume>
+                <offset>(0,0,-0.47)</offset>
+            </shadowData>
+        </graphicData>
+        <plant>
+<!--            <growDays>12</growDays>-->
+            <growDays>0.001</growDays>
+            <wildClusterRadius>5</wildClusterRadius>
+            <wildClusterWeight>15</wildClusterWeight>
+            <leaflessGraphicPath>Things/Plant/TreeBamboo_Leafless</leaflessGraphicPath>
+
+            <!-- Custom options -->
+            <harvestWork>340</harvestWork>
+            <harvestYield>7</harvestYield>
+            <sowWork>2500</sowWork>
+            <harvestWork>400</harvestWork>
+            <sowMinSkill>4</sowMinSkill>
+            <sowTags>
+                <li>CustomSowTagTree</li>
+            </sowTags>
+
+            <!-- Can build tree indoor -->
+            <mustBeWildToSow>false</mustBeWildToSow>
+            <interferesWithRoof>false</interferesWithRoof>
+        </plant>
+        <ingestible/>
+    </ThingDef>
+
+    <!-- ================= RSF_Plant_TreePalmNano Tropical ================= -->
+    <ThingDef ParentName="TreeBase">
+        <defName>RSF_Plant_TreePalmNano</defName>
+        <label>RSF_Plant_TreePalmNano.label</label>
+        <description>RSF_Plant_TreePalmNano.description</description>
+        <graphicData>
+            <texPath>Things/Plant/TreePalm</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.18, 0.3, 0.15)</volume>
+                <offset>(0.03,0,-0.44)</offset>
+            </shadowData>
+        </graphicData>
+        <statBases>
+            <Beauty>1</Beauty>
+            <Nutrition>1.5</Nutrition>
+        </statBases>
+        <plant>
+<!--            <growDays>14</growDays>-->
+            <growDays>0.001</growDays>
+            <wildClusterRadius>10</wildClusterRadius>
+            <wildClusterWeight>11</wildClusterWeight>
+            <immatureGraphicPath>Things/Plant/TreePalm_Immature</immatureGraphicPath>
+            <maxGrowthTemperature>75</maxGrowthTemperature>
+
+            <!-- Custom options -->
+            <harvestWork>340</harvestWork>
+            <harvestYield>13</harvestYield>
+            <sowWork>2500</sowWork>
+            <sowMinSkill>4</sowMinSkill>
+            <sowTags>
+                <li>CustomSowTagTree</li>
+            </sowTags>
+
+            <!-- Can build tree indoor -->
+            <mustBeWildToSow>false</mustBeWildToSow>
+            <interferesWithRoof>false</interferesWithRoof>
+        </plant>
+        <ingestible/>
     </ThingDef>
 </Defs>
 

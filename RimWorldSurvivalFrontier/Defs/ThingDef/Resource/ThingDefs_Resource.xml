@@ -631,8 +631,6 @@
         </stuffProps>
 
         <thingCategories>
-<!--            <li>Leathers</li>-->
-<!--            <li>Leathery</li>-->
             <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
         </thingCategories>
     </ThingDef>
