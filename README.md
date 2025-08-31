@@ -5,7 +5,10 @@ Complete survival toolkit for extreme biomes. Materials, food production, shelte
 Perfect integration with the base game. Balanced for equilibrium gameplay without disrupting the RimWorld experience.
 
 RECENT UPDATES:
- 
+
+UPDATES: 1.0.0.27
+- Fix growDays
+        
 UPDATES: 1.0.0.23
 - Now tree basin unlocks with Tree Sowing research
 - Add more indoor tree plants: Tree Drago Nano, Tree Cocoa Nano, Tree Pine Nano, Tree Bamboo Nano, Tree Palm Nano
@@ -15,7 +18,7 @@ UPDATES: 1.0.0.18
 - Add stone to build the basin
 - Fix Basins Tree Basin Tiny 1x1
 - Add Plant Tree Drago Nano
-               
+
 ## 🌱 **Ecological Production**
 Create bio-plastic at the biofuel refinery from common plant resources: agave, berries, corn, potatoes, and rice.
 Even greenhouse-grown crops work! No more dependence on traders for advanced materials!
@@ -43,7 +46,7 @@ Synthetic leather from plant polymers. Sustainable alternative to animal leather
 - Recycle all plastics into Chemfuel! Transform waste into energy for your generators.
 - Convert hay to Chemfuel
 - " Recycle " corpses of humans or animals into Chemfuel! Sustainable energy solutions, saving the world is a duty.
-        
+
 ## **Traders** :
 Now traders bring raw resources: Plastic Basic, Plastic Industrial, Plastic Bio-Steel, Plastic Fiber, Incendiary Plastic, Eco leather and Wood Planks
 
@@ -88,7 +91,7 @@ Currently supported:
 1. Comment your language
 2. I'll provide translation keys
 3. You translate, I'll credit you!
-        
+
 Originally inspired by Plastic Revolution by Orbittwz.
 https://github.com/orbittwz/PlasticRevolution .
 Completely rewritten implementation with expanded survival focus.
