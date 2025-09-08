@@ -41,7 +41,7 @@
 
         <fertility>1.2</fertility>
         <building>
-            <defaultPlantToGrow>Plant_Haygrass</defaultPlantToGrow>
+            <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
             <sowTag>CustomSowTagPlants</sowTag>
             <buildingTags>
                 <li>Production</li> <!-- Menù production -->
@@ -85,21 +85,21 @@
         <!-- ************************************* -->
     </ThingDef>
 
-    <!--  ================= RSF_CropBasin ================= -->
+    <!--  ================= RSF_CropBasin 4x4 ================= -->
     <ThingDef ParentName="TemplateBasin">
         <defName>RSF_CropBasin</defName>
         <label>RSF_CropBasin.label</label>
         <description>RSF_CropBasin.description</description>
-
+        
         <!-- stuffCategories defines WHICH material types can be used -->
         <!-- costStuffCount defines HOW MUCH of that material is required -->
         <!-- These two tags work together - you cannot have one without the other -->
         <!-- If you define stuffCategories, you MUST also define costStuffCount -->
-        <costStuffCount>40</costStuffCount>
+        <costStuffCount>60</costStuffCount>
 
         <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
-            <Steel>60</Steel>
+            <Steel>40</Steel>
         </costList>
     </ThingDef>
 
@@ -127,11 +127,39 @@
 
         <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>
-            <Steel>20</Steel>
+            <Steel>10</Steel>
         </costList>
 
     </ThingDef>
 
+    <!--  ================= RSF_CropBasinSmall 1x2 ================= -->
+    <ThingDef ParentName="TemplateBasin">
+        <defName>RSF_CropBasinSmall</defName>
+        <label>RSF_CropBasinSmall.label</label>
+        <description>RSF_CropBasinSmall.description</description>
+
+        <graphicData>
+            <drawSize>(1,2)</drawSize>
+        </graphicData>
+
+        <statBases>
+            <WorkToBuild>750</WorkToBuild>
+        </statBases>
+
+        <size>(1,2)</size>
+
+        <!-- stuffCategories defines WHICH material types can be used -->
+        <!-- costStuffCount defines HOW MUCH of that material is required -->
+        <!-- These two tags work together - you cannot have one without the other -->
+        <!-- If you define stuffCategories, you MUST also define costStuffCount -->
+        <costStuffCount>30</costStuffCount>
+
+        <!-- FIXED COST: costList specifies exact materials and quantities -->
+        <costList>
+            <Steel>20</Steel>
+        </costList>
+    </ThingDef>
+    
     <!--  ================= RSF_CropBasinCompact 1x3 ================= -->
     <ThingDef ParentName="TemplateBasin">
         <defName>RSF_CropBasinCompact</defName>
@@ -143,7 +171,7 @@
         </graphicData>
 
         <statBases>
-            <WorkToBuild>1000</WorkToBuild>
+            <WorkToBuild>1125</WorkToBuild>
         </statBases>
 
         <size>(1,3)</size>
@@ -185,7 +213,7 @@
         <!-- costStuffCount defines HOW MUCH of that material is required -->
         <!-- These two tags work together - you cannot have one without the other -->
         <!-- If you define stuffCategories, you MUST also define costStuffCount -->
-        <costStuffCount>30</costStuffCount>
+        <costStuffCount>45</costStuffCount>
 
         <!-- FIXED COST: costList specifies exact materials and quantities -->
         <costList>

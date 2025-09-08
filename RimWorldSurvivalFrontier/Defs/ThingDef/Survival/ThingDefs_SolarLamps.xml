@@ -2,9 +2,11 @@
 <Defs>
 
     <!--  ================= TemplateSunLamp ================= -->
-    <ThingDef Name="TemplateSunLamp" ParentName="LampBase" Abstract="true" >
+    <ThingDef Name="TemplateSunLamp" ParentName="LampBase" Abstract="true">
         <label>Template Sun Lamp</label>
-        <description>An industrial lamp which lights an area brightly enough to grow crops, but consumes a huge amount of power. Automatically turns itself off at night.</description>
+        <description>An industrial lamp which lights an area brightly enough to grow crops, but consumes a huge amount
+            of power. Automatically turns itself off at night.
+        </description>
         <thingClass>Building_SunLamp</thingClass>
         <graphicData>
             <texPath>Things/Building/Production/LampSun</texPath>
@@ -25,44 +27,62 @@
             <Steel>40</Steel>
         </costList>
         <uiOrder>2995</uiOrder>
-        
-        <!-- Adds default advanced behaviors to buildings like Power, 
-            switch on/off and many other things. You can find them with prefix CompProperties_ in the code source-->
+       
+        <!-- Determined by trial and error
+        This value isn't perfect because these radii use different algorithms
+        but it matches in this case-->
+        <specialDisplayRadius>5.8</specialDisplayRadius> <!-- Show where light has effect on plants -->
+    </ThingDef>
+
+    <!--  ================= RSF_SunLampMini ================= -->
+    <ThingDef ParentName="TemplateSunLamp">
+        <defName>RSF_SunLampMini</defName>
+        <label>RSF_SunLampMini.label</label>
+        <description>RSF_SunLampMini.description</description>
+
+        <!--        <uiIconPath>Things/Building/Furniture/SunLamp/SunLamp_MenuIcon</uiIconPath>-->
+
+        <costList>
+            <Steel>20</Steel>
+        </costList>
+
+        <statBases>
+            <WorkToBuild>165</WorkToBuild>
+            <Mass>2.3</Mass>
+        </statBases>
+
         <comps>
             <li Class="CompProperties_Glower">
-                <overlightRadius>7.0</overlightRadius>
-                <glowRadius>14</glowRadius>
+                <overlightRadius>5</overlightRadius> <!-- I don't understand how to work -->
+                <glowRadius>6.5</glowRadius> <!-- I don't understand how to work -->
+          
                 <glowColor>(370,370,370,0)</glowColor>
             </li>
-            <!-- CompProperties_Power  Can make an issues in inherited object -->
-<!--            <li Class="CompProperties_Power">-->
-<!--                <compClass>CompPowerTrader</compClass>-->
-<!--                <shortCircuitInRain>true</shortCircuitInRain>-->
-<!--                <basePowerConsumption>2900</basePowerConsumption>-->
-<!--            </li>-->
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>1450</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>1.2</heatPerSecond>
+            </li>
             <li Class="CompProperties_Schedule">
                 <!-- Match plant growing times -->
                 <startTime>0.25</startTime>
                 <endTime>0.8</endTime>
                 <offMessage>Off for plant resting period</offMessage>
             </li>
-            <li Class="CompProperties_HeatPusher">
-                <compClass>CompHeatPusherPowered</compClass>
-                <heatPerSecond>3</heatPerSecond>
-            </li>
         </comps>
-        <!-- Determined by trial and error
-        This value isn't perfect because these radii use different algorithms
-        but it matches in this case-->
-        <specialDisplayRadius>5.8</specialDisplayRadius>    
+        <specialDisplayRadius>3.9</specialDisplayRadius> <!-- Show where light has effect on plants -->
     </ThingDef>
-    
+
     <!--  ================= SunWallLamp ================= --> <!-- ERROR >>>>> SunWallLamp <<<<<< -->
     <ThingDef ParentName="TemplateSunLamp">
         <defName>SunWallLamp</defName>
-        <label>Sun Wall Lamp</label>
-        <description>A wall-mounted lamp which lights an area brightly enough to grow crops, but consumes a huge amount of power. Automatically turns itself off at night.</description>
-        
+        <label>SunWallLamp.label</label>
+        <description>SunWallLamp.description</description>
+
         <rotatable>true</rotatable>
         <graphicData>
             <texPath>Things/Building/Furniture/WallLamp/WallLamp</texPath>
@@ -76,9 +96,9 @@
             </damageData>
         </graphicData>
         <uiIconPath>Things/Building/Furniture/WallLamp/WallLamp_MenuIcon</uiIconPath>
-        
+
         <altitudeLayer>BuildingOnTop</altitudeLayer>
-        <terrainAffordanceNeeded IsNull="True" />
+        <terrainAffordanceNeeded IsNull="True"/>
         <building>
             <isEdifice>false</isEdifice>
             <isAttachment>true</isAttachment>
@@ -86,44 +106,6 @@
         <placeWorkers>
             <li>Placeworker_AttachedToWall</li>
         </placeWorkers>
-
-        
-        <costList>
-            <Steel>20</Steel>
-        </costList>
-        
-        <statBases>
-            <WorkToBuild>165</WorkToBuild>
-            <Mass>2.3</Mass>
-        </statBases>
-        <uiOrder>2992</uiOrder>
-        
-        <comps>
-            <li Class="CompProperties_Glower">
-                <overlightRadius>4.5</overlightRadius>
-                <glowRadius>9</glowRadius>
-                <glowColor>(370,370,370,0)</glowColor>
-            </li>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <shortCircuitInRain>true</shortCircuitInRain>
-                <basePowerConsumption>1450</basePowerConsumption>
-            </li>
-            <li Class="CompProperties_HeatPusher">
-                <compClass>CompHeatPusherPowered</compClass>
-                <heatPerSecond>1.9</heatPerSecond>
-            </li>
-        </comps>
-        <specialDisplayRadius>3.7</specialDisplayRadius>
-    </ThingDef>
-    
-    <!--  ================= RSF_SunLampMini ================= -->
-    <ThingDef ParentName="TemplateSunLamp">
-        <defName>RSF_SunLampMini</defName>
-        <label>RSF_SunLampMini.label</label>
-        <description>RSF_SunLampMini.description</description>
-       
-<!--        <uiIconPath>Things/Building/Furniture/SunLamp/SunLamp_MenuIcon</uiIconPath>-->
 
         <statBases>
             <WorkToBuild>132</WorkToBuild>
@@ -135,11 +117,13 @@
         <costList>
             <Steel>16</Steel>
         </costList>
-        
+
+        <uiOrder>2992</uiOrder>
+
         <comps>
             <li Class="CompProperties_Glower">
-                <overlightRadius>3</overlightRadius>
-                <glowRadius>6</glowRadius>
+                <overlightRadius>4.5</overlightRadius> <!-- I don't understand how to work -->
+                <glowRadius>6.5</glowRadius> <!-- I don't understand how to work -->
                 <glowColor>(370,370,370,0)</glowColor>
             </li>
             <li Class="CompProperties_Power">
@@ -149,18 +133,25 @@
             </li>
             <li Class="CompProperties_HeatPusher">
                 <compClass>CompHeatPusherPowered</compClass>
-                <heatPerSecond>1.2</heatPerSecond>
+                <heatPerSecond>1.9</heatPerSecond>
+            </li>
+            <li Class="CompProperties_Schedule">
+                <!-- Match plant growing times -->
+                <startTime>0.25</startTime>
+                <endTime>0.8</endTime>
+                <offMessage>Off for plant resting period</offMessage>
             </li>
         </comps>
-        <specialDisplayRadius>2.5</specialDisplayRadius>
+        <specialDisplayRadius>3.9</specialDisplayRadius> <!-- Show where light has effect on plants -->
+        
     </ThingDef>
-
-    <!--  ================= RSF_SunLampTiny ================= -->
+    
+    <!--  ================= RSF_SunLampTiny 3X3================= -->
     <ThingDef ParentName="TemplateSunLamp">
         <defName>RSF_SunLampTiny</defName>
         <label>RSF_SunLampTiny.label</label>
         <description>RSF_SunLampTiny.description</description>
-        
+
         <statBases>
             <WorkToBuild>100</WorkToBuild>
             <Mass>1.2</Mass>
@@ -174,8 +165,8 @@
 
         <comps>
             <li Class="CompProperties_Glower">
-                <overlightRadius>1.5</overlightRadius>
-                <glowRadius>3</glowRadius>
+                <overlightRadius>2.5</overlightRadius> <!-- I don't understand how to work -->
+                <glowRadius>3</glowRadius> <!-- I don't understand how to work -->
                 <glowColor>(370,370,370,0)</glowColor>
             </li>
             <li Class="CompProperties_Power">
@@ -187,11 +178,17 @@
                 <compClass>CompHeatPusherPowered</compClass>
                 <heatPerSecond>0.6</heatPerSecond>
             </li>
+            <li Class="CompProperties_Schedule">
+                <!-- Match plant growing times -->
+                <startTime>0.25</startTime>
+                <endTime>0.8</endTime>
+                <offMessage>Off for plant resting period</offMessage>
+            </li>
         </comps>
-        <specialDisplayRadius>1.2</specialDisplayRadius>
+        <specialDisplayRadius>1.6</specialDisplayRadius> <!-- Show where light has effect on plants -->
     </ThingDef>
-    
-    <!--  ================= RSF_SunLampCompact ================= -->
+
+    <!--  ================= RSF_SunLampCompact 5X5 ================= -->
     <ThingDef ParentName="TemplateSunLamp">
         <defName>RSF_SunLampCompact</defName>
         <label>RSF_SunLampCompact.label</label>
@@ -210,8 +207,9 @@
 
         <comps>
             <li Class="CompProperties_Glower">
-                <overlightRadius>2.0</overlightRadius>
-                <glowRadius>4</glowRadius>
+                <overlightRadius>3.5</overlightRadius> <!-- I don't understand how to work -->
+                <glowRadius>5.5</glowRadius> <!-- I don't understand how to work -->
+                
                 <glowColor>(370,370,370,0)</glowColor>
             </li>
             <li Class="CompProperties_Power">
@@ -223,25 +221,21 @@
                 <compClass>CompHeatPusherPowered</compClass>
                 <heatPerSecond>0.8</heatPerSecond>
             </li>
+            <li Class="CompProperties_Schedule">
+                <!-- Match plant growing times -->
+                <startTime>0.25</startTime>
+                <endTime>0.8</endTime>
+                <offMessage>Off for plant resting period</offMessage>
+            </li>            
         </comps>
-        <specialDisplayRadius>1.6</specialDisplayRadius>
+        <specialDisplayRadius>2.9</specialDisplayRadius> <!-- Show where light has effect on plants -->
     </ThingDef>
+
 </Defs>
-
-
-<!--
-Template (100%): 5.8 radius | 2900W | 3.0 heat/sec
-Wall: 3.7 radius | 1450W | 1.9 heat/sec | specialDisplayRadius=3.7
-Mini     (43%):  2.5 radius | 1250W | 1.3 heat/sec | specialDisplayRadius=2.5
-Pico     (26%):  1.5 radius |  750W | 0.8 heat/sec
--->
-
-
-
-<!--<comps>-->
-<!--<li Class="CompProperties_Glower">-->
-<!--    <overlightRadius>4.5</overlightRadius>-->
-<!--    <glowRadius>9</glowRadius>  &lt;!&ndash; Ridotto da 11 &ndash;&gt;-->
-<!--</li>-->
-<!--</comps>-->
-<!--<specialDisplayRadius>3.7</specialDisplayRadius>-->
+        <!--<comps>-->
+        <!--<li Class="CompProperties_Glower">-->
+        <!--    <overlightRadius>4.5</overlightRadius>-->
+        <!--    <glowRadius>9</glowRadius>  &lt;!&ndash; Ridotto da 11 &ndash;&gt;-->
+        <!--</li>-->
+        <!--</comps>-->
+        <!--<specialDisplayRadius>3.7</specialDisplayRadius>-->

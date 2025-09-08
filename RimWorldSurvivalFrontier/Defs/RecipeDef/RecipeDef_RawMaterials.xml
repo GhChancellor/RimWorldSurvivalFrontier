@@ -15,7 +15,7 @@
         <workAmount>2000</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
         <researchPrerequisite>RSF_PlasticBasicResearch</researchPrerequisite>
-        
+
         <!-- Preserves work progress if interrupted -->
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <displayPriority>0</displayPriority> <!-- priority work-->
@@ -63,7 +63,7 @@
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
     </RecipeDef>
-    
+
     <!--  ================= RSF_PlasticBasicRecipe  ================= -->
     <RecipeDef>
         <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
@@ -86,8 +86,8 @@
 
         <!-- Preserves work progress if interrupted -->
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-<!--        <displayPriority>0</displayPriority> &lt;!&ndash; priority work&ndash;&gt;-->
-        
+        <!--        <displayPriority>0</displayPriority> &lt;!&ndash; priority work&ndash;&gt;-->
+
         <!-- Where you craft it  -->
         <recipeUsers>
             <li>BiofuelRefinery</li>
@@ -97,6 +97,9 @@
         <ingredients>
             <li>
                 <filter>
+                    <thingDefs>
+                        <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+                    </thingDefs>
                     <categories>
                         <li>PlantFoodRaw</li>
                     </categories>
@@ -113,6 +116,9 @@
 
         <!-- Default UI filter - enables PlantFoodRaw by default -->
         <defaultIngredientFilter>
+            <thingDefs>
+                <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+            </thingDefs>
             <categories>
                 <li>PlantFoodRaw</li>
             </categories>
@@ -120,6 +126,9 @@
 
         <!-- Plant food filtering - excludes fungi and drugs -->
         <fixedIngredientFilter>
+            <thingDefs>
+                <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+            </thingDefs>
             <categories>
                 <li>PlantFoodRaw</li>
             </categories>
@@ -137,7 +146,7 @@
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
     </RecipeDef>
-    
+
     <!-- ================= RSF_PlasticIndustrialRecipe =================-->
     <RecipeDef>
         <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
@@ -160,7 +169,7 @@
 
         <!-- Preserves work progress if interrupted -->
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-<!--        <displayPriority>0</displayPriority> &lt;!&ndash; priority work&ndash;&gt;-->
+        <!--        <displayPriority>0</displayPriority> &lt;!&ndash; priority work&ndash;&gt;-->
 
         <!-- Where you craft it  -->
         <recipeUsers>
@@ -171,6 +180,9 @@
         <ingredients>
             <li>
                 <filter>
+                    <thingDefs>
+                        <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+                    </thingDefs>
                     <categories>
                         <li>PlantFoodRaw</li>
                     </categories>
@@ -187,6 +199,9 @@
 
         <!-- Default UI filter - enables PlantFoodRaw by default -->
         <defaultIngredientFilter>
+            <thingDefs>
+                <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+            </thingDefs>
             <categories>
                 <li>PlantFoodRaw</li>
             </categories>
@@ -194,6 +209,9 @@
 
         <!-- Plant food filtering - excludes fungi and drugs -->
         <fixedIngredientFilter>
+            <thingDefs>
+                <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+            </thingDefs>
             <categories>
                 <li>PlantFoodRaw</li>
             </categories>
@@ -234,7 +252,7 @@
 
         <!-- Preserves work progress if interrupted -->
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-<!--        <displayPriority>0</displayPriority> &lt;!&ndash; priority work&ndash;&gt;-->
+        <!--        <displayPriority>0</displayPriority> &lt;!&ndash; priority work&ndash;&gt;-->
 
         <!-- Where you craft it  -->
         <recipeUsers>
@@ -322,6 +340,9 @@
         <ingredients>
             <li>
                 <filter>
+                    <thingDefs>
+                        <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+                    </thingDefs>
                     <categories>
                         <li>PlantFoodRaw</li>
                     </categories>
@@ -338,6 +359,9 @@
 
         <!-- Default UI filter - enables PlantFoodRaw by default -->
         <defaultIngredientFilter>
+            <thingDefs>
+                <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+            </thingDefs>
             <categories>
                 <li>PlantFoodRaw</li>
             </categories>
@@ -345,6 +369,9 @@
 
         <!-- Plant food filtering - excludes fungi and drugs -->
         <fixedIngredientFilter>
+            <thingDefs>
+                <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+            </thingDefs>
             <categories>
                 <li>PlantFoodRaw</li>
             </categories>
@@ -441,7 +468,7 @@
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
     </RecipeDef>
-    
+
     <!--  ================= RSF_EcoLeatherRecipe  ================= -->
     <RecipeDef>
         <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
@@ -488,19 +515,19 @@
         <!-- Allow mixing different plant ingredients in same recipe -->
         <allowMixingIngredients>false</allowMixingIngredients>
 
-<!--        &lt;!&ndash; Default UI filter - enables PlantFoodRaw by default &ndash;&gt;-->
-<!--        <defaultIngredientFilter>-->
-<!--            <thingDefs>-->
-<!--                <li>RSF_PlasticFiber</li>-->
-<!--            </thingDefs>-->
-<!--        </defaultIngredientFilter>-->
+        <!--        &lt;!&ndash; Default UI filter - enables PlantFoodRaw by default &ndash;&gt;-->
+        <!--        <defaultIngredientFilter>-->
+        <!--            <thingDefs>-->
+        <!--                <li>RSF_PlasticFiber</li>-->
+        <!--            </thingDefs>-->
+        <!--        </defaultIngredientFilter>-->
 
-<!--        &lt;!&ndash; Plant food filtering - excludes fungi and drugs &ndash;&gt;-->
-<!--        <fixedIngredientFilter>-->
-<!--            <thingDefs>-->
-<!--                <li>RSF_PlasticFiber</li>-->
-<!--            </thingDefs>-->
-<!--        </fixedIngredientFilter>-->
+        <!--        &lt;!&ndash; Plant food filtering - excludes fungi and drugs &ndash;&gt;-->
+        <!--        <fixedIngredientFilter>-->
+        <!--            <thingDefs>-->
+        <!--                <li>RSF_PlasticFiber</li>-->
+        <!--            </thingDefs>-->
+        <!--        </fixedIngredientFilter>-->
 
         <!-- OUTPUT material-->
         <products>

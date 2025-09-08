@@ -30,33 +30,45 @@
     <RSF_EcoLeather.label>eco pelle</RSF_EcoLeather.label>
     <RSF_EcoLeather.description>Pelle sintetica bio-ingegnerizzata creata da polimeri vegetali avanzati. Alternativa sostenibile al cuoio animale per abbigliamento di qualità.</RSF_EcoLeather.description>
 
+    <!-- ================= SunWallLamp ================= --> <!-- ERROR >>>>> SunWallLamp <<<<<< -->
+    <SunWallLamp.label>lampada solare da muro</SunWallLamp.label>
+    <SunWallLamp.description>Una lampada solare da muro che permette la crescita indoor di ortaggi ma consuma una considerevole quantità di energia. Si spegne automaticamente di notte.</SunWallLamp.description>
+    <SunWallLamp.offMessage>Off for plant resting period.</SunWallLamp.offMessage>
+    
     <!--  ================= RSF_SunLampMini ================= -->
     <RSF_SunLampMini.label>lampada solare mini</RSF_SunLampMini.label>
-    <RSF_SunLampMini.description>Una lampada solare mini che permette la crescita indoor di ortaggi ma consuma una considerevole quantità di energia. Si spegne automaticamente di notte</RSF_SunLampMini.description>
-
-    <!--  ================= RSF_SunLampTiny 1x1 ================= -->
-    <RSF_SunLampTiny.label>lampada solare minuscola 1x1 </RSF_SunLampTiny.label>
-    <RSF_SunLampTiny.description>Una minuscola lampada solare 1x1 che permette la crescita indoor di ortaggi ma consuma una moderata quantità di energia. Si spegne automaticamente di notte.</RSF_SunLampTiny.description>
-
-    <!--  ================= RSF_SunLampCompact 1x3 ================= -->
+    <RSF_SunLampMini.description>Una lampada solare mini che permette la crescita indoor di ortaggi ma consuma una considerevole quantità di energia. Si spegne automaticamente di notte.</RSF_SunLampMini.description>
+    <RSF_SunLampMini.offMessage>Spenta nel periodo di riposo delle piante</RSF_SunLampMini.offMessage>
+    
+    <!--  ================= RSF_SunLampTiny 5x5 ================= -->
+    <RSF_SunLampTiny.label>lampada solare minuscola 5x5 </RSF_SunLampTiny.label>
+    <RSF_SunLampTiny.description>Una minuscola lampada solare 5x5 che permette la crescita indoor di ortaggi ma consuma una moderata quantità di energia. Si spegne automaticamente di notte.</RSF_SunLampTiny.description>
+    <RSF_SunLampTiny.offMessage>Spenta nel periodo di riposo delle piante</RSF_SunLampTiny.offMessage>
+    
+     <!--  ================= RSF_SunLampCompact 1x3 ================= -->
     <RSF_SunLampCompact.label>lampada solare compatta 1x3 </RSF_SunLampCompact.label>
     <RSF_SunLampCompact.description>Una lampada solare compatta 1x3 che permette la crescita indoor di ortaggi ma consuma una moderata quantità di energia. Si spegne automaticamente di notte.</RSF_SunLampCompact.description>
-
-    <!--  ================= RSF_CropBasin ================= -->
-    <RSF_CropBasin.label>vasca di coltivazione ortaggi</RSF_CropBasin.label>
-    <RSF_CropBasin.description>Una semplice vasca di coltivazione per ortaggi indoor non richiede energia.</RSF_CropBasin.description>
-
-    <!--  ================= RSF_CropBasinTiny ================= -->
-    <RSF_CropBasinTiny.label>minuscola vasca di coltivazione 1x1 per ortaggi</RSF_CropBasinTiny.label>
-    <RSF_CropBasinTiny.description>Una minuscola vasca di coltivazione 1x1 per ortaggi indoor non richiede energia.</RSF_CropBasinTiny.description>
+    <RSF_SunLampCompact.offMessage>Spenta nel periodo di riposo delle piante</RSF_SunLampCompact.offMessage>
     
-    <!--  ================= RSF_CropBasinCompact ================= -->
-    <RSF_CropBasinCompact.label>vasca compatta di coltivazione 1x3 per ortaggi</RSF_CropBasinCompact.label>
-    <RSF_CropBasinCompact.description>Una vasca compatta di coltivazione 1x3 per ortaggi indoor non richiede energia.</RSF_CropBasinCompact.description>
+    <!--  ================= RSF_CropBasin 1x4 ================= -->
+    <RSF_CropBasin.label>vasca 1x4 per coltivazione ortaggi</RSF_CropBasin.label>
+    <RSF_CropBasin.description>Una semplice vasca 1x4 per coltivazione per ortaggi indoor non richiede energia.</RSF_CropBasin.description>
+
+    <!-- ================= RSF_CropBasinTiny 1x1 ================= -->
+    <RSF_CropBasinTiny.label>vasca 1x1 per coltivazione ortaggi</RSF_CropBasinTiny.label>
+    <RSF_CropBasinTiny.description>Vasca per coltivazione 1x1 per ortaggi indoor non richiede energia.</RSF_CropBasinTiny.description>
+
+    <!-- ================= RSF_CropBasinSmall 1x2 ================= -->
+    <RSF_CropBasinSmall.label>vasca 1x2 per coltivazione ortaggi</RSF_CropBasinSmall.label>
+    <RSF_CropBasinSmall.description>Vasca per coltivazione 1x2 per ortaggi indoor non richiede energia.</RSF_CropBasinSmall.description>
+
+    <!-- ================= RSF_CropBasinCompact 1x3 ================= -->
+    <RSF_CropBasinCompact.label>vasca 1x3 per coltivazione ortaggi</RSF_CropBasinCompact.label>
+    <RSF_CropBasinCompact.description>Vasca compatta per coltivazione 1x3 per ortaggi indoor non richiede energia.</RSF_CropBasinCompact.description>
     
-    <!--  ================= RSF_TreeBasinTiny ================= -->
-    <RSF_TreeBasinTiny.label>minuscola vasca di coltivazione 1x1 per alberi </RSF_TreeBasinTiny.label>
-    <RSF_TreeBasinTiny.description>Una minuscola vasca di coltivazione 1x1 per alberi indoor non richiede energia.</RSF_TreeBasinTiny.description>
+    <!--  ================= RSF_TreeBasinTiny 1x1 ================= -->
+    <RSF_TreeBasinTiny.label>vasca 1x1 per coltivazione per alberi </RSF_TreeBasinTiny.label>
+    <RSF_TreeBasinTiny.description>Vasca 1x1 per coltivazione alberi indoor non richiede energia.</RSF_TreeBasinTiny.description>
     
     <!--  ================= RSF_ChemFuelStove ================= -->
     <RSF_ChemFuelStove.label>Forno a biocarburante</RSF_ChemFuelStove.label>

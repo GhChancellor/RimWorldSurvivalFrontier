@@ -30,17 +30,25 @@
     <RSF_EcoLeather.label>eco leather</RSF_EcoLeather.label>
     <RSF_EcoLeather.description>Synthetic leather from plant polymers. Sustainable alternative to animal leather for high-quality clothing.</RSF_EcoLeather.description>
 
+    <!-- ================= SunWallLamp ================= --> <!-- ERROR >>>>> SunWallLamp <<<<<< -->
+    <SunWallLamp.label>sun wall Lamp</SunWallLamp.label>
+    <SunWallLamp.description>A wall-mounted lamp which lights an area brightly enough to grow crops, but consumes a huge amount of power. Automatically turns itself off at night.</SunWallLamp.description>
+    <SunWallLamp.offMessage>Off for plant resting period.</SunWallLamp.offMessage>
+
     <!-- ================= RSF_SunLampMini ================= -->
     <RSF_SunLampMini.label>mini sun lamp</RSF_SunLampMini.label>
     <RSF_SunLampMini.description>A mini sun lamp which lights an area brightly enough to grow crops, but consumes a considerable amount of power. Automatically turns itself off at night.</RSF_SunLampMini.description>
+    <RSF_SunLampMini.offMessage>Off for plant resting period.</RSF_SunLampMini.offMessage>
 
-    <!-- ================= RSF_SunLampTiny 1x1 ================= -->
-    <RSF_SunLampTiny.label>tiny sun lamp 1x1</RSF_SunLampTiny.label>
-    <RSF_SunLampTiny.description>A tiny sun lamp 1x1 which lights an area brightly enough to grow crops, but consumes a moderate amount of power. Automatically turns itself off at night.</RSF_SunLampTiny.description>
-
-    <!-- ================= RSF_SunLampCompact 1x3 ================= -->
-    <RSF_SunLampCompact.label>compact sun lamp 1x3</RSF_SunLampCompact.label>
-    <RSF_SunLampCompact.description>A compact sun lamp 1x3 which lights an area brightly enough to grow crops, but consumes a moderate amount of power. Automatically turns itself off at night.</RSF_SunLampCompact.description>
+    <!-- ================= RSF_SunLampTiny 3X3 ================= -->
+    <RSF_SunLampTiny.label>tiny sun lamp 3X3</RSF_SunLampTiny.label>
+    <RSF_SunLampTiny.description>A tiny sun lamp 3X3 which lights an area brightly enough to grow crops, but consumes a moderate amount of power. Automatically turns itself off at night.</RSF_SunLampTiny.description>
+    <RSF_SunLampTiny.offMessage>Off for plant resting period.</RSF_SunLampTiny.offMessage>
+    
+    <!-- ================= RSF_SunLampCompact 5X5 ================= -->
+    <RSF_SunLampCompact.label>compact sun lamp 5X5</RSF_SunLampCompact.label>
+    <RSF_SunLampCompact.description>A compact sun lamp 5X5 which lights an area brightly enough to grow crops, but consumes a moderate amount of power. Automatically turns itself off at night.</RSF_SunLampCompact.description>
+    <RSF_SunLampCompact.offMessage>Off for plant resting period.</RSF_SunLampCompact.offMessage>
     
     <!-- ================= RSF_CropBasin ================= -->
     <RSF_CropBasin.label>crop basin</RSF_CropBasin.label>
@@ -49,6 +57,10 @@
     <!-- ================= RSF_CropBasinTiny 1x1 ================= -->
     <RSF_CropBasinTiny.label>tiny crop basin 1x1</RSF_CropBasinTiny.label>
     <RSF_CropBasinTiny.description>A tiny crop basin 1x1 for growing crops indoors without electricity.</RSF_CropBasinTiny.description>
+
+    <!-- ================= RSF_CropBasinSmall 1x2 ================= -->
+    <RSF_CropBasinSmall.label>compact crop basin 1x2</RSF_CropBasinSmall.label>
+    <RSF_CropBasinSmall.description>A compact basin 1x2 for growing crops indoors without electricity.</RSF_CropBasinSmall.description>
 
     <!-- ================= RSF_CropBasinCompact 1x3 ================= -->
     <RSF_CropBasinCompact.label>compact crop basin 1x3</RSF_CropBasinCompact.label>
