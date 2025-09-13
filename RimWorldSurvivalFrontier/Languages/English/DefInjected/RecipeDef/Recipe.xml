@@ -2,59 +2,78 @@
 
 <LanguageData>
 
-    <!--  ================= RSF_PlasticBasicRecipe ================= -->
+    <!-- ================= RSF_PlasticBasicRecipe ================= -->
     <RSF_PlasticBasicRecipe.label>make basic plastic</RSF_PlasticBasicRecipe.label>
     <RSF_PlasticBasicRecipe.description>Lightweight bio-plastic from plant materials. Basic-grade material suitable for simple furniture and structures.</RSF_PlasticBasicRecipe.description>
     <RSF_PlasticBasicRecipe.jobString>producing basic plastic</RSF_PlasticBasicRecipe.jobString>
 
-    <!--  ================= RSF_PlasticIndustrialRecipe ================= -->
+    <!-- ================= RSF_PlasticIndustrialRecipe ================= -->
     <RSF_PlasticIndustrialRecipe.label>make industrial plastic</RSF_PlasticIndustrialRecipe.label>
     <RSF_PlasticIndustrialRecipe.description>Advanced bio-plastic with enhanced durability. Industrial-grade material for high-quality furniture and robust structures.</RSF_PlasticIndustrialRecipe.description>
     <RSF_PlasticIndustrialRecipe.jobString>producing industrial plastic</RSF_PlasticIndustrialRecipe.jobString>
 
-    <!--  ================= RSF_PlasticBioSteelRecipe ================= -->
+    <!-- ================= RSF_PlasticBioSteelRecipe ================= -->
     <RSF_PlasticBioSteelRecipe.label>make plastic Bio-Steel</RSF_PlasticBioSteelRecipe.label>
     <RSF_PlasticBioSteelRecipe.description>Advanced Plastic bio-engineered steel created by reinforcing plant-based polymers with metallic compounds. While not as strong as spacer-tech materials, it offers an excellent balance of durability and sustainability for colonial construction.</RSF_PlasticBioSteelRecipe.description>
     <RSF_PlasticBioSteelRecipe.jobString>producing Plastic Bio-Steel</RSF_PlasticBioSteelRecipe.jobString>
 
-    <!--  ================= RSF_PlasticFiberRecipe ================= -->
+    <!-- ================= RSF_PlasticFiberRecipe ================= -->
     <RSF_PlasticFiberRecipe.label>make plastic fiber</RSF_PlasticFiberRecipe.label>
     <RSF_PlasticFiberRecipe.description>Synthetic textile fiber from bio-plastic. Suitable for clothing production and textile crafting.</RSF_PlasticFiberRecipe.description>
     <RSF_PlasticFiberRecipe.jobString>producing plastic fiber</RSF_PlasticFiberRecipe.jobString>
 
-    <!--  ================= RSF_ChemfuelFromPlasticRecipe ================= -->
+    <!-- ================= RSF_ChemfuelFromPlasticRecipe ================= -->
     <RSF_ChemfuelFromPlasticRecipe.label>make chemfuel from plastic</RSF_ChemfuelFromPlasticRecipe.label>
     <RSF_ChemfuelFromPlasticRecipe.description>Convert plastic into chemfuel.</RSF_ChemfuelFromPlasticRecipe.description>
     <RSF_ChemfuelFromPlasticRecipe.jobString>converting plastic to chemfuel</RSF_ChemfuelFromPlasticRecipe.jobString>
 
-    <!--  ================= RSF_PlasticIncendiaryRecipe ================= -->
+    <!-- ================= RSF_PlasticIncendiaryRecipe ================= -->
     <RSF_PlasticIncendiaryRecipe.label>make incendiary plastic</RSF_PlasticIncendiaryRecipe.label>
     <RSF_PlasticIncendiaryRecipe.description>Bio-plastic infused with volatile compounds. Extremely flammable construction material for tactical applications. Handle with care.</RSF_PlasticIncendiaryRecipe.description>
     <RSF_PlasticIncendiaryRecipe.jobString>converting bio plastic to incendiary plastic </RSF_PlasticIncendiaryRecipe.jobString>
 
-    <!--  ================= RSF_EcoLeatherRecipe ================= -->
+    <!-- ================= RSF_EcoLeatherRecipe ================= -->
     <RSF_EcoLeatherRecipe.label>make eco leather</RSF_EcoLeatherRecipe.label>
     <RSF_EcoLeatherRecipe.description>Synthetic leather from plant polymers. Sustainable alternative to animal leather for high-quality clothing.</RSF_EcoLeatherRecipe.description>
     <RSF_EcoLeatherRecipe.jobString>converting plastic fiber to eco leather</RSF_EcoLeatherRecipe.jobString>
 
-    <!--  ================= RSF_DriedMeatRecipe ================= -->
+    <!-- ================= RSF_DriedMeatRecipe ================= -->
     <RSF_DriedMeatRecipe.label>cook dried meat</RSF_DriedMeatRecipe.label>
     <RSF_DriedMeatRecipe.description>Preserve meat by drying it. The result tastes awful and gives mood penalties but lasts much longer without refrigeration. Better used as an ingredient in cooked meals than eaten directly.</RSF_DriedMeatRecipe.description>
     <RSF_DriedMeatRecipe.jobString>converting raw meat to dried meat</RSF_DriedMeatRecipe.jobString>
 
-    <!--  ================= RSF_DriedFruit ================= -->
+    <!-- ================= RSF_DriedFruitRecipe ================= -->
     <RSF_DriedFruitRecipe.label>cook dried fruit</RSF_DriedFruitRecipe.label>
     <RSF_DriedFruitRecipe.description>Preserve fruit by drying it. The result tastes awful and gives mood penalties but lasts much longer without refrigeration. Better used as an ingredient in cooked meals than eaten directly.</RSF_DriedFruitRecipe.description>
     <RSF_DriedFruitRecipe.jobString>converting raw fruit to dried fruit</RSF_DriedFruitRecipe.jobString>
 
-    <!--  ================= RSF_DriedMeatRecipe ================= -->
+    <!-- ================= RSF_DriedMeatRecipe4x ================= -->
     <RSF_DriedMeatRecipe4x.label>cook dried meat x4</RSF_DriedMeatRecipe4x.label>
     <RSF_DriedMeatRecipe4x.description>Preserve meat by drying it. The result tastes awful and gives mood penalties but lasts much longer without refrigeration. Better used as an ingredient in cooked meals than eaten directly.</RSF_DriedMeatRecipe4x.description>
     <RSF_DriedMeatRecipe4x.jobString>converting raw meat to dried meat</RSF_DriedMeatRecipe4x.jobString>
 
-    <!--  ================= RSF_DriedFruit ================= -->
+    <!-- ================= RSF_DriedFruitRecipe4x ================= -->
     <RSF_DriedFruitRecipe4x.label>cook dried fruit x4</RSF_DriedFruitRecipe4x.label>
     <RSF_DriedFruitRecipe4x.description>Preserve fruit by drying it. The result tastes awful and gives mood penalties but lasts much longer without refrigeration. Better used as an ingredient in cooked meals than eaten directly.</RSF_DriedFruitRecipe4x.description>
     <RSF_DriedFruitRecipe4x.jobString>converting raw fruit to dried fruit</RSF_DriedFruitRecipe4x.jobString>
 
+    <!-- ================= RSF_FiberWoolRecipe ================= -->
+    <RSF_FiberWoolRecipe.label>fiber wool</RSF_FiberWoolRecipe.label>
+    <RSF_FiberWoolRecipe.description>Soft, light and provides very good insulation. plastic wool clothes can keep the body warm even in very cold conditions.</RSF_FiberWoolRecipe.description>
+    <RSF_FiberWoolRecipe.jobString>producing fiber wool</RSF_FiberWoolRecipe.jobString>
+    
+    <!-- ================= RSF_FiberArcticRecipe ================= -->
+    <RSF_FiberArcticRecipe.label>fiber polar</RSF_FiberArcticRecipe.label>
+    <RSF_FiberArcticRecipe.description>Soft, light and provides extreme insulation. ultra thermal wool clothes can keep the body warm even in extreme cold conditions.</RSF_FiberArcticRecipe.description>
+    <RSF_FiberWoolRecipe.jobString>producing fiber polar</RSF_FiberWoolRecipe.jobString>
+    
+    <!-- ================= RSF_FiberDesertRecipe ================= -->
+    <RSF_FiberDesertRecipe.label>fiber desert</RSF_FiberDesertRecipe.label>
+    <RSF_FiberDesertRecipe.description>Lightweight, breathable fabric designed for hot climates. Desert fiber clothing provides excellent ventilation while protecting against sun exposure and sand storms.</RSF_FiberDesertRecipe.description>
+    <RSF_FiberWoolRecipe.jobString>producing fiber desert</RSF_FiberWoolRecipe.jobString>
+    
+    <!-- ================= RSF_FiberSolarRecipe ================= -->
+    <RSF_FiberSolarRecipe.label>fiber solar</RSF_FiberSolarRecipe.label>
+    <RSF_FiberSolarRecipe.description>Advanced reflective composite that deflects intense solar radiation. Solar fiber garments offer maximum heat protection for extreme desert conditions and prolonged sun exposure.</RSF_FiberSolarRecipe.description>
+    <RSF_FiberWoolRecipe.jobString>producing fiber solar</RSF_FiberWoolRecipe.jobString>
 </LanguageData>

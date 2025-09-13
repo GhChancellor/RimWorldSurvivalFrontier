@@ -6,6 +6,15 @@ Perfect integration with the base game. Balanced for equilibrium gameplay withou
 
 RECENT UPDATES:
 
+UPDATES: 1.0.0.46
+Add 4 fiber:
+- fiber wool: very good cold insulation
+- fiber polar: extreme cold insulation
+- fiber desert: good hot insulation
+- fiber solar: extreme hot insulation
+
+Fix italian translate 
+
 UPDATES: 1.0.0.34
 - Add Compact Crop Basin 1x2
 
@@ -17,9 +26,6 @@ Balance and fix sun lamps:
 
 Recipe:
 - Convert Fecal Sludge to plastic basic, plastic Industrial and plastic fiber ( Dubs Bad Hygiene )
-
-UPDATES: 1.0.0.27
-- Fix growDays
         
 UPDATES: 1.0.0.23
 - Now tree basin unlocks with Tree Sowing research

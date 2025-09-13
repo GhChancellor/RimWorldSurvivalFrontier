@@ -37,24 +37,44 @@
     <RSF_EcoLeatherRecipe.description>Pelle sintetica bio-ingegnerizzata creata da polimeri vegetali avanzati. Alternativa sostenibile al cuoio animale per abbigliamento di qualità.</RSF_EcoLeatherRecipe.description>
     <RSF_EcoLeatherRecipe.jobString>Converto fibra plastica in eco pelle</RSF_EcoLeatherRecipe.jobString>
 
-    <!--  ================= RSF_DriedMeat ================= -->
+    <!--  ================= RSF_DriedMeatRecipe ================= -->
     <RSF_DriedMeatRecipe.label>produci carne essiccata</RSF_DriedMeatRecipe.label>
     <RSF_DriedMeatRecipe.description>Conserva la carne essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedMeatRecipe.description>
     <RSF_DriedMeatRecipe.jobString>converte la carne cruda in carne essiccata</RSF_DriedMeatRecipe.jobString>
 
-    <!--  ================= RSF_DriedFruit ================= -->
+    <!--  ================= RSF_DriedFruitRecipe ================= -->
     <RSF_DriedFruitRecipe.label>produci frutta essiccata</RSF_DriedFruitRecipe.label>
     <RSF_DriedFruitRecipe.description>Conserva la frutta essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedFruitRecipe.description>
     <RSF_DriedFruitRecipe.jobString>converte la frutta cruda in frutta essiccata</RSF_DriedFruitRecipe.jobString>
 
-    <!--  ================= RSF_DriedMeat ================= -->
+    <!--  ================= RSF_DriedMeatRecipe4x ================= -->
     <RSF_DriedMeatRecipe4x.label>produci carne essiccata x4</RSF_DriedMeatRecipe4x.label>
     <RSF_DriedMeatRecipe4x.description>Conserva la carne essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedMeatRecipe4x.description>
     <RSF_DriedMeatRecipe4x.jobString>converte la carne cruda in carne essiccata</RSF_DriedMeatRecipe4x.jobString>
 
-    <!--  ================= RSF_DriedFruit ================= -->
+    <!--  ================= RSF_DriedFruitRecipe4x ================= -->
     <RSF_DriedFruitRecipe4x.label>produci frutta essiccata x4</RSF_DriedFruitRecipe4x.label>
     <RSF_DriedFruitRecipe4x.description>Conserva la frutta essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedFruitRecipe4x.description>
     <RSF_DriedFruitRecipe4x.jobString>converte la frutta cruda in frutta essiccata</RSF_DriedFruitRecipe4x.jobString>
 
+    <!-- ================= RSF_FiberWoolRecipe ================= -->
+    <RSF_FiberWoolRecipe.label>RSF_FiberWoolRecipe plastic wool</RSF_FiberWoolRecipe.label>
+    <RSF_FiberWoolRecipe.description>Soft, light and provides very good insulation. plastic wool clothes can keep the body warm even in very cold conditions.</RSF_FiberWoolRecipe.description>
+    <RSF_FiberWoolRecipe.jobString>converte la frutta cruda in frutta essiccata</RSF_FiberWoolRecipe.jobString>
+    
+    <!-- ================= RSF_FiberArcticRecipe ================= -->
+    <RSF_FiberArcticRecipe.label>RSF_FiberArcticRecipe wool</RSF_FiberArcticRecipe.label>
+    <RSF_FiberArcticRecipe.description>Soft, light and provides extreme insulation. ultra thermal wool clothes can keep the body warm even in extreme cold conditions.</RSF_FiberArcticRecipe.description>
+    <RSF_FiberArcticRecipe.jobString>converte la frutta cruda in frutta essiccata</RSF_FiberArcticRecipe.jobString>
+    
+    <!-- ================= RSF_FiberDesertRecipe ================= -->
+    <RSF_FiberDesertRecipe.label>RSF_FiberDesertRecipe wool</RSF_FiberDesertRecipe.label>
+    <RSF_FiberDesertRecipe.description>Tessuto leggero e traspirante progettato per climi caldi. I vestiti in fibra desertica offrono eccellente ventilazione proteggendo da esposizione solare e tempeste di sabbia.</RSF_FiberDesertRecipe.description>
+    <RSF_FiberDesertRecipe.jobString>converte la frutta cruda in frutta essiccata</RSF_FiberDesertRecipe.jobString>
+    
+    <!-- ================= RSF_FiberSolarRecipe ================= -->
+    <RSF_FiberSolarRecipe.label>RSF_FiberSolarRecipe wool</RSF_FiberSolarRecipe.label>
+    <RSF_FiberSolarRecipe.description>Composito riflettente avanzato che devia le intense radiazioni solari. Gli indumenti in fibra solare offrono massima protezione termica per condizioni desertiche estreme e prolungata esposizione al sole.</RSF_FiberSolarRecipe.description>
+    <RSF_FiberSolarRecipe.jobString>converte la frutta cruda in frutta essiccata</RSF_FiberSolarRecipe.jobString>
+    
 </LanguageData>

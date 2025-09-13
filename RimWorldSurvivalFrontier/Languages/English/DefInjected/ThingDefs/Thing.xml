@@ -101,5 +101,21 @@
     <!-- ================= RSF_Plant_TreePalmNano Tropical ================= -->
     <RSF_Plant_TreePalmNano.label>palm tree nano</RSF_Plant_TreePalmNano.label>
     <RSF_Plant_TreePalmNano.description>A fast-growing tree-like plant that grows in dense groves. Bamboo can be harvested for a wood-like material. The plant itself is not beautiful.</RSF_Plant_TreePalmNano.description>
-    
+
+    <!-- ================= RSF_FiberWool ================= -->
+    <RSF_FiberWool.label>fiber wool</RSF_FiberWool.label>
+    <RSF_FiberWool.description>Soft, light and provides very good insulation. plastic wool clothes can keep the body warm even in very cold conditions.</RSF_FiberWool.description>
+
+    <!-- ================= RSF_FiberArctic ================= -->
+    <RSF_FiberArctic.label>fiber polar</RSF_FiberArctic.label>
+    <RSF_FiberArctic.description>Soft, light and provides extreme insulation. ultra thermal wool clothes can keep the body warm even in extreme cold conditions.</RSF_FiberArctic.description>
+
+    <!-- ================= RSF_FiberDesert ================= -->
+    <RSF_FiberDesert.label>fiber desert</RSF_FiberDesert.label>
+    <RSF_FiberDesert.description>Lightweight, breathable fabric designed for hot climates. Desert fiber clothing provides excellent ventilation while protecting against sun exposure and sand storms.</RSF_FiberDesert.description>
+
+    <!-- ================= RSF_FiberSolar ================= -->
+    <RSF_FiberSolar.label>fiber solar</RSF_FiberSolar.label>
+    <RSF_FiberSolar.description>Advanced reflective composite that deflects intense solar radiation. Solar fiber garments offer maximum heat protection for extreme desert conditions and prolonged sun exposure.</RSF_FiberSolar.description>
+
 </LanguageData>

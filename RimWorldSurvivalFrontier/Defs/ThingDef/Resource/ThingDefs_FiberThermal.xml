@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <!-- ================= RSF_PlasticFiber > ThingCategoryDef TradingGoods ================= -->
+    <ThingDef ParentName="ResourceBase">
+        <!--ThingDefs_Items/Items_Resource_Stuff.xml > Cloth-->
+        <defName>RSF_PlasticFiber</defName>
+        <label>RSF_PlasticFiber.label</label>
+        <description>RSF_PlasticFiber.description</description>
+
+        <graphicData>
+            <texPath>Things/Item/Resource/Cloth</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(240,248,240)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
+        </graphicData>
+
+        <statBases>
+            <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.18</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+            <MaxHitPoints>80</MaxHitPoints>
+            <MarketValue>1.5</MarketValue>
+            <Mass>0.026</Mass>
+            <Flammability>1.2</Flammability>
+            <DeteriorationRate>4</DeteriorationRate>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <minRewardCount>30</minRewardCount>
+        <stuffProps>
+            <statFactors>
+                <Flammability>1.2</Flammability>
+                <Beauty>1</Beauty>
+            </statFactors>
+            <categories>
+                <li>Fabric</li>
+            </categories>
+            <color>(240,248,240)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
+            <commonality>1.4</commonality>
+            <allowColorGenerators>true</allowColorGenerators>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <thingCategories>
+            <li>Textiles</li>
+            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
+        </thingCategories>
+        <comps>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+        </comps>
+        <colorGeneratorInTraderStock Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>5</weight>
+                    <only>(0.33,0.33,0.33,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <min>(0.3,0.3,0.3,1)</min>
+                    <max>(0.9,0.9,0.9,1)</max>
+                </li>
+                <li>
+                    <weight>5</weight>
+                    <only>(0.9,0.9,0.9,1)</only>
+                </li>
+            </options>
+        </colorGeneratorInTraderStock>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+
+    <!-- ================= RSF_EcoLeather > ThingCategoryDef TradingGoods ================= -->
+    <ThingDef ParentName="LeatherBase">
+        <defName>RSF_EcoLeather</defName>
+        <label>RSF_EcoLeather.label</label>
+        <description>RSF_EcoLeather.description</description>
+
+        <graphicData>
+            <texPath>Things/Item/Resource/Leather</texPath>
+            <color>(85,107,47)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
+        </graphicData>
+
+        <statBases>
+            <MarketValue>2.5</MarketValue> <!-- Leggermente più costoso -->
+            <Mass>0.025</Mass>  <!-- Weight: Lighter than wood, easier transport -->
+            <DeteriorationRate>1.5</DeteriorationRate> <!-- resistance to deterioration -->
+            <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold> <!-- Insulation -->
+            <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+        </statBases>
+
+        <stuffProps>
+            <!--            <stuffAdjective>plastic leather</stuffAdjective>-->
+            <categories>
+                <li>Leathery</li>
+            </categories>
+            <commonality>0.02</commonality> <!-- Meno comune del cuoio normale -->
+        </stuffProps>
+
+        <thingCategories>
+            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
+        </thingCategories>
+    </ThingDef>
+
+    <!-- ================= RSF_FiberWool > ThingCategoryDef TradingGoods ================= -->
+    <ThingDef ParentName="WoolBase">
+        <defName>RSF_FiberWool</defName>
+        <label>RSF_FiberWool.label</label>
+        <description>RSF_FiberWool.description</description>
+        <possessionCount>30</possessionCount>
+        <statBases>
+            <StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+            <MarketValue>4.2</MarketValue>
+        </statBases>
+        <graphicData>
+            <color>(200,220,240)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(200,220,240)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <!-- ================= RSF_FiberArctic > ThingCategoryDef TradingGoods ================= -->
+    <ThingDef ParentName="WoolBase">
+        <defName>RSF_FiberArctic</defName>
+        <label>RSF_FiberArctic.label</label>
+        <description>RSF_FiberArctic.description</description>
+        <possessionCount>30</possessionCount>
+        <statBases>
+            <StuffPower_Insulation_Cold>47</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+            <MarketValue>6.8</MarketValue>
+            <Beauty>1.5</Beauty>
+        </statBases>
+        <graphicData>
+            <color>(100,120,140)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(100,120,140)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <!-- ================= RSF_FiberDesert > ThingCategoryDef TradingGoods ================= -->
+    <ThingDef ParentName="WoolBase">
+        <defName>RSF_FiberDesert</defName>
+        <label>RSF_FiberDesert.label</label>
+        <description>RSF_FiberDesert.description</description>
+        <possessionCount>30</possessionCount>
+        <statBases>
+            <StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
+            <StuffPower_Armor_Heat>0.85</StuffPower_Armor_Heat> <!-- radiations-->
+            <MarketValue>3.5</MarketValue>
+        </statBases>
+        <graphicData>
+            <color>(210,180,140)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(210,180,140)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <!-- ================= RSF_FiberSolar > ThingCategoryDef TradingGoods ================= -->
+    <ThingDef ParentName="WoolBase">
+        <defName>RSF_FiberSolar</defName>
+        <label>RSF_FiberSolar.label</label>
+        <description>RSF_FiberSolar.description</description>
+        <possessionCount>30</possessionCount>
+        <statBases>
+            <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>47</StuffPower_Insulation_Heat>
+            <StuffPower_Armor_Heat>0.95</StuffPower_Armor_Heat>
+            <Beauty>1.5</Beauty>
+            <Flammability>0.3</Flammability>
+            <MarketValue>6.2</MarketValue>
+        </statBases>
+        <graphicData>
+            <color>(255,235,59)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(255,235,59)</color>
+        </stuffProps>
+    </ThingDef>
+
+</Defs>

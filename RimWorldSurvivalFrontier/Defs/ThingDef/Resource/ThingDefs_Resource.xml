@@ -330,78 +330,6 @@
         
     </ThingDef>
 
-    <!--  ===== RSF_PlasticFiber > ThingCategoryDef TradingGoods ==== -->
-    <ThingDef ParentName="ResourceBase">
-        <!--ThingDefs_Items/Items_Resource_Stuff.xml > Cloth-->
-        <defName>RSF_PlasticFiber</defName>
-        <label>RSF_PlasticFiber.label</label>
-        <description>RSF_PlasticFiber.description</description>
-        
-        <graphicData>
-            <texPath>Things/Item/Resource/Cloth</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <color>(240,248,240)</color> <!-- This is the color of the icon that you can see in the inventory! -->
-            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
-        </graphicData>
-        
-        <statBases>
-            <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>0.18</StuffPower_Armor_Heat>
-            <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
-            <MaxHitPoints>80</MaxHitPoints>
-            <MarketValue>1.5</MarketValue>
-            <Mass>0.026</Mass>
-            <Flammability>1.2</Flammability>
-            <DeteriorationRate>4</DeteriorationRate>
-        </statBases>
-        <burnableByRecipe>true</burnableByRecipe>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <minRewardCount>30</minRewardCount>
-        <stuffProps>
-            <statFactors>
-                <Flammability>1.2</Flammability>
-                <Beauty>1</Beauty>
-            </statFactors>
-            <categories>
-                <li>Fabric</li>
-            </categories>
-            <color>(240,248,240)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
-            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
-            <commonality>1.4</commonality>
-            <allowColorGenerators>true</allowColorGenerators>
-            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
-        </stuffProps>
-        <thingCategories>
-            <li>Textiles</li>
-            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
-        </thingCategories>
-        <comps>
-            <li>
-                <compClass>CompColorable</compClass>
-            </li>
-        </comps>
-        <colorGeneratorInTraderStock Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>5</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.9,0.9,0.9,1)</max>
-                </li>
-                <li>
-                    <weight>5</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGeneratorInTraderStock>
-        <allowedArchonexusCount>80</allowedArchonexusCount>
-    </ThingDef>
-
     <!--  ===== RSF_WoodPlanks > ThingCategoryDef TradingGoods ==== -->
     <ThingDef ParentName="ResourceVerbBase">
         <defName>RSF_WoodPlanks</defName>
@@ -602,37 +530,5 @@
         <allowedArchonexusCount>150</allowedArchonexusCount>
     </ThingDef>
 
-    <!--  ===== RSF_EcoLeather > ThingCategoryDef TradingGoods ==== -->
-    <ThingDef ParentName="LeatherBase">
-        <defName>RSF_EcoLeather</defName>
-        <label>RSF_EcoLeather.label</label>
-        <description>RSF_EcoLeather.description</description>
 
-        <graphicData>
-            <texPath>Things/Item/Resource/Leather</texPath>
-            <color>(85,107,47)</color> <!-- This is the color of the icon that you can see in the inventory! -->
-            <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
-        </graphicData>
-
-        <statBases>
-            <MarketValue>2.5</MarketValue> <!-- Leggermente più costoso -->
-            <Mass>0.025</Mass>  <!-- Weight: Lighter than wood, easier transport -->
-            <DeteriorationRate>1.5</DeteriorationRate> <!-- resistance to deterioration -->
-            <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold> <!-- Insulation -->
-            <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
-        </statBases>
-
-        <stuffProps>
-<!--            <stuffAdjective>plastic leather</stuffAdjective>-->
-            <categories>
-                <li>Leathery</li>
-            </categories>
-            <commonality>0.02</commonality> <!-- Meno comune del cuoio normale -->
-        </stuffProps>
-
-        <thingCategories>
-            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
-        </thingCategories>
-    </ThingDef>
-    
 </Defs>

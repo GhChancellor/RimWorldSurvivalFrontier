@@ -26,4 +26,20 @@
     <RSF_EcoLeatherResearch.label>eco leather</RSF_EcoLeatherResearch.label>
     <RSF_EcoLeatherResearch.description>Synthetic leather from plant polymers. Sustainable alternative to animal leather for high-quality clothing.</RSF_EcoLeatherResearch.description>
 
+    <!-- ================= RSF_FiberWoolResearch ================= -->
+    <RSF_FiberWoolResearch.label>fiber wool</RSF_FiberWoolResearch.label>
+    <RSF_FiberWoolResearch.description>Soft, light and provides very good insulation. plastic wool clothes can keep the body warm even in very cold conditions.</RSF_FiberWoolResearch.description>
+
+    <!-- ================= RSF_FiberArcticResearch ================= -->
+    <RSF_FiberArcticResearch.label>fiber arctic</RSF_FiberArcticResearch.label>
+    <RSF_FiberArcticResearch.description>Soft, light and provides extreme insulation. ultra thermal wool clothes can keep the body warm even in extreme cold conditions.</RSF_FiberArcticResearch.description>
+
+    <!-- ================= RSF_FiberDesertResearch ================= -->
+    <RSF_FiberDesertResearch.label>fiber desert</RSF_FiberDesertResearch.label>
+    <RSF_FiberDesertResearch.description>Lightweight, breathable fabric designed for hot climates. Desert fiber clothing provides excellent ventilation while protecting against sun exposure and sand storms.</RSF_FiberDesertResearch.description>
+
+    <!-- ================= RSF_FiberSolarResearch ================= -->
+    <RSF_FiberSolarResearch.label>fiber solar</RSF_FiberSolarResearch.label>
+    <RSF_FiberSolarResearch.description>Advanced reflective composite that deflects intense solar radiation. Solar fiber garments offer maximum heat protection for extreme desert conditions and prolonged sun exposure.</RSF_FiberSolarResearch.description>
+    
 </LanguageData>

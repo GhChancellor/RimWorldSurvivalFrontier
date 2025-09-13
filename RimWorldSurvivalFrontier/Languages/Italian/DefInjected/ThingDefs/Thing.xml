@@ -39,15 +39,15 @@
     <RSF_SunLampMini.label>lampada solare mini</RSF_SunLampMini.label>
     <RSF_SunLampMini.description>Una lampada solare mini che permette la crescita indoor di ortaggi ma consuma una considerevole quantità di energia. Si spegne automaticamente di notte.</RSF_SunLampMini.description>
     <RSF_SunLampMini.offMessage>Spenta nel periodo di riposo delle piante</RSF_SunLampMini.offMessage>
-    
-    <!--  ================= RSF_SunLampTiny 5x5 ================= -->
-    <RSF_SunLampTiny.label>lampada solare minuscola 5x5 </RSF_SunLampTiny.label>
-    <RSF_SunLampTiny.description>Una minuscola lampada solare 5x5 che permette la crescita indoor di ortaggi ma consuma una moderata quantità di energia. Si spegne automaticamente di notte.</RSF_SunLampTiny.description>
+
+    <!-- ================= RSF_SunLampTiny 3X3 ================= -->
+    <RSF_SunLampTiny.label>lampada solare minuscola 3X3 </RSF_SunLampTiny.label>
+    <RSF_SunLampTiny.description>Una minuscola lampada solare 3X3 che permette la crescita indoor di ortaggi ma consuma una moderata quantità di energia. Si spegne automaticamente di notte.</RSF_SunLampTiny.description>
     <RSF_SunLampTiny.offMessage>Spenta nel periodo di riposo delle piante</RSF_SunLampTiny.offMessage>
-    
-     <!--  ================= RSF_SunLampCompact 1x3 ================= -->
-    <RSF_SunLampCompact.label>lampada solare compatta 1x3 </RSF_SunLampCompact.label>
-    <RSF_SunLampCompact.description>Una lampada solare compatta 1x3 che permette la crescita indoor di ortaggi ma consuma una moderata quantità di energia. Si spegne automaticamente di notte.</RSF_SunLampCompact.description>
+
+    <!-- ================= RSF_SunLampCompact 5X5 ================= -->
+    <RSF_SunLampCompact.label>lampada solare compatta 5X5 </RSF_SunLampCompact.label>
+    <RSF_SunLampCompact.description>Una lampada solare compatta 5X5 che permette la crescita indoor di ortaggi ma consuma una moderata quantità di energia. Si spegne automaticamente di notte.</RSF_SunLampCompact.description>
     <RSF_SunLampCompact.offMessage>Spenta nel periodo di riposo delle piante</RSF_SunLampCompact.offMessage>
     
     <!--  ================= RSF_CropBasin 1x4 ================= -->
@@ -98,7 +98,25 @@
     <RSF_Plant_TreeBambooNano.label>albero di bamboo nano</RSF_Plant_TreeBambooNano.label>
     <RSF_Plant_TreeBambooNano.description>Un albero nano a crescita rapida che cresce in boschetti densi. Il bambù può essere raccolto per ottenere un materiale simile al legno. La pianta stessa non è bella.</RSF_Plant_TreeBambooNano.description>
 
-    <!--  ================= RSF_Plant_TreePalmNano tropical ================= -->
+    <!-- ================= RSF_Plant_TreePalmNano tropical ================= -->
     <RSF_Plant_TreePalmNano.label>albero di palma nano</RSF_Plant_TreePalmNano.label>
     <RSF_Plant_TreePalmNano.description>Un albero tropicale nano con un tronco nudo sormontato da un gruppo di foglie molto larghe. Purtroppo, questa varietà non produce noci di cocco commestibili.</RSF_Plant_TreePalmNano.description>
+
+    <!-- ================= RSF_FiberWool ================= -->
+    <RSF_FiberWool.label>fibra di lana</RSF_FiberWool.label>
+    <RSF_FiberWool.description>ITA Soft, light and provides very good insulation. plastic wool clothes can keep the body warm even in very cold conditions.</RSF_FiberWool.description>
+
+    <!-- ================= RSF_FiberArctic ================= -->
+    <RSF_FiberArctic.label>fibra artica</RSF_FiberArctic.label>
+    <RSF_FiberArctic.description>ITA Soft, light and provides extreme insulation. ultra thermal wool clothes can keep the body warm even in extreme cold conditions.</RSF_FiberArctic.description>
+
+    <!-- ================= RSF_FiberDesert ================= -->
+    <RSF_FiberDesert.label>fibra del deserto</RSF_FiberDesert.label>
+    <RSF_FiberDesert.description>Tessuto leggero e traspirante progettato per climi caldi. I vestiti in fibra desertica offrono eccellente ventilazione proteggendo da esposizione solare e tempeste di sabbia.</RSF_FiberDesert.description>
+
+    <!-- ================= RSF_FiberSolar ================= -->
+    <RSF_FiberSolar.label>fibra solare</RSF_FiberSolar.label>
+    <RSF_FiberSolar.description>Composito riflettente avanzato che devia le intense radiazioni solari. Gli indumenti in fibra solare offrono massima protezione termica per condizioni desertiche estreme e prolungata esposizione al sole.</RSF_FiberSolar.description>
+
+
 </LanguageData>

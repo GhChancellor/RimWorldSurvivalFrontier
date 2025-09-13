@@ -26,4 +26,20 @@
     <RSF_EcoLeatherResearch.label>eco pelle</RSF_EcoLeatherResearch.label>
     <RSF_EcoLeatherResearch.description>Pelle sintetica bio-ingegnerizzata creata da polimeri vegetali avanzati. Alternativa sostenibile al cuoio animale per abbigliamento di qualità.</RSF_EcoLeatherResearch.description>
 
+    <!-- ================= RSF_FiberWoolResearch ================= -->
+    <RSF_FiberWoolResearch.label>RSF_FiberWoolResearch plastic wool</RSF_FiberWoolResearch.label>
+    <RSF_FiberWoolResearch.description>Soft, light and provides very good insulation. plastic wool clothes can keep the body warm even in very cold conditions.</RSF_FiberWoolResearch.description>
+
+    <!-- ================= RSF_FiberArcticResearch ================= -->
+    <RSF_FiberArcticResearch.label>RSF_FiberArcticResearch wool</RSF_FiberArcticResearch.label>
+    <RSF_FiberArcticResearch.description>Soft, light and provides extreme insulation. ultra thermal wool clothes can keep the body warm even in extreme cold conditions.</RSF_FiberArcticResearch.description>
+
+    <!-- ================= RSF_FiberDesertResearch ================= -->
+    <RSF_FiberDesertResearch.label>RSF_FiberDesertResearch wool</RSF_FiberDesertResearch.label>
+    <RSF_FiberDesertResearch.description>Tessuto leggero e traspirante progettato per climi caldi. I vestiti in fibra desertica offrono eccellente ventilazione proteggendo da esposizione solare e tempeste di sabbia.</RSF_FiberDesertResearch.description>
+
+    <!-- ================= RSF_FiberSolarResearch ================= -->
+    <RSF_FiberSolarResearch.label>RSF_FiberSolarResearch wool</RSF_FiberSolarResearch.label>
+    <RSF_FiberSolarResearch.description>Composito riflettente avanzato che devia le intense radiazioni solari. Gli indumenti in fibra solare offrono massima protezione termica per condizioni desertiche estreme e prolungata esposizione al sole.</RSF_FiberSolarResearch.description>
+
 </LanguageData>

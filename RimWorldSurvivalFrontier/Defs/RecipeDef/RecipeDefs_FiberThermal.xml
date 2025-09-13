@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--  ================= RSF_FiberWoolRecipe  ================= -->
+    <RecipeDef>
+        <!-- ID -->
+        <defName>RSF_FiberWoolRecipe</defName>
+        <label>RSF_FiberWoolRecipe.label</label>
+        <description>RSF_FiberWoolRecipe.description</description>
+
+        <!-- Mechanic CORE -->
+        <jobString>RSF_FiberWoolRecipe.jobString</jobString>
+        <workAmount>800</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
+        <researchPrerequisite>RSF_FiberWoolResearch</researchPrerequisite>
+
+        <!-- Preserves work progress if interrupted -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <displayPriority>0</displayPriority> <!-- priority work-->
+
+        <!-- Where you craft it  -->
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+
+        <!-- INGREDIENTS -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RSF_PlasticFiber</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Hay</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+
+        <products>
+            <RSF_FiberWool>20</RSF_FiberWool>
+        </products>
+
+        <!-- Effect Working & sound -->
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+    </RecipeDef>
+
+    <!--  ================= RSF_FiberArcticRecipe  ================= -->
+    <RecipeDef>
+        <!-- ID -->
+        <defName>RSF_FiberArcticRecipe</defName>
+        <label>RSF_FiberArcticRecipe.label</label>
+        <description>RSF_FiberArcticRecipe.description</description>
+
+        <!-- Mechanic CORE -->
+        <jobString>RSF_FiberArcticRecipe.jobString</jobString>
+        <workAmount>1200</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
+        <researchPrerequisite>RSF_FiberArcticResearch</researchPrerequisite>
+
+        <!-- Preserves work progress if interrupted -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <displayPriority>0</displayPriority> <!-- priority work-->
+
+        <!-- Where you craft it  -->
+        <recipeUsers>
+            <li>FabricationBench</li> <!-- Fabrication bench -->
+        </recipeUsers>
+
+        <!-- INGREDIENTS -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RSF_FiberWool</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RSF_EcoLeather</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DevilstrandCloth</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+        </ingredients>
+
+        <products>
+            <RSF_FiberArctic>12</RSF_FiberArctic>
+        </products>
+
+        <!-- Effect Working & sound -->
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+    </RecipeDef>
+
+    <!--  ================= RSF_FiberDesertRecipe  ================= -->
+    <RecipeDef>
+        <!-- ID -->
+        <defName>RSF_FiberDesertRecipe</defName>
+        <label>RSF_FiberDesertRecipe.label</label>
+        <description>RSF_FiberDesertRecipe.description</description>
+
+        <!-- Mechanic CORE -->
+        <jobString>RSF_FiberDesertRecipe.jobString</jobString>
+        <workAmount>600</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
+        <researchPrerequisite>RSF_FiberDesertResearch</researchPrerequisite>
+
+        <!-- Preserves work progress if interrupted -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <displayPriority>0</displayPriority> <!-- priority work-->
+
+        <!-- Where you craft it  -->
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+
+        <!-- INGREDIENTS -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RSF_PlasticFiber</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+
+        <products>
+            <RSF_FiberDesert>18</RSF_FiberDesert>
+        </products>
+
+        <!-- Effect Working & sound -->
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+    </RecipeDef>
+
+    <!--  ================= RSF_FiberSolarRecipe  ================= -->
+    <RecipeDef>
+        <!-- ID -->
+        <defName>RSF_FiberSolarRecipe</defName>
+        <label>RSF_FiberSolarRecipe.label</label>
+        <description>RSF_FiberSolarRecipe.description</description>
+
+        <!-- Mechanic CORE -->
+        <jobString>RSF_FiberSolarRecipe.jobString</jobString>
+        <workAmount>1000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
+        <researchPrerequisite>RSF_FiberSolarResearch</researchPrerequisite>
+
+        <!-- Preserves work progress if interrupted -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <displayPriority>0</displayPriority> <!-- priority work-->
+
+        <!-- Where you craft it  -->
+        <recipeUsers>
+            <li>FabricationBench</li> <!-- Fabrication bench -->
+        </recipeUsers>
+
+        <!-- INGREDIENTS -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RSF_FiberDesert</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RSF_EcoLeather</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DevilstrandCloth</li>
+                    </thingDefs>
+                </filter>
+                <count>6</count>
+            </li>
+        </ingredients>
+
+        <products>
+            <RSF_FiberSolar>10</RSF_FiberSolar>
+        </products>
+
+        <!-- Effect Working & sound -->
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+    </RecipeDef>    
+</Defs>
+
+<!--
+## **Ricette Thermal Fibers**
+
+**RSF_FiberWool** (Biofuel Refinery):
+- RSF_PlasticFiber: 25
+- Hay: 15  
+- Steel: 5
+- → RSF_FiberWool: 20
+
+**RSF_FiberArctic** (Fabrication Bench):
+- RSF_FiberWool: 15
+- RSF_EcoLeather: 10
+- Devilstrand: 8
+- → RSF_FiberArctic: 12
+
+**RSF_FiberDesert** (Biofuel Refinery):
+- RSF_PlasticFiber: 20
+- Cotton/Cloth: 15
+- → RSF_FiberDesert: 18
+
+**RSF_FiberSolar** (Fabrication Bench):
+- RSF_FiberDesert: 12
+- RSF_EcoLeather: 8
+- Devilstrand: 6
+- → RSF_FiberSolar: 10
+-->
