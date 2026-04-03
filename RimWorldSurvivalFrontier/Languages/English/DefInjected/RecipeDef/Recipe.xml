@@ -32,6 +32,11 @@
     <RSF_PlasticIncendiaryRecipe.description>Bio-plastic infused with volatile compounds. Extremely flammable construction material for tactical applications. Handle with care.</RSF_PlasticIncendiaryRecipe.description>
     <RSF_PlasticIncendiaryRecipe.jobString>converting bio plastic to incendiary plastic </RSF_PlasticIncendiaryRecipe.jobString>
 
+    <!-- ================= RSF_ChemfuelFromPlasticRecipe ================= -->
+    <RSF_ChemfuelFromHumanCorpse.label>make chemfuel from human corpse</RSF_ChemfuelFromHumanCorpse.label>
+    <RSF_ChemfuelFromHumanCorpse.description>" Recycle " corpses of humans into Chemfuel! Sustainable energy solutions, saving the world is a duty.</RSF_ChemfuelFromHumanCorpse.description>
+    <RSF_ChemfuelFromHumanCorpse.jobString>Refining chemfuel human corpse.</RSF_ChemfuelFromHumanCorpse.jobString>
+
     <!-- ================= RSF_EcoLeatherRecipe ================= -->
     <RSF_EcoLeatherRecipe.label>make eco leather</RSF_EcoLeatherRecipe.label>
     <RSF_EcoLeatherRecipe.description>Synthetic leather from plant polymers. Sustainable alternative to animal leather for high-quality clothing.</RSF_EcoLeatherRecipe.description>

@@ -32,6 +32,11 @@
     <RSF_PlasticIncendiaryRecipe.description>Bioplastica rinforzata con composti volatili. Materiale da costruzione estremamente infiammabile per applicazioni tattiche. Maneggiare con cura.</RSF_PlasticIncendiaryRecipe.description>
     <RSF_PlasticIncendiaryRecipe.jobString>Converto bio plastica in plastica incediaria </RSF_PlasticIncendiaryRecipe.jobString>
 
+    <!-- ================= RSF_ChemfuelFromPlasticRecipe ================= -->
+    <RSF_ChemfuelFromHumanCorpse.label>crea chemfuel da cadavere umano</RSF_ChemfuelFromHumanCorpse.label>
+    <RSF_ChemfuelFromHumanCorpse.description>" Ricicla " i cadaveri umani in chemfuel! Soluzioni energetiche sostenibili, salvare il mondo è un dovere.</RSF_ChemfuelFromHumanCorpse.description>
+    <RSF_ChemfuelFromHumanCorpse.jobString>Raffinazione chemfuel da cadavere umano.</RSF_ChemfuelFromHumanCorpse.jobString>
+
     <!--  ================= RSF_EcoLeatherRecipe ================= -->
     <RSF_EcoLeatherRecipe.label>produci eco pelle</RSF_EcoLeatherRecipe.label>
     <RSF_EcoLeatherRecipe.description>Pelle sintetica bio-ingegnerizzata creata da polimeri vegetali avanzati. Alternativa sostenibile al cuoio animale per abbigliamento di qualità.</RSF_EcoLeatherRecipe.description>

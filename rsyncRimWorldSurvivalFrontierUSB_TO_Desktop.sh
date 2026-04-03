@@ -6,7 +6,7 @@ PROJECTNAME="RimWorldSurvivalFrontier"
 PARAMETERS=(-av -c --delete --exclude=bin/ --exclude=obj/ --exclude=libs --exclude=.idea/ --exclude=.vscode/)
 BASE="Archivio/Programmazione/Modding/${GAMENAME}/${PROJECTNAME}/"
 
-SOURCE="/media/lele/54b9c956-8863-46f3-a04d-eb2e7a8dc261/${BASE}"
+SOURCE="/media/lele/writable/${BASE}"
 DESTINATION="/home/lele/Documenti/${BASE}"
 
 mkdir -p "${DESTINATION}"

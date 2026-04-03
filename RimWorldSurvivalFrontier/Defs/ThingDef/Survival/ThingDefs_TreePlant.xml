@@ -5,9 +5,12 @@
 
     <!-- ================= RSF_Plant_TreeDragoNano arid shrublands and deserts.  ================= -->
     <ThingDef ParentName="TreeBase">
+        <!-- ID -->
         <defName>RSF_Plant_TreeDragoNano</defName>
         <label>RSF_Plant_TreeDragoNano.label</label>
         <description>RSF_Plant_TreeDragoNano.description</description>
+
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Plant/TreeDrago</texPath>
             <graphicClass>Graphic_Random</graphicClass>
@@ -16,11 +19,17 @@
                 <offset>(0,0,-0.38)</offset>
             </shadowData>
         </graphicData>
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <Beauty>1</Beauty>
             <BeautyOutdoors>1</BeautyOutdoors>
         </statBases>
+
+        <!-- it's not comestible -->
         <ingestible/>
+
+        <!-- Plant specifics -->
         <plant>
             <growDays>15</growDays>
             <wildClusterRadius>6</wildClusterRadius>
@@ -46,10 +55,12 @@
 
     <!-- ================= RSF_Plant_TreeCocoaNano tropical biomes ================= -->
     <ThingDef ParentName="Plant_TreeCocoa">
+        <!-- ID -->
         <defName>RSF_Plant_TreeCocoaNano</defName>
         <label>RSF_Plant_TreeCocoaNano.label</label>
         <description>RSF_Plant_TreeCocoaNano.description</description>
 
+        <!-- Plant specifics -->
         <plant>
             <dieIfLeafless>true</dieIfLeafless>
             <growDays>16</growDays>
@@ -73,9 +84,12 @@
 
     <!-- ================= RSF_Plant_TreePineNano boreal forests and tundra ================= -->
     <ThingDef ParentName="TreeBase">
+        <!-- ID -->
         <defName>RSF_Plant_TreePineNano</defName>
         <label>RSF_Plant_TreePineNano.label</label>
         <description>RSF_Plant_TreePineNano.description</description>
+
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Plant/TreePine</texPath>
             <graphicClass>Graphic_Random</graphicClass>
@@ -84,11 +98,17 @@
                 <offset>(0,0,-0.38)</offset>
             </shadowData>
         </graphicData>
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <Beauty>2</Beauty>
             <BeautyOutdoors>2</BeautyOutdoors>
         </statBases>
+
+        <!-- it's not comestible -->
         <ingestible/>
+
+        <!-- Plant specifics -->
         <plant>
             <growDays>20</growDays>
             <visualSizeRange>1.5~3.0</visualSizeRange>
@@ -112,13 +132,18 @@
 
     <!-- ================= RSF_Plant_TreeBambooNano Tropical ================= -->
     <ThingDef ParentName="TreeBase">
+        <!-- ID -->
         <defName>RSF_Plant_TreeBambooNano</defName>
         <label>RSF_Plant_TreeBambooNano.label</label>
         <description>RSF_Plant_TreeBambooNano.description</description>
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <Nutrition>1.5</Nutrition>
-            <Mass>75</Mass>
+            <Mass>75</Mass>  <!-- Item weight (kg) -->
         </statBases>
+
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Plant/TreeBamboo</texPath>
             <graphicClass>Graphic_Random</graphicClass>
@@ -127,6 +152,8 @@
                 <offset>(0,0,-0.47)</offset>
             </shadowData>
         </graphicData>
+
+        <!-- Plant specifics -->
         <plant>
             <growDays>12</growDays>
             <wildClusterRadius>5</wildClusterRadius>
@@ -147,14 +174,19 @@
             <mustBeWildToSow>false</mustBeWildToSow>
             <interferesWithRoof>false</interferesWithRoof>
         </plant>
+
+        <!-- it's not comestible -->
         <ingestible/>
     </ThingDef>
 
     <!-- ================= RSF_Plant_TreePalmNano Tropical ================= -->
     <ThingDef ParentName="TreeBase">
+        <!-- ID -->
         <defName>RSF_Plant_TreePalmNano</defName>
         <label>RSF_Plant_TreePalmNano.label</label>
         <description>RSF_Plant_TreePalmNano.description</description>
+
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Plant/TreePalm</texPath>
             <graphicClass>Graphic_Random</graphicClass>
@@ -163,10 +195,14 @@
                 <offset>(0.03,0,-0.44)</offset>
             </shadowData>
         </graphicData>
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <Beauty>1</Beauty>
             <Nutrition>1.5</Nutrition>
         </statBases>
+
+        <!-- Plant specifics -->
         <plant>
             <growDays>14</growDays>
             <wildClusterRadius>10</wildClusterRadius>
@@ -187,6 +223,8 @@
             <mustBeWildToSow>false</mustBeWildToSow>
             <interferesWithRoof>false</interferesWithRoof>
         </plant>
+
+        <!-- it's not comestible -->
         <ingestible/>
     </ThingDef>
 </Defs>

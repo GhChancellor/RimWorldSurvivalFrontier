@@ -5,21 +5,24 @@
     <!--    see: Defs/RecipeDefs/Recipes_Food.xml > Make_Pemmican -->
     <!--  ================= RSF_TemplatePreservedFood  ================= -->
     <RecipeDef Name="RSF_TemplatePreservedFood" Abstract="true">
+        <!-- ID -->
         <label>RSF_Template Preserved Food</label>
         <description>Make pemmican, a preserved combination of meat and plant food. It doesn't taste amazing, but lasts
-            a long time without refrigeration.
-        </description>
+            a long time without refrigeration.</description>
         <jobString>Making pemmican.</jobString>
+
+        <!-- Mechanic CORE -->
         <workAmount>700</workAmount>
         <workSpeedStat>CookSpeed</workSpeedStat>
         <requiredGiverWorkType>Cooking</requiredGiverWorkType>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_CookMeal</soundWorking>
+
+        <!-- Ingredient stuff -->
         <allowMixingIngredients>true</allowMixingIngredients>
         <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
         <workSkill>Cooking</workSkill>
         <displayPriority>1440</displayPriority>
 
+        <!-- Where you craft it  -->
         <recipeUsers>
             <li>FueledStove</li>
             <li>ElectricStove</li>
@@ -27,12 +30,18 @@
             <li>Campfire</li>
         </recipeUsers>
 
+        <!-- Pre-selected by default -->
         <defaultIngredientFilter>
+            <!-- Disallowed Items -->
             <disallowedThingDefs>
+                <!-- Anomaly DLC: exclude twisted meat -->
                 <li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
             </disallowedThingDefs>
         </defaultIngredientFilter>
 
+        <!-- Effect Working & sound -->
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
     </RecipeDef>
 
     <!--  ================= RSF_DriedMeatRecipe  ================= -->
@@ -40,11 +49,17 @@
         <defName>RSF_DriedMeatRecipe</defName>
         <label>RSF_DriedMeatRecipe.label</label>
         <jobString>RSF_DriedMeatRecipe.jobString</jobString>
+
+        <!-- Mechanic CORE -->
         <workAmount>700</workAmount>
 
+        <!-- Recipe ingredients -->
         <ingredients>
             <li>
                 <filter>
+
+                    <!-- Material categories: defines which items can be crafted from this material -->
+                    <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
                     <categories>
                         <li>MeatRaw</li>
                     </categories>
@@ -53,22 +68,34 @@
             </li>
         </ingredients>
 
+        <!-- What CAN be selected -->
         <fixedIngredientFilter>
+
+            <!-- Allowed categories -->
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
             <categories>
                 <li>MeatRaw</li>
             </categories>
+
+            <!-- Disallowed categories -->
             <disallowedCategories>
                 <li>AnimalProductRaw</li>
                 <li>PlantFoodRaw</li>
             </disallowedCategories>
         </fixedIngredientFilter>
 
+        <!-- Pre-selected by default -->
         <defaultIngredientFilter>
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
             <categories>
                 <li>MeatRaw</li>
             </categories>
         </defaultIngredientFilter>
 
+        <!-- Output Products -->
         <products>
             <RSF_DriedMeat>16</RSF_DriedMeat>
         </products>
@@ -79,11 +106,17 @@
         <defName>RSF_DriedMeatRecipe4x</defName>
         <label>RSF_DriedMeatRecipe4x.label</label>
         <jobString>RSF_DriedMeatRecipe4x.jobString</jobString>
+
+        <!-- Mechanic CORE -->
         <workAmount>700</workAmount>
 
+        <!-- Recipe ingredients -->
         <ingredients>
             <li>
                 <filter>
+
+                    <!-- Material categories: defines which items can be crafted from this material -->
+                    <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
                     <categories>
                         <li>MeatRaw</li>
                     </categories>
@@ -92,22 +125,34 @@
             </li>
         </ingredients>
 
+        <!-- What CAN be selected -->
         <fixedIngredientFilter>
+
+            <!-- Allowed categories -->
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
             <categories>
                 <li>MeatRaw</li>
             </categories>
+
+            <!-- DISALLOWED CATEGORIES -->
             <disallowedCategories>
                 <li>AnimalProductRaw</li>
                 <li>PlantFoodRaw</li>
             </disallowedCategories>
         </fixedIngredientFilter>
 
+        <!-- Pre-selected by default -->
         <defaultIngredientFilter>
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
             <categories>
                 <li>MeatRaw</li>
             </categories>
         </defaultIngredientFilter>
 
+        <!-- Output material-->
         <products>
             <RSF_DriedMeat>64</RSF_DriedMeat>
         </products>
@@ -118,9 +163,14 @@
         <defName>RSF_DriedFruitRecipe</defName>
         <label>RSF_DriedFruitRecipe.label</label>
         <jobString>RSF_DriedFruitRecipe.jobString</jobString>
+
+        <!-- Mechanic CORE -->
         <workAmount>700</workAmount>
+
+        <!-- Allow mixing different materials in same recipe -->
         <allowMixingIngredients>true</allowMixingIngredients>
-        
+
+        <!-- Recipe ingredients -->
         <ingredients>
             <li>
                 <filter>
@@ -132,22 +182,28 @@
             </li>
         </ingredients>
 
+        <!-- What CAN be selected -->
         <fixedIngredientFilter>
+            <!-- Allowed items -->
             <thingDefs>  
                 <li>RawBerries</li> 
             </thingDefs>
+
+            <!-- DISALLOWED CATEGORIES -->
             <disallowedCategories>
                 <li>AnimalProductRaw</li>
                 <li>MeatRaw</li>
             </disallowedCategories>
         </fixedIngredientFilter>
 
+        <!-- Pre-selected by default -->
         <defaultIngredientFilter>
             <thingDefs>  
                 <li>RawBerries</li> 
             </thingDefs>
         </defaultIngredientFilter>
 
+        <!-- Output material-->
         <products>
             <RSF_DriedFruit>16</RSF_DriedFruit>
         </products>
@@ -155,12 +211,18 @@
     
     <!--  ================= RSF_DriedFruitRecipe x4  ================= -->
     <RecipeDef ParentName="RSF_TemplatePreservedFood">
+        <!-- ID -->
         <defName>RSF_DriedFruitRecipe4x</defName>
         <label>RSF_DriedFruitRecipe4x.label</label>
         <jobString>RSF_DriedFruitRecipe4x.jobString</jobString>
+
+        <!-- Mechanic CORE -->
         <workAmount>700</workAmount>
+
+        <!-- Allow mixing different materials in same recipe -->
         <allowMixingIngredients>true</allowMixingIngredients>
-        
+
+        <!-- Recipe ingredients -->
         <ingredients>
             <li>
                 <filter>
@@ -172,25 +234,30 @@
             </li>
         </ingredients>
 
+        <!-- What CAN be selected -->
         <fixedIngredientFilter>
+            <!-- Allowed items -->
             <thingDefs>  
                 <li>RawBerries</li> 
             </thingDefs>
+            <!-- DISALLOWED CATEGORIES -->
             <disallowedCategories>
                 <li>AnimalProductRaw</li>
                 <li>MeatRaw</li>
             </disallowedCategories>
         </fixedIngredientFilter>
 
+        <!-- Pre-selected by default -->
         <defaultIngredientFilter>
             <thingDefs>  
                 <li>RawBerries</li> 
             </thingDefs>
         </defaultIngredientFilter>
+
+        <!-- Output material-->
         <products>
             <RSF_DriedFruit>64</RSF_DriedFruit>
         </products>
     </RecipeDef>
-    
-    
+
 </Defs>

@@ -3,11 +3,16 @@
 
     <!--  =============== add RSF_ChemFuelStove =============== -->
     <ThingDef ParentName="BenchBase">
+
+        <!-- ID -->
         <defName>RSF_ChemFuelStove</defName>
         <label>RSF_ChemFuelStove.label</label>
         <description>RSF_ChemFuelStove.description</description>
+
         <thingClass>Building_WorkTable_HeatPush</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
+
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Building/Production/TableStoveFueled</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -22,25 +27,40 @@
         <castEdgeShadows>true</castEdgeShadows>
         <staticSunShadowHeight>0.20</staticSunShadowHeight>
         <constructEffect>ConstructMetal</constructEffect>
+
+        <!-- Specifies exact materials and quantities -->
         <costList>
             <Steel>80</Steel>
         </costList>
+
         <altitudeLayer>Building</altitudeLayer>
         <fillPercent>0.5</fillPercent>
         <useHitPoints>True</useHitPoints>
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <WorkToBuild>2000</WorkToBuild>
+
+            <!-- HP when item is on ground/inventory -->
             <MaxHitPoints>180</MaxHitPoints>
+
             <Flammability>1.0</Flammability>
         </statBases>
+
+        <!-- Items size -->
         <size>(3,1)</size>
-        <designationCategory>Production</designationCategory>
+
+        <!-- Ui Order: controls the order of items in the inventory -->
         <uiOrder>2110</uiOrder>
+
+        <designationCategory>Production</designationCategory>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <surfaceType>Item</surfaceType>
+
+        <!-- Recipes this building can cook/craft -->
         <recipes>
             <li>CookMealSimple</li>
             <li>CookMealFine</li>
@@ -66,6 +86,8 @@
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
+
+        <!-- Components: behavior modules -->
         <comps>
             <li Class="CompProperties_Refuelable">
                 <fuelConsumptionRate>80</fuelConsumptionRate>
@@ -104,14 +126,20 @@
     <!-- see Defs/ThingDefs_Items/Items_Food.xml > Kibble -->
     <ThingDef Name="RSF_TemplateKibble" ParentName="OrganicProductBase" Abstract="true">
         <label>RSF_Template dried food</label>
-        <thingCategories>
-            <li>Foods</li>
-        </thingCategories>
-        <socialPropernessMatters>true</socialPropernessMatters>
+
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Item/Resource/Pemmican</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
+
+        <socialPropernessMatters>true</socialPropernessMatters>
+
+        <thingCategories>
+            <li>Foods</li>
+        </thingCategories>
+
+        <!-- Components: behavior modules -->
         <comps>
             <li Class="CompProperties_Ingredients">
                 <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
@@ -122,9 +150,11 @@
 
     <!--  =============== RSF_DriedMeat =============== -->
     <ThingDef ParentName="RSF_TemplateKibble">
+        <!-- ID -->
         <defName>RSF_DriedMeat</defName>
         <label>RSF_DriedMeat.label</label>
         <description>RSF_DriedMeat.description</description>
+
         <ingestible>
             <foodType>Meat</foodType>                    <!--  Meat vs Kibble -->
             <preferability>RawTasty</preferability>      <!-- RawTasty vs RawBad -->
@@ -134,18 +164,21 @@
             <ingestSound>RawMeat_Eat</ingestSound>       <!-- sound -->
         </ingestible>
 
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <MarketValue>1.2</MarketValue>
-            <Mass>0.015</Mass>
+            <Mass>0.015</Mass> <!-- Item weight (kg) -->
             <Flammability>0.6</Flammability>
             <WorkToMake>600</WorkToMake>
             <DeteriorationRate>2</DeteriorationRate>
             <Nutrition>0.05</Nutrition>
         </statBases>
+
         <thingCategories>
             <li>MeatRaw</li>
         </thingCategories>
-                
+
+        <!-- Components: behavior modules -->
         <comps>
             <li Class="CompProperties_Rottable">
                 <daysToRotStart>50</daysToRotStart>
@@ -157,9 +190,11 @@
 
     <!--  =============== RSF_DriedFruit =============== -->
     <ThingDef ParentName="RSF_TemplateKibble">
+        <!-- ID -->
         <defName>RSF_DriedFruit</defName>
         <label>RSF_DriedFruit.label</label>
         <description>RSF_DriedFruit.description</description>
+
         <ingestible>
             <foodType>VegetableOrFruit</foodType>                    <!--  Meat vs Kibble -->
             <preferability>RawTasty</preferability>      <!-- RawTasty vs RawBad -->
@@ -169,18 +204,21 @@
             <ingestSound>RawVegetable_Eat</ingestSound>       <!-- sound -->
         </ingestible>
 
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <MarketValue>1.2</MarketValue>
-            <Mass>0.015</Mass>
+            <Mass>0.015</Mass>  <!-- Item weight (kg) -->
             <Flammability>0.6</Flammability>
             <WorkToMake>600</WorkToMake>
             <DeteriorationRate>2</DeteriorationRate>
             <Nutrition>0.05</Nutrition>
         </statBases>
+
         <thingCategories>
             <li>PlantFoodRaw</li>
         </thingCategories>
 
+        <!-- Components: behavior modules -->
         <comps>
             <li Class="CompProperties_Rottable">
                 <daysToRotStart>50</daysToRotStart>

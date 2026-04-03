@@ -3,11 +3,13 @@
 
     <!--  ================= TemplateSunLamp ================= -->
     <ThingDef Name="TemplateSunLamp" ParentName="LampBase" Abstract="true">
+        <!-- ID -->
         <label>Template Sun Lamp</label>
         <description>An industrial lamp which lights an area brightly enough to grow crops, but consumes a huge amount
             of power. Automatically turns itself off at night.
         </description>
-        <thingClass>Building_SunLamp</thingClass>
+
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Building/Production/LampSun</texPath>
             <shadowData>
@@ -15,75 +17,48 @@
                 <offset>(0,0,-0.1)</offset>
             </shadowData>
         </graphicData>
+
+        <thingClass>Building_SunLamp</thingClass>
+
+        <!-- Ui Order: controls the order of items in the inventory -->
+        <uiOrder>2995</uiOrder>
+
+        <!-- Wind block -->
         <blockWind>true</blockWind>
+
+        <!-- Tick rate: controls update frequency (Rare = ~4sec intervals) -->
         <tickerType>Rare</tickerType>
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <WorkToBuild>330</WorkToBuild>
-            <Mass>4.5</Mass>
+            <Mass>4.5</Mass>  <!-- Item weight (kg) -->
         </statBases>
 
-        <!-- FIXED COST: costList specifies exact materials and quantities -->
+        <!-- Specifies exact materials and quantities -->
         <costList>
             <Steel>40</Steel>
         </costList>
-        <uiOrder>2995</uiOrder>
-       
+
         <!-- Determined by trial and error
         This value isn't perfect because these radii use different algorithms
         but it matches in this case-->
-        <specialDisplayRadius>5.8</specialDisplayRadius> <!-- Show where light has effect on plants -->
+
+        <!-- Special display radius for light effects on plants -->
+        <specialDisplayRadius>5.8</specialDisplayRadius>
     </ThingDef>
 
-    <!--  ================= RSF_SunLampMini ================= -->
+    <!--  ================= RSF_SunWallLamp ================= -->
     <ThingDef ParentName="TemplateSunLamp">
-        <defName>RSF_SunLampMini</defName>
-        <label>RSF_SunLampMini.label</label>
-        <description>RSF_SunLampMini.description</description>
-
-        <!--        <uiIconPath>Things/Building/Furniture/SunLamp/SunLamp_MenuIcon</uiIconPath>-->
-
-        <costList>
-            <Steel>20</Steel>
-        </costList>
-
-        <statBases>
-            <WorkToBuild>165</WorkToBuild>
-            <Mass>2.3</Mass>
-        </statBases>
-
-        <comps>
-            <li Class="CompProperties_Glower">
-                <overlightRadius>5</overlightRadius> <!-- I don't understand how to work -->
-                <glowRadius>6.5</glowRadius> <!-- I don't understand how to work -->
-          
-                <glowColor>(370,370,370,0)</glowColor>
-            </li>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <shortCircuitInRain>true</shortCircuitInRain>
-                <basePowerConsumption>1450</basePowerConsumption>
-            </li>
-            <li Class="CompProperties_HeatPusher">
-                <compClass>CompHeatPusherPowered</compClass>
-                <heatPerSecond>1.2</heatPerSecond>
-            </li>
-            <li Class="CompProperties_Schedule">
-                <!-- Match plant growing times -->
-                <startTime>0.25</startTime>
-                <endTime>0.8</endTime>
-                <offMessage>Off for plant resting period</offMessage>
-            </li>
-        </comps>
-        <specialDisplayRadius>3.9</specialDisplayRadius> <!-- Show where light has effect on plants -->
-    </ThingDef>
-
-    <!--  ================= SunWallLamp ================= --> <!-- ERROR >>>>> SunWallLamp <<<<<< -->
-    <ThingDef ParentName="TemplateSunLamp">
-        <defName>SunWallLamp</defName>
+        <!-- ID -->
+        <defName>RSF_SunWallLamp</defName>
         <label>SunWallLamp.label</label>
         <description>SunWallLamp.description</description>
 
+        <!-- Mechanic CORE -->
         <rotatable>true</rotatable>
+
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Building/Furniture/WallLamp/WallLamp</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -95,6 +70,8 @@
                 <enabled>false</enabled>
             </damageData>
         </graphicData>
+
+        <!-- Icons -->
         <uiIconPath>Things/Building/Furniture/WallLamp/WallLamp_MenuIcon</uiIconPath>
 
         <altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -107,19 +84,21 @@
             <li>Placeworker_AttachedToWall</li>
         </placeWorkers>
 
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <WorkToBuild>132</WorkToBuild>
-            <Mass>1.8</Mass>
+            <Mass>1.8</Mass>  <!-- Item weight (kg) -->
         </statBases>
-        <uiOrder>2996</uiOrder>
 
-        <!-- FIXED COST: costList specifies exact materials and quantities -->
+        <!-- Specifies exact materials and quantities -->
         <costList>
             <Steel>16</Steel>
         </costList>
 
-        <uiOrder>2992</uiOrder>
+        <!-- Ui Order: controls the order of items in the inventory -->
+        <uiOrder>2999</uiOrder>
 
+        <!-- Components: behavior modules -->
         <comps>
             <li Class="CompProperties_Glower">
                 <overlightRadius>4.5</overlightRadius> <!-- I don't understand how to work -->
@@ -142,27 +121,34 @@
                 <offMessage>Off for plant resting period</offMessage>
             </li>
         </comps>
-        <specialDisplayRadius>3.9</specialDisplayRadius> <!-- Show where light has effect on plants -->
-        
+
+        <!-- Special display radius for light effects on plants -->
+        <specialDisplayRadius>3.9</specialDisplayRadius>
+
     </ThingDef>
-    
+
     <!--  ================= RSF_SunLampTiny 3X3================= -->
     <ThingDef ParentName="TemplateSunLamp">
+        <!-- ID -->
         <defName>RSF_SunLampTiny</defName>
         <label>RSF_SunLampTiny.label</label>
         <description>RSF_SunLampTiny.description</description>
 
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <WorkToBuild>100</WorkToBuild>
-            <Mass>1.2</Mass>
+            <Mass>1.2</Mass>  <!-- Item weight (kg) -->
         </statBases>
-        <uiOrder>2996</uiOrder>
 
-        <!-- FIXED COST: costList specifies exact materials and quantities -->
+        <!-- Specifies exact materials and quantities -->
         <costList>
-            <Steel>10</Steel>
+            <Steel>5</Steel>
         </costList>
 
+        <!-- Ui Order: controls the order of items in the inventory -->
+        <uiOrder>2996</uiOrder>
+
+        <!-- Components: behavior modules -->
         <comps>
             <li Class="CompProperties_Glower">
                 <overlightRadius>2.5</overlightRadius> <!-- I don't understand how to work -->
@@ -185,31 +171,38 @@
                 <offMessage>Off for plant resting period</offMessage>
             </li>
         </comps>
-        <specialDisplayRadius>1.6</specialDisplayRadius> <!-- Show where light has effect on plants -->
+
+        <!-- Special display radius for light effects on plants -->
+        <specialDisplayRadius>1.6</specialDisplayRadius>
     </ThingDef>
 
     <!--  ================= RSF_SunLampCompact 5X5 ================= -->
     <ThingDef ParentName="TemplateSunLamp">
+        <!-- ID -->
         <defName>RSF_SunLampCompact</defName>
         <label>RSF_SunLampCompact.label</label>
         <description>RSF_SunLampCompact.description</description>
 
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <WorkToBuild>100</WorkToBuild>
-            <Mass>1.2</Mass>
+            <Mass>1.2</Mass>  <!-- Item weight (kg) -->
         </statBases>
-        <uiOrder>2996</uiOrder>
 
-        <!-- FIXED COST: costList specifies exact materials and quantities -->
+        <!-- Ui Order: controls the order of items in the inventory -->
+        <uiOrder>2997</uiOrder>
+
+        <!-- Specifies exact materials and quantities -->
         <costList>
             <Steel>10</Steel>
         </costList>
 
+        <!-- Components: behavior modules -->
         <comps>
             <li Class="CompProperties_Glower">
                 <overlightRadius>3.5</overlightRadius> <!-- I don't understand how to work -->
                 <glowRadius>5.5</glowRadius> <!-- I don't understand how to work -->
-                
+
                 <glowColor>(370,370,370,0)</glowColor>
             </li>
             <li Class="CompProperties_Power">
@@ -226,16 +219,61 @@
                 <startTime>0.25</startTime>
                 <endTime>0.8</endTime>
                 <offMessage>Off for plant resting period</offMessage>
-            </li>            
+            </li>
         </comps>
-        <specialDisplayRadius>2.9</specialDisplayRadius> <!-- Show where light has effect on plants -->
+
+        <!-- Special display radius for light effects on plants -->
+        <specialDisplayRadius>2.9</specialDisplayRadius>
+    </ThingDef>
+
+    <!--  ================= RSF_SunLampMini 7x7 ================= -->
+    <ThingDef ParentName="TemplateSunLamp">
+        <!-- ID -->
+        <defName>RSF_SunLampMini</defName>
+        <label>RSF_SunLampMini.label</label>
+        <description>RSF_SunLampMini.description</description>
+
+        <!-- Specifies exact materials and quantities -->
+        <costList>
+            <Steel>20</Steel>
+        </costList>
+
+        <!-- Ui Order: controls the order of items in the inventory -->
+        <uiOrder>2998</uiOrder>
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
+        <statBases>
+            <WorkToBuild>165</WorkToBuild>
+            <Mass>2.3</Mass>  <!-- Item weight (kg) -->
+        </statBases>
+
+        <!-- Components: behavior modules -->
+        <comps>
+            <li Class="CompProperties_Glower">
+                <overlightRadius>5</overlightRadius> <!-- I don't understand how to work -->
+                <glowRadius>6.5</glowRadius> <!-- I don't understand how to work -->
+
+                <glowColor>(370,370,370,0)</glowColor>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>1450</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>1.2</heatPerSecond>
+            </li>
+            <li Class="CompProperties_Schedule">
+                <!-- Match plant growing times -->
+                <startTime>0.25</startTime>
+                <endTime>0.8</endTime>
+                <offMessage>Off for plant resting period</offMessage>
+            </li>
+        </comps>
+
+        <!-- Special display radius for light effects on plants -->
+        <specialDisplayRadius>3.9</specialDisplayRadius>
     </ThingDef>
 
 </Defs>
-        <!--<comps>-->
-        <!--<li Class="CompProperties_Glower">-->
-        <!--    <overlightRadius>4.5</overlightRadius>-->
-        <!--    <glowRadius>9</glowRadius>  &lt;!&ndash; Ridotto da 11 &ndash;&gt;-->
-        <!--</li>-->
-        <!--</comps>-->
-        <!--<specialDisplayRadius>3.7</specialDisplayRadius>-->

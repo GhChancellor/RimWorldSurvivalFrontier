@@ -27,19 +27,35 @@
     <RSF_EcoLeatherResearch.description>Pelle sintetica bio-ingegnerizzata creata da polimeri vegetali avanzati. Alternativa sostenibile al cuoio animale per abbigliamento di qualità.</RSF_EcoLeatherResearch.description>
 
     <!-- ================= RSF_FiberWoolResearch ================= -->
-    <RSF_FiberWoolResearch.label>RSF_FiberWoolResearch plastic wool</RSF_FiberWoolResearch.label>
-    <RSF_FiberWoolResearch.description>Soft, light and provides very good insulation. plastic wool clothes can keep the body warm even in very cold conditions.</RSF_FiberWoolResearch.description>
+    <RSF_FiberWoolResearch.label>ricerca lana di plastica</RSF_FiberWoolResearch.label>
+    <RSF_FiberWoolResearch.description>Morbido, leggero e fornisce un ottimo isolamento termico. Gli indumenti in pile sintetico mantengono il corpo caldo anche in condizioni molto fredde.</RSF_FiberWoolResearch.description>
 
     <!-- ================= RSF_FiberArcticResearch ================= -->
-    <RSF_FiberArcticResearch.label>RSF_FiberArcticResearch wool</RSF_FiberArcticResearch.label>
-    <RSF_FiberArcticResearch.description>Soft, light and provides extreme insulation. ultra thermal wool clothes can keep the body warm even in extreme cold conditions.</RSF_FiberArcticResearch.description>
+    <RSF_FiberArcticResearch.label>ricerca lana artica</RSF_FiberArcticResearch.label>
+    <RSF_FiberArcticResearch.description>Morbido, leggero e fornisce un isolamento termico estremo. Gli indumenti in pile sintetico mantengono il corpo caldo anche in condizioni estremanente fredde.</RSF_FiberArcticResearch.description>
 
     <!-- ================= RSF_FiberDesertResearch ================= -->
-    <RSF_FiberDesertResearch.label>RSF_FiberDesertResearch wool</RSF_FiberDesertResearch.label>
+    <RSF_FiberDesertResearch.label>ricerca fibra del deserto</RSF_FiberDesertResearch.label>
     <RSF_FiberDesertResearch.description>Tessuto leggero e traspirante progettato per climi caldi. I vestiti in fibra desertica offrono eccellente ventilazione proteggendo da esposizione solare e tempeste di sabbia.</RSF_FiberDesertResearch.description>
 
     <!-- ================= RSF_FiberSolarResearch ================= -->
-    <RSF_FiberSolarResearch.label>RSF_FiberSolarResearch wool</RSF_FiberSolarResearch.label>
+    <RSF_FiberSolarResearch.label>ricerca fibra antisolare</RSF_FiberSolarResearch.label>
     <RSF_FiberSolarResearch.description>Composito riflettente avanzato che devia le intense radiazioni solari. Gli indumenti in fibra solare offrono massima protezione termica per condizioni desertiche estreme e prolungata esposizione al sole.</RSF_FiberSolarResearch.description>
+
+    <!-- ================= RSF_SunWallLamp ================= -->
+    <RSF_SunWallLamp.label>lampada solare a parete</RSF_SunWallLamp.label>
+    <RSF_SunWallLamp.description>Una lampada solare montata a parete che fornisce luce per la crescita senza occupare spazio a terra. Consuma molta energia e si spegne di notte.</RSF_SunWallLamp.description>
+
+    <!-- ================= RSF_SunLampTiny 3X3 ================= -->
+    <RSF_SunLampTiny.label>lampada solare minuscola</RSF_SunLampTiny.label>
+    <RSF_SunLampTiny.description>Una lampada solare compatta progettata per piccole aree di coltivazione 3x3. Consuma meno energia rispetto alle lampade standard, ma copre meno area. Si spegne di notte.</RSF_SunLampTiny.description>
+
+    <!-- ================= RSF_SunLampCompact 5X5 ================= -->
+    <RSF_SunLampCompact.label>lampada solare compatta</RSF_SunLampCompact.label>
+    <RSF_SunLampCompact.description>Una lampada solare di medie dimensioni ottimizzata per aree di coltivazione 5x5. Bilancia copertura ed efficienza energetica. Si spegne di notte.</RSF_SunLampCompact.description>
+
+    <!-- ================= RSF_SunLampMini 7x7 ================= -->
+    <RSF_SunLampMini.label>lampada solare mini</RSF_SunLampMini.label>
+    <RSF_SunLampMini.description>Un'alternativa più piccola alle lampade solari standard, copre un'area 7x7. Consumo energetico ridotto rispetto ai modelli industriali. Si spegne di notte.</RSF_SunLampMini.description>
 
 </LanguageData>

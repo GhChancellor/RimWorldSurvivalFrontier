@@ -2,6 +2,7 @@
 <Defs>
 	
 	<ResearchTabDef>
+		<!-- ID -->
 		<defName>RSF_EcoPlastic</defName>
 		<label>RSF_EcoPlastic.label</label>
 	</ResearchTabDef>

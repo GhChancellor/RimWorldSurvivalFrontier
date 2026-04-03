@@ -3,6 +3,7 @@
 echo
 MODNAME="RimWorldSurvivalFrontier"
 
+# ================= MOD SOURCE (development files) =================
 PROJECTPATH="/home/${USER}/Documenti/Archivio/Programmazione/Modding/RimWorld/${MODNAME}/${MODNAME}/"
 
 CSPROJFILE="${PROJECTPATH}${MODNAME}.csproj"

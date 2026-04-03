@@ -39,7 +39,10 @@
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
         <PropertyGroup>
             <ProjectName>RimWorldSurvivalFrontier</ProjectName>
+
+            <!-- DEPLOYED MOD (runtime location ) -->
             <ModRootFolder>/home/$(USER)/Documenti/Archivio/Store/Steam/steamapps/common/RimWorld/Mods/$(ProjectName)</ModRootFolder>
+
             <ModAssembliesFolder>$(ModRootFolder)/Assemblies</ModAssembliesFolder>
             <ModName>$(ProjectName).dll</ModName>
         </PropertyGroup>

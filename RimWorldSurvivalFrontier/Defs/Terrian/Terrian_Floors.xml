@@ -4,16 +4,19 @@
 
     <!--  ================= RSF_BurnedPlasticIncendiaryTile  ================= -->
     <TerrainDef ParentName="BurnedFloorBase">
+        <!-- ID -->
         <defName>RSF_BurnedPlasticIncendiaryTile</defName>
         <label>RSF_BurnedPlasticIncendiaryTile.label</label>
-        <renderPrecedence>240</renderPrecedence>
         <description>RSF_BurnedPlasticIncendiaryTile.description</description>
+
+        <renderPrecedence>240</renderPrecedence>
         <texturePath>Terrain/Surfaces/BurnedStrawmatting</texturePath>
         <edgeType>FadeRough</edgeType>
     </TerrainDef>
 
     <!--  ================= RSF_PlasticIncendiaryTile  ================= -->
     <TerrainDef ParentName="FloorBase">
+        <!-- ID -->
         <defName>RSF_PlasticIncendiaryTile</defName>
         <label>RSF_PlasticIncendiaryTile.label</label>
         <description>RSF_PlasticIncendiaryTile.description</description>
@@ -28,6 +31,8 @@
         <renderPrecedence>240</renderPrecedence>
         <burnedDef>RSF_BurnedPlasticIncendiaryTile</burnedDef>
         <pathCost>1</pathCost>
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <Beauty>-1</Beauty>
             <Cleanliness>-0.1</Cleanliness>
@@ -36,7 +41,7 @@
             <Flammability>1.5</Flammability>
         </statBases>
 
-        <!-- FIXED COST: costList specifies exact materials and quantities -->
+        <!-- Specifies exact materials and quantities -->
         <costList>
             <RSF_PlasticIncendiary>2</RSF_PlasticIncendiary>
         </costList>

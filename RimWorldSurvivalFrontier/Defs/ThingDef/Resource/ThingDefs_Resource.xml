@@ -4,12 +4,12 @@
     <!--  ===== RSF_PlasticBasic > ThingCategoryDef TradingGoods ==== -->
     <ThingDef ParentName="ResourceVerbBase">
         <!-- ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog -->
-        <!-- CORE IDENTITY -->
+        <!-- ID -->
         <defName>RSF_PlasticBasic</defName>
         <label>RSF_PlasticBasic.label</label>
         <description>RSF_PlasticBasic.description</description>
 
-        <!-- VISUAL REPRESENTATION -->
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Item/Resource/StoneBlocks</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -19,20 +19,19 @@
         
         <equippedAngleOffset>-20</equippedAngleOffset> 
         
-        <!-- PHYSICAL PROPERTIES -->
+        <!-- Physical properties -->
         <soundInteract>Wood_Drop</soundInteract>
         <soundDrop>Wood_Drop</soundDrop>
-        
-        <!-- STATISTICS -->
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <!-- Economic: Slightly cheaper than wood (1.2 vs 1.02) -->
-            <MarketValue>1.02</MarketValue>
+            <MarketValue>1</MarketValue>
 
-            <!-- Durability: Reduced hitpoints, bioplastic is less sturdy -->
-            <MaxHitPoints>127</MaxHitPoints>
+            <!-- HP when item is on ground/inventory -->
+            <MaxHitPoints>90</MaxHitPoints>
 
-            <!-- Weight: Lighter than wood, easier transport -->
-            <Mass>0.3</Mass>
+            <Mass>0.3</Mass>  <!-- Item weight (kg) -->
 
             <!-- Fire: Slightly less flammable than wood -->
             <Flammability>0.9</Flammability>
@@ -57,13 +56,14 @@
         <burnableByRecipe>true</burnableByRecipe> <!-- Can be used as fuel -->
         <healthAffectsPrice>false</healthAffectsPrice> <!-- No effect on price if damaged -->
         <minRewardCount>10</minRewardCount> <!-- Quest rewards -->
-        
+
+        <!-- It has effects on constructed items -->
         <stuffProps>
-            <!-- Material appearance and naming -->
-<!--            <stuffAdjective>bioplastic</stuffAdjective>-->
-            <!-- Material categories this can be used for -->
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
             <categories>
-                <li>Woody</li> <!-- Furniture material -->
+                <li>Woody</li>
             </categories>
             <commonality>0.85</commonality> <!-- Spawn probability (wood 1.0)-->
             <color>(255,255,255)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
@@ -78,9 +78,12 @@
             <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>    <!-- Sharp weapon hit sound -->
             <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>    <!-- Blunt weapon hit sound -->
             <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>  <!-- Melee impact sound -->
-            
+
+            <!-- statFactors: MULTIPLIERS for buildings/items crafted from this material -->
+            <!-- Formula: final_stat = base_stat × statFactor -->
+            <!-- Example: Wall (300 HP base) × 0.65 = 195 HP -->
             <statFactors>
-                <MaxHitPoints>0.65</MaxHitPoints>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- Max HP -->
                 <Beauty>0.8</Beauty> <!-- Less attractive than natural materials -->
                 <Flammability>0.95</Flammability> <!-- Multiplied by fire (Flammability * Flammability) -->
                 <WorkToMake>0.7</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from this material -->
@@ -89,17 +92,19 @@
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
-        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
-        
+
         <!-- Inventory category -->
         <thingCategories>
             <li>ResourcesRaw</li>
             <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
         </thingCategories>
-        
+
+        <!-- Prosthesis limb -->
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
         <techHediffsTags>
             <li>Poor</li> <!-- quality of prosthesis -->
         </techHediffsTags>
+
         <weaponClasses>
             <li>Melee</li>
             <li>MeleeBlunt</li>
@@ -122,12 +127,12 @@
     <!--  ===== RSF_PlasticIndustrial > ThingCategoryDef TradingGoods ==== -->
     <ThingDef ParentName="ResourceVerbBase">
         <!-- ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog -->
-        <!-- CORE IDENTITY -->
+        <!-- ID -->
         <defName>RSF_PlasticIndustrial</defName>
         <label>RSF_PlasticIndustrial.label</label>
         <description>RSF_PlasticIndustrial.description</description>
-        
-        <!-- VISUAL REPRESENTATION -->
+
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Item/Resource/StoneBlocks</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -141,16 +146,15 @@
         <soundInteract>Wood_Drop</soundInteract>
         <soundDrop>Wood_Drop</soundDrop>
 
-        <!-- STATISTICS -->
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <!-- Economic: Slightly cheaper than wood (1.2 vs 1.02) -->
             <MarketValue>1.07</MarketValue>
 
-            <!-- Durability: Reduced hitpoints, bioplastic is less sturdy -->
+            <!-- HP when item is on ground/inventory -->
             <MaxHitPoints>168</MaxHitPoints>
 
-            <!-- Weight: Lighter than wood, easier transport -->
-            <Mass>0.5</Mass>
+            <Mass>0.5</Mass>  <!-- Item weight (kg) -->
 
             <!-- Fire: Slightly less flammable than wood -->
             <Flammability>0.8</Flammability>
@@ -176,12 +180,13 @@
         <healthAffectsPrice>false</healthAffectsPrice> <!-- No effect on price if damaged -->
         <minRewardCount>10</minRewardCount> <!-- Quest rewards -->
 
+        <!-- It has effects on constructed items -->
         <stuffProps>
-            <!-- Material appearance and naming -->
-<!--            <stuffAdjective>bioplastic</stuffAdjective>-->
-            <!-- Material categories this can be used for -->
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
             <categories>
-                <li>Woody</li> <!-- Furniture material -->
+                <li>Woody</li>
             </categories>
             <commonality>0.85</commonality> <!-- Spawn probability (wood 1.0)-->
             <color>(85,95,105)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
@@ -196,6 +201,9 @@
             <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>    <!-- Blunt weapon hit sound -->
             <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>  <!-- Melee impact sound -->
 
+            <!-- statFactors: MULTIPLIERS for buildings/items crafted from this material -->
+            <!-- Formula: final_stat = base_stat × statFactor -->
+            <!-- Example: Wall (300 HP base) × 0.65 = 195 HP -->
             <statFactors>
                 <MaxHitPoints>0.65</MaxHitPoints>
                 <Beauty>1.2</Beauty> <!-- Less attractive than natural materials -->
@@ -206,7 +214,7 @@
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
-        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
+
 
         <!-- Inventory category -->
         <thingCategories>
@@ -214,9 +222,12 @@
             <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
         </thingCategories>
 
+        <!-- Prosthesis limb -->
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
         <techHediffsTags>
             <li>Poor</li> <!-- quality of prosthesis -->
         </techHediffsTags>
+
         <weaponClasses>
             <li>Melee</li>
             <li>MeleeBlunt</li>
@@ -239,12 +250,12 @@
     <!--  ===== RSF_PlasticBioSteel > ThingCategoryDef TradingGoods ==== -->
     <ThingDef ParentName="ResourceBase">
         <!--ThingDefs_Items/Items_Resource_Stuff.xml > Plasteel-->
-        <!-- CORE IDENTITY -->
+        <!-- ID -->
         <defName>RSF_PlasticBioSteel</defName>
         <label>RSF_PlasticBioSteel.label</label>
         <description>RSF_PlasticBioSteel.description</description>
 
-        <!-- VISUAL REPRESENTATION -->
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Item/Resource/Plasteel</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -257,12 +268,12 @@
         <soundDrop>Metal_Drop</soundDrop>
         <useHitPoints>false</useHitPoints>
         <healthAffectsPrice>false</healthAffectsPrice>                 <!-- No effect on price if damaged -->
-        
-        <!-- RAW MATERIAL STATS -->
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <!-- Economic values -->
             <MarketValue>5.5</MarketValue>                             <!-- Industrial grade, more expensive than wood -->
-            <Mass>0.28</Mass>                                          <!-- Denser than RSF_PlasticBasic -->
+            <Mass>0.28</Mass>                                          <!-- Item weight (kg) -->
 
             <!-- Armor effectiveness when used as stuff -->
             <StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>     <!-- Better protection than basic -->
@@ -279,7 +290,6 @@
             <BluntDamageMultiplier>0.7</BluntDamageMultiplier>        <!-- More rigid than basic -->
         </statBases>
 
-        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
 
         <!-- Inventory category -->
         <thingCategories>
@@ -287,6 +297,8 @@
             <li>TradingGoods2</li>
         </thingCategories>
 
+        <!-- Prosthesis limb -->
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
         <techHediffsTags>
             <li>Simple</li> <!-- quality of prosthesis -->
         </techHediffsTags>
@@ -297,10 +309,13 @@
 <!--        <burnableByRecipe>false</burnableByRecipe>-->
 <!--        <smeltable>true</smeltable>-->
 
+        <!-- It has effects on constructed items -->
         <stuffProps>
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
             <categories>
-                <!-- Material categories this can be used for -->
-                <li>Metallic</li> <!-- Industrial material strutucture, weapons, etc. -->
+                <li>Metallic</li>
             </categories>
             <appearance>Metal</appearance>
             <commonality>0.3</commonality>
@@ -314,8 +329,12 @@
             <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
             <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
-            
+
+            <!-- statFactors: MULTIPLIERS for buildings/items crafted from this material -->
+            <!-- Formula: final_stat = base_stat × statFactor -->
+            <!-- Example: Wall (300 HP base) × 0.65 = 195 HP -->
             <statFactors>
+
                 <MaxHitPoints>2.2</MaxHitPoints>
                 <Beauty>1.3</Beauty>
                 <Flammability>0.3</Flammability>
@@ -332,9 +351,12 @@
 
     <!--  ===== RSF_WoodPlanks > ThingCategoryDef TradingGoods ==== -->
     <ThingDef ParentName="ResourceVerbBase">
+        <!-- ID -->
         <defName>RSF_WoodPlanks</defName>
         <label>RSF_WoodPlanks.label</label>
         <description>RSF_WoodPlanks.description</description>
+
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Item/Resource/StoneBlocks</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -344,10 +366,13 @@
         <equippedAngleOffset>-20</equippedAngleOffset>
         <soundInteract>Wood_Drop</soundInteract>
         <soundDrop>Wood_Drop</soundDrop>
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <MarketValue>1.2</MarketValue>
+            <!-- HP when item is on ground/inventory -->
             <MaxHitPoints>150</MaxHitPoints>
-            <Mass>0.4</Mass>
+            <Mass>0.4</Mass>  <!-- Item weight (kg) -->
             <Flammability>1.0</Flammability>
             <DeteriorationRate>0.5</DeteriorationRate>
             <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
@@ -361,8 +386,13 @@
         <burnableByRecipe>true</burnableByRecipe>
         <healthAffectsPrice>false</healthAffectsPrice>
         <minRewardCount>10</minRewardCount>
+
+        <!-- It has effects on constructed items -->
         <stuffProps>
             <!-- <stuffAdjective>wooden</stuffAdjective>-->
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
             <categories>
                 <li>Woody</li>
             </categories>
@@ -375,7 +405,12 @@
             <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
             <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
             <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
+
+            <!-- statFactors: MULTIPLIERS for buildings/items crafted from this material -->
+            <!-- Formula: final_stat = base_stat × statFactor -->
+            <!-- Example: Wall (300 HP base) × 0.65 = 195 HP -->
             <statFactors>
+
                 <MaxHitPoints>0.65</MaxHitPoints>
                 <Beauty>1</Beauty>
                 <Flammability>1</Flammability>
@@ -385,14 +420,17 @@
             </statFactors>
             <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
         </stuffProps>
-        <isTechHediff>true</isTechHediff>
         <thingCategories>
             <li>ResourcesRaw</li>
             <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
         </thingCategories>
+
+        <!-- Prosthesis limb -->
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
         <techHediffsTags>
-            <li>Poor</li>
+            <li>Poor</li> <!-- quality of prosthesis -->
         </techHediffsTags>
+
         <weaponClasses>
             <li>Melee</li>
             <li>MeleeBlunt</li>
@@ -415,12 +453,12 @@
     <!--  ===== RSF_PlasticIncendiary > ThingCategoryDef TradingGoods ==== -->
     <ThingDef ParentName="ResourceVerbBase">
         <!-- ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog -->
-        <!-- CORE IDENTITY -->
+        <!-- ID -->
         <defName>RSF_PlasticIncendiary</defName>
         <label>RSF_PlasticIncendiary.label</label>
         <description>RSF_PlasticIncendiary.description</description>
 
-        <!-- VISUAL REPRESENTATION -->
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Item/Resource/StoneBlocks</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -434,16 +472,15 @@
         <soundInteract>Wood_Drop</soundInteract>
         <soundDrop>Wood_Drop</soundDrop>
 
-        <!-- STATISTICS -->
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <!-- Economic: Slightly cheaper than wood (1.2 vs 1.02) -->
             <MarketValue>2.50</MarketValue>
 
-            <!-- Durability: Reduced hitpoints, bioplastic is less sturdy -->
+            <!-- HP when item is on ground/inventory -->
             <MaxHitPoints>80</MaxHitPoints>
 
-            <!-- Weight: Lighter than wood, easier transport -->
-            <Mass>0.4</Mass>
+            <Mass>0.4</Mass>  <!-- Item weight (kg) -->
 
             <!-- Fire: Slightly less flammable than wood -->
             <Flammability>1.5</Flammability>
@@ -469,12 +506,13 @@
         <healthAffectsPrice>false</healthAffectsPrice> <!-- No effect on price if damaged -->
         <minRewardCount>10</minRewardCount> <!-- Quest rewards -->
 
+        <!-- It has effects on constructed items -->
         <stuffProps>
-            <!-- Material appearance and naming -->
-            <!--            <stuffAdjective>bioplastic</stuffAdjective>-->
-            <!-- Material categories this can be used for -->
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
             <categories>
-                <li>Woody</li> <!-- Furniture material -->
+                <li>Woody</li>
             </categories>
             <commonality>0.85</commonality> <!-- Spawn probability (wood 1.0)-->
             <color>(255,140,0)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
@@ -490,9 +528,12 @@
             <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>    <!-- Blunt weapon hit sound -->
             <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>  <!-- Melee impact sound -->
 
+            <!-- statFactors: MULTIPLIERS for buildings/items crafted from this material -->
+            <!-- Formula: final_stat = base_stat × statFactor -->
+            <!-- Example: Wall (300 HP base) × 0.65 = 195 HP -->
             <statFactors>
-                <MaxHitPoints>0.50</MaxHitPoints>
-                <Beauty>0.6</Beauty> <!-- Less attractive than natural materials -->
+                <MaxHitPoints>0.15</MaxHitPoints>
+                <Beauty>0.5</Beauty> <!-- Less attractive than natural materials -->
                 <Flammability>2.5</Flammability> <!-- Multiplied by fire (Flammability * Flammability) -->
                 <WorkToMake>1.3</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from this material -->
                 <WorkToBuild>1.3</WorkToBuild> <!-- How to build structures ( wall, door ) from this material -->
@@ -500,7 +541,6 @@
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
-        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
 
         <!-- Inventory category -->
         <thingCategories>
@@ -508,9 +548,13 @@
             <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
         </thingCategories>
 
+
+        <!-- Prosthesis limb -->
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
         <techHediffsTags>
             <li>Poor</li> <!-- quality of prosthesis -->
         </techHediffsTags>
+
         <weaponClasses>
             <li>Melee</li>
             <li>MeleeBlunt</li>

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-    
-    
     <!--Plastic Basic, Plastic Industrial, Plastic Fiber, and Wood Planks-->
     <ThingCategoryDef>
+        <!-- ID -->
         <defName>TradingGoods</defName>
         <label>tradingGoods</label>
         <parent>Manufactured</parent>
@@ -12,6 +11,7 @@
 
     <!-- Plastic Bio-Steel-->
     <ThingCategoryDef>
+        <!-- ID -->
         <defName>TradingGoods2</defName>
         <label>tradingGoods2</label>
         <parent>Manufactured</parent>

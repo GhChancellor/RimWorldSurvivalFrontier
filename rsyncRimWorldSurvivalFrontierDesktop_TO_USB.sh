@@ -7,7 +7,7 @@ PARAMETERS=(-av -c --delete --exclude=bin/ --exclude=obj/ --exclude=libs --exclu
 BASE="Archivio/Programmazione/Modding/${GAMENAME}/${PROJECTNAME}/"
 
 SOURCE="/home/lele/Documenti/${BASE}"
-DESTINATION="/media/lele/54b9c956-8863-46f3-a04d-eb2e7a8dc261/${BASE}"
+DESTINATION="/media/lele/writable/${BASE}"
 
 mkdir -p "${DESTINATION}"
 
