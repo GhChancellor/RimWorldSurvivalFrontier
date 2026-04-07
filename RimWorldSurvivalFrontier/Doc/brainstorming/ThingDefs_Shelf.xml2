@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="StorageShelfBase">
+        <defName>RSF_HeavyMaterialRack</defName>
+        <label>Heavy Material Rack</label>
+        <description>A triple-stack shelf that holds three times as much as empty ground. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nSince shelf space is limited, shelves cannot hold chunks, buildings, plants and large corpses.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Shelf</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,2)</drawSize>
+        </graphicData>
+        <costStuffCount>20</costStuffCount>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+            <WorkToBuild>500</WorkToBuild>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+        </statBases>
+        <size>(2,1)</size>
+        <designationHotKey>Misc12</designationHotKey>
+        <building>
+            <relatedBuildCommands>
+                <li>ShelfSmall</li>
+            </relatedBuildCommands>
+        </building>
+
+
+
+
+        <fixedStorageSettings>
+            <filter>
+                <disallowNotEverStorable>true</disallowNotEverStorable>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedCategories>
+                    <li>Chunks</li>
+                    <li>Plants</li>
+                    <li>Buildings</li>
+                </disallowedCategories>
+                <disallowedThingDefs MayRequire="Ludeon.RimWorld.Biotech">
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Wastepack</li>
+                </disallowedThingDefs>
+                <specialFiltersToDisallow>
+                    <li>AllowLargeCorpses</li>
+                </specialFiltersToDisallow>
+            </filter>
+        </fixedStorageSettings>
+        <defaultStorageSettings>
+            <priority>Preferred</priority>
+            <filter>
+                <categories>
+                    <li>Foods</li>
+                    <li>Manufactured</li>
+                    <li>ResourcesRaw</li>
+                    <li>Items</li>
+                    <li>Weapons</li>
+                    <li>Apparel</li>
+                    <li>BodyParts</li>
+                </categories>
+            </filter>
+        </defaultStorageSettings>
+
+
+    </ThingDef>
+</Defs>

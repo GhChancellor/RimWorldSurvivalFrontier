@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--  ================= Table 1x1 ================= -->
+    <ThingDef ParentName="TableGatherSpotBase">
+        <!-- ID -->
+        <defName>RSF_Table1x1a</defName>
+        <label>table (1x1)</label>
+
+        <!-- Icons & colors -->
+        <graphicData>
+            <texPath>Things/Building/Furniture/Table2x2</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
+        <statBases>
+            <MaxHitPoints>35</MaxHitPoints>
+            <WorkToBuild>350</WorkToBuild>
+            <Mass>2.5</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>0.25</Beauty>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+        </statBases>
+
+        <!-- Items size -->
+        <size>(1,1)</size>
+
+        <!-- Ui Order: controls the order of items in the inventory -->
+        <uiOrder>2071</uiOrder>
+
+        <!-- Ui Icon Scale: controls the size of the icon in the inventory -->
+        <uiIconScale>0.7</uiIconScale>
+
+        <!-- Defines WHICH and HOW MUCH of that material is required -->
+        <costStuffCount>25</costStuffCount>
+        <rotatable>false</rotatable>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Check RimWorldSurvivalFrontier/Defs/ThingDef/Survival/ThingDefs_ChemicalStation.xml -->
+
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Normal</success>
+        <operations>
+            <!-- Add boost to BiofuelRefinery and from ToolCabinet -->
+            <!-- See Defs/ThingDefs_Buildings/Buildings_Production.xml -->
+            <!-- <defName>TableStonecutter</defName> > <comps> > ToolCabinet and <defName>BiofuelRefinery</defName> -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="BiofuelRefinery"]/comps</xpath>
+                <value>
+                    <li Class="CompProperties_AffectedByFacilities">
+                        <linkableFacilities>
+                            <li>RSF_ChemicalStation</li>
+                        </linkableFacilities>
+                    </li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName ="Brewery"]</xpath>
+                <value>
+                    <comps>
+                        <li Class="CompProperties_AffectedByFacilities">
+                            <linkableFacilities>
+                                <li>RSF_ChemicalStation</li>
+                            </linkableFacilities>
+                        </li>
+                    </comps>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+
+</Patch>

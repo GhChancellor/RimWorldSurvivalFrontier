@@ -4,7 +4,7 @@
 
     <!--  ================= RSF_PlasticBasic ================= -->
     <RSF_PlasticBasic.label>plastica base</RSF_PlasticBasic.label>
-    <RSF_PlasticBasic.description>Bio-plastica leggera ricavata da materiali vegetali. Adatta per la costruzione di mobili e strutture ma di qualità inferiore.</RSF_PlasticBasic.description>
+    <RSF_PlasticBasic.description>Bio-plastica leggera ricavata da chemfuel. Adatta per la costruzione di mobili e strutture ma di qualità inferiore.</RSF_PlasticBasic.description>
 
     <!--  ================= RSF_PlasticIndustrial ================= -->
     <RSF_PlasticIndustrial.label>plastica industriale</RSF_PlasticIndustrial.label>
@@ -118,5 +118,24 @@
     <RSF_FiberSolar.label>fibra solare</RSF_FiberSolar.label>
     <RSF_FiberSolar.description>Composito riflettente avanzato che devia le intense radiazioni solari. Gli indumenti in fibra solare offrono massima protezione termica per condizioni desertiche estreme e prolungata esposizione al sole.</RSF_FiberSolar.description>
 
+    <!-- ================= RSF_SunWallLamp ================= -->
+    <RSF_SunWallLamp.label>lampada solare a parete</RSF_SunWallLamp.label>
+    <RSF_SunWallLamp.description>Una lampada solare montata a parete che fornisce luce per la crescita senza occupare spazio a terra. Consuma molta energia e si spegne di notte.</RSF_SunWallLamp.description>
+
+    <!-- ================= RSF_SunLampTiny 3X3 ================= -->
+    <RSF_SunLampTiny.label>lampada solare minuscola</RSF_SunLampTiny.label>
+    <RSF_SunLampTiny.description>Una lampada solare compatta progettata per piccole aree di coltivazione 3x3. Consuma meno energia rispetto alle lampade standard, ma copre meno area. Si spegne di notte.</RSF_SunLampTiny.description>
+
+    <!-- ================= RSF_SunLampCompact 5X5 ================= -->
+    <RSF_SunLampCompact.label>lampada solare compatta</RSF_SunLampCompact.label>
+    <RSF_SunLampCompact.description>Una lampada solare di medie dimensioni ottimizzata per aree di coltivazione 5x5. Bilancia copertura ed efficienza energetica. Si spegne di notte.</RSF_SunLampCompact.description>
+
+    <!-- ================= RSF_SunLampMini 7x7 ================= -->
+    <RSF_SunLampMini.label>lampada solare mini</RSF_SunLampMini.label>
+    <RSF_SunLampMini.description>Un'alternativa più piccola alle lampade solari standard, copre un'area 7x7. Consumo energetico ridotto rispetto ai modelli industriali. Si spegne di notte.</RSF_SunLampMini.description>
+
+    <!-- ================= RSF_ChemicalStation ================= -->
+    <RSF_ChemicalStation.label>stazione chimica</RSF_ChemicalStation.label>
+    <RSF_ChemicalStation.description>Aumenta la velocità di lavoro quando posizionata vicino a una raffineria di biocarburante o a un birrificio. Un banco da lavoro può utilizzare fino a due stazioni chimiche.</RSF_ChemicalStation.description>
 
 </LanguageData>

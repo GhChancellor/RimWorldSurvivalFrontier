@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+    <!--  ================= RSF_ChemfuelFromHumanCorpse  ================= -->
     <RecipeDef>
         <!-- ID -->
         <defName>RSF_ChemfuelFromHumanCorpse</defName>
@@ -11,7 +13,8 @@
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
         <workAmount>6000</workAmount>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
 
         <!-- Where you craft it  -->
         <recipeUsers>

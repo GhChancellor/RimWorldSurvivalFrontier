@@ -118,4 +118,24 @@
     <RSF_FiberSolar.label>fiber solar</RSF_FiberSolar.label>
     <RSF_FiberSolar.description>Advanced reflective composite that deflects intense solar radiation. Solar fiber garments offer maximum heat protection for extreme desert conditions and prolonged sun exposure.</RSF_FiberSolar.description>
 
+      <!-- ================= RSF_SunWallLamp ================= -->
+    <RSF_SunWallLamp.label>wall sun lamp</RSF_SunWallLamp.label>
+    <RSF_SunWallLamp.description>A wall-mounted sun lamp that provides growing light without occupying floor space. Consumes significant power and turns off at night.</RSF_SunWallLamp.description>
+
+    <!-- ================= RSF_SunLampTiny 3X3 ================= -->
+    <RSF_SunLampTiny.label>tiny sun lamp</RSF_SunLampTiny.label>
+    <RSF_SunLampTiny.description>A compact sun lamp designed for small 3x3 growing areas. Lower power consumption than standard lamps, but covers less area. Turns off at night.</RSF_SunLampTiny.description>
+
+    <!-- ================= RSF_SunLampCompact 5X5 ================= -->
+    <RSF_SunLampCompact.label>compact sun lamp</RSF_SunLampCompact.label>
+    <RSF_SunLampCompact.description>A medium-sized sun lamp optimized for 5x5 growing areas. Balances coverage and power efficiency. Turns off at night.</RSF_SunLampCompact.description>
+
+    <!-- ================= RSF_SunLampMini 7x7 ================= -->
+    <RSF_SunLampMini.label>mini sun lamp</RSF_SunLampMini.label>
+    <RSF_SunLampMini.description>A smaller alternative to standard sun lamps, covering a 7x7 area. Reduced power draw compared to industrial models. Turns off at night.</RSF_SunLampMini.description>
+
+    <!-- ================= RSF_ChemicalStation ================= -->
+    <RSF_ChemicalStation.label>chemical station</RSF_ChemicalStation.label>
+    <RSF_ChemicalStation.description>Increases work speed when placed near a Biofuel Refinery and Brewery. One workbench can use up to two tool cabinets.</RSF_ChemicalStation.description>
+
 </LanguageData>

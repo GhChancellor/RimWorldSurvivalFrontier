@@ -26,6 +26,7 @@
         <ingredients>
             <li>
                 <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>RSF_PlasticFiber</li>
                     </thingDefs>
@@ -34,6 +35,7 @@
             </li>
             <li>
                 <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>Hay</li>
                     </thingDefs>
@@ -42,6 +44,7 @@
             </li>
             <li>
                 <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>Steel</li>
                     </thingDefs>
@@ -86,6 +89,7 @@
         <ingredients>
             <li>
                 <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>RSF_FiberWool</li>
                     </thingDefs>
@@ -94,6 +98,7 @@
             </li>
             <li>
                 <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>RSF_EcoLeather</li>
                     </thingDefs>
@@ -102,6 +107,7 @@
             </li>
             <li>
                 <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>DevilstrandCloth</li>
                     </thingDefs>
@@ -146,6 +152,7 @@
         <ingredients>
             <li>
                 <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>RSF_PlasticFiber</li>
                     </thingDefs>
@@ -154,6 +161,7 @@
             </li>
             <li>
                 <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>Cloth</li>
                     </thingDefs>
@@ -162,6 +170,7 @@
             </li>
             <li>
                 <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>Steel</li>
                     </thingDefs>
@@ -206,6 +215,7 @@
         <ingredients>
             <li>
                 <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>RSF_FiberDesert</li>
                     </thingDefs>
@@ -214,6 +224,7 @@
             </li>
             <li>
                 <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>RSF_EcoLeather</li>
                     </thingDefs>
@@ -222,6 +233,7 @@
             </li>
             <li>
                 <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>DevilstrandCloth</li>
                     </thingDefs>

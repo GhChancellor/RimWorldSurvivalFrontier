@@ -14,7 +14,6 @@
         <!-- Mechanic CORE -->
         <workAmount>2000</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
         <researchPrerequisite>RSF_PlasticBasicResearch</researchPrerequisite>
 
         <!-- Preserves work progress if interrupted -->
@@ -78,8 +77,13 @@
         <!-- Mechanic CORE -->
         <workAmount>800</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>RSF_PlasticBasicResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
+
+        <!-- Requirements -->
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
 
         <!-- Preserves work progress if interrupted -->
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
@@ -94,18 +98,61 @@
         <ingredients>
             <li>
                 <filter>
-                    <!-- thingDefs: defines which items can be crafted from this material -->
                     <thingDefs>
-                        <li>Chemfuel</li>
+                        <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
                     </thingDefs>
+
+                    <!-- Material categories: defines which items can be crafted from this material -->
+                    <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                    </categories>
+                    <!-- DISALLOWED Items -->
+                    <disallowedThingDefs>
+                        <li>RawFungus</li>
+                    </disallowedThingDefs>
                 </filter>
-                <count>40</count>
+                <count>50</count>
             </li>
         </ingredients>
 
+        <!-- Allow mixing different plant ingredients in same recipe -->
+        <allowMixingIngredients>true</allowMixingIngredients>
+
+        <!-- What CAN be selected -->
+        <fixedIngredientFilter>
+            <!-- Allowed items -->
+            <thingDefs>
+                <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+            </thingDefs>
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
+            <categories>
+                <li>PlantFoodRaw</li>
+            </categories>
+            <!-- DISALLOWED CATEGORIES -->
+            <disallowedThingDefs>
+                <li>RawFungus</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+
+        <!-- Pre-selected by default -->
+        <defaultIngredientFilter>
+            <thingDefs>
+                <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+            </thingDefs>
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
+            <categories>
+                <li>PlantFoodRaw</li>
+            </categories>
+        </defaultIngredientFilter>
+
         <!-- Output material-->
         <products>
-            <RSF_PlasticBasic>25</RSF_PlasticBasic>
+            <RSF_PlasticBasic>45</RSF_PlasticBasic>
         </products>
 
         <!-- Effect AUDIO/VISUAL -->
@@ -125,7 +172,7 @@
         <!-- Mechanic CORE -->
         <workAmount>1200</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>RSF_PlasticIndustrialResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
 
         <!-- Requirements -->
@@ -146,18 +193,61 @@
         <ingredients>
             <li>
                 <filter>
-                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
-                        <li>Chemfuel</li>
+                        <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
                     </thingDefs>
+
+                    <!-- Material categories: defines which items can be crafted from this material -->
+                    <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                    </categories>
+                    <!-- DISALLOWED items -->
+                    <disallowedThingDefs>
+                        <li>RawFungus</li>
+                    </disallowedThingDefs>
                 </filter>
-                <count>40</count>
+                <count>50</count>
             </li>
         </ingredients>
 
+        <!-- Allow mixing different plant ingredients in same recipe -->
+        <allowMixingIngredients>true</allowMixingIngredients>
+
+         <!-- What CAN be selected -->
+        <fixedIngredientFilter>
+            <!-- Allowed items -->
+            <thingDefs>
+                <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+            </thingDefs>
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
+            <categories>
+                <li>PlantFoodRaw</li>
+            </categories>
+            <!-- DISALLOWED items -->
+            <disallowedThingDefs>
+                <li>RawFungus</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+
+        <!-- Pre-selected by default -->
+        <defaultIngredientFilter>
+            <thingDefs>
+                <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+            </thingDefs>
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
+            <categories>
+                <li>PlantFoodRaw</li>
+            </categories>
+        </defaultIngredientFilter>
+
         <!-- OUTPUT material-->
         <products>
-            <RSF_PlasticIndustrial>20</RSF_PlasticIndustrial>
+            <RSF_PlasticIndustrial>40</RSF_PlasticIndustrial>
         </products>
 
         <!-- Effect AUDIO/VISUAL -->
@@ -177,7 +267,7 @@
         <!-- Mechanic CORE -->
         <workAmount>5000</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill>
         <researchPrerequisite>RSF_PlasticBioSteelResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
 
         <!-- Requirements -->
@@ -198,7 +288,6 @@
         <ingredients>
             <li>
                 <filter>
-                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>Steel</li>
                     </thingDefs>
@@ -207,7 +296,6 @@
             </li>
             <li>
                 <filter>
-                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>RSF_PlasticIndustrial</li>
                     </thingDefs>
@@ -216,7 +304,6 @@
             </li>
             <li>
                 <filter>
-                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>Chemfuel</li>
                     </thingDefs>
@@ -257,7 +344,7 @@
         <!-- Mechanic CORE -->
         <workAmount>600</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>RSF_PlasticFiberResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
 
         <!-- Preserves work progress if interrupted -->
@@ -279,18 +366,61 @@
         <ingredients>
             <li>
                 <filter>
-                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
-                        <li>Chemfuel</li>
+                        <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
                     </thingDefs>
+
+                    <!-- Material categories: defines which items can be crafted from this material -->
+                    <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                    </categories>
+                    <!-- DISALLOWED items -->
+                    <disallowedThingDefs>
+                        <li>RawFungus</li>
+                    </disallowedThingDefs>
                 </filter>
-                <count>35</count>
+                <count>50</count>
             </li>
         </ingredients>
 
+        <!-- Allow mixing different plant ingredients in same recipe -->
+        <allowMixingIngredients>true</allowMixingIngredients>
+
+        <!-- What CAN be selected -->
+        <fixedIngredientFilter>
+            <!-- Allowed items -->
+            <thingDefs>
+                <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+            </thingDefs>
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
+            <categories>
+                <li>PlantFoodRaw</li>
+            </categories>
+            <!-- DISALLOWED items -->
+            <disallowedThingDefs>
+                <li>RawFungus</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+
+        <!-- Pre-selected by default -->
+        <defaultIngredientFilter>
+            <thingDefs>
+                <li MayRequire="Dubwise.DubsBadHygiene">FecalSludge</li>
+            </thingDefs>
+
+            <!-- Material categories: defines which items can be crafted from this material -->
+            <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
+            <categories>
+                <li>PlantFoodRaw</li>
+            </categories>
+        </defaultIngredientFilter>
+
         <!-- OUTPUT material-->
         <products>
-            <RSF_PlasticFiber>28</RSF_PlasticFiber>
+            <RSF_PlasticFiber>45</RSF_PlasticFiber>
         </products>
 
         <!-- Effect AUDIO/VISUAL -->
@@ -310,7 +440,7 @@
         <!-- Mechanic CORE -->
         <workAmount>800</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>RSF_PlasticIncendiaryResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
 
         <!-- Preserves work progress if interrupted -->
@@ -332,18 +462,45 @@
         <ingredients>
             <li>
                 <filter>
-                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>Chemfuel</li>
                     </thingDefs>
                 </filter>
                 <count>25</count>
             </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RSF_PlasticBasic</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
         </ingredients>
+
+        <!-- Allow mixing different plant ingredients in same recipe -->
+        <allowMixingIngredients>true</allowMixingIngredients>
+
+        <!-- What CAN be selected -->
+        <fixedIngredientFilter>
+            <!-- Allowed items -->
+            <thingDefs>
+                <li>Chemfuel</li>
+                <li>RSF_PlasticBasic</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+
+        <!-- Pre-selected by default -->
+        <defaultIngredientFilter>
+            <thingDefs>
+                <li>Chemfuel</li>
+                <li>RSF_PlasticBasic</li>
+            </thingDefs>
+        </defaultIngredientFilter>
 
         <!-- OUTPUT material-->
         <products>
-            <RSF_PlasticIncendiary>20</RSF_PlasticIncendiary>
+            <RSF_PlasticIncendiary>25</RSF_PlasticIncendiary>
         </products>
 
         <!-- Effect AUDIO/VISUAL -->
@@ -363,7 +520,7 @@
         <!-- Mechanic CORE -->
         <workAmount>800</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>RSF_EcoLeatherResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
 
         <!-- Preserves work progress if interrupted -->
@@ -386,7 +543,6 @@
         <ingredients>
             <li>
                 <filter>
-                    <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
                         <li>RSF_PlasticFiber</li>
                     </thingDefs>
@@ -397,6 +553,20 @@
 
         <!-- Allow mixing different plant ingredients in same recipe -->
         <allowMixingIngredients>false</allowMixingIngredients>
+
+        <!--        &lt;!&ndash; Default UI filter - enables PlantFoodRaw by default &ndash;&gt;-->
+        <!--        <defaultIngredientFilter>-->
+        <!--            <thingDefs>-->
+        <!--                <li>RSF_PlasticFiber</li>-->
+        <!--            </thingDefs>-->
+        <!--        </defaultIngredientFilter>-->
+
+        <!--        &lt;!&ndash; Plant food filtering - excludes fungi and drugs &ndash;&gt;-->
+        <!--        <fixedIngredientFilter>-->
+        <!--            <thingDefs>-->
+        <!--                <li>RSF_PlasticFiber</li>-->
+        <!--            </thingDefs>-->
+        <!--        </fixedIngredientFilter>-->
 
         <!-- OUTPUT material-->
         <products>

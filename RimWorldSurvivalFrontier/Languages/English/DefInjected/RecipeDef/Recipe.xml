@@ -4,7 +4,7 @@
 
     <!-- ================= RSF_PlasticBasicRecipe ================= -->
     <RSF_PlasticBasicRecipe.label>make basic plastic</RSF_PlasticBasicRecipe.label>
-    <RSF_PlasticBasicRecipe.description>Lightweight bio-plastic from plant materials. Basic-grade material suitable for simple furniture and structures.</RSF_PlasticBasicRecipe.description>
+    <RSF_PlasticBasicRecipe.description>Lightweight bio-plastic from chemfuel. Basic-grade material suitable for simple furniture and structures.</RSF_PlasticBasicRecipe.description>
     <RSF_PlasticBasicRecipe.jobString>producing basic plastic</RSF_PlasticBasicRecipe.jobString>
 
     <!-- ================= RSF_PlasticIndustrialRecipe ================= -->

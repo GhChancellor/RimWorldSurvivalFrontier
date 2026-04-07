@@ -1,230 +1,243 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!--  =============== add RSF_ChemFuelStove =============== -->
-    <ThingDef ParentName="BenchBase">
+    <!--  ================= RSF_TemplateFueledStove ================= -->
+    <ThingDef Name="RSF_TemplateFueledStove" ParentName="BenchBase" Abstract="true">
+			 <label>Template fueled stove</label>
+            <description>A wood-fueled stove with an attached countertop for preparing meals.</description>
+			<thingClass>Building_WorkTable_HeatPush</thingClass>
+			<drawerType>MapMeshAndRealTime</drawerType>
 
-        <!-- ID -->
-        <defName>RSF_ChemFuelStove</defName>
-        <label>RSF_ChemFuelStove.label</label>
-        <description>RSF_ChemFuelStove.description</description>
+			<!-- Icons & colors -->
+			<graphicData>
+				<texPath>Things/Building/Production/TableStoveFueled</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(3.5,1.5)</drawSize>
+				<damageData>
+					<cornerTL>Damage/Corner</cornerTL>
+					<cornerTR>Damage/Corner</cornerTR>
+					<cornerBL>Damage/Corner</cornerBL>
+					<cornerBR>Damage/Corner</cornerBR>
+				</damageData>
+			</graphicData>
+			<castEdgeShadows>true</castEdgeShadows>
+			<staticSunShadowHeight>0.20</staticSunShadowHeight>
+			<constructEffect>ConstructMetal</constructEffect>
 
-        <thingClass>Building_WorkTable_HeatPush</thingClass>
-        <drawerType>MapMeshAndRealTime</drawerType>
+			<!-- Specifies exact materials and quantities -->
+			<costList>
+				<Steel>80</Steel>
+			</costList>
+			<altitudeLayer>Building</altitudeLayer>
+			<fillPercent>0.5</fillPercent>
+			<useHitPoints>True</useHitPoints>
+			<statBases>
+				<WorkToBuild>2000</WorkToBuild>
+				<MaxHitPoints>180</MaxHitPoints>
+				<Flammability>1.0</Flammability>
+			</statBases>
+			<size>(3,1)</size>
+			<designationCategory>Production</designationCategory>
+			<uiOrder>2110</uiOrder>
+			<passability>PassThroughOnly</passability>
+			<pathCost>50</pathCost>
+			<hasInteractionCell>True</hasInteractionCell>
+			<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+			<surfaceType>Item</surfaceType>
+			<recipes>
+				<li>CookMealSimple</li>
+				<li>CookMealFine</li>
+				<li>CookMealFine_Veg</li>
+				<li>CookMealFine_Meat</li>
+				<li>CookMealLavish</li>
+				<li>CookMealLavish_Veg</li>
+				<li>CookMealLavish_Meat</li>
+				<li>CookMealSurvival</li>
+				<li>CookMealSimpleBulk</li>
+				<li>CookMealFineBulk</li>
+				<li>CookMealFineBulk_Veg</li>
+				<li>CookMealFineBulk_Meat</li>
+				<li>CookMealLavishBulk</li>
+				<li>CookMealLavishBulk_Veg</li>
+				<li>CookMealLavishBulk_Meat</li>
+				<li>CookMealSurvivalBulk</li>
+				<li>Make_Pemmican</li>
+				<li>Make_PemmicanBulk</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFood</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFoodBulk</li>
+			</recipes>
+			<inspectorTabs>
+				<li>ITab_Bills</li>
+			</inspectorTabs>
+<!--			<comps>
+				<li Class="CompProperties_Refuelable">
+					<fuelConsumptionRate>160.0</fuelConsumptionRate>
+					<fuelCapacity>50.0</fuelCapacity>
+					<fuelFilter>
+						<thingDefs>
+							<li>WoodLog</li>
+						</thingDefs>
+					</fuelFilter>
+					<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+					<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+					<canEjectFuel>true</canEjectFuel>
+				</li>
+				<li Class="CompProperties_HeatPusher">
+					<compClass>CompHeatPusherPowered</compClass>
+					<heatPerSecond>4</heatPerSecond>
+				</li>
+			</comps>-->
+			<placeWorkers>
+				<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+			</placeWorkers>
+			<building>
+				<isMealSource>true</isMealSource>
+				<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+				<heatPerTickWhileWorking>0.10</heatPerTickWhileWorking>
+				<workTableRoomRole>Kitchen</workTableRoomRole>
+				<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+			</building>
 
-        <!-- Icons & colors -->
-        <graphicData>
-            <texPath>Things/Building/Production/TableStoveFueled</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3.5,1.5)</drawSize>
-            <damageData>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
-                <cornerBL>Damage/Corner</cornerBL>
-                <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
-        </graphicData>
-        <castEdgeShadows>true</castEdgeShadows>
-        <staticSunShadowHeight>0.20</staticSunShadowHeight>
-        <constructEffect>ConstructMetal</constructEffect>
+		</ThingDef>
 
-        <!-- Specifies exact materials and quantities -->
-        <costList>
-            <Steel>80</Steel>
-        </costList>
+	<!--  =============== RSF_ChemFuelStove=============== -->
+	<ThingDef ParentName="RSF_TemplateFueledStove">
 
-        <altitudeLayer>Building</altitudeLayer>
-        <fillPercent>0.5</fillPercent>
-        <useHitPoints>True</useHitPoints>
+		<!-- ID -->
+		<defName>RSF_ChemFuelStove</defName>
+		<label>RSF_ChemFuelStove.label</label>
+		<description>RSF_ChemFuelStove.description</description>
 
-        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
-        <statBases>
-            <WorkToBuild>2000</WorkToBuild>
+		<!-- Ui Order: controls the order of items in the inventory -->
+		<uiOrder>2114</uiOrder>
 
-            <!-- HP when item is on ground/inventory -->
-            <MaxHitPoints>180</MaxHitPoints>
+		<!-- Components: behavior modules -->
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>120</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<canEjectFuel>true</canEjectFuel>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>4</heatPerSecond>
+			</li>
+		</comps>
 
-            <Flammability>1.0</Flammability>
-        </statBases>
+		<researchPrerequisites>
+			<li>BiofuelRefining</li>
+		</researchPrerequisites>
+	</ThingDef>
 
-        <!-- Items size -->
-        <size>(3,1)</size>
+	<!--  =============== RSF_TemplateKibble =============== -->
+	<!-- see Defs/ThingDefs_Items/Items_Food.xml > Kibble -->
+	<ThingDef Name="RSF_TemplateKibble" ParentName="OrganicProductBase" Abstract="true">
+		<label>RSF_Template dried food</label>
 
-        <!-- Ui Order: controls the order of items in the inventory -->
-        <uiOrder>2110</uiOrder>
+		<!-- Icons & colors -->
+		<graphicData>
+			<texPath>Things/Item/Resource/Pemmican</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
 
-        <designationCategory>Production</designationCategory>
-        <passability>PassThroughOnly</passability>
-        <pathCost>50</pathCost>
-        <hasInteractionCell>True</hasInteractionCell>
-        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-        <surfaceType>Item</surfaceType>
+		<socialPropernessMatters>true</socialPropernessMatters>
 
-        <!-- Recipes this building can cook/craft -->
-        <recipes>
-            <li>CookMealSimple</li>
-            <li>CookMealFine</li>
-            <li>CookMealFine_Veg</li>
-            <li>CookMealFine_Meat</li>
-            <li>CookMealLavish</li>
-            <li>CookMealLavish_Veg</li>
-            <li>CookMealLavish_Meat</li>
-            <li>CookMealSurvival</li>
-            <li>CookMealSimpleBulk</li>
-            <li>CookMealFineBulk</li>
-            <li>CookMealFineBulk_Veg</li>
-            <li>CookMealFineBulk_Meat</li>
-            <li>CookMealLavishBulk</li>
-            <li>CookMealLavishBulk_Veg</li>
-            <li>CookMealLavishBulk_Meat</li>
-            <li>CookMealSurvivalBulk</li>
-            <li>Make_Pemmican</li>
-            <li>Make_PemmicanBulk</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFood</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFoodBulk</li>
-        </recipes>
-        <inspectorTabs>
-            <li>ITab_Bills</li>
-        </inspectorTabs>
+		<thingCategories>
+			<li>Foods</li>
+		</thingCategories>
 
-        <!-- Components: behavior modules -->
-        <comps>
-            <li Class="CompProperties_Refuelable">
-                <fuelConsumptionRate>80</fuelConsumptionRate>
-                <fuelCapacity>50.0</fuelCapacity>
-                <fuelFilter>
-                    <thingDefs>
-                        <li>Chemfuel</li>
-                    </thingDefs>
-                </fuelFilter>
-                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-                <canEjectFuel>true</canEjectFuel>
-            </li>
-            <li Class="CompProperties_HeatPusher">
-                <compClass>CompHeatPusherPowered</compClass>
-                <heatPerSecond>4</heatPerSecond>
-            </li>
-        </comps>
-        <placeWorkers>
-            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-        </placeWorkers>
-        <building>
-            <isMealSource>true</isMealSource>
-            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-            <heatPerTickWhileWorking>0.10</heatPerTickWhileWorking>
-            <workTableRoomRole>Kitchen</workTableRoomRole>
-            <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
-        </building>
+		<!-- Components: behavior modules -->
+		<comps>
+			<li Class="CompProperties_Ingredients">
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
+			<li Class="CompProperties_FoodPoisonable" />
+		</comps>
+	</ThingDef>
 
-        <researchPrerequisites>
-            <li>BiofuelRefining</li>
-        </researchPrerequisites>
-    </ThingDef>
+	<!--  =============== RSF_DriedMeat =============== -->
+	<ThingDef ParentName="RSF_TemplateKibble">
+		<!-- ID -->
+		<defName>RSF_DriedMeat</defName>
+		<label>RSF_DriedMeat.label</label>
+		<description>RSF_DriedMeat.description</description>
 
-    <!--  =============== RSF_TemplateKibble =============== -->
-    <!-- see Defs/ThingDefs_Items/Items_Food.xml > Kibble -->
-    <ThingDef Name="RSF_TemplateKibble" ParentName="OrganicProductBase" Abstract="true">
-        <label>RSF_Template dried food</label>
+		<ingestible>
+			<foodType>Meat</foodType>                    <!--  Meat vs Kibble -->
+			<preferability>RawTasty</preferability>      <!-- RawTasty vs RawBad -->
+			<tasteThought>AteRawFood</tasteThought>      <!--  AteRawFood vs AteKibble -->
+			<optimalityOffsetHumanlikes>-7</optimalityOffsetHumanlikes>  <!-- less penalty -->
+			<ingestEffect>EatMeat</ingestEffect>         <!-- EatMeat -->
+			<ingestSound>RawMeat_Eat</ingestSound>       <!-- sound -->
+		</ingestible>
 
-        <!-- Icons & colors -->
-        <graphicData>
-            <texPath>Things/Item/Resource/Pemmican</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-        </graphicData>
+		<!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<Mass>0.015</Mass> <!-- Item weight (kg) -->
+			<Flammability>0.6</Flammability>
+			<WorkToMake>600</WorkToMake>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
 
-        <socialPropernessMatters>true</socialPropernessMatters>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
 
-        <thingCategories>
-            <li>Foods</li>
-        </thingCategories>
+		<!-- Components: behavior modules -->
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>50</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
 
-        <!-- Components: behavior modules -->
-        <comps>
-            <li Class="CompProperties_Ingredients">
-                <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
-            </li>
-            <li Class="CompProperties_FoodPoisonable" />
-        </comps>
-    </ThingDef>
+		</comps>
+	</ThingDef>
 
-    <!--  =============== RSF_DriedMeat =============== -->
-    <ThingDef ParentName="RSF_TemplateKibble">
-        <!-- ID -->
-        <defName>RSF_DriedMeat</defName>
-        <label>RSF_DriedMeat.label</label>
-        <description>RSF_DriedMeat.description</description>
+	<!--  =============== RSF_DriedFruit =============== -->
+	<ThingDef ParentName="RSF_TemplateKibble">
+		<!-- ID -->
+		<defName>RSF_DriedFruit</defName>
+		<label>RSF_DriedFruit.label</label>
+		<description>RSF_DriedFruit.description</description>
 
-        <ingestible>
-            <foodType>Meat</foodType>                    <!--  Meat vs Kibble -->
-            <preferability>RawTasty</preferability>      <!-- RawTasty vs RawBad -->
-            <tasteThought>AteRawFood</tasteThought>      <!--  AteRawFood vs AteKibble -->
-            <optimalityOffsetHumanlikes>-7</optimalityOffsetHumanlikes>  <!-- less penalty -->
-            <ingestEffect>EatMeat</ingestEffect>         <!-- EatMeat -->
-            <ingestSound>RawMeat_Eat</ingestSound>       <!-- sound -->
-        </ingestible>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>                    <!--  Meat vs Kibble -->
+			<preferability>RawTasty</preferability>      <!-- RawTasty vs RawBad -->
+			<tasteThought>AteRawFood</tasteThought>      <!--  AteRawFood vs AteKibble -->
+			<optimalityOffsetHumanlikes>-7</optimalityOffsetHumanlikes>  <!-- less penalty -->
+			<ingestEffect>EatVegetarian</ingestEffect>         <!-- EatMeat -->
+			<ingestSound>RawVegetable_Eat</ingestSound>       <!-- sound -->
+		</ingestible>
 
-        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
-        <statBases>
-            <MarketValue>1.2</MarketValue>
-            <Mass>0.015</Mass> <!-- Item weight (kg) -->
-            <Flammability>0.6</Flammability>
-            <WorkToMake>600</WorkToMake>
-            <DeteriorationRate>2</DeteriorationRate>
-            <Nutrition>0.05</Nutrition>
-        </statBases>
+		<!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<Mass>0.015</Mass>  <!-- Item weight (kg) -->
+			<Flammability>0.6</Flammability>
+			<WorkToMake>600</WorkToMake>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
 
-        <thingCategories>
-            <li>MeatRaw</li>
-        </thingCategories>
+		<thingCategories>
+			<li>PlantFoodRaw</li>
+		</thingCategories>
 
-        <!-- Components: behavior modules -->
-        <comps>
-            <li Class="CompProperties_Rottable">
-                <daysToRotStart>50</daysToRotStart>
-                <rotDestroys>true</rotDestroys>
-            </li>
-            
-        </comps>
-    </ThingDef>
-
-    <!--  =============== RSF_DriedFruit =============== -->
-    <ThingDef ParentName="RSF_TemplateKibble">
-        <!-- ID -->
-        <defName>RSF_DriedFruit</defName>
-        <label>RSF_DriedFruit.label</label>
-        <description>RSF_DriedFruit.description</description>
-
-        <ingestible>
-            <foodType>VegetableOrFruit</foodType>                    <!--  Meat vs Kibble -->
-            <preferability>RawTasty</preferability>      <!-- RawTasty vs RawBad -->
-            <tasteThought>AteRawFood</tasteThought>      <!--  AteRawFood vs AteKibble -->
-            <optimalityOffsetHumanlikes>-7</optimalityOffsetHumanlikes>  <!-- less penalty -->
-            <ingestEffect>EatVegetarian</ingestEffect>         <!-- EatMeat -->
-            <ingestSound>RawVegetable_Eat</ingestSound>       <!-- sound -->
-        </ingestible>
-
-        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
-        <statBases>
-            <MarketValue>1.2</MarketValue>
-            <Mass>0.015</Mass>  <!-- Item weight (kg) -->
-            <Flammability>0.6</Flammability>
-            <WorkToMake>600</WorkToMake>
-            <DeteriorationRate>2</DeteriorationRate>
-            <Nutrition>0.05</Nutrition>
-        </statBases>
-
-        <thingCategories>
-            <li>PlantFoodRaw</li>
-        </thingCategories>
-
-        <!-- Components: behavior modules -->
-        <comps>
-            <li Class="CompProperties_Rottable">
-                <daysToRotStart>50</daysToRotStart>
-                <rotDestroys>true</rotDestroys>
-            </li>
-
-        </comps>
-    </ThingDef>
+		<!-- Components: behavior modules -->
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>50</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>
