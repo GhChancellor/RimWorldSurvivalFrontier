@@ -138,4 +138,12 @@
     <RSF_ChemicalStation.label>stazione chimica</RSF_ChemicalStation.label>
     <RSF_ChemicalStation.description>Aumenta la velocità di lavoro quando posizionata vicino a una raffineria di biocarburante o a un birrificio. Un banco da lavoro può utilizzare fino a due stazioni chimiche.</RSF_ChemicalStation.description>
 
+    <!-- ================= RSF_StoragePalle ================= -->
+    <RSF_StoragePallet.label>pallet</RSF_StoragePallet.label>
+    <RSF_StoragePallet.description>Un pallet di stoccaggio che contiene detriti e edifici. Gli oggetti conservati al suo interno non si deteriorano mai e non influenzano la bellezza dell'ambiente circostante. Il pallet non può contenere piante o cadaveri.</RSF_StoragePallet.description>
+
+    <!-- ================= RSF_StoragePalletSmall ================= -->
+    <RSF_StoragePalletSmall.label>pallet piccolo</RSF_StoragePalletSmall.label>
+    <RSF_StoragePalletSmall.description>Un piccolo pallet di stoccaggio che contiene detriti e edifici. Gli oggetti conservati al suo interno non si deteriorano mai e non influenzano la bellezza dell'ambiente circostante. Il pallet non può contenere piante o cadaveri.</RSF_StoragePalletSmall.description>
+
 </LanguageData>

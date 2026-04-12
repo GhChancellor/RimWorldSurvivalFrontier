@@ -138,4 +138,13 @@
     <RSF_ChemicalStation.label>chemical station</RSF_ChemicalStation.label>
     <RSF_ChemicalStation.description>Increases work speed when placed near a Biofuel Refinery and Brewery. One workbench can use up to two tool cabinets.</RSF_ChemicalStation.description>
 
+    <!-- ================= RSF_StoragePallet ================= -->
+    <RSF_StoragePallet.label>storage pallet</RSF_StoragePallet.label>
+    <RSF_StoragePallet.description>A storage pallet that holds chunks and buildings. Items stored inside will never deteriorate and don't affect the beauty of their surroundings. The pallet cannot hold plants and corpses.</RSF_StoragePallet.description>
+
+    <!-- ================= RSF_StoneRackSmall ================= -->
+    <RSF_StoragePalletSmall.label>small storage pallet</RSF_StoragePalletSmall.label>
+    <RSF_StoragePalletSmall.description>A small storage pallet that holds chunks and buildings. Items stored inside will never deteriorate and don't affect the beauty of their surroundings. The pallet cannot hold plants and corpses.</RSF_StoragePalletSmall.description>
+
+
 </LanguageData>

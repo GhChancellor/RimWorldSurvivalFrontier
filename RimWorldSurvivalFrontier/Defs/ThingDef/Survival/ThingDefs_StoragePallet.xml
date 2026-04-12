@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- Defs/ThingDefs_Buildings/Buildings_Furniture.xml -->
+    <!-- ==================== Template ShelfBase =================== -->
+    <ThingDef Name="ShelfBase" ParentName="FurnitureBase" Abstract="True">
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.4</fillPercent>
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>50</pathCost>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <statBases>
+            <Flammability>1.0</Flammability>
+            <Beauty>0.5</Beauty>
+        </statBases>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <maxItemsInCell>2</maxItemsInCell>
+            <blueprintClass>Blueprint_Storage</blueprintClass>
+            <paintable>true</paintable>
+        </building>
+        <inspectorTabs>
+            <li>ITab_Storage</li>
+        </inspectorTabs>
+        <staticSunShadowHeight>0.5</staticSunShadowHeight>
+        <surfaceType>Item</surfaceType>
+        <canOverlapZones>false</canOverlapZones>
+        <researchPrerequisites>
+            <li>ComplexFurniture</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Styleable"/>
+        </comps>
+        <uiOrder>2050</uiOrder> <!-- To group with outfit stand -->
+    </ThingDef>
+
+    <!-- ==================== Template Storage Shelf =================== -->
+    <ThingDef Name="StorageShelfBase" ParentName="ShelfBase" Abstract="True">
+
+        <!-- Icons & colors -->
+        <graphicData>
+            <texPath>Things/Building/Furniture/RSF_StoragePallet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+
+            <!-- This is the color of the icon that you can see in the inventory! -->
+            <color>(255,255,255)</color>
+        </graphicData>
+
+        <thingClass>Building_Storage</thingClass>
+        <building>
+            <storageGroupTag>Shelf</storageGroupTag>
+
+            <fixedStorageSettings>
+                <filter>
+                    <disallowNotEverStorable>true</disallowNotEverStorable>
+
+                    <!-- Allowed materials. Defines which items can be stored in this building. -->
+                   <thingDefs>
+                       <li>Steel</li>
+                   </thingDefs>
+
+                   <!-- Allowed categories -->
+                    <!-- Material categories: Defines which categories can be stored in this building. -->
+                    <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
+                    <categories>
+                        <li>Chunks</li>
+                        <li>Buildings</li>
+                    </categories>
+                    <!-- Disallowed Items -->
+                    <!-- Biotech DLC: exclude Wastepack -->
+                    <disallowedThingDefs MayRequire="Ludeon.RimWorld.Biotech">
+                        <li MayRequire="Ludeon.RimWorld.Biotech">Wastepack</li>
+                    </disallowedThingDefs>
+
+                    <specialFiltersToDisallow>
+                        <li>AllowLargeCorpses</li>
+                    </specialFiltersToDisallow>
+                </filter>
+            </fixedStorageSettings>
+
+            <!-- Pre-selected by default -->
+            <defaultStorageSettings>
+                <priority>Normal</priority>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+
+                    <categories>
+                        <li>Chunks</li>
+                        <li>Buildings</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+
+        </building>
+        <designationHotKey>Misc12</designationHotKey>
+    </ThingDef>
+
+    <!-- ==================== RSF_StoragePallet =================== -->
+    <ThingDef ParentName="StorageShelfBase">
+        <!-- ID -->
+        <defName>RSF_StoragePallet</defName>
+        <label>RSF_StoragePallet.label</label>
+        <description>RSF_StoragePallet.description</description>
+
+        <!-- Icons & colors -->
+        <graphicData>
+            <drawSize>(3,2)</drawSize>
+        </graphicData>
+
+        <!-- Defines WHICH and HOW MUCH of that material is required -->
+        <costStuffCount>35</costStuffCount>
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>8</Mass>
+            <WorkToBuild>500</WorkToBuild>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+        </statBases>
+
+        <size>(3,2)</size>
+        <designationHotKey>Misc12</designationHotKey>
+
+        <building>
+            <relatedBuildCommands>
+                <li>RSF_StoragePalletSmall</li>
+            </relatedBuildCommands>
+        </building>
+    </ThingDef>
+
+    <!-- ==================== RSF_StoragePalletSmall =================== -->
+    <ThingDef ParentName="StorageShelfBase">
+        <!-- ID -->
+        <defName>RSF_StoragePalletSmall</defName>
+        <label>RSF_StoragePalletSmall.label</label>
+        <description>RSF_StoragePalletSmall.description</description>
+
+        <!-- Icons & colors -->
+        <graphicData>
+             <drawSize>(2,1)</drawSize>
+        </graphicData>
+
+        <!-- Ui Icon Scale: controls the size of the icon in the inventory -->
+        <uiIconScale>0.8</uiIconScale>
+        <costStuffCount>18</costStuffCount>
+
+        <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>4</Mass>
+            <WorkToBuild>250</WorkToBuild>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+        </statBases>
+        <size>(2,1)</size>
+
+        <building>
+            <relatedBuildCommands>
+                <li>RSF_StoragePallet</li>
+            </relatedBuildCommands>
+        </building>
+    </ThingDef>
+</Defs>

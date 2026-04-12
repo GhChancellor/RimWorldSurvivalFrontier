@@ -33,6 +33,7 @@
         <Folder Include="Defs\**\*"/>
         <Folder Include="Languages\**\*"/>
         <Folder Include="Patches\**\*"/>
+        <Folder Include="Textures\**\*"/>
     </ItemGroup>
 
     <!-- Post-build deployment steps -->
@@ -52,6 +53,7 @@
         <Exec Command="mkdir -p &quot;$(ModRootFolder)/Defs&quot;"/>
         <Exec Command="mkdir -p &quot;$(ModRootFolder)/Languages&quot;"/>
         <Exec Command="mkdir -p &quot;$(ModRootFolder)/Patches&quot;"/>
+        <Exec Command="mkdir -p &quot;$(ModRootFolder)/Texturess&quot;"/>
         <Exec Command="mkdir -p &quot;$(ModAssembliesFolder)&quot;"/>
 
         <!-- Copy mod files to installation directory -->
@@ -60,6 +62,7 @@
         <Exec Command="rsync -av --delete &quot;Defs/&quot; &quot;$(ModRootFolder)/Defs/&quot;"/>
         <Exec Command="rsync -av --delete &quot;Languages/&quot; &quot;$(ModRootFolder)/Languages/&quot;"/>
         <Exec Command="rsync -av --delete &quot;Patches/&quot; &quot;$(ModRootFolder)/Patches/&quot;"/>
+        <Exec Command="rsync -av --delete &quot;Textures/&quot; &quot;$(ModRootFolder)/Textures/&quot;"/>
         <Exec Command="rsync -av --delete &quot;$(TargetPath)&quot; &quot;$(ModAssembliesFolder)/$(ModName)&quot;"/>
 
     </Target>

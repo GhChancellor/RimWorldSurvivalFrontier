@@ -9,6 +9,7 @@
     <label>TemplateToolCabinet</label>
     <description>A simple Template.</description>
 
+        <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Building/Misc/ToolCabinet</texPath>
             <graphicClass>Graphic_Multi</graphicClass>

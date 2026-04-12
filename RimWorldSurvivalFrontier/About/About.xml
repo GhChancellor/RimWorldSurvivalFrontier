@@ -17,12 +17,14 @@ Complete survival toolkit for extreme biomes. Materials, food production, shelte
 Perfect integration with the base game. Balanced for equilibrium gameplay without disrupting the RimWorld experience.
 
 RECENT UPDATES:
+UPDATES: 1.0.0.77
+- Add Storage pallet/small pallet that holds chunks and buildings The pallet cannot hold plants and corpses. ( shelf )
 
 UPDATES: 1.0.0.72
 - Balance recipe plastic base
 - Unified recipes to vanilla standard. Two-step process: materials → chemfuel → plastics.
 - Balance stats of chefuel stove
-- Add table 1x1
+- Add Table 1x1
 - Add Chemical station ( like toolcabinet ) for biochemfuel refinery and brewery
 
 UPDATES: 1.0.0.65
@@ -32,15 +34,6 @@ UPDATES: 1.0.0.65
 - Restyle Documentations
 - Restyle translation
 - Add Manifest.xml
-
-UPDATES: 1.0.0.46
-Add 4 fiber:
-- fiber wool: very good cold insulation
-- fiber polar: extreme cold insulation
-- fiber desert: good hot insulation
-- fiber solar: extreme hot insulation
-
-Fix italian translate 
 
 🌱 Ecological Production
 Create bio-plastic at the biofuel refinery from common plant resources: agave, berries, corn, potatoes, and rice.
@@ -102,6 +95,10 @@ Indoor crops :
 Cooking
 - Add Chemfuel stove
 - Add dried fruit and dried meat for longer storage without refrigeration
+
+Furniture
+- Add table 1x1
+- Add storage pallet/small pallet that holds chunks and buildings The pallet cannot hold plants and corpses. ( shelf )
 
 Quality of life ( QoL ) :
 Add light range indicators to all vanilla lamps: Wall Lamp, Flood Light, Standing Lamp, Torch Lamp, and Wall Torch Lamp

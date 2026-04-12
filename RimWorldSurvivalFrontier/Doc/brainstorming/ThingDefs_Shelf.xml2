@@ -1,66 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Defs>
+  <Defs>
+
+    <!-- ==================== ShelfBase =================== -->
+    <ThingDef Name="ShelfBase" ParentName="FurnitureBase" Abstract="True">
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>50</pathCost>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>3</maxItemsInCell>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <paintable>true</paintable>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <surfaceType>Item</surfaceType>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Styleable" />
+    </comps>
+    <uiOrder>2050</uiOrder> <!-- To group with outfit stand -->
+  </ThingDef>
+
+    <ThingDef Name="StorageShelfBase" ParentName="ShelfBase" Abstract="True">
+    <thingClass>Building_Storage</thingClass>
+    <building>
+      <storageGroupTag>Shelf</storageGroupTag>
+      <fixedStorageSettings>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <categories>
+            <li>Root</li>
+          </categories>
+          <disallowedCategories>
+            <li>Chunks</li>
+            <li>Plants</li>
+            <li>Buildings</li>
+          </disallowedCategories>
+          <disallowedThingDefs MayRequire="Ludeon.RimWorld.Biotech">
+            <li MayRequire="Ludeon.RimWorld.Biotech">Wastepack</li>
+          </disallowedThingDefs>
+          <specialFiltersToDisallow>
+            <li>AllowLargeCorpses</li>
+          </specialFiltersToDisallow>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <categories>
+            <li>Foods</li>
+            <li>Manufactured</li>
+            <li>ResourcesRaw</li>
+            <li>Items</li>
+            <li>Weapons</li>
+            <li>Apparel</li>
+            <li>BodyParts</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <designationHotKey>Misc12</designationHotKey>
+  </ThingDef>
+
     <ThingDef ParentName="StorageShelfBase">
-        <defName>RSF_HeavyMaterialRack</defName>
-        <label>Heavy Material Rack</label>
-        <description>A triple-stack shelf that holds three times as much as empty ground. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nSince shelf space is limited, shelves cannot hold chunks, buildings, plants and large corpses.</description>
-        <graphicData>
-            <texPath>Things/Building/Furniture/Shelf</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3,2)</drawSize>
-        </graphicData>
-        <costStuffCount>20</costStuffCount>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Mass>8</Mass>
-            <WorkToBuild>500</WorkToBuild>
-            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
-        </statBases>
-        <size>(2,1)</size>
-        <designationHotKey>Misc12</designationHotKey>
-        <building>
-            <relatedBuildCommands>
-                <li>ShelfSmall</li>
-            </relatedBuildCommands>
-        </building>
+      <!-- ID -->
+      <defName>RSF_StoneRack</defName>
 
 
+      <label>RSF_StoneRack.label</label>
+<!--      <label>shelf</label>-->
 
 
-        <fixedStorageSettings>
-            <filter>
-                <disallowNotEverStorable>true</disallowNotEverStorable>
-                <categories>
-                    <li>Root</li>
-                </categories>
-                <disallowedCategories>
-                    <li>Chunks</li>
-                    <li>Plants</li>
-                    <li>Buildings</li>
-                </disallowedCategories>
-                <disallowedThingDefs MayRequire="Ludeon.RimWorld.Biotech">
-                    <li MayRequire="Ludeon.RimWorld.Biotech">Wastepack</li>
-                </disallowedThingDefs>
-                <specialFiltersToDisallow>
-                    <li>AllowLargeCorpses</li>
-                </specialFiltersToDisallow>
-            </filter>
-        </fixedStorageSettings>
-        <defaultStorageSettings>
-            <priority>Preferred</priority>
-            <filter>
-                <categories>
-                    <li>Foods</li>
-                    <li>Manufactured</li>
-                    <li>ResourcesRaw</li>
-                    <li>Items</li>
-                    <li>Weapons</li>
-                    <li>Apparel</li>
-                    <li>BodyParts</li>
-                </categories>
-            </filter>
-        </defaultStorageSettings>
+      <description>RSF_StoneRack.description</description>
+<!--      <description>A triple-stack shelf that holds three times as much as empty ground. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nSince shelf space is limited, shelves cannot hold chunks, buildings, plants and large corpses.</description>-->
+
+      <graphicData>
+<!--        <texPath>Things/Building/Furniture/Shelf</texPath>-->
+        <texPath>Things/Building/Furniture/RSF_StoneRack</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(3,2)</drawSize>
+      </graphicData>
+      <costStuffCount>20</costStuffCount>
+      <statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+        <Mass>8</Mass>
+        <WorkToBuild>500</WorkToBuild>
+        <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+      </statBases>
+      <size>(2,1)</size>
+      <designationHotKey>Misc12</designationHotKey>
+      <building>
+        <relatedBuildCommands>
+          <li>ShelfSmall</li>
+        </relatedBuildCommands>
+      </building>
+  </ThingDef>
+
+    <ThingDef ParentName="StorageShelfBase">
+    <defName>RSF_ShelfSmall</defName>
+    <label>small shelf</label>
+    <description>A small triple-stack shelf that holds three times as much as empty ground. Items stored inside will never deteriorate and don't affect the beauty of their surroundings.\n\nSince shelf space is limited, shelves cannot hold chunks, buildings, plants and large corpses.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ShelfSmall</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <uiIconScale>0.5</uiIconScale>
+    <costStuffCount>10</costStuffCount>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>4</Mass>
+      <WorkToBuild>250</WorkToBuild>
+      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2.5</StyleDominance>
+    </statBases>
+    <size>(1,1)</size>
+    <building>
+      <relatedBuildCommands>
+        <li>Shelf</li>
+      </relatedBuildCommands>
+    </building>
+  </ThingDef>
+  </Defs>
 
 
-    </ThingDef>
-</Defs>
