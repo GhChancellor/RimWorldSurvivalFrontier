@@ -136,10 +136,10 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!--  =============== RSF_TemplateKibble =============== -->
+	<!--  =============== RSF_TemplateDried =============== -->
 	<!-- see Defs/ThingDefs_Items/Items_Food.xml > Kibble -->
-	<ThingDef Name="RSF_TemplateKibble" ParentName="OrganicProductBase" Abstract="true">
-		<label>RSF_Template dried food</label>
+	<ThingDef Name="RSF_TemplateDried" ParentName="OrganicProductBase" Abstract="true">
+		<label>Temlate Dried Food</label>
 
 		<!-- Icons & colors -->
 		<graphicData>
@@ -163,11 +163,20 @@
 	</ThingDef>
 
 	<!--  =============== RSF_DriedMeat =============== -->
-	<ThingDef ParentName="RSF_TemplateKibble">
+	<ThingDef ParentName="RSF_TemplateDried">
 		<!-- ID -->
 		<defName>RSF_DriedMeat</defName>
 		<label>RSF_DriedMeat.label</label>
 		<description>RSF_DriedMeat.description</description>
+
+		<!-- Icons & colors -->
+		<graphicData>
+			<texPath>Things/Item/Resource/RSF_DriedMeat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+			<!-- This is the color of the icon that you can see in the inventory! -->
+			<color>(255,255,255)</color>
+		</graphicData>
 
 		<ingestible>
 			<foodType>Meat</foodType>                    <!--  Meat vs Kibble -->
@@ -203,11 +212,20 @@
 	</ThingDef>
 
 	<!--  =============== RSF_DriedFruit =============== -->
-	<ThingDef ParentName="RSF_TemplateKibble">
+	<ThingDef ParentName="RSF_TemplateDried">
 		<!-- ID -->
 		<defName>RSF_DriedFruit</defName>
 		<label>RSF_DriedFruit.label</label>
 		<description>RSF_DriedFruit.description</description>
+
+		<!-- Icons & colors -->
+		<graphicData>
+			<texPath>Things/Item/Resource/RSF_DriedFruit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+			<!-- This is the color of the icon that you can see in the inventory! -->
+			<color>(255,255,255)</color>
+		</graphicData>
 
 		<ingestible>
 			<foodType>VegetableOrFruit</foodType>                    <!--  Meat vs Kibble -->

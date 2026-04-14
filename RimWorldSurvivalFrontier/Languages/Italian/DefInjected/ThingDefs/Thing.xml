@@ -75,11 +75,11 @@
     <RSF_ChemFuelStove.description>Un forno a biocarburante con piano di cottura per prepare pasti.</RSF_ChemFuelStove.description>
 
     <!--  ================= RSF_DriedMeat ================= -->
-    <RSF_DriedMeat.label>produci carne essiccata</RSF_DriedMeat.label>
+    <RSF_DriedMeat.label>carne essiccata</RSF_DriedMeat.label>
     <RSF_DriedMeat.description>Conserva la carne essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedMeat.description>
 
     <!--  ================= RSF_DriedFruit ================= -->
-    <RSF_DriedFruit.label>produci frutta essiccata</RSF_DriedFruit.label>
+    <RSF_DriedFruit.label>frutta essiccata</RSF_DriedFruit.label>
     <RSF_DriedFruit.description>Conserva la frutta essiccandola. Il sapore è terribile e da delle penalità al umore ma può essere conservata a lungo senza refrigerazione. Meglio utilizzarla come ingrediente in un pasto cucinato che mangiata direttamente.</RSF_DriedFruit.description>
 
     <!-- ================= RSF_Plant_TreeDragoNano arid shrublands and deserts.  ================= -->

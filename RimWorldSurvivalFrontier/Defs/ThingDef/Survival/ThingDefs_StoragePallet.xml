@@ -72,7 +72,8 @@
                         <li>Chunks</li>
                         <li>Buildings</li>
                     </categories>
-                    <!-- Disallowed Items -->
+
+                    <!-- DISALLOWED items -->
                     <!-- Biotech DLC: exclude Wastepack -->
                     <disallowedThingDefs MayRequire="Ludeon.RimWorld.Biotech">
                         <li MayRequire="Ludeon.RimWorld.Biotech">Wastepack</li>

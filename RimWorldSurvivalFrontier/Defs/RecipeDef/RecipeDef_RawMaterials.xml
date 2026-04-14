@@ -14,7 +14,7 @@
         <!-- Mechanic CORE -->
         <workAmount>2000</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>RSF_PlasticBasicResearch</researchPrerequisite>
 
         <!-- Preserves work progress if interrupted -->
@@ -57,6 +57,7 @@
             </thingDefs>
         </fixedIngredientFilter>
 
+        <!-- Output Products -->
         <products>
             <Chemfuel>40</Chemfuel>
         </products>
@@ -78,7 +79,7 @@
         <!-- Mechanic CORE -->
         <workAmount>800</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>RSF_PlasticBasicResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
 
         <!-- Preserves work progress if interrupted -->
@@ -125,7 +126,7 @@
         <!-- Mechanic CORE -->
         <workAmount>1200</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>RSF_PlasticIndustrialResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
 
         <!-- Requirements -->
@@ -177,7 +178,7 @@
         <!-- Mechanic CORE -->
         <workAmount>5000</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>RSF_PlasticBioSteelResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
 
         <!-- Requirements -->
@@ -257,7 +258,7 @@
         <!-- Mechanic CORE -->
         <workAmount>600</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>RSF_PlasticFiberResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
 
         <!-- Preserves work progress if interrupted -->
@@ -310,7 +311,7 @@
         <!-- Mechanic CORE -->
         <workAmount>800</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>RSF_PlasticIncendiaryResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
 
         <!-- Preserves work progress if interrupted -->
@@ -363,7 +364,7 @@
         <!-- Mechanic CORE -->
         <workAmount>800</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
         <researchPrerequisite>RSF_EcoLeatherResearch</researchPrerequisite> <!-- unlock this items See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
 
         <!-- Preserves work progress if interrupted -->

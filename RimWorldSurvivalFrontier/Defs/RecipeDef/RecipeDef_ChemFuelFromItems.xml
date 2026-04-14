@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+    <!--  ================= RSF_TemplateChemFuel  ================= -->
+    <RecipeDef Name="RSF_TemplateChemFuel" Abstract="true">
+
+        <!-- Mechanic CORE -->
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
+
+        <!-- Where you craft it  -->
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+
+        <!-- Effect Working & sound -->
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+    </RecipeDef>
+
     <!--  ================= RSF_ChemfuelFromHumanCorpse  ================= -->
-    <RecipeDef>
+    <RecipeDef ParentName="RSF_TemplateChemFuel">
         <!-- ID -->
         <defName>RSF_ChemfuelFromHumanCorpse</defName>
         <label>RSF_ChemfuelFromHumanCorpse.label</label>
@@ -10,16 +27,7 @@
         <jobString>RSF_ChemfuelFromHumanCorpse.jobString</jobString>
 
         <!-- Mechanic CORE -->
-        <effectWorking>Cremate</effectWorking>
-        <soundWorking>Recipe_Cremate</soundWorking>
         <workAmount>6000</workAmount>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <workSkill>Crafting</workSkill> <!-- Work Speed Stat -->
-
-        <!-- Where you craft it  -->
-        <recipeUsers>
-            <li>BiofuelRefinery</li>
-        </recipeUsers>
 
         <!-- Recipe ingredients -->
         <ingredients>
@@ -52,4 +60,5 @@
             <Chemfuel>90</Chemfuel>
         </products>
     </RecipeDef>
+
 </Defs>
