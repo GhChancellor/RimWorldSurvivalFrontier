@@ -53,7 +53,7 @@
         <Exec Command="mkdir -p &quot;$(ModRootFolder)/Defs&quot;"/>
         <Exec Command="mkdir -p &quot;$(ModRootFolder)/Languages&quot;"/>
         <Exec Command="mkdir -p &quot;$(ModRootFolder)/Patches&quot;"/>
-        <Exec Command="mkdir -p &quot;$(ModRootFolder)/Texturess&quot;"/>
+        <Exec Command="mkdir -p &quot;$(ModRootFolder)/Textures&quot;"/>
         <Exec Command="mkdir -p &quot;$(ModAssembliesFolder)&quot;"/>
 
         <!-- Copy mod files to installation directory -->

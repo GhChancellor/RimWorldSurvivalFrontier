@@ -149,10 +149,6 @@
 
 		<socialPropernessMatters>true</socialPropernessMatters>
 
-		<thingCategories>
-			<li>Foods</li>
-		</thingCategories>
-
 		<!-- Components: behavior modules -->
 		<comps>
 			<li Class="CompProperties_Ingredients">

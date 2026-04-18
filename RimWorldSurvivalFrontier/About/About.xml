@@ -16,12 +16,15 @@ Complete survival toolkit for extreme biomes. Materials, food production, shelte
 🎯 Vanilla Friendly
 Perfect integration with the base game. Balanced for equilibrium gameplay without disrupting the RimWorld experience.
 
+RECENT UPDATES:
+UPDATES: 1.0.0.89 
+- Fix category dried fruit
+
 UPDATES: 1.0.0.87
 - Fix italian translate
 - Add Icons Dried Fruit, Dried Meat
 - Balance recipe Fruit Recipe, Fruit Recipe bulk, Meat recipe, Meat recipe bulk
 
-RECENT UPDATES:
 UPDATES: 1.0.0.77
 - Add Storage pallet/small pallet that holds chunks and buildings The pallet cannot hold plants and corpses. ( shelf )
 
@@ -31,14 +34,6 @@ UPDATES: 1.0.0.72
 - Balance stats of chefuel stove
 - Add Table 1x1
 - Add Chemical station ( like toolcabinet ) for biochemfuel refinery and brewery
-
-UPDATES: 1.0.0.65
-- Balance recipe Tiny 3x3 sun lamp
-- Balance recipe Corpses of humans into Chemfuel
-- Balance resource base like plastic basic
-- Restyle Documentations
-- Restyle translation
-- Add Manifest.xml
 
 🌱 Ecological Production
 Create bio-plastic at the biofuel refinery from common plant resources: agave, berries, corn, potatoes, and rice.
