@@ -42,8 +42,9 @@
         <building>
             <destroySound>BuildingDestroyed_Metal_Small</destroySound>
         </building>
-
+        
         <researchPrerequisites>
+            <li>BiofuelRefining</li>
         </researchPrerequisites>
 
         <designationCategory>Misc</designationCategory>
@@ -90,8 +91,5 @@
             <ComponentIndustrial>2</ComponentIndustrial>
         </costList>
 
-        <researchPrerequisites>
-            <li>BiofuelRefining</li>
-        </researchPrerequisites>
     </ThingDef>
 </Defs>

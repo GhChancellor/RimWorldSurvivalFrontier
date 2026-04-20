@@ -32,10 +32,10 @@
     <RSF_PlasticIncendiaryRecipe.description>Bio-plastic infused with volatile compounds. Extremely flammable construction material for tactical applications. Handle with care.</RSF_PlasticIncendiaryRecipe.description>
     <RSF_PlasticIncendiaryRecipe.jobString>converting bio plastic to incendiary plastic </RSF_PlasticIncendiaryRecipe.jobString>
 
-    <!-- ================= RSF_ChemfuelFromPlasticRecipe ================= -->
-    <RSF_ChemfuelFromHumanCorpse.label>make chemfuel from human corpse</RSF_ChemfuelFromHumanCorpse.label>
-    <RSF_ChemfuelFromHumanCorpse.description>" Recycle " corpses of humans into Chemfuel! Sustainable energy solutions, saving the world is a duty.</RSF_ChemfuelFromHumanCorpse.description>
-    <RSF_ChemfuelFromHumanCorpse.jobString>Refining chemfuel human corpse.</RSF_ChemfuelFromHumanCorpse.jobString>
+    <!-- ================= RSF_ChemfuelFromHumanCorpseRecipe ================= -->
+    <RSF_ChemfuelFromHumanCorpseRecipe.label>make chemfuel from human corpse</RSF_ChemfuelFromHumanCorpseRecipe.label>
+    <RSF_ChemfuelFromHumanCorpseRecipe.description>" Recycle " corpses of humans into Chemfuel! Sustainable energy solutions, saving the world is a duty.</RSF_ChemfuelFromHumanCorpseRecipe.description>
+    <RSF_ChemfuelFromHumanCorpseRecipe.jobString>Refining chemfuel human corpse.</RSF_ChemfuelFromHumanCorpseRecipe.jobString>
 
     <!-- ================= RSF_EcoLeatherRecipe ================= -->
     <RSF_EcoLeatherRecipe.label>make eco leather</RSF_EcoLeatherRecipe.label>
@@ -68,17 +68,17 @@
     <RSF_FiberWoolRecipe.jobString>producing fiber wool</RSF_FiberWoolRecipe.jobString>
     
     <!-- ================= RSF_FiberArcticRecipe ================= -->
-    <RSF_FiberArcticRecipe.label>fiber polar</RSF_FiberArcticRecipe.label>
+    <RSF_FiberArcticRecipe.label>fiber arctic</RSF_FiberArcticRecipe.label>
     <RSF_FiberArcticRecipe.description>Soft, light and provides extreme insulation. ultra thermal wool clothes can keep the body warm even in extreme cold conditions.</RSF_FiberArcticRecipe.description>
-    <RSF_FiberWoolRecipe.jobString>producing fiber polar</RSF_FiberWoolRecipe.jobString>
+    <RSF_FiberArcticRecipe.jobString>producing fiber polar</RSF_FiberArcticRecipe.jobString>
     
     <!-- ================= RSF_FiberDesertRecipe ================= -->
     <RSF_FiberDesertRecipe.label>fiber desert</RSF_FiberDesertRecipe.label>
     <RSF_FiberDesertRecipe.description>Lightweight, breathable fabric designed for hot climates. Desert fiber clothing provides excellent ventilation while protecting against sun exposure and sand storms.</RSF_FiberDesertRecipe.description>
-    <RSF_FiberWoolRecipe.jobString>producing fiber desert</RSF_FiberWoolRecipe.jobString>
+    <RSF_FiberDesertRecipe.jobString>producing fiber desert</RSF_FiberDesertRecipe.jobString>
     
     <!-- ================= RSF_FiberSolarRecipe ================= -->
-    <RSF_FiberSolarRecipe.label>fiber solar</RSF_FiberSolarRecipe.label>
+    <RSF_FiberSolarRecipe.label>antisolar fiber</RSF_FiberSolarRecipe.label>
     <RSF_FiberSolarRecipe.description>Advanced reflective composite that deflects intense solar radiation. Solar fiber garments offer maximum heat protection for extreme desert conditions and prolonged sun exposure.</RSF_FiberSolarRecipe.description>
-    <RSF_FiberWoolRecipe.jobString>producing fiber solar</RSF_FiberWoolRecipe.jobString>
+    <RSF_FiberSolarRecipe.jobString>producing fiber solar</RSF_FiberSolarRecipe.jobString>
 </LanguageData>

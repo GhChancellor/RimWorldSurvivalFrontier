@@ -1,27 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Defs>
+    <!--  ===== RSF_TemplateWooLog > ThingCategoryDef TradingGoods ==== -->
+    <!-- Defs/ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog ==== -->
+    <ThingDef Name="RSF_TemplateWooLog" ParentName="ResourceVerbBase" Abstract="true">
+        <!-- Icons & colors -->
+        <graphicData>
+            <texPath>Things/Item/Resource/StoneBlocks</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+
+        <equippedAngleOffset>-20</equippedAngleOffset>
+
+        <!-- Can be used as fuel -->
+        <burnableByRecipe>true</burnableByRecipe>
+        <!-- No effect on price if damaged -->
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <!-- Quest rewards -->
+        <minRewardCount>10</minRewardCount>
+
+        <!-- Audio/Visual effects - for interactions -->
+
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+
+        <stuffProps>
+            <constructEffect>ConstructWood</constructEffect>
+
+            <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>  <!-- Bullet impact sound -->
+            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>    <!-- Sharp weapon hit sound -->
+            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>    <!-- Blunt weapon hit sound -->
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>  <!-- Melee impact
+        sound -->
+        </stuffProps>
+
+
+        <!-- Inventory category -->
+        <thingCategories>
+            <li>ResourcesRaw</li>
+            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml categoryDef-->
+        </thingCategories>
+
+        <!-- Prosthesis limb -->
+        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
+        <techHediffsTags>
+            <li>Poor</li> <!-- quality of prosthesis -->
+        </techHediffsTags>
+
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleeBlunt</li>
+            <li>Neolithic</li>
+        </weaponClasses>
+
+        <tools>
+            <li>
+                <label>log</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2.5</cooldownTime>
+            </li>
+        </tools>
+
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+
     <!--  ===== RSF_PlasticBasic > ThingCategoryDef TradingGoods ==== -->
-    <ThingDef ParentName="ResourceVerbBase">
-        <!-- ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog -->
+    <ThingDef ParentName="RSF_TemplateWooLog">
+        <!-- Defs/ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog ==== -->
         <!-- ID -->
         <defName>RSF_PlasticBasic</defName>
         <label>RSF_PlasticBasic.label</label>
         <description>RSF_PlasticBasic.description</description>
 
+
         <!-- Icons & colors -->
         <graphicData>
-            <texPath>Things/Item/Resource/StoneBlocks</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <color>(255,255,255)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- This is the color of the icon that you can see in the
+            inventory! -->
+            <color>(255,255,255)</color>
             <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
         </graphicData>
-        
-        <equippedAngleOffset>-20</equippedAngleOffset> 
-        
-        <!-- Physical properties -->
-        <soundInteract>Wood_Drop</soundInteract>
-        <soundDrop>Wood_Drop</soundDrop>
 
         <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
@@ -52,10 +113,6 @@
             <SharpDamageMultiplier>0.20</SharpDamageMultiplier>
             <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
         </statBases>
-        
-        <burnableByRecipe>true</burnableByRecipe> <!-- Can be used as fuel -->
-        <healthAffectsPrice>false</healthAffectsPrice> <!-- No effect on price if damaged -->
-        <minRewardCount>10</minRewardCount> <!-- Quest rewards -->
 
         <!-- It has effects on constructed items -->
         <stuffProps>
@@ -66,18 +123,14 @@
                 <li>Woody</li>
             </categories>
             <commonality>0.85</commonality> <!-- Spawn probability (wood 1.0)-->
-            <color>(255,255,255)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
+            <color>(255,255,255)</color> <!-- This is the color of the icon that you can see in the
+            menu and ingame! -->
             <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
 
             <!-- Audio/Visual effects - using wood equivalents (closest vanilla match) -->
-            <constructEffect>ConstructWood</constructEffect>
-<!--            <appearance>Planks</appearance> &lt;!&ndash; Maintains plank appearance like wood &ndash;&gt;-->
-            
-            <!-- Sound effects for interactions -->
-            <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>  <!-- Bullet impact sound -->
-            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>    <!-- Sharp weapon hit sound -->
-            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>    <!-- Blunt weapon hit sound -->
-            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>  <!-- Melee impact sound -->
+
+            <!--            <appearance>Planks</appearance> &lt;!&ndash; Maintains plank appearance like wood
+            &ndash;&gt;-->
 
             <!-- statFactors: MULTIPLIERS for buildings/items crafted from this material -->
             <!-- Formula: final_stat = base_stat × statFactor -->
@@ -85,48 +138,21 @@
             <statFactors>
                 <MaxHitPoints>0.5</MaxHitPoints> <!-- Max HP -->
                 <Beauty>0.8</Beauty> <!-- Less attractive than natural materials -->
-                <Flammability>0.95</Flammability> <!-- Multiplied by fire (Flammability * Flammability) -->
-                <WorkToMake>0.7</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from this material -->
-                <WorkToBuild>0.7</WorkToBuild> <!-- How to build structures ( wall, door ) from this material -->
+                <Flammability>0.95</Flammability> <!-- Multiplied by fire (Flammability *
+                Flammability) -->
+                <WorkToMake>0.7</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from
+                this material -->
+                <WorkToBuild>0.7</WorkToBuild> <!-- How to build structures ( wall, door ) from this
+                material -->
                 <DoorOpenSpeed>1.2</DoorOpenSpeed>
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
-
-        <!-- Inventory category -->
-        <thingCategories>
-            <li>ResourcesRaw</li>
-            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
-        </thingCategories>
-
-        <!-- Prosthesis limb -->
-        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
-        <techHediffsTags>
-            <li>Poor</li> <!-- quality of prosthesis -->
-        </techHediffsTags>
-
-        <weaponClasses>
-            <li>Melee</li>
-            <li>MeleeBlunt</li>
-            <li>Neolithic</li>
-        </weaponClasses>
-        <tools>
-            <li>
-                <label>log</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>8</power>
-                <cooldownTime>2.5</cooldownTime>
-            </li>
-        </tools>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <allowedArchonexusCount>150</allowedArchonexusCount>
     </ThingDef>
 
     <!--  ===== RSF_PlasticIndustrial > ThingCategoryDef TradingGoods ==== -->
-    <ThingDef ParentName="ResourceVerbBase">
-        <!-- ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog -->
+    <ThingDef ParentName="RSF_TemplateWooLog">
+        <!-- Defs/ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog ==== -->
         <!-- ID -->
         <defName>RSF_PlasticIndustrial</defName>
         <label>RSF_PlasticIndustrial.label</label>
@@ -134,17 +160,10 @@
 
         <!-- Icons & colors -->
         <graphicData>
-            <texPath>Things/Item/Resource/StoneBlocks</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <color>(85,95,105)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- This is the color of the icon that you can see in the inventory! -->
+            <color>(85,95,105)</color>
             <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
         </graphicData>
-
-        <equippedAngleOffset>-20</equippedAngleOffset>
-
-        <!-- PHYSICAL PROPERTIES -->
-        <soundInteract>Wood_Drop</soundInteract>
-        <soundDrop>Wood_Drop</soundDrop>
 
         <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
@@ -176,10 +195,6 @@
             <BluntDamageMultiplier>0.11</BluntDamageMultiplier>
         </statBases>
 
-        <burnableByRecipe>true</burnableByRecipe> <!-- Can be used as fuel -->
-        <healthAffectsPrice>false</healthAffectsPrice> <!-- No effect on price if damaged -->
-        <minRewardCount>10</minRewardCount> <!-- Quest rewards -->
-
         <!-- It has effects on constructed items -->
         <stuffProps>
 
@@ -189,17 +204,13 @@
                 <li>Woody</li>
             </categories>
             <commonality>0.85</commonality> <!-- Spawn probability (wood 1.0)-->
-            <color>(85,95,105)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
+            <color>(85,95,105)</color> <!-- This is the color of the icon that you can see in the
+            menu and ingame! -->
             <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
             <!-- Audio/Visual effects - using wood equivalents (closest vanilla match) -->
-            <constructEffect>ConstructWood</constructEffect>
-            <!--            <appearance>Planks</appearance> &lt;!&ndash; Maintains plank appearance like wood &ndash;&gt;-->
 
-            <!-- Sound effects for interactions -->
-            <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>  <!-- Bullet impact sound -->
-            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>    <!-- Sharp weapon hit sound -->
-            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>    <!-- Blunt weapon hit sound -->
-            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>  <!-- Melee impact sound -->
+            <!--            <appearance>Planks</appearance> &lt;!&ndash; Maintains plank appearance like wood
+            &ndash;&gt;-->
 
             <!-- statFactors: MULTIPLIERS for buildings/items crafted from this material -->
             <!-- Formula: final_stat = base_stat × statFactor -->
@@ -207,49 +218,21 @@
             <statFactors>
                 <MaxHitPoints>0.65</MaxHitPoints>
                 <Beauty>1.2</Beauty> <!-- Less attractive than natural materials -->
-                <Flammability>0.95</Flammability> <!-- Multiplied by fire (Flammability * Flammability) -->
-                <WorkToMake>0.7</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from this material -->
-                <WorkToBuild>0.7</WorkToBuild> <!-- How to build structures ( wall, door ) from this material -->
+                <Flammability>0.95</Flammability> <!-- Multiplied by fire (Flammability *
+                Flammability) -->
+                <WorkToMake>0.7</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from
+                this material -->
+                <WorkToBuild>0.7</WorkToBuild> <!-- How to build structures ( wall, door ) from this
+                material -->
                 <DoorOpenSpeed>1.2</DoorOpenSpeed>
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
-
-
-        <!-- Inventory category -->
-        <thingCategories>
-            <li>ResourcesRaw</li>
-            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
-        </thingCategories>
-
-        <!-- Prosthesis limb -->
-        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
-        <techHediffsTags>
-            <li>Poor</li> <!-- quality of prosthesis -->
-        </techHediffsTags>
-
-        <weaponClasses>
-            <li>Melee</li>
-            <li>MeleeBlunt</li>
-            <li>Neolithic</li>
-        </weaponClasses>
-        <tools>
-            <li>
-                <label>log</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>8</power>
-                <cooldownTime>2.5</cooldownTime>
-            </li>
-        </tools>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <allowedArchonexusCount>150</allowedArchonexusCount>
     </ThingDef>
 
-    <!--  ===== RSF_PlasticBioSteel > ThingCategoryDef TradingGoods ==== -->
-    <ThingDef ParentName="ResourceBase">
-        <!--ThingDefs_Items/Items_Resource_Stuff.xml > Plasteel-->
+    <!--  ===== RSF_PlasticBioSteel > ThingCategoryDef TradingGoods2 ==== -->
+    <ThingDef ParentName="RSF_TemplateWooLog">
+        <!-- Defs/ThingDefs_Items/Items_Resource_Stuff.xml > Plasteel ==== -->
         <!-- ID -->
         <defName>RSF_PlasticBioSteel</defName>
         <label>RSF_PlasticBioSteel.label</label>
@@ -258,23 +241,25 @@
         <!-- Icons & colors -->
         <graphicData>
             <texPath>Things/Item/Resource/Plasteel</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <color>(30,144,255)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- This is the color of the icon that you can see in the inventory! -->
+            <color>(30,144,255)</color>
             <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
         </graphicData>
 
-        <!-- SOUND EFFECTS -->
+        <!-- Audio/Visual effects - for interactions -->
         <soundInteract>Metal_Drop</soundInteract>
         <soundDrop>Metal_Drop</soundDrop>
+
         <useHitPoints>false</useHitPoints>
-        <healthAffectsPrice>false</healthAffectsPrice>                 <!-- No effect on price if damaged -->
+        <!-- No effect on price if damaged -->
+        <healthAffectsPrice>false</healthAffectsPrice>
 
         <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
             <!-- Economic values -->
             <MarketValue>5.5</MarketValue>                             <!-- Industrial grade, more expensive than wood -->
             <Mass>0.28</Mass>                                          <!-- Item weight (kg) -->
-
+            <!-- error is haulable, but does not have an authored mass value > add <Mass>  -->
             <!-- Armor effectiveness when used as stuff -->
             <StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>     <!-- Better protection than basic -->
             <StuffPower_Armor_Blunt>0.46</StuffPower_Armor_Blunt>     <!-- Enhanced blunt protection -->
@@ -286,28 +271,10 @@
 
             <!-- Damage multipliers for weapons made from this ???? -->
             <!-- Da rivedere-->
-            <SharpDamageMultiplier>0.93</SharpDamageMultiplier>       <!-- Better than basic but still fragile -->
+            <SharpDamageMultiplier>0.93</SharpDamageMultiplier>       <!-- Better than basic but still
+            fragile -->
             <BluntDamageMultiplier>0.7</BluntDamageMultiplier>        <!-- More rigid than basic -->
         </statBases>
-
-
-        <!-- Inventory category -->
-        <thingCategories>
-            <li>ResourcesRaw</li>
-            <li>TradingGoods2</li>
-        </thingCategories>
-
-        <!-- Prosthesis limb -->
-        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
-        <techHediffsTags>
-            <li>Simple</li> <!-- quality of prosthesis -->
-        </techHediffsTags>
-
-<!--        <deepCommonality>1</deepCommonality>-->
-<!--        <deepCountPerPortion>10</deepCountPerPortion>-->
-<!--        <deepLumpSizeRange>2~10</deepLumpSizeRange>-->
-<!--        <burnableByRecipe>false</burnableByRecipe>-->
-<!--        <smeltable>true</smeltable>-->
 
         <!-- It has effects on constructed items -->
         <stuffProps>
@@ -318,12 +285,13 @@
                 <li>Metallic</li>
             </categories>
             <appearance>Metal</appearance>
-            <commonality>0.3</commonality>
+            <commonality>0.8</commonality>
             <constructEffect>ConstructMetal</constructEffect>
             <isAirtight>true</isAirtight>
-            <color>(30,144,255)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
+            <color>(30,144,255)</color> <!-- This is the color of the icon that you can see in the
+            menu and ingame! -->
             <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
-            
+
             <!-- Sound effects -->
             <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
             <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -344,13 +312,31 @@
             </statFactors>
         </stuffProps>
 
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>80</allowedArchonexusCount>
+
+        <!-- Inventory category -->
+        <thingCategories Inherit="False"> <!-- don't merge with parent thingCategories -->
+            <li>ResourcesRaw</li>
+            <li>TradingGoods2</li> <!-- Custom category for traders see: PatchTraders.xml -->
+        </thingCategories>
+
+        <!-- Prosthesis limb -->
+        <techHediffsTags Inherit="False"> <!-- don't merge with parent techHediffsTags -->
+            <li>Simple</li> <!-- quality of prosthesis -->
+        </techHediffsTags>
+
+        <weaponClasses />
+        <tools />
         
     </ThingDef>
 
     <!--  ===== RSF_WoodPlanks > ThingCategoryDef TradingGoods ==== -->
-    <ThingDef ParentName="ResourceVerbBase">
+    <ThingDef ParentName="RSF_TemplateWooLog">
+        <!-- Defs/ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog ==== -->
         <!-- ID -->
         <defName>RSF_WoodPlanks</defName>
         <label>RSF_WoodPlanks.label</label>
@@ -358,14 +344,10 @@
 
         <!-- Icons & colors -->
         <graphicData>
-            <texPath>Things/Item/Resource/StoneBlocks</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <color>(160,130,98)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- This is the color of the icon that you can see in the inventory! -->
+            <color>(160,130,98)</color>
             <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
         </graphicData>
-        <equippedAngleOffset>-20</equippedAngleOffset>
-        <soundInteract>Wood_Drop</soundInteract>
-        <soundDrop>Wood_Drop</soundDrop>
 
         <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
@@ -383,9 +365,6 @@
             <SharpDamageMultiplier>0.40</SharpDamageMultiplier>
             <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
         </statBases>
-        <burnableByRecipe>true</burnableByRecipe>
-        <healthAffectsPrice>false</healthAffectsPrice>
-        <minRewardCount>10</minRewardCount>
 
         <!-- It has effects on constructed items -->
         <stuffProps>
@@ -397,14 +376,11 @@
                 <li>Woody</li>
             </categories>
             <commonality>1.00</commonality>
-            <color>(160,130,98)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
+            <color>(160,130,98)</color> <!-- This is the color of the icon that you can see in the
+            menu and ingame! -->
             <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
-            <constructEffect>ConstructWood</constructEffect>
+
             <appearance>Planks</appearance>
-            <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
-            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
 
             <!-- statFactors: MULTIPLIERS for buildings/items crafted from this material -->
             <!-- Formula: final_stat = base_stat × statFactor -->
@@ -420,39 +396,11 @@
             </statFactors>
             <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
         </stuffProps>
-        <thingCategories>
-            <li>ResourcesRaw</li>
-            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
-        </thingCategories>
-
-        <!-- Prosthesis limb -->
-        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
-        <techHediffsTags>
-            <li>Poor</li> <!-- quality of prosthesis -->
-        </techHediffsTags>
-
-        <weaponClasses>
-            <li>Melee</li>
-            <li>MeleeBlunt</li>
-            <li>Neolithic</li>
-        </weaponClasses>
-        <tools>
-            <li>
-                <label>log</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>10</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <allowedArchonexusCount>150</allowedArchonexusCount>
     </ThingDef>
 
     <!--  ===== RSF_PlasticIncendiary > ThingCategoryDef TradingGoods ==== -->
-    <ThingDef ParentName="ResourceVerbBase">
-        <!-- ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog -->
+    <ThingDef ParentName="RSF_TemplateWooLog">
+        <!-- Defs/ThingDefs_Items/Items_Resource_Stuff.xml > WoodLog ==== -->
         <!-- ID -->
         <defName>RSF_PlasticIncendiary</defName>
         <label>RSF_PlasticIncendiary.label</label>
@@ -460,17 +408,10 @@
 
         <!-- Icons & colors -->
         <graphicData>
-            <texPath>Things/Item/Resource/StoneBlocks</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <color>(255,140,0)</color> <!-- This is the color of the icon that you can see in the inventory! -->
+            <!-- This is the color of the icon that you can see in the inventory! -->
+            <color>(255,140,0)</color>
             <!-- see: EcoPlastic/Doc/Images/ThingDef/IconColor.png-->
         </graphicData>
-
-        <equippedAngleOffset>-20</equippedAngleOffset>
-
-        <!-- PHYSICAL PROPERTIES -->
-        <soundInteract>Wood_Drop</soundInteract>
-        <soundDrop>Wood_Drop</soundDrop>
 
         <!-- Base stats: Affects ONLY the item itself (inventory/ground), NOT buildings -->
         <statBases>
@@ -502,10 +443,6 @@
             <BluntDamageMultiplier>0.5</BluntDamageMultiplier>
         </statBases>
 
-        <burnableByRecipe>true</burnableByRecipe> <!-- Can be used as fuel -->
-        <healthAffectsPrice>false</healthAffectsPrice> <!-- No effect on price if damaged -->
-        <minRewardCount>10</minRewardCount> <!-- Quest rewards -->
-
         <!-- It has effects on constructed items -->
         <stuffProps>
 
@@ -515,18 +452,14 @@
                 <li>Woody</li>
             </categories>
             <commonality>0.85</commonality> <!-- Spawn probability (wood 1.0)-->
-            <color>(255,140,0)</color> <!-- This is the color of the icon that you can see in the menu and ingame! -->
+            <color>(255,140,0)</color> <!-- This is the color of the icon that you can see in the
+            menu and ingame! -->
             <!-- see: EcoPlastic/Doc/Images/ThingDef/IconcolorMenuAndGame.png-->
 
             <!-- Audio/Visual effects - using wood equivalents (closest vanilla match) -->
-            <constructEffect>ConstructWood</constructEffect>
-<!--            <appearance>Planks</appearance> &lt;!&ndash; Maintains plank appearance like wood &ndash;&gt;-->
 
-            <!-- Sound effects for interactions -->
-            <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>  <!-- Bullet impact sound -->
-            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>    <!-- Sharp weapon hit sound -->
-            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>    <!-- Blunt weapon hit sound -->
-            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>  <!-- Melee impact sound -->
+            <!--            <appearance>Planks</appearance> &lt;!&ndash; Maintains plank appearance like wood
+            &ndash;&gt;-->
 
             <!-- statFactors: MULTIPLIERS for buildings/items crafted from this material -->
             <!-- Formula: final_stat = base_stat × statFactor -->
@@ -534,45 +467,19 @@
             <statFactors>
                 <MaxHitPoints>0.15</MaxHitPoints>
                 <Beauty>0.5</Beauty> <!-- Less attractive than natural materials -->
-                <Flammability>2.5</Flammability> <!-- Multiplied by fire (Flammability * Flammability) -->
-                <WorkToMake>1.3</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from this material -->
-                <WorkToBuild>1.3</WorkToBuild> <!-- How to build structures ( wall, door ) from this material -->
+                <Flammability>2.5</Flammability> <!-- Multiplied by fire (Flammability *
+                Flammability) -->
+                <WorkToMake>1.3</WorkToMake> <!-- How to craft items ( dresses, weapons.... ) from
+                this material -->
+                <WorkToBuild>1.3</WorkToBuild> <!-- How to build structures ( wall, door ) from this
+                material -->
                 <DoorOpenSpeed>0.8</DoorOpenSpeed>
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
 
-        <!-- Inventory category -->
-        <thingCategories>
-            <li>ResourcesRaw</li>
-            <li>TradingGoods</li> <!-- Custom category for traders see: PatchTraders.xml > categoryDef-->
-        </thingCategories>
-
-
         <!-- Prosthesis limb -->
-        <isTechHediff>true</isTechHediff> <!-- can use it to build prosthesis limb -->
-        <techHediffsTags>
-            <li>Poor</li> <!-- quality of prosthesis -->
-        </techHediffsTags>
-
-        <weaponClasses>
-            <li>Melee</li>
-            <li>MeleeBlunt</li>
-            <li>Neolithic</li>
-        </weaponClasses>
-        <tools>
-            <li>
-                <label>log</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>8</power>
-                <cooldownTime>2.5</cooldownTime>
-            </li>
-        </tools>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <allowedArchonexusCount>150</allowedArchonexusCount>
+        <isTechHediff>false</isTechHediff> <!-- can use it to build prosthesis limb -->
     </ThingDef>
-
 
 </Defs>

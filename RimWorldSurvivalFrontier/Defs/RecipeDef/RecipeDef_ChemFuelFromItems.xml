@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <!--  ================= RSF_TemplateChemFuel  ================= -->
-    <RecipeDef Name="RSF_TemplateChemFuel" Abstract="true">
+    <!--  ================= RSF_TemplateChemFuelRecipe ================= -->
+    <RecipeDef Name="RSF_TemplateChemFuelRecipe" Abstract="true">
 
         <!-- Mechanic CORE -->
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
         <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
+
+        <!-- Preserves work progress if interrupted -->
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <displayPriority>0</displayPriority> <!-- priority work-->
 
         <!-- Where you craft it  -->
         <recipeUsers>
@@ -18,13 +22,13 @@
         <soundWorking>Recipe_Cremate</soundWorking>
     </RecipeDef>
 
-    <!--  ================= RSF_ChemfuelFromHumanCorpse  ================= -->
-    <RecipeDef ParentName="RSF_TemplateChemFuel">
+    <!--  ================= RSF_ChemfuelFromHumanCorpse ================= -->
+    <RecipeDef ParentName="RSF_TemplateChemFuelRecipe">
         <!-- ID -->
-        <defName>RSF_ChemfuelFromHumanCorpse</defName>
-        <label>RSF_ChemfuelFromHumanCorpse.label</label>
-        <description>RSF_ChemfuelFromHumanCorpse.description</description>
-        <jobString>RSF_ChemfuelFromHumanCorpse.jobString</jobString>
+        <defName>RSF_ChemfuelFromHumanCorpseRecipe</defName>
+        <label>RSF_ChemfuelFromHumanCorpseRecipe.label</label>
+        <description>RSF_ChemfuelFromHumanCorpseRecipe.description</description>
+        <jobString>RSF_ChemfuelFromHumanCorpseRecipe.jobString</jobString>
 
         <!-- Mechanic CORE -->
         <workAmount>6000</workAmount>
@@ -58,6 +62,44 @@
         <!-- Output Products -->
         <products>
             <Chemfuel>90</Chemfuel>
+        </products>
+    </RecipeDef>
+
+    <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
+    <!--  ================= RSF_ChemfuelFromPlasticRecipe  ================= -->
+    <RecipeDef ParentName="RSF_TemplateChemFuelRecipe">
+        <!-- ID -->
+        <defName>RSF_ChemfuelFromPlasticRecipe</defName>
+        <label>RSF_ChemfuelFromPlasticRecipe.label</label>
+        <description>RSF_ChemfuelFromPlasticRecipe.description</description>
+        <jobString>RSF_ChemfuelFromPlasticRecipe.jobString</jobString>
+
+        <!-- Mechanic CORE -->
+        <workAmount>2000</workAmount>
+
+        <!-- Allow mixing different plant ingredients in same recipe -->
+        <allowMixingIngredients>true</allowMixingIngredients>
+
+        <!-- Recipe ingredients -->
+        <ingredients>
+            <li>
+                <filter>
+                    <!-- thingDefs: defines which items can be crafted from this material -->
+                    <thingDefs>
+                        <li>RSF_PlasticBasic</li>
+                        <li>RSF_PlasticIndustrial</li>
+                        <li>RSF_PlasticFiber</li>
+                        <li>RSF_PlasticIncendiary</li>
+                        <li>RSF_EcoLeather</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+
+        <!-- Output material-->
+        <products>
+            <Chemfuel>40</Chemfuel>
         </products>
     </RecipeDef>
 

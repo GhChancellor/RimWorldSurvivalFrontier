@@ -1,25 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <!--  ================= RSF_FiberWoolRecipe  ================= -->
-    <RecipeDef>
-        <!-- ID -->
-        <defName>RSF_FiberWoolRecipe</defName>
-        <label>RSF_FiberWoolRecipe.label</label>
-        <description>RSF_FiberWoolRecipe.description</description>
-        <jobString>RSF_FiberWoolRecipe.jobString</jobString>
-
+    <!--  ================= RSF_TemplateFiberRecipe  ================= -->
+    <RecipeDef Name="RSF_TemplateFiberRecipe" Abstract="true">
         <!-- Mechanic CORE -->
-        <workAmount>800</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
-        <researchPrerequisite>RSF_FiberWoolResearch</researchPrerequisite>
+        <workSkill>Crafting</workSkill> <!-- Work XP Skill -->
 
         <!-- Preserves work progress if interrupted -->
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <displayPriority>0</displayPriority> <!-- priority work-->
+
+        <!-- Effect Working & sound -->
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+    </RecipeDef>
+
+    <!--  ================= RSF_PlasticFiberRecipe ================= -->
+    <RecipeDef ParentName="RSF_TemplateFiberRecipe">
+        <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
+        <!-- ID -->
+        <defName>RSF_PlasticFiberRecipe</defName>
+        <label>RSF_PlasticFiberRecipe.label</label>
+        <description>RSF_PlasticFiberRecipe.description</description>
+        <jobString>RSF_PlasticFiberRecipe.jobString</jobString>
+
+        <!-- Mechanic CORE -->
+        <workAmount>600</workAmount>
+        <researchPrerequisite>RSF_PlasticFiberResearch</researchPrerequisite> <!-- unlock this items
+        See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
+
+        <!-- Requirements -->
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
 
         <!-- Where you craft it  -->
-        <recipeUsers>
+        <recipeUsers Inherit="False"> <!-- don't merge with parent recipe users  -->
             <li>BiofuelRefinery</li>
+        </recipeUsers>
+
+        <!-- Recipe ingredients -->
+        <ingredients>
+            <li>
+                <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+        </ingredients>
+
+        <!-- Effect Working & sound -->
+        <products>
+            <RSF_PlasticFiber>28</RSF_PlasticFiber>
+        </products>
+
+    </RecipeDef>
+
+    <!--  ================= RSF_EcoLeatherRecipe ================= -->
+    <RecipeDef ParentName="RSF_TemplateFiberRecipe">
+        <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
+        <!-- ID -->
+        <defName>RSF_EcoLeatherRecipe</defName>
+        <label>RSF_EcoLeatherRecipe.label</label>
+        <description>RSF_EcoLeatherRecipe.description</description>
+        <jobString>RSF_EcoLeatherRecipe.jobString</jobString>
+
+        <!-- Mechanic CORE -->
+        <workAmount>800</workAmount>
+        <researchPrerequisite>RSF_EcoLeatherResearch</researchPrerequisite> <!-- unlock this items
+        See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
+
+        <!-- Requirements -->
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+
+        <!-- Where you craft it  -->
+        <recipeUsers Inherit="False"> <!-- don't merge with parent recipe users  -->
+            <li>HandTailoringBench</li>
+            <li>ElectricTailoringBench</li>
         </recipeUsers>
 
         <!-- Recipe ingredients -->
@@ -31,8 +92,30 @@
                         <li>RSF_PlasticFiber</li>
                     </thingDefs>
                 </filter>
-                <count>25</count>
+                <count>10</count>
             </li>
+        </ingredients>
+
+        <!-- Effect Working & sound -->
+        <products>
+            <RSF_EcoLeather>8</RSF_EcoLeather>
+        </products>
+    </RecipeDef>
+
+    <!--  ================= RSF_FiberWoolRecipe  ================= -->
+    <RecipeDef ParentName="RSF_TemplateFiberRecipe">
+        <!-- ID -->
+        <defName>RSF_FiberWoolRecipe</defName>
+        <label>RSF_FiberWoolRecipe.label</label>
+        <description>RSF_FiberWoolRecipe.description</description>
+        <jobString>RSF_FiberWoolRecipe.jobString</jobString>
+
+        <!-- Mechanic CORE -->
+        <workAmount>800</workAmount>
+        <researchPrerequisite>RSF_FiberWoolResearch</researchPrerequisite>
+
+        <!-- Recipe ingredients -->
+        <ingredients>
             <li>
                 <filter>
                     <!-- thingDefs: defines which item can be crafted from this material -->
@@ -46,25 +129,27 @@
                 <filter>
                     <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
-                        <li>Steel</li>
+                        <li>RSF_PlasticFiber</li>
                     </thingDefs>
                 </filter>
-                <count>5</count>
+                <count>25</count>
             </li>
         </ingredients>
+
+        <!-- Where you craft it  -->
+        <recipeUsers Inherit="False"> <!-- don't merge with parent recipe users  -->
+            <li>HandTailoringBench</li> <!-- HandTailoringBench -->
+            <li>ElectricTailoringBench</li> <!-- ElectricTailoringBench -->
+        </recipeUsers>
 
         <!-- Output material-->
         <products>
             <RSF_FiberWool>20</RSF_FiberWool>
         </products>
-
-        <!-- Effect Working & sound -->
-        <effectWorking>Cremate</effectWorking>
-        <soundWorking>Recipe_Cremate</soundWorking>
     </RecipeDef>
 
     <!--  ================= RSF_FiberArcticRecipe  ================= -->
-    <RecipeDef>
+    <RecipeDef ParentName="RSF_TemplateFiberRecipe">
         <!-- ID -->
         <defName>RSF_FiberArcticRecipe</defName>
         <label>RSF_FiberArcticRecipe.label</label>
@@ -73,20 +158,24 @@
 
         <!-- Mechanic CORE -->
         <workAmount>1200</workAmount>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
         <researchPrerequisite>RSF_FiberArcticResearch</researchPrerequisite>
 
-        <!-- Preserves work progress if interrupted -->
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <displayPriority>0</displayPriority> <!-- priority work-->
-
         <!-- Where you craft it  -->
-        <recipeUsers>
+        <recipeUsers Inherit="False"> <!-- don't merge with parent recipe users  -->
             <li>FabricationBench</li> <!-- Fabrication bench -->
         </recipeUsers>
 
         <!-- Recipe ingredients -->
         <ingredients>
+            <li>
+                <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
+                    <thingDefs>
+                        <li>Hay</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
             <li>
                 <filter>
                     <!-- thingDefs: defines which item can be crafted from this material -->
@@ -100,19 +189,10 @@
                 <filter>
                     <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
-                        <li>RSF_EcoLeather</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-            <li>
-                <filter>
-                    <!-- thingDefs: defines which item can be crafted from this material -->
-                    <thingDefs>
                         <li>DevilstrandCloth</li>
                     </thingDefs>
                 </filter>
-                <count>8</count>
+                <count>10</count>
             </li>
         </ingredients>
 
@@ -122,12 +202,12 @@
         </products>
 
         <!-- Effect Working & sound -->
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
     </RecipeDef>
 
     <!--  ================= RSF_FiberDesertRecipe  ================= -->
-    <RecipeDef>
+    <RecipeDef ParentName="RSF_TemplateFiberRecipe">
         <!-- ID -->
         <defName>RSF_FiberDesertRecipe</defName>
         <label>RSF_FiberDesertRecipe.label</label>
@@ -135,30 +215,17 @@
         <jobString>RSF_FiberDesertRecipe.jobString</jobString>
 
         <!-- Mechanic CORE -->
-        <workAmount>600</workAmount>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
+        <workAmount>800</workAmount>
         <researchPrerequisite>RSF_FiberDesertResearch</researchPrerequisite>
 
-        <!-- Preserves work progress if interrupted -->
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <displayPriority>0</displayPriority> <!-- priority work-->
-
         <!-- Where you craft it  -->
-        <recipeUsers>
-            <li>BiofuelRefinery</li>
+        <recipeUsers Inherit="False"> <!-- don't merge with parent recipe users  -->
+            <li>HandTailoringBench</li> <!-- HandTailoringBench -->
+            <li>ElectricTailoringBench</li> <!-- ElectricTailoringBench -->
         </recipeUsers>
 
         <!-- Recipe ingredients -->
         <ingredients>
-            <li>
-                <filter>
-                    <!-- thingDefs: defines which item can be crafted from this material -->
-                    <thingDefs>
-                        <li>RSF_PlasticFiber</li>
-                    </thingDefs>
-                </filter>
-                <count>20</count>
-            </li>
             <li>
                 <filter>
                     <!-- thingDefs: defines which item can be crafted from this material -->
@@ -172,10 +239,10 @@
                 <filter>
                     <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
-                        <li>Steel</li>
+                        <li>RSF_PlasticFiber</li>
                     </thingDefs>
                 </filter>
-                <count>5</count>
+                <count>20</count>
             </li>
         </ingredients>
 
@@ -184,13 +251,10 @@
             <RSF_FiberDesert>18</RSF_FiberDesert>
         </products>
 
-        <!-- Effect Working & sound -->
-        <effectWorking>Cremate</effectWorking>
-        <soundWorking>Recipe_Cremate</soundWorking>
     </RecipeDef>
 
     <!--  ================= RSF_FiberSolarRecipe  ================= -->
-    <RecipeDef>
+    <RecipeDef ParentName="RSF_TemplateFiberRecipe">
         <!-- ID -->
         <defName>RSF_FiberSolarRecipe</defName>
         <label>RSF_FiberSolarRecipe.label</label>
@@ -198,21 +262,25 @@
         <jobString>RSF_FiberSolarRecipe.jobString</jobString>
 
         <!-- Mechanic CORE -->
-        <workAmount>1000</workAmount>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat> <!-- Work Speed Stat -->
+        <workAmount>1200</workAmount>
         <researchPrerequisite>RSF_FiberSolarResearch</researchPrerequisite>
 
-        <!-- Preserves work progress if interrupted -->
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <displayPriority>0</displayPriority> <!-- priority work-->
-
         <!-- Where you craft it  -->
-        <recipeUsers>
+        <recipeUsers Inherit="False"> <!-- don't merge with parent recipe users  -->
             <li>FabricationBench</li> <!-- Fabrication bench -->
         </recipeUsers>
 
         <!-- Recipe ingredients -->
         <ingredients>
+            <li>
+                <filter>
+                    <!-- thingDefs: defines which item can be crafted from this material -->
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>            
             <li>
                 <filter>
                     <!-- thingDefs: defines which item can be crafted from this material -->
@@ -226,19 +294,10 @@
                 <filter>
                     <!-- thingDefs: defines which item can be crafted from this material -->
                     <thingDefs>
-                        <li>RSF_EcoLeather</li>
-                    </thingDefs>
-                </filter>
-                <count>8</count>
-            </li>
-            <li>
-                <filter>
-                    <!-- thingDefs: defines which item can be crafted from this material -->
-                    <thingDefs>
                         <li>DevilstrandCloth</li>
                     </thingDefs>
                 </filter>
-                <count>6</count>
+                <count>15</count>
             </li>
         </ingredients>
 
@@ -248,7 +307,8 @@
         </products>
 
         <!-- Effect Working & sound -->
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-    </RecipeDef>    
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+    </RecipeDef>
+
 </Defs>

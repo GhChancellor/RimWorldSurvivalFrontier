@@ -32,10 +32,10 @@
     <RSF_PlasticIncendiaryRecipe.description>Bioplastica rinforzata con composti volatili. Materiale da costruzione estremamente infiammabile per applicazioni tattiche. Maneggiare con cura.</RSF_PlasticIncendiaryRecipe.description>
     <RSF_PlasticIncendiaryRecipe.jobString>Converto bio plastica in plastica incediaria </RSF_PlasticIncendiaryRecipe.jobString>
 
-    <!-- ================= RSF_ChemfuelFromPlasticRecipe ================= -->
-    <RSF_ChemfuelFromHumanCorpse.label>crea chemfuel da cadavere umano</RSF_ChemfuelFromHumanCorpse.label>
-    <RSF_ChemfuelFromHumanCorpse.description>" Ricicla " i cadaveri umani in chemfuel! Soluzioni energetiche sostenibili, salvare il mondo è un dovere.</RSF_ChemfuelFromHumanCorpse.description>
-    <RSF_ChemfuelFromHumanCorpse.jobString>Raffinazione chemfuel da cadavere umano.</RSF_ChemfuelFromHumanCorpse.jobString>
+    <!-- ================= RSF_ChemfuelFromHumanCorpseRecipe ================= -->
+    <RSF_ChemfuelFromHumanCorpseRecipe.label>crea chemfuel da cadavere umano</RSF_ChemfuelFromHumanCorpseRecipe.label>
+    <RSF_ChemfuelFromHumanCorpseRecipe.description>" Ricicla " i cadaveri umani in chemfuel! Soluzioni energetiche sostenibili, salvare il mondo è un dovere.</RSF_ChemfuelFromHumanCorpseRecipe.description>
+    <RSF_ChemfuelFromHumanCorpseRecipe.jobString>Raffinazione chemfuel da cadavere umano.</RSF_ChemfuelFromHumanCorpseRecipe.jobString>
 
     <!--  ================= RSF_EcoLeatherRecipe ================= -->
     <RSF_EcoLeatherRecipe.label>produci eco pelle</RSF_EcoLeatherRecipe.label>
@@ -63,22 +63,22 @@
     <RSF_DriedFruitRecipe4x.jobString>converte la frutta cruda in frutta essiccata</RSF_DriedFruitRecipe4x.jobString>
 
     <!-- ================= RSF_FiberWoolRecipe ================= -->
-    <RSF_FiberWoolRecipe.label>RSF_FiberWoolRecipe plastic wool</RSF_FiberWoolRecipe.label>
+    <RSF_FiberWoolRecipe.label>fibra di lana</RSF_FiberWoolRecipe.label>
     <RSF_FiberWoolRecipe.description>Soft, light and provides very good insulation. plastic wool clothes can keep the body warm even in very cold conditions.</RSF_FiberWoolRecipe.description>
     <RSF_FiberWoolRecipe.jobString>converte la frutta cruda in frutta essiccata</RSF_FiberWoolRecipe.jobString>
     
     <!-- ================= RSF_FiberArcticRecipe ================= -->
-    <RSF_FiberArcticRecipe.label>RSF_FiberArcticRecipe wool</RSF_FiberArcticRecipe.label>
+    <RSF_FiberArcticRecipe.label>fibra artica</RSF_FiberArcticRecipe.label>
     <RSF_FiberArcticRecipe.description>Soft, light and provides extreme insulation. ultra thermal wool clothes can keep the body warm even in extreme cold conditions.</RSF_FiberArcticRecipe.description>
     <RSF_FiberArcticRecipe.jobString>converte la frutta cruda in frutta essiccata</RSF_FiberArcticRecipe.jobString>
     
     <!-- ================= RSF_FiberDesertRecipe ================= -->
-    <RSF_FiberDesertRecipe.label>RSF_FiberDesertRecipe wool</RSF_FiberDesertRecipe.label>
+    <RSF_FiberDesertRecipe.label>lana del deserto</RSF_FiberDesertRecipe.label>
     <RSF_FiberDesertRecipe.description>Tessuto leggero e traspirante progettato per climi caldi. I vestiti in fibra desertica offrono eccellente ventilazione proteggendo da esposizione solare e tempeste di sabbia.</RSF_FiberDesertRecipe.description>
     <RSF_FiberDesertRecipe.jobString>converte la frutta cruda in frutta essiccata</RSF_FiberDesertRecipe.jobString>
     
     <!-- ================= RSF_FiberSolarRecipe ================= -->
-    <RSF_FiberSolarRecipe.label>RSF_FiberSolarRecipe wool</RSF_FiberSolarRecipe.label>
+    <RSF_FiberSolarRecipe.label>fibra anti solare</RSF_FiberSolarRecipe.label>
     <RSF_FiberSolarRecipe.description>Composito riflettente avanzato che devia le intense radiazioni solari. Gli indumenti in fibra solare offrono massima protezione termica per condizioni desertiche estreme e prolungata esposizione al sole.</RSF_FiberSolarRecipe.description>
     <RSF_FiberSolarRecipe.jobString>converte la frutta cruda in frutta essiccata</RSF_FiberSolarRecipe.jobString>
     

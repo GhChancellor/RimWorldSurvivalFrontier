@@ -17,8 +17,8 @@ Complete survival toolkit for extreme biomes. Materials, food production, shelte
 Perfect integration with the base game. Balanced for equilibrium gameplay without disrupting the RimWorld experience.
 
 RECENT UPDATES:
-UPDATES: 1.0.0.89 
-- Fix category dried fruit
+UPDATES: 1.0.0.101
+- Internal refactor: deep code and documentation revision, research and recipe rebalancing, various fixes. No new content.
 
 UPDATES: 1.0.0.87
 - Fix italian translate
@@ -27,13 +27,6 @@ UPDATES: 1.0.0.87
 
 UPDATES: 1.0.0.77
 - Add Storage pallet/small pallet that holds chunks and buildings The pallet cannot hold plants and corpses. ( shelf )
-
-UPDATES: 1.0.0.72
-- Balance recipe plastic base
-- Unified recipes to vanilla standard. Two-step process: materials → chemfuel → plastics.
-- Balance stats of chefuel stove
-- Add Table 1x1
-- Add Chemical station ( like toolcabinet ) for biochemfuel refinery and brewery
 
 🌱 Ecological Production
 Create bio-plastic at the biofuel refinery from common plant resources: agave, berries, corn, potatoes, and rice.
@@ -51,7 +44,11 @@ Advanced version for high-quality construction. Greater durability and beauty fo
 Advanced plastic bio-engineered steel created by reinforcing plant-based polymers with metallic compounds (Fabrication bench)
 
 *Plastic Fiber* :
-Synthetic textile for clothing. Sustainable alternative to cotton for dressing your colony. ( Biofuel refinery )
+Synthetic textile for clothing. Sustainable alternative to cotton for dressing your colony.
+- Fiber wool: very good cold insulation ( tailor bench )
+- Fiber Arctic: extreme cold insulation ( Fabrication bench )
+- Fiber desert: very good hot insulation ( tailor bench )
+- Fiber Antisolar: extreme hot insulation ( Fabrication bench )
 
 *Incendiary Plastic* :
 Bio-plastic infused with volatile compounds. Extremely flammable material for tactical construction/floor applications. Handle with care. ( Biofuel refinery )

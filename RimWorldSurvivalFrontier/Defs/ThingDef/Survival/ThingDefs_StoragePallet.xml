@@ -35,7 +35,7 @@
             <li>ComplexFurniture</li>
         </researchPrerequisites>
         <comps>
-            <li Class="CompProperties_Styleable"/>
+            <li Class="CompProperties_Styleable" />
         </comps>
         <uiOrder>2050</uiOrder> <!-- To group with outfit stand -->
     </ThingDef>
@@ -61,12 +61,13 @@
                     <disallowNotEverStorable>true</disallowNotEverStorable>
 
                     <!-- Allowed materials. Defines which items can be stored in this building. -->
-                   <thingDefs>
-                       <li>Steel</li>
-                   </thingDefs>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
 
-                   <!-- Allowed categories -->
-                    <!-- Material categories: Defines which categories can be stored in this building. -->
+                    <!-- Allowed categories -->
+                    <!-- Material categories: Defines which categories can be stored in this
+                    building. -->
                     <!-- "Woody" = furniture, structures, floors (same as wood/plasteel in vanilla) -->
                     <categories>
                         <li>Chunks</li>
@@ -146,7 +147,7 @@
 
         <!-- Icons & colors -->
         <graphicData>
-             <drawSize>(2,1)</drawSize>
+            <drawSize>(2,1)</drawSize>
         </graphicData>
 
         <!-- Ui Icon Scale: controls the size of the icon in the inventory -->

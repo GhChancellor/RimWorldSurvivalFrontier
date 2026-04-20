@@ -27,7 +27,7 @@
         </statBases>
 
         <!-- it's not comestible -->
-        <ingestible/>
+        <ingestible />
 
         <!-- Plant specifics -->
         <plant>
@@ -106,7 +106,7 @@
         </statBases>
 
         <!-- it's not comestible -->
-        <ingestible/>
+        <ingestible />
 
         <!-- Plant specifics -->
         <plant>
@@ -176,7 +176,7 @@
         </plant>
 
         <!-- it's not comestible -->
-        <ingestible/>
+        <ingestible />
     </ThingDef>
 
     <!-- ================= RSF_Plant_TreePalmNano Tropical ================= -->
@@ -225,7 +225,6 @@
         </plant>
 
         <!-- it's not comestible -->
-        <ingestible/>
+        <ingestible />
     </ThingDef>
 </Defs>
-

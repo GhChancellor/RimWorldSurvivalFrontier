@@ -165,7 +165,7 @@
 
         <!-- Icons & colors -->
         <graphicData>
-            <color>(100,120,140)</color>
+            <color>(255,255,255)</color>
         </graphicData>
 
         <possessionCount>30</possessionCount>

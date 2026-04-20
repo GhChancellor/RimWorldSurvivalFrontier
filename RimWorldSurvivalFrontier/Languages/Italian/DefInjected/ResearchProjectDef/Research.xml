@@ -27,19 +27,19 @@
     <RSF_EcoLeatherResearch.description>Pelle sintetica bio-ingegnerizzata creata da polimeri vegetali avanzati. Alternativa sostenibile al cuoio animale per abbigliamento di qualità.</RSF_EcoLeatherResearch.description>
 
     <!-- ================= RSF_FiberWoolResearch ================= -->
-    <RSF_FiberWoolResearch.label>ricerca lana di plastica</RSF_FiberWoolResearch.label>
+    <RSF_FiberWoolResearch.label>lana di plastica</RSF_FiberWoolResearch.label>
     <RSF_FiberWoolResearch.description>Morbido, leggero e fornisce un ottimo isolamento termico. Gli indumenti in pile sintetico mantengono il corpo caldo anche in condizioni molto fredde.</RSF_FiberWoolResearch.description>
 
     <!-- ================= RSF_FiberArcticResearch ================= -->
-    <RSF_FiberArcticResearch.label>ricerca lana artica</RSF_FiberArcticResearch.label>
+    <RSF_FiberArcticResearch.label>lana artica</RSF_FiberArcticResearch.label>
     <RSF_FiberArcticResearch.description>Morbido, leggero e fornisce un isolamento termico estremo. Gli indumenti in pile sintetico mantengono il corpo caldo anche in condizioni estremanente fredde.</RSF_FiberArcticResearch.description>
 
     <!-- ================= RSF_FiberDesertResearch ================= -->
-    <RSF_FiberDesertResearch.label>ricerca fibra del deserto</RSF_FiberDesertResearch.label>
+    <RSF_FiberDesertResearch.label>fibra del deserto</RSF_FiberDesertResearch.label>
     <RSF_FiberDesertResearch.description>Tessuto leggero e traspirante progettato per climi caldi. I vestiti in fibra desertica offrono eccellente ventilazione proteggendo da esposizione solare e tempeste di sabbia.</RSF_FiberDesertResearch.description>
 
     <!-- ================= RSF_FiberSolarResearch ================= -->
-    <RSF_FiberSolarResearch.label>ricerca fibra antisolare</RSF_FiberSolarResearch.label>
+    <RSF_FiberSolarResearch.label> fibra antisolare</RSF_FiberSolarResearch.label>
     <RSF_FiberSolarResearch.description>Composito riflettente avanzato che devia le intense radiazioni solari. Gli indumenti in fibra solare offrono massima protezione termica per condizioni desertiche estreme e prolungata esposizione al sole.</RSF_FiberSolarResearch.description>
 
     <!-- ================= RSF_ChemicalStation ================= -->
