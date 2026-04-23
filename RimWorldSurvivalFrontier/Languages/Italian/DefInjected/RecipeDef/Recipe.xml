@@ -7,10 +7,20 @@
     <RSF_PlasticBasicRecipe.description>Bio-plastica leggera ricavata da materiali vegetali. Adatta per la costruzione di mobili e strutture ma di qualità inferiore.</RSF_PlasticBasicRecipe.description>
     <RSF_PlasticBasicRecipe.jobString>producendo plastica base</RSF_PlasticBasicRecipe.jobString>
 
+    <!--  ================= RSF_PlasticBasicCatalyzedRecipe ================= -->
+    <RSF_PlasticBasicCatalyzedRecipe.label>produci plastica base catalizzata</RSF_PlasticBasicCatalyzedRecipe.label>
+    <RSF_PlasticBasicCatalyzedRecipe.description>Bio-plastica base catalizzata è leggera ricavata da materiali vegetali. Adatta per la costruzione di mobili e strutture ma di qualità inferiore.</RSF_PlasticBasicCatalyzedRecipe.description>
+    <RSF_PlasticBasicCatalyzedRecipe.jobString>producendo plastica base</RSF_PlasticBasicCatalyzedRecipe.jobString>
+
     <!--  ================= RSF_PlasticIndustrialRecipe ================= -->
     <RSF_PlasticIndustrialRecipe.label>produci plastica industriale</RSF_PlasticIndustrialRecipe.label>
     <RSF_PlasticIndustrialRecipe.description>Bio-plastica resistente per costruzioni. Adatta per la costruzione di mobili e strutture ma di qualità superiore.</RSF_PlasticIndustrialRecipe.description>
     <RSF_PlasticIndustrialRecipe.jobString>producendo plastica industriale</RSF_PlasticIndustrialRecipe.jobString>
+
+    <!--  ================= RSF_PlasticIndustrialCatalyzedRecipe ================= -->
+    <RSF_PlasticIndustrialCatalyzedRecipe.label>produci plastica industriale catalizzata</RSF_PlasticIndustrialCatalyzedRecipe.label>
+    <RSF_PlasticIndustrialCatalyzedRecipe.description>Bio-plastica industriale cataliizzata è resistente per costruzioni. Adatta per la costruzione di mobili e strutture ma di qualità superiore.</RSF_PlasticIndustrialCatalyzedRecipe.description>
+    <RSF_PlasticIndustrialCatalyzedRecipe.jobString>producendo plastica industriale</RSF_PlasticIndustrialCatalyzedRecipe.jobString>
 
     <!--  ================= RSF_PlasticBioSteelRecipe ================= -->
     <RSF_PlasticBioSteelRecipe.label>produci acciaio Bio-Plastico</RSF_PlasticBioSteelRecipe.label>

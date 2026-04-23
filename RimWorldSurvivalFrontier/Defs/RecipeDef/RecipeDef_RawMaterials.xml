@@ -52,6 +52,48 @@
         </products>
     </RecipeDef>
 
+    <!--  ================= RSF_PlasticBasicCatalyzedRecipe ================= -->
+    <RecipeDef ParentName="RSF_TemplateRawMaterialRecipe">
+        <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
+        <!-- ID -->
+        <defName>RSF_PlasticBasicCatalyzedRecipe</defName>
+        <label>RSF_PlasticBasicCatalyzedRecipe.label</label>
+        <description>RSF_PlasticBasicCatalyzedRecipe.description</description>
+        <jobString>RSF_PlasticBasicCatalyzedRecipe.jobString</jobString>
+
+        <!-- Mechanic CORE -->
+        <workAmount>700</workAmount>
+        <researchPrerequisite>RSF_PlasticBasicResearch</researchPrerequisite> <!-- unlock this items
+        See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
+
+        <!-- Recipe ingredients -->
+        <ingredients>
+            <li>
+                <filter>
+                    <!-- thingDefs: defines which items can be crafted from this material -->
+                    <thingDefs>
+                        <li>Hay</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <!-- thingDefs: defines which items can be crafted from this material -->
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+
+        <!-- Output material-->
+        <products>
+            <RSF_PlasticBasic>30</RSF_PlasticBasic>
+        </products>
+    </RecipeDef>
+
     <!-- ================= RSF_PlasticIndustrialRecipe =================-->
     <RecipeDef ParentName="RSF_TemplateRawMaterialRecipe">
         <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
@@ -87,6 +129,53 @@
         <!-- Output material-->
         <products>
             <RSF_PlasticIndustrial>20</RSF_PlasticIndustrial>
+        </products>
+    </RecipeDef>
+
+    <!--  ================= RSF_PlasticIndustrialCatalyzedRecipe ================= -->
+    <RecipeDef ParentName="RSF_TemplateRawMaterialRecipe">
+        <!-- RecipeDefs/Recipes_Production_Vanilla.xml > Make_ChemfuelFromWood -->
+        <!-- ID -->
+        <defName>RSF_PlasticIndustrialCatalyzedRecipe</defName>
+        <label>RSF_PlasticIndustrialCatalyzedRecipe.label</label>
+        <description>RSF_PlasticIndustrialCatalyzedRecipe.description</description>
+        <jobString>RSF_PlasticIndustrialCatalyzedRecipe.jobString</jobString>
+
+        <!-- Mechanic CORE -->
+        <workAmount>1000</workAmount>
+        <researchPrerequisite>RSF_PlasticIndustrialResearch</researchPrerequisite> <!-- unlock this items
+        See: EcoPlastic/Doc/Images/Research/Unlock_RSF_PlasticBasic.png -->
+
+        <!-- Requirements -->
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+
+        <!-- Recipe ingredients -->
+        <ingredients>
+            <li>
+                <filter>
+                    <!-- thingDefs: defines which items can be crafted from this material -->
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <!-- thingDefs: defines which items can be crafted from this material -->
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+
+        <!-- Output material-->
+        <products>
+            <RSF_PlasticIndustrial>25</RSF_PlasticIndustrial>
         </products>
     </RecipeDef>
 

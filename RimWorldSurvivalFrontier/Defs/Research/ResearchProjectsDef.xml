@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-    
+
     <!--  ================= RSF_PlasticBasicResearch  ================= -->
     <ResearchProjectDef>
         <!-- ID -->
@@ -11,17 +11,39 @@
 
         <baseCost>300</baseCost> <!-- Research points required -->
         <techLevel>Industrial</techLevel>
-        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+        <prerequisites> <!-- before you must unlock this researches See:
+            EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
             <li>BiofuelRefining</li>
         </prerequisites>
-        
+
         <!-- Position on tab research -->
         <researchViewX>0.50</researchViewX>
         <researchViewY>2.90</researchViewY>
-        
+
         <tab>RSF_EcoPlastic</tab>
     </ResearchProjectDef>
-    
+
+    <!--  ================= RSF_PlasticBasicCatalyzedResearch  ================= -->
+    <ResearchProjectDef>
+        <!-- ID -->
+        <defName>RSF_PlasticBasicCatalyzedResearch</defName>
+        <label>RSF_PlasticBasicCatalyzedResearch.label</label>
+        <description>RSF_PlasticBasicCatalyzedResearch.description</description>
+
+        <baseCost>500</baseCost> <!-- Research points required -->
+        <techLevel>Industrial</techLevel>
+        <prerequisites> <!-- before you must unlock this researches See:
+            EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+            <li>RSF_PlasticBasicResearch</li>
+        </prerequisites>
+
+        <!-- Position on tab research -->
+        <researchViewX>1.50</researchViewX>
+        <researchViewY>0.30</researchViewY>
+
+        <tab>RSF_EcoPlastic</tab>
+    </ResearchProjectDef>
+
     <!--  ================= RSF_PlasticIndustrialResearch  ================= -->
     <ResearchProjectDef>
         <!-- ID -->
@@ -31,17 +53,39 @@
 
         <baseCost>1200</baseCost> <!-- Research points required -->
         <techLevel>Industrial</techLevel>
-        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+        <prerequisites> <!-- before you must unlock this researches See:
+            EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
             <li>RSF_PlasticBasicResearch</li>
         </prerequisites>
-        
+
         <!-- Position on tab research -->
         <researchViewX>2.50</researchViewX>
         <researchViewY>1.30</researchViewY>
-        
+
         <tab>RSF_EcoPlastic</tab>
     </ResearchProjectDef>
-    
+
+    <!--  ================= RSF_PlasticIndustrialCatalyzedResearch  ================= -->
+    <ResearchProjectDef>
+        <!-- ID -->
+        <defName>RSF_PlasticIndustrialCatalyzedResearch</defName>
+        <label>RSF_PlasticIndustrialCatalyzedResearch.label</label>
+        <description>RSF_PlasticIndustrialCatalyzedResearch.description</description>
+
+        <baseCost>1400</baseCost> <!-- Research points required -->
+        <techLevel>Industrial</techLevel>
+        <prerequisites> <!-- before you must unlock this researches See:
+            EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+            <li>RSF_PlasticBasicResearch</li>
+        </prerequisites>
+
+        <!-- Position on tab research -->
+        <researchViewX>4.50</researchViewX>
+        <researchViewY>1.60</researchViewY>
+
+        <tab>RSF_EcoPlastic</tab>
+    </ResearchProjectDef>
+
     <!--  ================= RSF_PlasticBioSteelResearch  ================= -->
     <ResearchProjectDef>
         <!-- ID -->
@@ -51,13 +95,14 @@
 
         <baseCost>2000</baseCost> <!-- Research points required -->
         <techLevel>Industrial</techLevel>
-        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+        <prerequisites> <!-- before you must unlock this researches See:
+            EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
             <li>RSF_PlasticIndustrialResearch</li>
         </prerequisites>
 
         <!-- Position on tab research -->
         <researchViewX>4.50</researchViewX>
-        <researchViewY>1.20</researchViewY>
+        <researchViewY>0.00</researchViewY>
 
         <tab>RSF_EcoPlastic</tab>
     </ResearchProjectDef>
@@ -71,14 +116,15 @@
 
         <baseCost>600</baseCost> <!-- Research points required -->
         <techLevel>Industrial</techLevel>
-        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+        <prerequisites> <!-- before you must unlock this researches See:
+            EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
             <li>RSF_PlasticBasicResearch</li>
         </prerequisites>
 
         <!-- Position on tab research -->
         <researchViewX>2.50</researchViewX>
         <researchViewY>2.90</researchViewY>
-        
+
         <tab>RSF_EcoPlastic</tab>
     </ResearchProjectDef>
 
@@ -91,14 +137,15 @@
 
         <baseCost>800</baseCost> <!-- Research points required -->
         <techLevel>Industrial</techLevel>
-        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+        <prerequisites> <!-- before you must unlock this researches See:
+            EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
             <li>RSF_PlasticFiberResearch</li>
         </prerequisites>
 
         <!-- Position on tab research -->
         <researchViewX>4.50</researchViewX>
         <researchViewY>2.90</researchViewY>
-        
+
         <tab>RSF_EcoPlastic</tab>
     </ResearchProjectDef>
 
@@ -111,14 +158,15 @@
 
         <baseCost>300</baseCost> <!-- Research points required -->
         <techLevel>Industrial</techLevel> <!-- Tech era classification -->
-        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+        <prerequisites> <!-- before you must unlock this researches See:
+            EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
             <li>RSF_PlasticBasicResearch</li>
         </prerequisites>
 
         <!-- Position on tab research -->
         <researchViewX>0.50</researchViewX>
         <researchViewY>0.40</researchViewY>
-        
+
         <tab>RSF_EcoPlastic</tab>
     </ResearchProjectDef>
 
@@ -131,7 +179,8 @@
 
         <baseCost>1200</baseCost> <!-- Research points required -->
         <techLevel>Industrial</techLevel> <!-- Tech era classification -->
-        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+        <prerequisites> <!-- before you must unlock this researches See:
+            EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
             <li>RSF_PlasticFiberResearch</li>
         </prerequisites>
 
@@ -141,7 +190,7 @@
 
         <tab>RSF_EcoPlastic</tab>
     </ResearchProjectDef>
-    
+
     <!--  ================= RSF_FiberArcticResearch  ================= -->
     <ResearchProjectDef>
         <!-- ID -->
@@ -151,7 +200,8 @@
 
         <baseCost>2000</baseCost> <!-- Research points required -->
         <techLevel>Industrial</techLevel> <!-- Tech era classification -->
-        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+        <prerequisites> <!-- before you must unlock this researches See:
+            EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
             <li>RSF_FiberWoolResearch</li>
         </prerequisites>
 
@@ -161,7 +211,7 @@
 
         <tab>RSF_EcoPlastic</tab>
     </ResearchProjectDef>
-    
+
     <!--  ================= RSF_FiberDesertResearch  ================= -->
     <ResearchProjectDef>
         <!-- ID -->
@@ -169,19 +219,20 @@
         <label>RSF_FiberDesertResearch.label</label>
         <description>RSF_FiberDesertResearch.description</description>
 
-        <baseCost>1000</baseCost> <!-- Research points required -->
+        <baseCost>1200</baseCost> <!-- Research points required -->
         <techLevel>Industrial</techLevel> <!-- Tech era classification -->
-        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+        <prerequisites> <!-- before you must unlock this researches See:
+            EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
             <li>RSF_PlasticFiberResearch</li>
         </prerequisites>
 
-        <!-- Position on tab research -->  
+        <!-- Position on tab research -->
         <researchViewX>3.50</researchViewX>
         <researchViewY>4.90</researchViewY>
-        
+
         <tab>RSF_EcoPlastic</tab>
     </ResearchProjectDef>
-    
+
     <!--  ================= RSF_FiberSolarResearch  ================= -->
     <ResearchProjectDef>
         <!-- ID -->
@@ -189,17 +240,18 @@
         <label>RSF_FiberSolarResearch.label</label>
         <description>RSF_FiberSolarResearch.description</description>
 
-        <baseCost>1800</baseCost> <!-- Research points required -->
+        <baseCost>2000</baseCost> <!-- Research points required -->
         <techLevel>Industrial</techLevel> <!-- Tech era classification -->
-        <prerequisites> <!-- before you must unlock this researches See: EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
+        <prerequisites> <!-- before you must unlock this researches See:
+            EcoPlastic/Doc/Images/Research/Tree_Overview.png -->
             <li>RSF_FiberDesertResearch</li>
         </prerequisites>
 
         <!-- Position on tab research -->
         <researchViewX>5.50</researchViewX>
         <researchViewY>4.80</researchViewY>
-        
+
         <tab>RSF_EcoPlastic</tab>
     </ResearchProjectDef>
-        
+
 </Defs>

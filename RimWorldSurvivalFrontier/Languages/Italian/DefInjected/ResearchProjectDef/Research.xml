@@ -6,9 +6,17 @@
     <RSF_PlasticBasicResearch.label>plastica base</RSF_PlasticBasicResearch.label>
     <RSF_PlasticBasicResearch.description>Bio-plastica leggera ricavata da materiali vegetali. Adatta per la costruzione di mobili e strutture ma di qualità inferiore.</RSF_PlasticBasicResearch.description>
 
+    <!--  ================= RSF_PlasticBasicCatalyzedResearch  ================= -->
+    <RSF_PlasticBasicCatalyzedResearch.label>plastica base catalizzata</RSF_PlasticBasicCatalyzedResearch.label>
+    <RSF_PlasticBasicCatalyzedResearch.description>Bio-plastica leggera ricavata da materiali vegetali. Adatta per la costruzione di mobili e strutture ma di qualità inferiore.</RSF_PlasticBasicCatalyzedResearch.description>
+
     <!--  ================= RSF_PlasticIndustrialResearch  ================= -->
     <RSF_PlasticIndustrialResearch.label>plastica industriale</RSF_PlasticIndustrialResearch.label>
     <RSF_PlasticIndustrialResearch.description>Bio-plastica resistente per costruzioni. Adatta per la costruzione di mobili e strutture ma di qualità superiore.</RSF_PlasticIndustrialResearch.description>
+
+    <!--  ================= RSF_PlasticIndustrialCatalyzedResearch  ================= -->
+    <RSF_PlasticIndustrialCatalyzedResearch.label>plastica industriale catalizzata</RSF_PlasticIndustrialCatalyzedResearch.label>
+    <RSF_PlasticIndustrialCatalyzedResearch.description>Bio-plastica resistente per costruzioni. Adatta per la costruzione di mobili e strutture ma di qualità superiore.</RSF_PlasticIndustrialCatalyzedResearch.description>
 
     <!--  ================= RSF_PlasticBioSteelResearch  ================= -->
     <RSF_PlasticBioSteelResearch.label>acciaio bio-ingegnerizzato</RSF_PlasticBioSteelResearch.label>

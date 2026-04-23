@@ -6,9 +6,17 @@
     <RSF_PlasticBasicResearch.label>basic plastic</RSF_PlasticBasicResearch.label>
     <RSF_PlasticBasicResearch.description>Lightweight bio-plastic from plant materials. Basic-grade material suitable for simple furniture and structures.</RSF_PlasticBasicResearch.description>
 
+    <!--  ================= RSF_PlasticBasicCatalyzedResearch  ================= -->
+    <RSF_PlasticBasicCatalyzedResearch.label>basic plastic catalyzed</RSF_PlasticBasicCatalyzedResearch.label>
+    <RSF_PlasticBasicCatalyzedResearch.description>Lightweight bio-plastic from plant materials. Basic-grade material suitable for simple furniture and structures.</RSF_PlasticBasicCatalyzedResearch.description>
+
     <!--  ================= RSF_PlasticIndustrialResearch  ================= -->
     <RSF_PlasticIndustrialResearch.label>industrial plastic</RSF_PlasticIndustrialResearch.label>
     <RSF_PlasticIndustrialResearch.description>Advanced bio-plastic with enhanced durability. Industrial-grade material for high-quality furniture and robust structures.</RSF_PlasticIndustrialResearch.description>
+
+    <!--  ================= RSF_PlasticIndustrialCatalyzedResearch  ================= -->
+    <RSF_PlasticIndustrialCatalyzedResearch.label>industrial plastic catalyzed</RSF_PlasticIndustrialCatalyzedResearch.label>
+    <RSF_PlasticIndustrialCatalyzedResearch.description>Advanced bio-plastic with enhanced durability. Industrial-grade material for high-quality furniture and robust structures.</RSF_PlasticIndustrialCatalyzedResearch.description>
 
     <!--  ================= RSF_PlasticBioSteelResearch  ================= -->
     <RSF_PlasticBioSteelResearch.label>plastic Bio-Steel </RSF_PlasticBioSteelResearch.label>

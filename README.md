@@ -1,69 +1,69 @@
 ## 🌨️ **Designed for Extreme Climates**
 Complete survival toolkit for extreme biomes. Materials, food production, shelter - everything needed to thrive in hostile frontiers.
 
-## 🎯 **Vanilla Friendly** :
+🎯 Vanilla Friendly
 Perfect integration with the base game. Balanced for equilibrium gameplay without disrupting the RimWorld experience.
 
 RECENT UPDATES:
+UPDATES: 1.0.0.104
+- Add Recipes
+    - Bioplastic Basic Catalyzed: Chemfuel + Hay for improved yield and efficiency
+    - Bioplastic Industrial Catalyzed: Chemfuel + Cloth for optimized production
 
-UPDATES: 1.0.0.46
-Add 4 fiber:
-- fiber wool: very good cold insulation
-- fiber polar: extreme cold insulation
-- fiber desert: good hot insulation
-- fiber solar: extreme hot insulation
+- Added Research:
+    - Catalytic Bioplastic Synthesis: unlocks catalyzed recipes for resource optimization
 
-Fix italian translate 
+UPDATES: 1.0.0.101
+- Internal refactor: deep code and documentation revision, research and recipe rebalancing, various fixes. No new content.
 
-UPDATES: 1.0.0.34
-- Add Compact Crop Basin 1x2
+UPDATES: 1.0.0.87
+- Fix italian translate
+- Add Icons Dried Fruit, Dried Meat
+- Balance recipe Fruit Recipe, Fruit Recipe bulk, Meat recipe, Meat recipe bulk
 
-Balance and fix sun lamps:
-- Wall sun lamp
-- Small sun lamp
-- Tiny 3x3 sun lamp
-- Compact 5x5 sun lamp
-
-Recipe:
-- Convert Fecal Sludge to plastic basic, plastic Industrial and plastic fiber ( Dubs Bad Hygiene )
-        
-UPDATES: 1.0.0.23
-- Now tree basin unlocks with Tree Sowing research
-- Add more indoor tree plants: Tree Drago Nano, Tree Cocoa Nano, Tree Pine Nano, Tree Bamboo Nano, Tree Palm Nano
-
-## 🌱 **Ecological Production**
+🌱 Ecological Production
 Create bio-plastic at the biofuel refinery from common plant resources: agave, berries, corn, potatoes, and rice.
 Even greenhouse-grown crops work! No more dependence on traders for advanced materials!
+Raw material ( corpse, chemfuel, plant etc.) > Chemfuel > Plastics
 
-## 🔧 **Six Specialized Materials**
-**Plastic Basic** :
-Entry-level material for basic furniture, structures, and recreation. Cheap and fast to produce. ( Biofuel refinery )
+🔧 Six Specialized Materials
+Plastic Basic:
+Entry-level material for basic furniture, structures, and recreation. Cheap and fast to produce.
+- Base recipe: Chemfuel only
+- Catalyzed recipe: Chemfuel + Hay for improved yield and efficiency
 
-**Plastic Industrial** :
-Advanced version for high-quality construction. Greater durability and beauty for your premium structures. ( Biofuel refinery )
+Plastic Industrial:
+Advanced version for high-quality construction. Greater durability and beauty for premium structures.
+- Base recipe: Chemfuel only
+- Catalyzed recipe: Chemfuel + Cloth for improved yield and efficiency
 
-**Plastic Bio-Steel** :
+*Plastic Bio-Steel* :
 Advanced plastic bio-engineered steel created by reinforcing plant-based polymers with metallic compounds (Fabrication bench)
 
-**Plastic Fiber** :
-Synthetic textile for clothing. Sustainable alternative to cotton for dressing your colony. ( Biofuel refinery )
+*Plastic Fiber* :
+Synthetic textile for clothing. Sustainable alternative to cotton for dressing your colony.
+- Fiber wool: very good cold insulation ( tailor bench )
+- Fiber Arctic: extreme cold insulation ( Fabrication bench )
+- Fiber desert: very good hot insulation ( tailor bench )
+- Fiber Antisolar: extreme hot insulation ( Fabrication bench )
 
-**Incendiary Plastic** :
+*Incendiary Plastic* :
 Bio-plastic infused with volatile compounds. Extremely flammable material for tactical construction/floor applications. Handle with care. ( Biofuel refinery )
 
-**Eco leather** :
+*Eco leather* :
 Synthetic leather from plant polymers. Sustainable alternative to animal leather for high-quality clothing. ( tailor bench )
 
-## ⚡ **Recipe for Biofuel Refinery**
-- Recycle all plastics into Chemfuel! Transform waste into energy for your generators.
-- Convert hay to Chemfuel
-- " Recycle " corpses of humans or animals into Chemfuel! Sustainable energy solutions, saving the world is a duty.
-- Convert Fecal Sludge to plastic basic, plastic Industrial and plastic fiber ( Dubs Bad Hygiene )
+⚡ *Biochemfuel refinery* :
+- Chemical station ( like toolcabinet ) for biochemfuel refinery and brewery.
 
-## **Traders** :
+Recipe for Biofuel Refinery :
+- Recycle all plastics into Chemfuel! Transform waste into energy for your generators.
+- " Recycle " corpses of humans or animals into Chemfuel! Sustainable energy solutions, saving the world is a duty.
+
+Traders :
 Now traders bring raw resources: Plastic Basic, Plastic Industrial, Plastic Bio-Steel, Plastic Fiber, Incendiary Plastic, Eco leather and Wood Planks
 
-## **Indoor crops** :
+Indoor crops :
 *Crop Basin*:
 - No power required.
 - Crop types: Corn, Cotton, Dandelion, Daylily, Devilstrand, Haygrass, Hops, Healroot, Potato, Psychoid, Rice, Rose, Smokeleaf, Strawberry, Tinctoria
@@ -86,11 +86,15 @@ Now traders bring raw resources: Plastic Basic, Plastic Industrial, Plastic Bio-
 - Tiny 3x3 sun lamp
 - Compact 5x5 sun lamp
 
-## **Cooking**
+Cooking
 - Add Chemfuel stove
 - Add dried fruit and dried meat for longer storage without refrigeration
 
-## **Quality of life ( QoL ) ** :
+Furniture
+- Add table 1x1
+- Add storage pallet/small pallet that holds chunks and buildings The pallet cannot hold plants and corpses. ( shelf )
+
+Quality of life ( QoL ) :
 Add light range indicators to all vanilla lamps: Wall Lamp, Flood Light, Standing Lamp, Torch Lamp, and Wall Torch Lamp
 
 🌍 **TRANSLATION REQUEST** 🌍
