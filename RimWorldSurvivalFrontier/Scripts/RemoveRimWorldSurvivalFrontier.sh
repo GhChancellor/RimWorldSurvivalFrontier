@@ -1,11 +1,16 @@
 #!/bin/bash
+clear
 
-echo
+GAMENAME="RimWorld"
 MODNAME="RimWorldSurvivalFrontier"
+SOURCE_PATH_RAW="/home/${USER}/Documenti/Archivio/Store/Steam/steamapps/common/${GAMENAME}/Mods"
+# DESTINATION_PATH_RAW=""
 
-# ================= DEPLOYED MOD (runtime location) =================
-PROJECTPATH="/home/${USER}/Documenti/Archivio/Store/Steam/steamapps/common/RimWorld/Mods/${MODNAME}"
+# ================= MOD SOURCE (Development files) =================
+SOURCE="${SOURCE_PATH_RAW}/${MODNAME}/"
 
-rm -rf "${PROJECTPATH}"
+rm -rf "${SOURCE}"
 
-echo -e "${PROJECTPATH} removed"
+echo -e "\e[32m **************************************************************** \e[0m"
+echo -e "\e[32m ******************** ${SOURCE} removed ************************* \e[0m"
+echo -e "\e[32m **************************************************************** \e[0m"
